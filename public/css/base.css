@@ -33,21 +33,26 @@ h1 em {
 }
 
 h1 {
-    margin-bottom: 40px;
+    margin-top: 40px;
     font-size: 150%;
     color: #666;
+}
+
+img {
+  margin-left: -40px;
 }
 
 #main, #footer {
     width: 55em;
     margin: 0 auto;
     position: relative;
-    padding: 50px 0;
+    padding: 0;
 }
 
 #footer p {
     font-size: 100%;
     color: #666;
+    padding: 50px 0;
 }
 
 #footer a {
@@ -55,7 +60,6 @@ h1 {
 }
 
 #mc_embed_signup {
-    margin-top: 45px;
     background-color: #ECECEC;
     border-width: 1px 0;
     border-style: solid;
@@ -63,6 +67,7 @@ h1 {
     text-align: center;
     padding: 20px 100px 40px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 #mc_embed_signup div {
@@ -88,14 +93,14 @@ h1 {
 div.mce_inline_error {
     position: absolute;
     top: 55px;
-    left: 398px;
+    left: 385px;
     color: #000;
     font-weight: bold;
 }
 
 .mc-sub-badge10 {
     position: absolute;
-    top: 60px;
+    top: 10px;
     right: 10px;
 }
 
