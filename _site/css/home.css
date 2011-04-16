@@ -1,0 +1,57 @@
+#main p {
+    background-color: #FFFEE1;
+}
+
+#mc_embed_signup {
+    background-color: #ECECEC;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #CCC;
+    text-align: center;
+    padding: 20px 100px 40px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#mc_embed_signup div {
+    float: left;
+}
+
+#mce-EMAIL {
+    width: 400px;
+    padding: 4px;
+}
+
+#mc-embedded-subscribe {
+    margin: 5px 10px;
+}
+
+.mc-field-group label {
+    position: absolute;
+    top: 55px;
+    left: 100px;
+    color: #999;
+}
+
+div.mce_inline_error {
+    position: absolute;
+    top: 55px;
+    left: 385px;
+    color: #000;
+    font-weight: bold;
+}
+
+.mc-sub-badge10 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.mc-sub-badge10 li.mc-subscribers {
+    padding: 6px 5px 5px 0 !important;
+}
+
+.mc-sub-badge10 li.mc-power {
+    text-align: right;
+    margin-top: 5px;
+}
