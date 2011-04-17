@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Scott Tesoriere</title>
+  <link href="http://devopsweekly.com/archive.xml" rel="self"/>
+  <link href="http://devopsweekly.com/"/>
+  <updated>2011-04-17T14:46:33+01:00</updated>
+  <id>http://devopsweeksly.com</id>
+  <author>
+    <name>Gareth Rushgrove</name>
+    <email>scott@morethanseven.ner</email>
+  </author>
+  
+  <entry>
+    <title>Issue 17 - 11th April 2011</title>
+    <link href="http://devopsweekly.com/2011/04/11/issue-17/"/>
+    <updated>2011-04-11T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/04/11/issue-17</id>
+    <content type="html">&lt;h2&gt;Issue 17 &amp;#8211; 11th April 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Sorry for the delay in getting this issue out, but I hope stuffing it with even more good content will compensate a little. I spent the end of last week in Edinburgh for the Scottish Ruby Conference and, as well as watching some pretty good talks, met a few subscribers and talked an awful lot about Chef, Puppet and Vagrant. Good to meet everyone I bumped into.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;I always found Varnish documentation by jumping between mailing lists and various bits of the internet, for most things I&amp;#8217;ll now probably go to this epic blog post. It doesn&amp;#8217;t just cover the obvious caching of static files, but demonstrates more advantages tricks with dynamic content.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://devblog.factual.com/practical-guide-to-varnish&quot;&gt;http://devblog.factual.com/practical-guide-to-varnish&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;John Allspaw&amp;#8217;s latest post is a pretty thought provoking read, attempting to introduce Resilience Engineering and position it at the heart of how business prioritises activities. It&amp;#8217;s part I as well so presumably more on the subject on the way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/&quot;&gt;http://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rackspace have rolled out a load balancer feature for their cloud stack. This article covers the details of setting it up for use with other Rackspace cloud instances.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cloudservers.rackspacecloud.com/index.php/Configuring_a_Cloud_Load_Balancer&quot;&gt;http://cloudservers.rackspacecloud.com/index.php/Configuring_a_Cloud_Load_Balancer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes it&amp;#8217;s just useful to have a big old list of bullet points to remind you about a broad topic. This post from Ricky Ho could be useful if you don&amp;#8217;t know where to start, although it would be nice to see lots more references.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://architects.dzone.com/news/scalable-system-design-0&quot;&gt;http://architects.dzone.com/news/scalable-system-design-0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Replay Solutions carried out a survey of companies, focusing on management and larger organisations around devops. This might be useful to those fighting the good fight and needing to convince the powers that be. The survey results are available as a &lt;span class=&quot;caps&quot;&gt;PDF&lt;/span&gt; from that page.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://replaysolutions.com/company/news/59&quot;&gt;http://replaysolutions.com/company/news/59&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m finding more and more long, well thought out posts that I&amp;#8217;m sure I&amp;#8217;ll be referring back to again and again. This post from Stephanie Dean covers processes and practices to use and put in place when everything around you is going wrong. It ends with a great list of responsibilities for the different groups involved that everyone should read.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://stephaniekdean.wordpress.com/2011/04/04/eventmgmt/&quot;&gt;http://stephaniekdean.wordpress.com/2011/04/04/eventmgmt/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Altering based on a percentage is pretty common, and is the default in many popular monitoring applications. It&amp;#8217;s also counter productive and sometimes dangerous according to Chris Siebenmann. He argues very well that the defaults exist because it&amp;#8217;s easy to do, and as someone who has been warning about a machine with 20GB of disk left in the past because of this I&amp;#8217;m coming round to the same viewpoint.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://utcc.utoronto.ca/~cks/space/blog/sysadmin/NoAlertOnPercentages&quot;&gt;http://utcc.utoronto.ca/~cks/space/blog/sysadmin/NoAlertOnPercentages&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More and more folks are writing up their continuous deployment setups, which I think is a great think. The more shared experience the more we can get to a stage where common tools for things like this exist, lowering the costs and barriers to entry.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://prettyprint.me/2011/01/24/continuous-deployment-at-outbrain/&quot;&gt;http://prettyprint.me/2011/01/24/continuous-deployment-at-outbrain/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;If you&amp;#8217;re a fan of using monit, daemon, logrotate and cron for running daemonised services then it&amp;#8217;s probably not because of the setup and configuration. pmonit caught my eye as a painless looking approach to getting these all working together quickly. Although I&amp;#8217;d be tempted to pull some of this out into Chef recipes or Puppet manifests.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/emgee/pmonit&quot;&gt;https://github.com/emgee/pmonit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Excellent blog post and application code from Posterous. They ran into issues around optimising caching, and build some pretty impressive tools to allow log play back and generate statistics on cache behaviour.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://technology.posterous.com/planning-and-engineering-your-cache-for-maxim-0&quot;&gt;http://technology.posterous.com/planning-and-engineering-your-cache-for-maxim-0&lt;/a&gt; and &lt;a href=&quot;https://github.com/vincentchu/sim_cache&quot;&gt;https://github.com/vincentchu/sim_cache&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Most people who end up talking about low level monitoring of Java applications always sound angry. This tool acts as a connector between &lt;span class=&quot;caps&quot;&gt;JMX&lt;/span&gt; and a number of different monitoring systems including cacti, rrdtool, graphite and plain old stdout.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://code.google.com/p/jmxtrans/&quot;&gt;http://code.google.com/p/jmxtrans/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 16 - 31st March 2011</title>
+    <link href="http://devopsweekly.com/2011/03/31/issue-16/"/>
+    <updated>2011-03-31T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/03/31/issue-16</id>
+    <content type="html">&lt;h2&gt;Issue 16 &amp;#8211; 31st March 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;I&amp;#8217;ll start this issue with a bit of a call to action. It turns out that the Devops Wikipedia page needs some love. It&amp;#8217;s led to a few confused views this last week or so and as more and more people come across the term it&amp;#8217;s something folks will turn to. It would be great if the community chipped in on http://en.wikipedia.org/wiki/DevOps. Onwards to the real content.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;I always love posts where people describe, ideally with diagrams, how a system architecture works. Digg posted this interesting blog post this week doing just that. It goes into a little detail about the services they use and the technology stack they employ. More posts are promised as well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://about.digg.com/blog/how-digg-is-built&quot;&gt;http://about.digg.com/blog/how-digg-is-built&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Patrick Debois has been pushing Vagrant in a small team setup and a complex application with great results. The post is a great walkthrough of the how and why, this some good observations about using a tool like vagrant in a team setting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jedi.be/blog/2011/03/28/using-vagrant-as-a-team/&quot;&gt;http://jedi.be/blog/2011/03/28/using-vagrant-as-a-team/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve been showing various people Chef recently and one problem a few people have commented on is the discoverability of some of the documentation. Sean OMeara pointed out that the docs are vast and broken up into many pages on the Opscode wiki and wrote up a great index along with a brief explanation of each of the main topics.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.afistfulofservers.net/post/3889872012/a-can-of-condensed-chef-documentation&quot;&gt;http://blog.afistfulofservers.net/post/3889872012/a-can-of-condensed-chef-documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;One thing driving lots of the talk around devops is the move towards software as a service, whether that means inside a large company or paying a third party for an internet based setup. This post has some nice observations about the changes needed if you&amp;#8217;re more familiar with the more traditional software delivery process.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://omniti.com/seeds/from-making-software-to-running-saas&quot;&gt;http://omniti.com/seeds/from-making-software-to-running-saas&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;R.I.Pienaar continues his self appointed task of making monitoring better. I&amp;#8217;m liking the sound of a framework that can build monitoring systems, meaning you&amp;#8217;ll have to add code to the mix to get something useful but that should be specific to your needs, and able to evolve with you over time.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.devco.net/archives/2011/03/25/monitoring_framework_event_correlation.php&quot;&gt;http://www.devco.net/archives/2011/03/25/monitoring_framework_event_correlation.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nice writeup of DevOps &lt;span class=&quot;caps&quot;&gt;ATL&lt;/span&gt; in Atlanta. Some good points about how particular pain points and skunkworks projects, especially in larger more formal organisations, can help embed newer practices.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.puppetlabs.com/blog/the-state-of-devops-down-south-tips-on-deploying-devops-practices/&quot;&gt;http://www.puppetlabs.com/blog/the-state-of-devops-down-south-tips-on-deploying-devops-practices/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I always like being reminded why something is important. These slides on continuous integration are a good read, or maybe something to sent to your boss or colleagues who are interested in the subject.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/o19s/turbocharge-your-automated-tests-with-ci&quot;&gt;http://www.slideshare.net/o19s/turbocharge-your-automated-tests-with-ci&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Twitter released the Murder deployment tool using BitTorrent a while ago. Russ Garrett has just released a Python variant of the idea, but with fewer opinions about how you&amp;#8217;ll use it. As Russ put it &amp;#8220;It was designed for pushing code out to a number of production systems. You can probably use it for other things.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/russss/Herd&quot;&gt;https://github.com/russss/Herd&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 15 - 24th March 2011</title>
+    <link href="http://devopsweekly.com/2011/03/24/issue-15/"/>
+    <updated>2011-03-24T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/03/24/issue-15</id>
+    <content type="html">&lt;h2&gt;Issue 15 &amp;#8211; 24th March 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;This issue contains the word metrics repeatedly and it seems more and more we&amp;#8217;re focused on gathering data to make the case for what we&amp;#8217;re trying to do. That might be code or infrastructure changes or wholesale business improvement, but all things considered this analytical approach feels like a good thing to me. But then my background was as an experimental Physicist so I&amp;#8217;m probably biased.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;A big part of devops is organisational change, and metrics provide a good discussion point to try and prove why change is needed. But metrics can be used for the opposite reason, eloquently described here as using metrics as a weapon.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.hollenback.net/index.php/JustifyingChanges&quot;&gt;http://www.hollenback.net/index.php/JustifyingChanges&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The idea of writing tests for configuration management has been around for a while but this take on it looks particularly interesting. Using cucumber to make assertions based on puppet providers looks a pretty simple approach code wise.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.unixdaemon.net/tools/puppet/puppet-cucumber-providers.html&quot;&gt;http://www.unixdaemon.net/tools/puppet/puppet-cucumber-providers.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DevOpsDays Boston 2011 sounded like it was a great event and this writeup of one of the openspace events sounds interesting. 20 people spoke about using metrics for tracking the effects of changes in your Dev / Ops environments and jotted down a pretty good list of interesting things to track.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.zeroturnaround.com/blog/how-to-measure-the-effectiveness-of-implementing-devops/&quot;&gt;http://www.zeroturnaround.com/blog/how-to-measure-the-effectiveness-of-implementing-devops/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More good Vagrant tutorials, this time with a really good end to end &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; example going from the why to a full set of Puppet manifests for bootstrapping a symphony development environment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.theodo.fr/blog/2011/03/start-using-vagrant/&quot;&gt;http://www.theodo.fr/blog/2011/03/start-using-vagrant/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Moving Fast at Scale microconference at &lt;span class=&quot;caps&quot;&gt;SXSW&lt;/span&gt; looked like one of the highlights of the week and the increasingly nice folks at Etsy have released all the slides from the event. These covered Scaling Startups, Continuous Deployment, Etsy&amp;#8217;s inhouse deployment tool Deployinator and talk of Metrics-driven Development.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://codeascraft.etsy.com/2011/03/19/moving-fast-at-scale-slides-and-reprise/&quot;&gt;http://codeascraft.etsy.com/2011/03/19/moving-fast-at-scale-slides-and-reprise/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;However much you love Nagios (or your monitoring tool of choice) it likely feels somewhat dated when it comes to dealing with a modern dynamic infrastructure where new machines come and go regularly and often automatically. R.I.Pienaar has been prototyping a new monitoring system that aims to solve that problem as well as potentially many others. One to keep an eye on.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.devco.net/archives/2011/03/19/thinking_about_monitoring_frameworks.php&quot;&gt;http://www.devco.net/archives/2011/03/19/thinking_about_monitoring_frameworks.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;One aspect of Devops is definitely self improvement, and this article about steps to improve as a sysadmin is interesting, the focus on tasks that might historically simply been shunted to developers in particular.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cwebber.ucr.edu/2011/03/the-journey-to-senior-sysadmin/&quot;&gt;http://cwebber.ucr.edu/2011/03/the-journey-to-senior-sysadmin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Stackops is a distro based on Ubuntu 10.04 &lt;span class=&quot;caps&quot;&gt;LTS&lt;/span&gt; Server that allows for installing the various components of the OpenStack Nova platform via a simple to use installer. If Openstack is the ‘Linux’ of the cloud operating systems, StackOps wants to be the reference distribution of this operating system which seems a nobel and lofty goal.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.stackops.com/2011/03/23/stackops-distro-smart-installer-deploy-openstack-in-your-datacenter/&quot;&gt;http://blog.stackops.com/2011/03/23/stackops-distro-smart-installer-deploy-openstack-in-your-datacenter/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re deploying applications to Heroku, then Heroku-Bartender might be of interest. It&amp;#8217;s a very simple continuous deployment tool which shows you all the commits to a given Git branch and allows you to trigger a deployment of one via a web interface.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://code.dblock.org/ShowPost.aspx?id=186&quot;&gt;http://code.dblock.org/ShowPost.aspx?id=186&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 14 - 17th March 2011</title>
+    <link href="http://devopsweekly.com/2011/03/17/issue-14/"/>
+    <updated>2011-03-17T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/03/17/issue-14</id>
+    <content type="html">&lt;h2&gt;Issue 14 &amp;#8211; 17th March 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;More interesting news and tools from last week. If anyone has anything they think would be of interest to folks do let me know at gareth@morethanseven.net&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;I finally managed to get a site built this week to provide a list of Vagrant base boxes. The question comes up on Twitter or blog posts or mailing lists pretty regularly. Hopefully a few people find it useful.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.vagrantbox.es/&quot;&gt;http://www.vagrantbox.es/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Amazon have just expanded their virtual networking for Amazon EC2, adding in lots more functionality which to my mind make it much more useful. You can now run with a single public subnet, with public and private subnets, with Internet and &lt;span class=&quot;caps&quot;&gt;VPN&lt;/span&gt; access or with &lt;span class=&quot;caps&quot;&gt;VPN&lt;/span&gt; access only.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://aws.typepad.com/aws/2011/03/new-approach-amazon-ec2-networking.html&quot;&gt;http://aws.typepad.com/aws/2011/03/new-approach-amazon-ec2-networking.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dean Wilson has been doing some interesting things around testing deployments and infrastructure changes using Nagios, and &lt;span class=&quot;caps&quot;&gt;NRPE&lt;/span&gt; Runner looks a handy tool if you&amp;#8217;re interested in doing the same. The basic premise is to have a command allowing you to run your nagios checks like a test suite.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.unixdaemon.net/tools/commandline/introducing-nrpe-runner.html&quot;&gt;http://www.unixdaemon.net/tools/commandline/introducing-nrpe-runner.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ted Dziuba&amp;#8217;s latest article covers what and why to monitor, and what makes for a good system that can be easily checked. The focus of monitoring checks should be to keep them Informative and Actionable, which I like.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://teddziuba.com/2011/03/monitoring-theory.html&quot;&gt;http://teddziuba.com/2011/03/monitoring-theory.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Zed Shaw always writes good opinion pieces and this one has a number of good points. The basic gist is that more programmers should actually learn how statistics really works, which I have to agree with. The more we look for evidence for application or process improvements the more important it is to get the analysis right.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://zedshaw.com/essays/programmer_stats.html&quot;&gt;http://zedshaw.com/essays/programmer_stats.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A pretty formal article introducing some folks to the concepts behind Devops. I&amp;#8217;m quite interested in the idea that Devops might be a sort-of bridge between IT Service management with Agile development practices&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cmcrossroads.com/behaviorally-speaking/13925-behaviorally-speaking-devops-101&quot;&gt;http://www.cmcrossroads.com/behaviorally-speaking/13925-behaviorally-speaking-devops-101&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Branches are an important part of lots of development workflows, and with the increasing adoption of version control for configuration management file and the mantra of &amp;#8220;infrastructure as code&amp;#8221; some people are starting to talk about how to use branches for these too.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.carlossanchez.eu/2011/03/15/new-challenges-from-devops-development-cycle-for-your-infrastructure/&quot;&gt;http://blog.carlossanchez.eu/2011/03/15/new-challenges-from-devops-development-cycle-for-your-infrastructure/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;The nice folks at Etsy continue releasing various useful tools, this time Logster is a very handy looking tool for parsing log files and generating metrics for Graphite and Ganglia from the results.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/etsy/logster&quot;&gt;https://github.com/etsy/logster&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 13 - 9th March 2011</title>
+    <link href="http://devopsweekly.com/2011/03/09/issue-13/"/>
+    <updated>2011-03-09T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/03/09/issue-13</id>
+    <content type="html">&lt;h2&gt;Issue 13 &amp;#8211; 9th March 2011&lt;/h2&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Maciej Ceglowski has written up the full story of the days and nights when the internet descended on Pinboard after Yahoo attempted to kill off Delicious. All sorts of good recommendations and observations about running a site under load.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://pinboard.in/blog/173/&quot;&gt;http://pinboard.in/blog/173/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Being both a big fan of testing and of monitoring I&amp;#8217;ve been thinking for a while about all the parallels between the two. This blog post by Grig Gheorghiu covers just that, expanding on a number of similarities. I&amp;#8217;d have liked to see mention of overlapping tools or the lack thereof as I&amp;#8217;ve been meaning to write something on that myself for a while.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://agiletesting.blogspot.com/2011/03/monitoring-is-for-ops-what-testing-is.html&quot;&gt;http://agiletesting.blogspot.com/2011/03/monitoring-is-for-ops-what-testing-is.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The analysts have been writing interesting things about the whole devops idea and I thought this set of observations from a large &lt;span class=&quot;caps&quot;&gt;IBM&lt;/span&gt; event were interesting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blogs.forrester.com/dave_west/11-03-09-dev_ops_fell_on_deaf_ears_at_ibm_pulse_2011&quot;&gt;http://blogs.forrester.com/dave_west/11-03-09-dev_ops_fell_on_deaf_ears_at_ibm_pulse_2011&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Interesting article from Erwin Bolwidt about what he terms Stateless Computing. This goes into more details, along with a clear outline of the advantages and some practical tips, on using an image based deployment approach.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.worldturner.com/worldturner/entry/stateless_computing&quot;&gt;http://blog.worldturner.com/worldturner/entry/stateless_computing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jesse Robins from Opscode gave what sounded like a great talk at DevopsDays Boston called Devops Culture Hacks. Martin J. Logan was on hand to live blog it in detail, covering various ways you can help create real change in organisations that already have a way of working.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://devops.com/2011/03/08/devops-culture-hacks/&quot;&gt;http://devops.com/2011/03/08/devops-culture-hacks/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On the 19th of May in London &lt;span class=&quot;caps&quot;&gt;UKUUG&lt;/span&gt; are running a full day workshop on Debian packaging run by Phil Hands. This sounds like a great way of getting starting with system packaging if you&amp;#8217;re wondering where to start.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ukuug.org/events/debian2011/&quot;&gt;http://www.ukuug.org/events/debian2011/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mytop has been around for a long time, but it&amp;#8217;s nice to see an introductory article showing how to use it for those that might not have come across it before.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.junauza.com/2011/02/live-performance-monitor-for-your-mysql.html&quot;&gt;http://www.junauza.com/2011/02/live-performance-monitor-for-your-mysql.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Fabric now has a 1.0 release, including improvements to the main workhorses of sudo, run, put and get. Also puts in place some of the groundwork for writing tests for fabfiles and task namespacing in the near future.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://readthedocs.org/docs/fabric/en/1.0.0/changes/1.0.html&quot;&gt;http://readthedocs.org/docs/fabric/en/1.0.0/changes/1.0.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Knife is the command line tool used for managing Chef nodes and it&amp;#8217;s now been much improved for those using Windows environments. Knife-windows adds commands to bootstrap and run commands on remote windows machines.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/opscode/knife-windows&quot;&gt;https://github.com/opscode/knife-windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve not spent enough time looking at looks like ZooKeeper to see where they fit in, but this article takes on that subject and also introduces an alternative tool, Noah, which looks particularly interesting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://lusislog.blogspot.com/2011/03/ad-hoc-configuration-coordination-and.html&quot;&gt;http://lusislog.blogspot.com/2011/03/ad-hoc-configuration-coordination-and.html&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/lusis/Noah&quot;&gt;https://github.com/lusis/Noah&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 12 - 1st March 2011</title>
+    <link href="http://devopsweekly.com/2011/03/01/issue-12/"/>
+    <updated>2011-03-01T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/03/01/issue-12</id>
+    <content type="html">&lt;h2&gt;Issue 12 &amp;#8211; 1st March 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;A big thank you to everyone who filled out the survey last week. So far I&amp;#8217;ve amassed over 600 responses which should make for some good analysis. Now with interesting devops new for the week.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;The big news this week was Amazon&amp;#8217;s launch of CloudFormation, which is a way of creating templates to describe your infrastructure, which can then be executed to provision EC2 instances and other &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; components automatically.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://aws.amazon.com/cloudformation/&quot;&gt;http://aws.amazon.com/cloudformation/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On hearing about CloudFormation various parts of the internet exploded with comments about how they no longer needed Chef or Puppet, missing the difference between configuration management and provisioning (&lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; specific provisioning at that) entirely. Luckily Mitchell Hashimoto (of Vagrant fame) and Stephen Nelson-Smith both came to the rescue.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://agilesysadmin.net/cloudformation&quot;&gt;http://agilesysadmin.net/cloudformation&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://mitchellhashimoto.com/post/3526628232/cloudformation-the-big-picture&quot;&gt;http://mitchellhashimoto.com/post/3526628232/cloudformation-the-big-picture&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;R.I.Pienaar meanwhile was busy showing how CloudFormation can be useful (with a great mcollective example) and then breaking down some of the good and bad points about the current implementation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.devco.net/archives/2011/02/26/mcollective_101_demo_using_aws_cloudformation.php&quot;&gt;http://www.devco.net/archives/2011/02/26/mcollective_101_demo_using_aws_cloudformation.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Node.js got some nice things said about it by the smart folk at SimpleGeo. They argue that Node.js is a good candidate for production services right now and outline some of the reasons they chose it and things they like.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://highscalability.com/blog/2011/2/22/is-nodejs-becoming-a-part-of-the-stack-simplegeo-says-yes.html&quot;&gt;http://highscalability.com/blog/2011/2/22/is-nodejs-becoming-a-part-of-the-stack-simplegeo-says-yes.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re in Chicago this Saturday you might be interested in a Puppet Hack-a-thon being organised by Martin J. Logan. Two tracks and Puppetlabs founder Teyo Tyree should make for an interesting event.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.meetup.com/devops/events/16513536/&quot;&gt;http://www.meetup.com/devops/events/16513536/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Tav has reworked the core of Fabric to add all sorts of shiny new features and remove a few scars. An environment variable manager, remote script execution, contexts (more advanced roles and hosts control), parallel deployment, stages, a build-in shell, autocompletion and even colours for output. And some other things too. I really hope this gets merged upstream.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tav.espians.com/fabric-python-with-cleaner-api-and-parallel-deployment-support.html&quot;&gt;http://tav.espians.com/fabric-python-with-cleaner-api-and-parallel-deployment-support.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An interesting presentation, that actually works just reading the slides. Interesting alternative to package installation and bootstrapping using Fabric and an extension called Cuisine. And details of system monitoring using Watchdog.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/ffunction/fabric-cuisine-and-watchdog-for-server-administration-in-python&quot;&gt;http://www.slideshare.net/ffunction/fabric-cuisine-and-watchdog-for-server-administration-in-python&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 11 - 22th February 2011</title>
+    <link href="http://devopsweekly.com/2011/02/22/issue-11/"/>
+    <updated>2011-02-22T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/02/22/issue-11</id>
+    <content type="html">&lt;h2&gt;Issue 11 &amp;#8211; 22th February 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Last week was pretty light on tools so I&amp;#8217;ve this week I&amp;#8217;ve found all sorts of interesting looking new toys to play with. I&amp;#8217;d love to see and stories of success or failure if anyone tries any of these out.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;I&amp;#8217;m constantly interested in how everyone does deployment subtly or wildly differently so I&amp;#8217;ve decided to run a survey rather than just base my thoughts on my own personal experience and here say. If you have 5 minutes and have anything to do with deploying web sites or applications then please fill in the following Google form.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/webdeployment&quot;&gt;http://bit.ly/webdeployment&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In many cases you don&amp;#8217;t want or can&amp;#8217;t have lots of automated small releases as you push code but you do want everything that comes with the workflow around continuous deployment. A good article about terminology, around why the recent book was called continuous delivery and why deployment should maybe have been release.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/&quot;&gt;http://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes you just want to be in the bay area and this event on Data Collection and Logging looks great. You&amp;#8217;ve probably seen talks about processing data with Hadoop, but how did that data get collected in the first place? Are you using Scribe, Chukwa, or something else? And where are you keeping all that data until you&amp;#8217;re ready to process it?  What about after you process it?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/events/15481136/&quot;&gt;http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/events/15481136/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A pretty interesting argument that devops is a way of insourcing work back into development teams that&amp;#8217;s previously been outsourced. Drawing parallels to how agile made testing sexy and got people interested in tooling. Worth a read.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.redmonk.com/cote/2011/02/16/the-developer-landgrab-another-way-to-look-at-devops/&quot;&gt;http://www.redmonk.com/cote/2011/02/16/the-developer-landgrab-another-way-to-look-at-devops/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Always nice to see more people talking about vagrant, very quick example but it does contain a link to a Centos base box for the latest version of Vagrant.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.maestrodev.com/blogs/vagrant-is-my-new-best-friend&quot;&gt;http://www.maestrodev.com/blogs/vagrant-is-my-new-best-friend&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nice list of 8 things to think about when deploying mysql databases, with a specific focus on EC2 environments. Not loads of detail but a nice list to have handy if you&amp;#8217;re not already a database expert.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.iheavy.com/2011/02/21/deploying-mysql-on-amazon-ec2-best-practices/&quot;&gt;http://www.iheavy.com/2011/02/21/deploying-mysql-on-amazon-ec2-best-practices/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;An interesting looking continuous deployment framework that makes use of ZooKeeper. At it&amp;#8217;s heart a daemon you install on your production machines and a command to trigger those nodes to pull your latest application from your continuous integration system.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mconigliaro/conveyor&quot;&gt;https://github.com/mconigliaro/conveyor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Deployment tools are definitely interesting lots of people at the moment and Meerkatalyst looks like an interesting continuous deployment server allowing developers to deploy &lt;span class=&quot;caps&quot;&gt;ASP&lt;/span&gt;.net or Ruby projects. Currently invite only but you can sign up on the site.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.meerkatalyst.com/&quot;&gt;http://www.meerkatalyst.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Poni describes itself as a systems management tool for defining, deploying and verifying complex multi-node computer systems. It looks like a pretty comprehensive command line tool with cloud provisioning baked in as well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://melor.github.com/poni/index.html&quot;&gt;http://melor.github.com/poni/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And finally yet another deployment tool, this time called Beehive which is written in Erlang and Ruby. Again lots of good examples and documentation for getting started.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://getbeehive.com/&quot;&gt;http://getbeehive.com/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 10 - 15th February 2011</title>
+    <link href="http://devopsweekly.com/2011/02/15/issue-10/"/>
+    <updated>2011-02-15T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/02/15/issue-10</id>
+    <content type="html">&lt;h2&gt;Issue 10 &amp;#8211; 15th February 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;And we&amp;#8217;re already onto the 10th edition. To celebrate I&amp;#8217;ve gone and paid for an upgrade to my Mailchimp account, meaning that all the links you see should now not be horrible link tracking things. Lots of people complained about that.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;I&amp;#8217;m organising another talks evening in London on the 3rd of March, kindly hosted by the nice folks at youDevise again. We&amp;#8217;ll have three talks; one on Spacewalk, one on monitoring and another to be announced. Only a few tickets left.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://londondevops.eventwax.com/devops-talks&quot;&gt;https://londondevops.eventwax.com/devops-talks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another London event, this time of the paid variety from Thoughtworks. Jez Humble and Chris Turner, are running a full day workshop on March 10th on continuous delivery.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.regonline.com/builder/site/Default.aspx?EventID=936039&quot;&gt;https://www.regonline.com/builder/site/Default.aspx?EventID=936039&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;First of a couple of Puppet articles I read with interest this week. This one covers self-classifying puppet nodes, and is a good walkthrough with code examples of using puppet and mcollective.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://nuknad.com/2011/02/11/self-classifying-puppet-nodes/&quot;&gt;http://nuknad.com/2011/02/11/self-classifying-puppet-nodes/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The second puppet article, about the best way of separating whether you want something installed and whether you want it running in a puppet module. Some good alternatives and discussion in the comments as well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.krisbuytaert.be/blog/ensure-running&quot;&gt;http://www.krisbuytaert.be/blog/ensure-running&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lots of devops talk is still focused on the technology and I&amp;#8217;m probably as guilty of featuring more technology material than anything else. This article caught my eye this week though on what devops really means to business minded folk.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.evolven.com/blog/devops-misunderstandings-and-how-devops-really-drives-business-needs.html&quot;&gt;http://www.evolven.com/blog/devops-misunderstandings-and-how-devops-really-drives-business-needs.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Migrations are always hairy and this post has some nice details about how Involver moved from &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; recently. Just enough juicy details to be interesting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://invalidlogic.com/2011/02/11/how-we-did-a-datacenter-migration-with-no-downtime/&quot;&gt;http://invalidlogic.com/2011/02/11/how-we-did-a-datacenter-migration-with-no-downtime/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thought provoking video from Randy Shoup talking at QCon about how programming might evolve as more and more things take advantage of cloud services.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/presentations/Evolving-Programming-for-the-Cloud&quot;&gt;http://www.infoq.com/presentations/Evolving-Programming-for-the-Cloud&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some of the slides from the presentations at &lt;span class=&quot;caps&quot;&gt;FOSDEM&lt;/span&gt; are showing up online. I particularly liked Joshua&amp;#8217;s Chef 101 and application deployment double presentation. A good introduction in the first half and a detailed look at deploying apps using Chef in the second.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/jtimberman/fosdem-chef101appdeploy&quot;&gt;http://www.slideshare.net/jtimberman/fosdem-chef101appdeploy&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Spatula looks an interesting tool for anyone using Chef. It provides a simple command line interface to the Opscode cookbooks stored in the official repository, allowing you to search, get details of and download quickly.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/trotter/spatula&quot;&gt;https://github.com/trotter/spatula&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 9 - 8th February 2011</title>
+    <link href="http://devopsweekly.com/2011/02/08/issue-9/"/>
+    <updated>2011-02-08T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/02/08/issue-9</id>
+    <content type="html">&lt;h2&gt;Issue 9 &amp;#8211; 8th February 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Welcome to the ninth instalment of Devops Weekly. A little later than intended as I&amp;#8217;ve been in Brussels for the &lt;span class=&quot;caps&quot;&gt;FOSDEM&lt;/span&gt; conference. But we&amp;#8217;re back to being out on Tuesday again.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;The DevOps Survey 2010 results are in. Over 200 people filled in the survey and the results have been collated and graphed. Worth a look.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.geekle.id.au/2011/01/devops-survey-2010-results.html&quot;&gt;http://www.geekle.id.au/2011/01/devops-survey-2010-results.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Belgium is definitely on a roll when it comes to useful technical events and Load looks to be no exception. It&amp;#8217;s in Wilrijk on April 16th-17th and is geared towards Linux sysadmins and people interested in linux administration. A call for papers is up now.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.loadays.org/news/call-presentations&quot;&gt;http://www.loadays.org/news/call-presentations&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More proof that at least the analysts are listening to people about devops. I&amp;#8217;m not convinced that platform as a service is really the answer to everything but the comments in particular are worth reading.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blogs.forrester.com/mike_gualtieri/11-02-07-i_dont_want_devops_i_want_noops&quot;&gt;http://blogs.forrester.com/mike_gualtieri/11-02-07-i_dont_want_devops_i_want_noops&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Brightbox, the UK based web host, have launched a load balancer component to their cloud hosting platform. Unlike Amazon &lt;span class=&quot;caps&quot;&gt;ELB&lt;/span&gt; you can point an IP address at a load balancer, meaning you don&amp;#8217;t have to use &lt;span class=&quot;caps&quot;&gt;CNAME&lt;/span&gt; records, which might be useful to some.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.brightbox.co.uk/posts/cloud-load-balancers-beta&quot;&gt;http://blog.brightbox.co.uk/posts/cloud-load-balancers-beta&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m hearing more and more people try to configure systems so they don&amp;#8217;t need to ever login to them. This article is a pretty good explanation of how you might come to that conclusion and what you need to think about to make it a reality.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://me.andering.com/2011/02/03/server-login-considered-harmful/&quot;&gt;http://me.andering.com/2011/02/03/server-login-considered-harmful/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some things still take lots of commands and the first step to automating them is to write everything down. This article covers creating a bootable virtual application using VMWare and does just that.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.worldturner.com/worldturner/entry/creating_a_bootable_virtual_appliance&quot;&gt;http://blog.worldturner.com/worldturner/entry/creating_a_bootable_virtual_appliance&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Noah is a lightweight node and service registry based on Zookeeper. Zookepper did always strike me as interesting but pretty impenetrable. Noah uses Redis on the backend and is written in Ruby and already looks well documented.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lusis/Noah&quot;&gt;https://github.com/lusis/Noah&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Node Control is a node.js based system admin and code deployment too for executing commands on many remote machines in parallel via ssh. I&amp;#8217;m finding it interesting that node.js is cropping up more and more as a platform for writing system tools like this.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/tsmith/node-control&quot;&gt;https://github.com/tsmith/node-control&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 8 - 28th January 2011</title>
+    <link href="http://devopsweekly.com/2011/01/28/issue-8/"/>
+    <updated>2011-01-28T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/01/28/issue-8</id>
+    <content type="html">&lt;h2&gt;Issue 8 &amp;#8211; 28th January 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Welcome to the eighth instalment of Devops Weekly. More than 660 people have now signed up and the list is growing every week. Thanks for sticking around and do let me know what you&amp;#8217;d like to see more (or less) of.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Lots of people are interested in building a shared vocabulary and understanding at the moment, including this take on documenting release management. The author is seeking input from devops flavoured folk so any ideas you have should be welcome.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.erp4it.com/erp4it/2011/01/release-management-integration-pattern-seeking-devops-comments.html&quot;&gt;http://www.erp4it.com/erp4it/2011/01/release-management-integration-pattern-seeking-devops-comments.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;New Relic have a great product for monitoring Java and Ruby applications and publish the odd bit of interesting insight into what they get up to too. They recently moved database servers and documented how they went about it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.newrelic.com/2011/01/26/how-do-you-move-more-than-6000-customers-in-2-hours/&quot;&gt;http://blog.newrelic.com/2011/01/26/how-do-you-move-more-than-6000-customers-in-2-hours/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;FOSDEM&lt;/span&gt; is only weeks away and the official site has started publishing a few interviews. Spike, who some people might have seen talk at the last devopsdays event in Hamburg, is talking again this time about monitoring and the transition from being a full time sysadmin to a developer.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://fosdem.org/2011/interview/spike-morelli&quot;&gt;http://fosdem.org/2011/interview/spike-morelli&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;IMVU&lt;/span&gt;, who originally described how they went about continuous deployment, have written up how they deal with intermittently failing tests across a rather large test suite. Interesting problem and solution.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://engineering.imvu.com/2011/01/19/buildbot-and-intermittent-tests/&quot;&gt;http://engineering.imvu.com/2011/01/19/buildbot-and-intermittent-tests/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Puppet Labs is hosting its bi-annual conference for users and developers in Amsterdam on April 28th and 29th. Early bird tickets are available now and the call for papers ends March 6th for those interested in speaking.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.puppetlabs.com/community/puppet-camp/puppet-camp-ams-2011-info&quot;&gt;http://www.puppetlabs.com/community/puppet-camp/puppet-camp-ams-2011-info&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;It&amp;#8217;s always nice to be able to experiment with a web &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; before you jump head long into code and Jazor looks a nice way of pushing and prodding &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; based services when curl isn&amp;#8217;t quite the right tool.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://conigliaro.org/2011/01/24/jazor-a-simple-command-line-json-parsing-tool/&quot;&gt;http://conigliaro.org/2011/01/24/jazor-a-simple-command-line-json-parsing-tool/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pallet describes itself as an agile cloud development tool for developers, sysadmins, and operations. It&amp;#8217;s a clojure based tool which doesn&amp;#8217;t use a central server or require you to install an agent on each node. The blog contains links to good presentation materials and example code.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://palletops.com/&quot;&gt;http://palletops.com/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 7 - 21st January 2011</title>
+    <link href="http://devopsweekly.com/2011/01/21/issue-7/"/>
+    <updated>2011-01-21T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/01/21/issue-7</id>
+    <content type="html">&lt;h2&gt;Issue 7 &amp;#8211; 21st January 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Welcome to the seventh instalment of Devops Weekly. More tools and events this week than news, so if you&amp;#8217;re looking for things to spend your time on this should hopefully be a good issue.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Fosdem is just weeks away and a specific devops meal out is being organised again for the night before the conference. Last year was a good opportunity to put faces to names so I&amp;#8217;ll definitely be along again this year. Register as places are limited.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://devopsfosdem2011.eventbrite.com/&quot;&gt;http://devopsfosdem2011.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Puppet Labs are running several masters 3 day courses in Boston and Brussels in the coming weeks. If you&amp;#8217;re using puppet and somewhere in the vicinity these might be useful for you or your colleagues.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.puppetlabs.com/events/boston-training-jan-11/&quot;&gt;http://www.puppetlabs.com/events/boston-training-jan-11/&lt;/a&gt; Jan 31 &amp;#8211; Feb 2&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.puppetlabs.com/events/brussels-training-feb-11/&quot;&gt;http://www.puppetlabs.com/events/brussels-training-feb-11/&lt;/a&gt; Feb 8 &amp;#8211; Feb 10&lt;/p&gt;
+&lt;p&gt;A brief glimpse into some of the technical details surrounding how Google do large scale experiments and testing. This blog post has picked up on a few interesting snippets of how Google go about deployment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://glinden.blogspot.com/2011/01/experiment-infrastructure-at-google.html&quot;&gt;http://glinden.blogspot.com/2011/01/experiment-infrastructure-at-google.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Richard Crawley from Devstructure launched Gimme Servers this week, which is a super simple interface to launching Rackspace cloud instances. If you&amp;#8217;ve used the existing web based dashboard you&amp;#8217;ll know why this exists.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://gimmeservers.com/&quot;&gt;http://gimmeservers.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Amazon launched Elastic Beanstalk, which provides more of a platform as a service layer on top of EC2. At the moment that means an autoscaling tomcat instance along with build in load balancing and auto-scaling of resources based on utilisation. Very nice looking indeed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://aws.typepad.com/aws/2011/01/introducing-elastic-beanstalk.html&quot;&gt;http://aws.typepad.com/aws/2011/01/introducing-elastic-beanstalk.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Shameless self promotion warning. Here&amp;#8217;s article I write last week regarding why software developers like me should care more about system packages.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://morethanseven.net/2011/01/16/Why-developers-should-care-about-system-packages.html&quot;&gt;http://morethanseven.net/2011/01/16/Why-developers-should-care-about-system-packages.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;FPM&lt;/span&gt; looks awesome. If you have to deal with gems or node.js npm packages but you&amp;#8217;d rather be dealing with rpms or debs, or you have a debian package with some maintainer scripts you&amp;#8217;d rather strip out and manage using chef/puppet, then this tool is for you. It&amp;#8217;s early days it seems but I&amp;#8217;m hoping other input and output formats will be added soon.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jordansissel/fpm/&quot;&gt;https://github.com/jordansissel/fpm/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nagiosharder is a tool for querying the state of a nagios instance from a nice Ruby &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;. This looks ideal if you&amp;#8217;re trying to show dashboards or reports without the rest of Nagios getting in the way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/railsmachine/nagiosharder&quot;&gt;https://github.com/railsmachine/nagiosharder&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Playing with large data sets is good fun, but managing all the software required might not be your thing. In which case this set of tools from Infochimps might be useful. It&amp;#8217;s a series of chef recipes designed specifically for managing Hadoop and Cassandra clusters, including creating and mounting &lt;span class=&quot;caps&quot;&gt;EBS&lt;/span&gt; and setting up &lt;span class=&quot;caps&quot;&gt;NFS&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/infochimps/cluster_chef&quot;&gt;https://github.com/infochimps/cluster_chef&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 6 - 14th January 2011</title>
+    <link href="http://devopsweekly.com/2011/01/14/issue-6/"/>
+    <updated>2011-01-14T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/01/14/issue-6</id>
+    <content type="html">&lt;h2&gt;Issue 6 &amp;#8211; 14th January 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Welcome to the sixth instalment of Devops Weekly. I&amp;#8217;ve had a few people contact me about putting job opportunities in the list and I&amp;#8217;m giving that a go this week. Shout up if don&amp;#8217;t like this.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Boston is the venue for the next devopsdays conference and you have until February 20th to get your proposals in if you&amp;#8217;d like to speak.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://devopsdays.org/blog/2011/01/08/boston-devopsdays-7-8-march-2011/&quot;&gt;http://devopsdays.org/blog/2011/01/08/boston-devopsdays-7-8-march-2011/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Joshua Timberman from Opscode is in London next month to give a 3 day Chef Fundamentals course from 31st of January.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://agilesysadmin.net/chef-fundamentals&quot;&gt;http://agilesysadmin.net/chef-fundamentals&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lots of the tools I generally use work only on Linux or Unix environments but some people are trying to take along of these same ideas into the Windows world. Jon Topper is currently trying to organise a get together in London and asking people when they could meet.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.doodle.com/zx46wyxy79u53pd6&quot;&gt;http://www.doodle.com/zx46wyxy79u53pd6&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a great article re-imaginging stored procedures. DBA&amp;#8217;s and developers working more closely together sounds like a good thing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jaksprats.wordpress.com/2010/11/15/datastore-side-scripting-can-prevent-bottlenecks/&quot;&gt;http://jaksprats.wordpress.com/2010/11/15/datastore-side-scripting-can-prevent-bottlenecks/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you want a detailed high level description of all the things you could and should be monitoring look no further. Mathias Meyer has written a great article covering the different levels you probably want monitoring and why, along with reference to tools that fit that problem.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.paperplanes.de/2011/1/5/the_virtues_of_monitoring.html&quot;&gt;http://www.paperplanes.de/2011/1/5/the_virtues_of_monitoring.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Facebook talking about scaling is always good and these take aways from a talk by Aditya Agarwal, Director of Engineering at Facebook, are interesting reading. It concentrates mainly on how to scale an organisation which I think is just as important as the technology side.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://highscalability.com/blog/2010/6/10/the-four-meta-secrets-of-scaling-at-facebook.html&quot;&gt;http://highscalability.com/blog/2010/6/10/the-four-meta-secrets-of-scaling-at-facebook.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;LASIC&lt;/span&gt; is a language that facilitates creating and managing systems in a cloud environment. At the moment it only supports Amazon &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; but looks like it might be interesting&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://code.google.com/p/lasic/&quot;&gt;http://code.google.com/p/lasic/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Jobs&lt;/h2&gt;
+&lt;p&gt;FreeAgent is a fast growing and hugely popular UK based startup obsessed with building fantastic online accounting software. We&amp;#8217;re a small team of smart people looking to hire productive Ruby and Rails developers in Edinburgh or Cambridge. You&amp;#8217;ll be working on adding and maintaining features for our existing applications and making sure our software scales up as we inevitably take over the world.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.freeagentcentral.com/company/jobs&quot;&gt;http://www.freeagentcentral.com/company/jobs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bin Weevils are looking for a new &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; developer/sysadmin to join the team and continue the development of our &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; backed flash-based game. Being able to handle things at extreme scale is kinda fun &amp;#8211; it&amp;#8217;s a quiet day that does less than 5,000 concurrent users and 10+ million hits on our servers (and that&amp;#8217;s a drop in the ocean compared to the &lt;span class=&quot;caps&quot;&gt;CDN&lt;/span&gt; and other servers we run). New code is written in the Zend Framework, with use of Nginx, Memcache and also some Java servers. For sysadmin tasks, an appreciation of tools like Chef and Capistrano would be useful.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.binweevils.com&quot;&gt;http://www.binweevils.com&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 5 - 7th January 2011</title>
+    <link href="http://devopsweekly.com/2011/01/07/issue-5/"/>
+    <updated>2011-01-07T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2011/01/07/issue-5</id>
+    <content type="html">&lt;h2&gt;Issue 5 &amp;#8211; 7th January 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Welcome to the fifth instalment of Devops Weekly. Sorry for the slow start this year, I&amp;#8217;ve been a little busy getting the new year started (so still no &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; version, sorry). Luckily the internet has been busy too so here&amp;#8217;s what I&amp;#8217;ve been reading these past few weeks.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;First off a few upcoming events. If you&amp;#8217;re in Paris the second devops meetup is scheduled for the 12th of January.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://lanyrd.com/2011/paris-devops-meetup-2/&quot;&gt;http://lanyrd.com/2011/paris-devops-meetup-2/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In Chicago a few days later on the 15th of January a Chef Hackathon is being held. This looks like a full day event and some of the Opscode folk are going to be going along.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.meetup.com/devops/calendar/15648262/&quot;&gt;http://www.meetup.com/devops/calendar/15648262/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This interview with Adrian Cole about Jclouds (a Java library for interacting with cloud services like EC2) has a few interesting points. In particular the build in in-memory version of S3 especially for writing tests against is a nice idea. Worth a read.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/interviews/adrian-cole-jclouds&quot;&gt;http://www.infoq.com/interviews/adrian-cole-jclouds&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This next article shows a couple of approaches to having EC2 (or any cloud instance) automatically register with your puppetmaster. Good examples and good explanation of what you&amp;#8217;re doing and why.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.codelord.net/2010/12/19/using-puppet-to-automatically-configure-new-ec2-instances/&quot;&gt;http://www.codelord.net/2010/12/19/using-puppet-to-automatically-configure-new-ec2-instances/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A good lengthy walkthrough of starting out with Chef. If you&amp;#8217;ve been using Chef for a while it&amp;#8217;s easy to forget the initial barrier of getting going so I really liked the conversational style and personal experience approach to this tutorial.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://beacon.wharton.upenn.edu/404/2010/12/chef-out-of-the-gate/&quot;&gt;http://beacon.wharton.upenn.edu/404/2010/12/chef-out-of-the-gate/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;SSH&lt;/span&gt; is probably one of the most useful and used tools in anyones toolbox and the number of tricks and features is surprisingly large. This ever growing blog post is documenting in an easy to read manner all manner of tips and best practices.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://crunchtools.com/ssh-keychain/&quot;&gt;http://crunchtools.com/ssh-keychain/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The nice folk at Etsy have open sourced an internal node.js tool they are using to collect and aggregate statistics. StatsD provides a very straightforward interface for collecting arbitrary stats and feeding them into Graphite.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/etsy/statsd&quot;&gt;https://github.com/etsy/statsd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m always interested in another continuos integration server and Big Tuna looks nice. It&amp;#8217;s a Rails based application, supports multiple version control systems and has a nice looking interface.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bigtuna.appelier.com/&quot;&gt;http://bigtuna.appelier.com/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 4 - 21st December 2010</title>
+    <link href="http://devopsweekly.com/2010/12/21/issue-4/"/>
+    <updated>2010-12-21T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2010/12/21/issue-4</id>
+    <content type="html">&lt;h2&gt;Issue 4 &amp;#8211; 21st December 2010&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Welcome to the fourth instalment of Devops Weekly. I&amp;#8217;ll probably be taking a break next week while I&amp;#8217;m on holiday, so the next issue should be available in the new year. As always email gareth@morethanseven.net if you have anything you&amp;#8217;d like included.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;The Configuration Management DevRoom at Fosdem next year is looking for talks, anyone interested has until the 8th of January to submit. Presentations are to be formal and not longer than 30 minutes, plus 15 &lt;br /&gt;
+extra for questions (45 in total). Panels with more than one speaker are also of interest.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.puppetlabs.com/blog/call-for-papers-configuration-management-devroom-at-fosdem-2011/&quot;&gt;http://www.puppetlabs.com/blog/call-for-papers-configuration-management-devroom-at-fosdem-2011/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You might not be using either Glassfish or Puppet but I found this article interesting anyway as it&amp;#8217;s a good walk though of taking unpackaged software fresh from the developers and going through the steps of packaging and automating installation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.screv.com/?p=143&quot;&gt;http://blog.screv.com/?p=143&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The guys at Devstructure have made lots of changes to their service this week, including moving to a completely free model. It&amp;#8217;s an interesting approach to configuration management that&amp;#8217;s worth having a look at of you haven&amp;#8217;t already.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.devstructure.com/rebooting-devstructure&quot;&gt;http://blog.devstructure.com/rebooting-devstructure&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I feel bad about including the next article as I wrote it, but I reason it&amp;#8217;s interesting to readers of devopsweekly. Even pushing down the time between releases doesn&amp;#8217;t remove all of the risk from rolling out new code, that&amp;#8217;s where smoke testing comes in. This article walks through an example using cucumber and celerity to do fast, headless, tests to check your deployment worked.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://sysadvent.blogspot.com/2010/12/day-17-smoke-testing-deployments-using.html&quot;&gt;http://sysadvent.blogspot.com/2010/12/day-17-smoke-testing-deployments-using.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More headless testing, this time using the Jasmine &lt;span class=&quot;caps&quot;&gt;BDD&lt;/span&gt; Javascript framework. This article shows how to wire up Rhino to allow you to run javascript tests without a browser, perfect for continuous integration.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://agile.dzone.com/news/javascript-bdd-jasmine-without&quot;&gt;http://agile.dzone.com/news/javascript-bdd-jasmine-without&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Mcollective, the build server orchestration or parallel job execution framework, has just released version 1.0.0. It comes with a few minor features and bug fixes but also marks a change in how the software packages will be made available and versioned in the future. Well worth a look.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://groups.google.com/group/mcollective-users/browse_thread/thread/9c548d321b159627&quot;&gt;http://groups.google.com/group/mcollective-users/browse_thread/thread/9c548d321b159627&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;LinkedIn recently released their deployment automation platform called Glu, which is used to deploy the various different parts of LinkedIn. It&amp;#8217;s written in groovy/java but can apparently be used to deploy anything.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/linkedin/glu/&quot;&gt;https://github.com/linkedin/glu/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 3 - 14th December 2010</title>
+    <link href="http://devopsweekly.com/2010/12/14/issue-3/"/>
+    <updated>2010-12-14T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2010/12/14/issue-3</id>
+    <content type="html">&lt;h2&gt;Issue 3 &amp;#8211; 14th December 2010&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Welcome to the third instalment of Devops Weekly. Thanks for all the support again this week. If you have any news or tools you think people will find interesting do email me at gareth@morethanseven.net&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Part of Devops is definitely the adoption of agile practices by operations teams and it&amp;#8217;s interesting to read about about peoples experience of managing process in a team of systems administrators.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.rooflabs.com/2010/12/13/using-agile-to-manage-system-engineering/&quot;&gt;http://www.rooflabs.com/2010/12/13/using-agile-to-manage-system-engineering/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Agile Web Operations blog has been putting out a series of Devops posts over the past couple of weeks. The first one this week that caught my eye was John Allspaw&amp;#8217;s post about soft skills and the importance of communication and collaboration.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.agileweboperations.com/devops-these-soft-parts&quot;&gt;http://www.agileweboperations.com/devops-these-soft-parts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The second article is from James Turnbull on why people really shouldn&amp;#8217;t get hung up on the word Devops (as some people appear to do). &amp;#8220;The point is making Ops better – one step at a time – and in the process making our lives easier&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.agileweboperations.com/the-state-of-devops&quot;&gt;http://www.agileweboperations.com/the-state-of-devops&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Probably my favourite article of the week was this one, on the re-emergance of Systems Engineering as a discipline. I found lots of this described me and, I think, many of the people I meet at Devops events. It also neatly sidesteps the Devops as a role argument.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cuddletech.com/blog/pivot/entry.php?id=1149&quot;&gt;http://www.cuddletech.com/blog/pivot/entry.php?id=1149&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;James talked in his article above about his formative years and another post this week caught my eye about experience gained working with smart people and processes. This one covers the importance of source control, staging servers and some lessons learned using them. Good introductory material is hard to write so I&amp;#8217;d love to see more.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.kalzumeus.com/2010/12/12/staging-servers-source-control-deploy-workflows-and-other-stuff-nobody-teaches-you/&quot;&gt;http://www.kalzumeus.com/2010/12/12/staging-servers-source-control-deploy-workflows-and-other-stuff-nobody-teaches-you/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I find people sharing details about the tools they use incredible useful, especially when they can include numbers. This great open blog post about using Bacula for backups is exactly the sort of thing I&amp;#8217;d like to see more of. &amp;#8220;A standard 2 week rotation amounts to ~190 TB of data con taining ~490.000.000 files&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.myunix.dk/2010/12/01/large-scale-disk-to-disk-backups-using-bacula/&quot;&gt;http://blog.myunix.dk/2010/12/01/large-scale-disk-to-disk-backups-using-bacula/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Just before I hit the send button Julian Simpson just published a good interview with the product manager of the Go continuous integration and deployment pipeline too from Thoughtworks.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.build-doctor.com/2010/12/14/go-thoughtworks-jez-humble/&quot;&gt;http://www.build-doctor.com/2010/12/14/go-thoughtworks-jez-humble/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;I found myself looking at different ways of aggregating log files from different systems this week and had chance to investigate a couple of newish open source offerings.&lt;/p&gt;
+&lt;p&gt;Graylog2 is a Java app which stores syslog entries in a MongoDB datastore, along with a good looking Ruby on Rails application for looking at the results.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.graylog2.org/&quot;&gt;http://www.graylog2.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Logstash is similar in purpose to Graylog2 but uses ElasticSearch as the backend. It can also aggregate logs from syslog, text files or &lt;span class=&quot;caps&quot;&gt;AMQP&lt;/span&gt; which might prove useful.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://code.google.com/p/logstash/&quot;&gt;http://code.google.com/p/logstash/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 2 - 7th December 2010</title>
+    <link href="http://devopsweekly.com/2010/12/07/issue-2/"/>
+    <updated>2010-12-07T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2010/12/07/issue-2</id>
+    <content type="html">&lt;h2&gt;Issue 2 &amp;#8211; 7th December 2010&lt;/h2&gt;
+&lt;p&gt;Thanks for all the feedback since last week. I had a few issues with links being rewritten to be rather on the long side when the final newsletter was sent out. I was hoping to have time this week to get round to resolving but alas the week flew by. The same will happen again this time but I&amp;#8217;ve positioned the links after the text so it should be easier to read. I&amp;#8217;ll probably move to a very simple &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; format as time permits.&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;It&amp;#8217;s December which means we have lots of blogs trying to publish a new article every day. One such blog that I found last year and is keeping up the high standard again is &lt;span class=&quot;caps&quot;&gt;SYSADVENT&lt;/span&gt;. The pick of the articles for me so far has been this one, talking about using code reviews in operations teams.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://sysadvent.blogspot.com/2010/12/day-5-why-arent-you-doing-code-reviews.html&quot;&gt;http://sysadvent.blogspot.com/2010/12/day-5-why-arent-you-doing-code-reviews.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;People interested in &lt;span class=&quot;caps&quot;&gt;PERFORMANCE&lt;/span&gt; even have their own advent calendar blog, again publishing some really good content already. This article about the need for generalists within software teams I think runs parallel with many of the ideas of devops, at least as I see them.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://calendar.perfplanet.com/2010/the-full-stack/&quot;&gt;http://calendar.perfplanet.com/2010/the-full-stack/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A few weeks ago now a group of about 35 London based developers and ops people met up to talk about &lt;span class=&quot;caps&quot;&gt;DEPLOYMENT&lt;/span&gt;. The nice folks at YouDevise let us use a room in their offices and we had at it for a good few hours. The videos taken during the event have just been published and make an educational and occasionally entertaining watch.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dev.youdevise.com/YDBlog/index.php/2010/12/01/devops-comes-to-youdevise&quot;&gt;https://dev.youdevise.com/YDBlog/index.php/2010/12/01/devops-comes-to-youdevise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This isn&amp;#8217;t a new article but I found it interesting coming from &lt;span class=&quot;caps&quot;&gt;GARTNER&lt;/span&gt;. If you&amp;#8217;re working in a large enterprise it can often be tricky to get buy-in for new ideas or ways of working. Having large companies outside the technology sector as well as analyst firms advocating for some of the things we&amp;#8217;re all talking about can only be beneficial.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blogs.gartner.com/cameron_haight/2010/04/07/the-need-for-it-io-reform/&quot;&gt;http://blogs.gartner.com/cameron_haight/2010/04/07/the-need-for-it-io-reform/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Matthew Jones has put together a pretty comprehensive &lt;span class=&quot;caps&quot;&gt;SURVEY&lt;/span&gt; around devops. We&amp;#8217;ve seen lots of people writing about what they think devops means, so it should be interested if enough people fill this out to see what a wider group think.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.geekle.id.au/2010/12/devops-survey-2010.html&quot;&gt;http://www.geekle.id.au/2010/12/devops-survey-2010.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;The &lt;span class=&quot;caps&quot;&gt;HUDSON&lt;/span&gt; project have been having some political issues of late and it&amp;#8217;s good to see them publishing regular updates to the wider community. Continuous Integration plays a big part in quite a few devops ideas and we need a mature open source player in the area.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.hudson-labs.org/content/whos-driving-thing&quot;&gt;http://www.hudson-labs.org/content/whos-driving-thing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;MCOLLECTIVE&lt;/span&gt; has traditionally used ApacheMQ for it&amp;#8217;s messaging needs and several people (myself included) had enquired about whether it could work with RabbitMQ, especially for people that already had that message queue in a production environment. With recent patches to the Stomp adaptor for Rabbit, and this handy tutorial you should be up and running in no time.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.threedrunkensysadsonthe.net/2010/12/mcollective-and-rabbitmq-on-centos/&quot;&gt;http://www.threedrunkensysadsonthe.net/2010/12/mcollective-and-rabbitmq-on-centos/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 1 - 30th November 2010</title>
+    <link href="http://devopsweekly.com/2010/11/30/issue-1/"/>
+    <updated>2010-11-30T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2010/11/30/issue-1</id>
+    <content type="html">&lt;h2&gt;Issue 1 &amp;#8211; 30th November 2010&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Welcome to the first issue of Devops Weekly.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve been finding Ruby Weekly (&lt;a href=&quot;http://rubyweekly.com/&quot;&gt;http://rubyweekly.com/&lt;/a&gt;), an email newsletter from Peter Cooper, increasingly useful in the last month or so. Something about finding a small amount of high quality content once a week easier to digest than the usual fire hose of &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; and Twitter. So I&amp;#8217;m trying the same format out for devops related content. Please email me with anything you think is worth featuring.&lt;/p&gt;
+&lt;p&gt;But what is Devops? I know a number of people have signed up to this newsletter having only recently come across the term. It&amp;#8217;s safe to say Devops means different things to different people at this early stage, but I&amp;#8217;m going to start out by pointing everyone to James Turnbull&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;WHAT&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;DEVOPS&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;MEANS&lt;/span&gt; TO ME (&lt;a href=&quot;http://www.kartar.net/2010/02/what-devops-means-to-me/&quot;&gt;http://www.kartar.net/2010/02/what-devops-means-to-me/&lt;/a&gt;).&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;The much loved &lt;span class=&quot;caps&quot;&gt;VELOCITY&lt;/span&gt; conference has put out a call for participation (&lt;a href=&quot;http://velocityconf.com/velocity2011/public/cfp/137&quot;&gt;http://velocityconf.com/velocity2011/public/cfp/137&lt;/a&gt;) for next year&amp;#8217;s event. You have until January 11th, 2011 to put together suggestions and submit them. In particular they are looking for talks and panels on NoSQL, mobile performance, effective cloud computing, javaScript speedups, &lt;span class=&quot;caps&quot;&gt;TCP&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt;, and &lt;span class=&quot;caps&quot;&gt;SSL&lt;/span&gt; optimizations, metrics and monitoring and the impact on the bottom line.&lt;/p&gt;
+&lt;p&gt;Lindsay Holmwood has written an interesting piece this week about all the things happening in Devops recently, in particular whether people are too focused on tools and technologies at the expense of people and communication (&lt;a href=&quot;http://www.agileweboperations.com/devops-hijacked-by-technologists&quot;&gt;http://www.agileweboperations.com/devops-hijacked-by-technologists&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;On a related topic Spike Morelli has been writing about the use of the term Devops and how it&amp;#8217;s a useful marketing phrase if we want to spread our experiments and ideas to a wider audience (&lt;a href=&quot;http://www.spikelab.org/the-word-devops-and-a-marketing-problem/&quot;&gt;http://www.spikelab.org/the-word-devops-and-a-marketing-problem/&lt;/a&gt;). This definitely gels with my own reasons for creating Devops Weekly.&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Joe Heck just wrote about a new monitoring system he&amp;#8217;s been working on for a year called &lt;span class=&quot;caps&quot;&gt;EYES&lt;/span&gt; (&lt;a href=&quot;http://www.rhonabwy.com/wp/2010/11/20/eyes-a-new-monitoring-system/&quot;&gt;http://www.rhonabwy.com/wp/2010/11/20/eyes-a-new-monitoring-system/&lt;/a&gt;). It&amp;#8217;s still early days but sounds interesting. The main thrust seems to be that having a monitoring system that is completely &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; driven from the start makes lots of things easier. It uses the Nagios plugin format as well so you should be able to make use of existing plugins easily enough.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve recently been playing with &lt;span class=&quot;caps&quot;&gt;CUCUMER&lt;/span&gt; for monitoring purposes and it looks like others have too. Jordan Sissel just posted an example of using Cucumber to monitor a Solr instance (&lt;a href=&quot;https://gist.github.com/707691&quot;&gt;https://gist.github.com/707691&lt;/a&gt;) that I found useful. If anyone else has any Cucumber scripts they use for monitoring purposes I&amp;#8217;d love to know.&lt;/p&gt;
+&lt;p&gt;One article I came across this week that I found particularly handy was a huge roundup of Linux &lt;span class=&quot;caps&quot;&gt;MONITORING&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;UTILITIES&lt;/span&gt; (&lt;a href=&quot;http://www.cyberciti.biz/tips/top-linux-monitoring-tools.html&quot;&gt;http://www.cyberciti.biz/tips/top-linux-monitoring-tools.html&lt;/a&gt;). I&amp;#8217;d wager most readers will have come across most of the tools on the list but I found it interesting seeing them all listed in one place along with quick examples.&lt;/p&gt;
+&lt;p&gt;I only came across &lt;span class=&quot;caps&quot;&gt;VAGRANT&lt;/span&gt; (&lt;a href=&quot;http://vagrantup.com/&quot;&gt;http://vagrantup.com/&lt;/a&gt;) at the recent devopsdays event in Hamburg but I&amp;#8217;m already finding it indispensable. Vagrant is a tool for building and distributing virtualized development environments built around VirtualBox. In my view it massively reduces the barrier to entry for using virtualisation in even small development teams. Worth checking out.&lt;/p&gt;
+&lt;h2&gt;Events&lt;/h2&gt;
+&lt;p&gt;UK &lt;span class=&quot;caps&quot;&gt;SCALE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;CAMP&lt;/span&gt; (&lt;a href=&quot;http://www.scalecamp.org.uk/&quot;&gt;http://www.scalecamp.org.uk/&lt;/a&gt;) is billed as a one-day event for and by people who care about web performance and scalability. It&amp;#8217;s being hosted in London at the offices of The Guardian and if last year&amp;#8217;s event was anything to go by should be a great opportunity to talk about interesting topics with smart people. For those not able to make it along I&amp;#8217;ll try and find as many write ups of the event for a future Devops Weekly.&lt;/p&gt;
+&lt;h2&gt;Sponsored Link&lt;/h2&gt;
+&lt;p&gt;Well not really, &lt;span class=&quot;caps&quot;&gt;DEVOPS&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;BOOKS&lt;/span&gt; (&lt;a href=&quot;http://devopsbooks.com/&quot;&gt;http://devopsbooks.com/&lt;/a&gt;) is another site I just launched collecting recommended reading for anyone interested in Devops topics. I&amp;#8217;m always looking for more book recommendations so please email me with anything I&amp;#8217;m missing.&lt;/p&gt;</content>
+  </entry>
+  
+</feed>

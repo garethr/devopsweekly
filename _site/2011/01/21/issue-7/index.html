@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 7 - 21st January 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='/archive.xml' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 7 &#8211; 21st January 2011</h2>
+<p><em>Welcome to the seventh instalment of Devops Weekly. More tools and events this week than news, so if you&#8217;re looking for things to spend your time on this should hopefully be a good issue.</em></p>
+<h2>News</h2>
+<p>Fosdem is just weeks away and a specific devops meal out is being organised again for the night before the conference. Last year was a good opportunity to put faces to names so I&#8217;ll definitely be along again this year. Register as places are limited.</p>
+<p><a href="http://devopsfosdem2011.eventbrite.com/">http://devopsfosdem2011.eventbrite.com/</a></p>
+<p>Puppet Labs are running several masters 3 day courses in Boston and Brussels in the coming weeks. If you&#8217;re using puppet and somewhere in the vicinity these might be useful for you or your colleagues.</p>
+<p><a href="http://www.puppetlabs.com/events/boston-training-jan-11/">http://www.puppetlabs.com/events/boston-training-jan-11/</a> Jan 31 &#8211; Feb 2</p>
+<p><a href="http://www.puppetlabs.com/events/brussels-training-feb-11/">http://www.puppetlabs.com/events/brussels-training-feb-11/</a> Feb 8 &#8211; Feb 10</p>
+<p>A brief glimpse into some of the technical details surrounding how Google do large scale experiments and testing. This blog post has picked up on a few interesting snippets of how Google go about deployment.</p>
+<p><a href="http://glinden.blogspot.com/2011/01/experiment-infrastructure-at-google.html">http://glinden.blogspot.com/2011/01/experiment-infrastructure-at-google.html</a></p>
+<p>Richard Crawley from Devstructure launched Gimme Servers this week, which is a super simple interface to launching Rackspace cloud instances. If you&#8217;ve used the existing web based dashboard you&#8217;ll know why this exists.</p>
+<p><a href="http://gimmeservers.com/">http://gimmeservers.com/</a></p>
+<p>Amazon launched Elastic Beanstalk, which provides more of a platform as a service layer on top of EC2. At the moment that means an autoscaling tomcat instance along with build in load balancing and auto-scaling of resources based on utilisation. Very nice looking indeed.</p>
+<p><a href="http://aws.typepad.com/aws/2011/01/introducing-elastic-beanstalk.html">http://aws.typepad.com/aws/2011/01/introducing-elastic-beanstalk.html</a></p>
+<p>Shameless self promotion warning. Here&#8217;s article I write last week regarding why software developers like me should care more about system packages.</p>
+<p><a href="http://morethanseven.net/2011/01/16/Why-developers-should-care-about-system-packages.html">http://morethanseven.net/2011/01/16/Why-developers-should-care-about-system-packages.html</a></p>
+<h2>Tools</h2>
+<p><span class="caps">FPM</span> looks awesome. If you have to deal with gems or node.js npm packages but you&#8217;d rather be dealing with rpms or debs, or you have a debian package with some maintainer scripts you&#8217;d rather strip out and manage using chef/puppet, then this tool is for you. It&#8217;s early days it seems but I&#8217;m hoping other input and output formats will be added soon.</p>
+<p><a href="https://github.com/jordansissel/fpm/">https://github.com/jordansissel/fpm/</a></p>
+<p>Nagiosharder is a tool for querying the state of a nagios instance from a nice Ruby <span class="caps">API</span>. This looks ideal if you&#8217;re trying to show dashboards or reports without the rest of Nagios getting in the way.</p>
+<p><a href="https://github.com/railsmachine/nagiosharder">https://github.com/railsmachine/nagiosharder</a></p>
+<p>Playing with large data sets is good fun, but managing all the software required might not be your thing. In which case this set of tools from Infochimps might be useful. It&#8217;s a series of chef recipes designed specifically for managing Hadoop and Cassandra clusters, including creating and mounting <span class="caps">EBS</span> and setting up <span class="caps">NFS</span>.</p>
+<p><a href="https://github.com/infochimps/cluster_chef">https://github.com/infochimps/cluster_chef</a></p>
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

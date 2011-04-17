@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 15 - 24th March 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='/archive.xml' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 15 &#8211; 24th March 2011</h2>
+<p><em>This issue contains the word metrics repeatedly and it seems more and more we&#8217;re focused on gathering data to make the case for what we&#8217;re trying to do. That might be code or infrastructure changes or wholesale business improvement, but all things considered this analytical approach feels like a good thing to me. But then my background was as an experimental Physicist so I&#8217;m probably biased.</em></p>
+<h2>News</h2>
+<p>A big part of devops is organisational change, and metrics provide a good discussion point to try and prove why change is needed. But metrics can be used for the opposite reason, eloquently described here as using metrics as a weapon.</p>
+<p><a href="http://www.hollenback.net/index.php/JustifyingChanges">http://www.hollenback.net/index.php/JustifyingChanges</a></p>
+<p>The idea of writing tests for configuration management has been around for a while but this take on it looks particularly interesting. Using cucumber to make assertions based on puppet providers looks a pretty simple approach code wise.</p>
+<p><a href="http://www.unixdaemon.net/tools/puppet/puppet-cucumber-providers.html">http://www.unixdaemon.net/tools/puppet/puppet-cucumber-providers.html</a></p>
+<p>DevOpsDays Boston 2011 sounded like it was a great event and this writeup of one of the openspace events sounds interesting. 20 people spoke about using metrics for tracking the effects of changes in your Dev / Ops environments and jotted down a pretty good list of interesting things to track.</p>
+<p><a href="http://www.zeroturnaround.com/blog/how-to-measure-the-effectiveness-of-implementing-devops/">http://www.zeroturnaround.com/blog/how-to-measure-the-effectiveness-of-implementing-devops/</a></p>
+<p>More good Vagrant tutorials, this time with a really good end to end <span class="caps">PHP</span> example going from the why to a full set of Puppet manifests for bootstrapping a symphony development environment.</p>
+<p><a href="http://www.theodo.fr/blog/2011/03/start-using-vagrant/">http://www.theodo.fr/blog/2011/03/start-using-vagrant/</a></p>
+<p>The Moving Fast at Scale microconference at <span class="caps">SXSW</span> looked like one of the highlights of the week and the increasingly nice folks at Etsy have released all the slides from the event. These covered Scaling Startups, Continuous Deployment, Etsy&#8217;s inhouse deployment tool Deployinator and talk of Metrics-driven Development.</p>
+<p><a href="http://codeascraft.etsy.com/2011/03/19/moving-fast-at-scale-slides-and-reprise/">http://codeascraft.etsy.com/2011/03/19/moving-fast-at-scale-slides-and-reprise/</a></p>
+<p>However much you love Nagios (or your monitoring tool of choice) it likely feels somewhat dated when it comes to dealing with a modern dynamic infrastructure where new machines come and go regularly and often automatically. R.I.Pienaar has been prototyping a new monitoring system that aims to solve that problem as well as potentially many others. One to keep an eye on.</p>
+<p><a href="http://www.devco.net/archives/2011/03/19/thinking_about_monitoring_frameworks.php">http://www.devco.net/archives/2011/03/19/thinking_about_monitoring_frameworks.php</a></p>
+<p>One aspect of Devops is definitely self improvement, and this article about steps to improve as a sysadmin is interesting, the focus on tasks that might historically simply been shunted to developers in particular.</p>
+<p><a href="http://cwebber.ucr.edu/2011/03/the-journey-to-senior-sysadmin/">http://cwebber.ucr.edu/2011/03/the-journey-to-senior-sysadmin/</a></p>
+<h2>Tools</h2>
+<p>Stackops is a distro based on Ubuntu 10.04 <span class="caps">LTS</span> Server that allows for installing the various components of the OpenStack Nova platform via a simple to use installer. If Openstack is the ‘Linux’ of the cloud operating systems, StackOps wants to be the reference distribution of this operating system which seems a nobel and lofty goal.</p>
+<p><a href="http://blog.stackops.com/2011/03/23/stackops-distro-smart-installer-deploy-openstack-in-your-datacenter/">http://blog.stackops.com/2011/03/23/stackops-distro-smart-installer-deploy-openstack-in-your-datacenter/</a></p>
+<p>If you&#8217;re deploying applications to Heroku, then Heroku-Bartender might be of interest. It&#8217;s a very simple continuous deployment tool which shows you all the commits to a given Git branch and allows you to trigger a deployment of one via a web interface.</p>
+<p><a href="http://code.dblock.org/ShowPost.aspx?id=186">http://code.dblock.org/ShowPost.aspx?id=186</a></p>
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>
