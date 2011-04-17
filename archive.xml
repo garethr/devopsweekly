@@ -3,14 +3,14 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Scott Tesoriere</title>
+  <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
-    <email>scott@morethanseven.ner</email>
+    <email>gareth@morethanseven.ner</email>
   </author>
   {% for post in site.posts %}
   <entry>
