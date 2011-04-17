@@ -1,0 +1,56 @@
+--- 
+layout: post
+title: Issue 17 - 11th April 2011
+---
+
+h2. Issue 17 - 11th April 2011
+
+_Sorry for the delay in getting this issue out, but I hope stuffing it with even more good content will compensate a little. I spent the end of last week in Edinburgh for the Scottish Ruby Conference and, as well as watching some pretty good talks, met a few subscribers and talked an awful lot about Chef, Puppet and Vagrant. Good to meet everyone I bumped into._
+
+h2. News
+
+I always found Varnish documentation by jumping between mailing lists and various bits of the internet, for most things I'll now probably go to this epic blog post. It doesn't just cover the obvious caching of static files, but demonstrates more advantages tricks with dynamic content.
+
+"http://devblog.factual.com/practical-guide-to-varnish":http://devblog.factual.com/practical-guide-to-varnish
+
+John Allspaw's latest post is a pretty thought provoking read, attempting to introduce Resilience Engineering and position it at the heart of how business prioritises activities. It's part I as well so presumably more on the subject on the way.
+
+"http://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/":http://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/
+
+Rackspace have rolled out a load balancer feature for their cloud stack. This article covers the details of setting it up for use with other Rackspace cloud instances.
+
+"http://cloudservers.rackspacecloud.com/index.php/Configuring_a_Cloud_Load_Balancer":http://cloudservers.rackspacecloud.com/index.php/Configuring_a_Cloud_Load_Balancer
+
+Sometimes it's just useful to have a big old list of bullet points to remind you about a broad topic. This post from Ricky Ho could be useful if you don't know where to start, although it would be nice to see lots more references.
+
+"http://architects.dzone.com/news/scalable-system-design-0":http://architects.dzone.com/news/scalable-system-design-0
+
+Replay Solutions carried out a survey of companies, focusing on management and larger organisations around devops. This might be useful to those fighting the good fight and needing to convince the powers that be. The survey results are available as a PDF from that page.
+
+"http://replaysolutions.com/company/news/59":http://replaysolutions.com/company/news/59
+
+I'm finding more and more long, well thought out posts that I'm sure I'll be referring back to again and again. This post from Stephanie Dean covers processes and practices to use and put in place when everything around you is going wrong. It ends with a great list of responsibilities for the different groups involved that everyone should read.
+
+"http://stephaniekdean.wordpress.com/2011/04/04/eventmgmt/":http://stephaniekdean.wordpress.com/2011/04/04/eventmgmt/
+
+Altering based on a percentage is pretty common, and is the default in many popular monitoring applications. It's also counter productive and sometimes dangerous according to Chris Siebenmann. He argues very well that the defaults exist because it's easy to do, and as someone who has been warning about a machine with 20GB of disk left in the past because of this I'm coming round to the same viewpoint.
+
+"http://utcc.utoronto.ca/~cks/space/blog/sysadmin/NoAlertOnPercentages":http://utcc.utoronto.ca/~cks/space/blog/sysadmin/NoAlertOnPercentages
+
+More and more folks are writing up their continuous deployment setups, which I think is a great think. The more shared experience the more we can get to a stage where common tools for things like this exist, lowering the costs and barriers to entry.
+
+"http://prettyprint.me/2011/01/24/continuous-deployment-at-outbrain/":http://prettyprint.me/2011/01/24/continuous-deployment-at-outbrain/
+
+h2. Tools
+
+If you're a fan of using monit, daemon, logrotate and cron for running daemonised services then it's probably not because of the setup and configuration. pmonit caught my eye as a painless looking approach to getting these all working together quickly. Although I'd be tempted to pull some of this out into Chef recipes or Puppet manifests.
+
+"https://github.com/emgee/pmonit":https://github.com/emgee/pmonit
+
+Excellent blog post and application code from Posterous. They ran into issues around optimising caching, and build some pretty impressive tools to allow log play back and generate statistics on cache behaviour.
+
+"http://technology.posterous.com/planning-and-engineering-your-cache-for-maxim-0":http://technology.posterous.com/planning-and-engineering-your-cache-for-maxim-0 and "https://github.com/vincentchu/sim_cache":https://github.com/vincentchu/sim_cache
+
+Most people who end up talking about low level monitoring of Java applications always sound angry. This tool acts as a connector between JMX and a number of different monitoring systems including cacti, rrdtool, graphite and plain old stdout.
+
+"http://code.google.com/p/jmxtrans/":http://code.google.com/p/jmxtrans/

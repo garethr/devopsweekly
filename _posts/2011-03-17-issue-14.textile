@@ -1,0 +1,44 @@
+--- 
+layout: post
+title: Issue 14 - 17th March 2011
+---
+
+h2. Issue 14 - 17th March 2011
+
+_More interesting news and tools from last week. If anyone has anything they think would be of interest to folks do let me know at gareth@morethanseven.net_
+
+h2. News
+
+I finally managed to get a site built this week to provide a list of Vagrant base boxes. The question comes up on Twitter or blog posts or mailing lists pretty regularly. Hopefully a few people find it useful.
+
+"http://www.vagrantbox.es/":http://www.vagrantbox.es/
+
+Amazon have just expanded their virtual networking for Amazon EC2, adding in lots more functionality which to my mind make it much more useful. You can now run with a single public subnet, with public and private subnets, with Internet and VPN access or with VPN access only.
+
+"http://aws.typepad.com/aws/2011/03/new-approach-amazon-ec2-networking.html":http://aws.typepad.com/aws/2011/03/new-approach-amazon-ec2-networking.html
+
+Dean Wilson has been doing some interesting things around testing deployments and infrastructure changes using Nagios, and NRPE Runner looks a handy tool if you're interested in doing the same. The basic premise is to have a command allowing you to run your nagios checks like a test suite. 
+
+"http://www.unixdaemon.net/tools/commandline/introducing-nrpe-runner.html":http://www.unixdaemon.net/tools/commandline/introducing-nrpe-runner.html
+
+Ted Dziuba's latest article covers what and why to monitor, and what makes for a good system that can be easily checked. The focus of monitoring checks should be to keep them Informative and Actionable, which I like.
+
+"http://teddziuba.com/2011/03/monitoring-theory.html":http://teddziuba.com/2011/03/monitoring-theory.html
+
+Zed Shaw always writes good opinion pieces and this one has a number of good points. The basic gist is that more programmers should actually learn how statistics really works, which I have to agree with. The more we look for evidence for application or process improvements the more important it is to get the analysis right.
+
+"http://zedshaw.com/essays/programmer_stats.html":http://zedshaw.com/essays/programmer_stats.html
+
+A pretty formal article introducing some folks to the concepts behind Devops. I'm quite interested in the idea that Devops might be a sort-of bridge between IT Service management with Agile development practices
+
+"http://www.cmcrossroads.com/behaviorally-speaking/13925-behaviorally-speaking-devops-101":http://www.cmcrossroads.com/behaviorally-speaking/13925-behaviorally-speaking-devops-101
+
+Branches are an important part of lots of development workflows, and with the increasing adoption of version control for configuration management file and the mantra of "infrastructure as code" some people are starting to talk about how to use branches for these too.
+
+"http://blog.carlossanchez.eu/2011/03/15/new-challenges-from-devops-development-cycle-for-your-infrastructure/":http://blog.carlossanchez.eu/2011/03/15/new-challenges-from-devops-development-cycle-for-your-infrastructure/
+
+h2. Tools
+
+The nice folks at Etsy continue releasing various useful tools, this time Logster is a very handy looking tool for parsing log files and generating metrics for Graphite and Ganglia from the results.
+
+"https://github.com/etsy/logster":https://github.com/etsy/logster

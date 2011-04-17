@@ -1,0 +1,40 @@
+--- 
+layout: post
+title: Issue 8 - 28th January 2011
+---
+
+h2. Issue 8 - 28th January 2011
+
+_Welcome to the eighth instalment of Devops Weekly. More than 660 people have now signed up and the list is growing every week. Thanks for sticking around and do let me know what you'd like to see more (or less) of._
+
+h2. News
+
+Lots of people are interested in building a shared vocabulary and understanding at the moment, including this take on documenting release management. The author is seeking input from devops flavoured folk so any ideas you have should be welcome.
+
+"http://www.erp4it.com/erp4it/2011/01/release-management-integration-pattern-seeking-devops-comments.html":http://www.erp4it.com/erp4it/2011/01/release-management-integration-pattern-seeking-devops-comments.html
+
+New Relic have a great product for monitoring Java and Ruby applications and publish the odd bit of interesting insight into what they get up to too. They recently moved database servers and documented how they went about it.
+
+"http://blog.newrelic.com/2011/01/26/how-do-you-move-more-than-6000-customers-in-2-hours/":http://blog.newrelic.com/2011/01/26/how-do-you-move-more-than-6000-customers-in-2-hours/
+
+FOSDEM is only weeks away and the official site has started publishing a few interviews. Spike, who some people might have seen talk at the last devopsdays event in Hamburg, is talking again this time about monitoring and the transition from being a full time sysadmin to a developer.
+
+"http://fosdem.org/2011/interview/spike-morelli":http://fosdem.org/2011/interview/spike-morelli
+
+IMVU, who originally described how they went about continuous deployment, have written up how they deal with intermittently failing tests across a rather large test suite. Interesting problem and solution.
+
+"http://engineering.imvu.com/2011/01/19/buildbot-and-intermittent-tests/":http://engineering.imvu.com/2011/01/19/buildbot-and-intermittent-tests/
+
+Puppet Labs is hosting its bi-annual conference for users and developers in Amsterdam on April 28th and 29th. Early bird tickets are available now and the call for papers ends March 6th for those interested in speaking.
+
+"http://www.puppetlabs.com/community/puppet-camp/puppet-camp-ams-2011-info":http://www.puppetlabs.com/community/puppet-camp/puppet-camp-ams-2011-info
+
+h2. Tools
+
+It's always nice to be able to experiment with a web API before you jump head long into code and Jazor looks a nice way of pushing and prodding JSON based services when curl isn't quite the right tool.
+
+"http://conigliaro.org/2011/01/24/jazor-a-simple-command-line-json-parsing-tool/":http://conigliaro.org/2011/01/24/jazor-a-simple-command-line-json-parsing-tool/
+
+Pallet describes itself as an agile cloud development tool for developers, sysadmins, and operations. It's a clojure based tool which doesn't use a central server or require you to install an agent on each node. The blog contains links to good presentation materials and example code.
+
+"http://palletops.com/":http://palletops.com/

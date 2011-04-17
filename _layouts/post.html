@@ -2,10 +2,11 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Weekly Devops Email Newsletter</title>
+  <title>Devops Weekly {{ page.title }}</title>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
   <link rel="stylesheet" href="/css/reset.css" type="text/css" />
   <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='/archive.xml' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-435455-14']);
@@ -21,8 +22,13 @@
 <body>
   <div id="main">
     <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
       <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
     </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
     {{ content }}
   </div>
   <div id="footer">

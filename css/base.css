@@ -13,6 +13,11 @@ a:hover, a:focus {
 p {
     font-size: 120%;
     line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+p em {
+  font-style: italic;
 }
 
 strong {
@@ -29,9 +34,19 @@ h1 em {
 }
 
 h1 {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 150%;
     color: #666;
+}
+
+h2 {
+    font-family: 'Droid Sans';
+    font-size: 150%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    margin: 2em 0 1em;
+} 
 }
 
 img {
@@ -53,4 +68,44 @@ img {
 
 #footer a {
     color: #666;
+}
+
+#archive {
+  margin-top: 2em;
+  margin-left: 20px;
+}
+
+#archive li {
+  line-height: 175%;
+}
+
+#nav {
+  margin-top: 15px;
+}
+
+#nav li {
+  display: inline;
+}
+
+#nav li a {
+  color: #666;
+}
+
+#nav a:hover, #nav a:active {
+  text-decoration: none;
+}
+
+.mc-sub-badge10 {
+    position: absolute;
+    top: 42px;
+    right: 10px;
+}
+
+.mc-sub-badge10 li.mc-subscribers {
+    padding: 6px 5px 5px 0 !important;
+}
+
+.mc-sub-badge10 li.mc-power {
+    text-align: right;
+    margin-top: 5px;
 }

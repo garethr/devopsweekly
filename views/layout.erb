@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/css/reset.css" type="text/css" />
   <link rel="stylesheet" href="/css/base.css" type="text/css" />
   <link rel="stylesheet" href="/css/home.css" type="text/css" />
+  <link href='/archive.xml' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-435455-14']);
@@ -22,6 +23,9 @@
 <body>
   <div id="main">
     <div id="head">
+      <ul id="nav">
+        <li><a href="/archive">Archive</a></li>
+      </ul>
       <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
     </div>
     <%= yield %>

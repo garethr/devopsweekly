@@ -1,0 +1,52 @@
+--- 
+layout: post
+title: Issue 3 - 14th December 2010
+---
+
+h2. Issue 3 - 14th December 2010
+
+_Welcome to the third instalment of Devops Weekly. Thanks for all the support again this week. If you have any news or tools you think people will find interesting do email me at gareth@morethanseven.net_
+
+h2. News
+
+Part of Devops is definitely the adoption of agile practices by operations teams and it's interesting to read about about peoples experience of managing process in a team of systems administrators.
+
+"http://www.rooflabs.com/2010/12/13/using-agile-to-manage-system-engineering/":http://www.rooflabs.com/2010/12/13/using-agile-to-manage-system-engineering/
+
+The Agile Web Operations blog has been putting out a series of Devops posts over the past couple of weeks. The first one this week that caught my eye was John Allspaw's post about soft skills and the importance of communication and collaboration.
+
+"http://www.agileweboperations.com/devops-these-soft-parts":http://www.agileweboperations.com/devops-these-soft-parts
+
+The second article is from James Turnbull on why people really shouldn't get hung up on the word Devops (as some people appear to do). "The point is making Ops better – one step at a time – and in the process making our lives easier".
+
+"http://www.agileweboperations.com/the-state-of-devops":http://www.agileweboperations.com/the-state-of-devops
+
+Probably my favourite article of the week was this one, on the re-emergance of Systems Engineering as a discipline. I found lots of this described me and, I think, many of the people I meet at Devops events. It also neatly sidesteps the Devops as a role argument.
+
+"http://www.cuddletech.com/blog/pivot/entry.php?id=1149":http://www.cuddletech.com/blog/pivot/entry.php?id=1149
+
+James talked in his article above about his formative years and another post this week caught my eye about experience gained working with smart people and processes. This one covers the importance of source control, staging servers and some lessons learned using them. Good introductory material is hard to write so I'd love to see more.
+
+"http://www.kalzumeus.com/2010/12/12/staging-servers-source-control-deploy-workflows-and-other-stuff-nobody-teaches-you/":http://www.kalzumeus.com/2010/12/12/staging-servers-source-control-deploy-workflows-and-other-stuff-nobody-teaches-you/
+
+I find people sharing details about the tools they use incredible useful, especially when they can include numbers. This great open blog post about using Bacula for backups is exactly the sort of thing I'd like to see more of. "A standard 2 week rotation amounts to ~190 TB of data con taining ~490.000.000 files"
+
+"http://blog.myunix.dk/2010/12/01/large-scale-disk-to-disk-backups-using-bacula/":http://blog.myunix.dk/2010/12/01/large-scale-disk-to-disk-backups-using-bacula/
+
+Just before I hit the send button Julian Simpson just published a good interview with the product manager of the Go continuous integration and deployment pipeline too from Thoughtworks.
+
+"http://www.build-doctor.com/2010/12/14/go-thoughtworks-jez-humble/":http://www.build-doctor.com/2010/12/14/go-thoughtworks-jez-humble/
+
+
+h2. Tools
+
+I found myself looking at different ways of aggregating log files from different systems this week and had chance to investigate a couple of newish open source offerings.
+
+Graylog2 is a Java app which stores syslog entries in a MongoDB datastore, along with a good looking Ruby on Rails application for looking at the results. 
+
+"http://www.graylog2.org/":http://www.graylog2.org/
+
+Logstash is similar in purpose to Graylog2 but uses ElasticSearch as the backend. It can also aggregate logs from syslog, text files or AMQP which might prove useful.
+
+"http://code.google.com/p/logstash/":http://code.google.com/p/logstash/
+

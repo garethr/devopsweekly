@@ -18,7 +18,7 @@ include WEBrick
 task :default => :develop
  
 desc 'Build site with Jekyll.'
-task :build => :tags do
+task :build do
   printHeader "Compiling website..."
   options = Jekyll.configuration({})
   @site = Jekyll::Site.new(options)
@@ -73,13 +73,13 @@ task :new do
   article = {"title" => title, "layout" => "post"}.to_yaml
   article << "---"
   fileName = title.gsub(/[\s \( \) \? \[ \] \, \: \< \>]/, '-').downcase
-  path = "_posts/#{Time.now.strftime("%Y-%m-%d")}#{'-' + fileName}.markdown"
+  path = "_posts/#{Time.now.strftime("%Y-%m-%d")}#{'-' + fileName}.textile"
   unless File.exist?(path)
     File.open(path, "w") do |file| 
       file.write article
-      sh "vim " + path
     end
-      puts "A new article was created at #{path}."
+    puts "A new article was created at #{path}."
+    sh "vim " + path
   else
       puts "There was an error creating the article, #{path} already exists."
   end
@@ -94,42 +94,3 @@ def printHeader headerText
   print bold + blue + "==> " + reset
   print bold + headerText + reset + "\n"
 end
-
-desc 'Generate tags pages'
-task :tags  => :tag_cloud do
-  puts "Generating tags..."
-  require 'rubygems'
-  require 'jekyll'
-  include Jekyll::Filters
-  
-  options = Jekyll.configuration({})
-  site = Jekyll::Site.new(options)
-  site.read_posts('')
-
-  # Remove tags directory before regenerating
-  FileUtils.rm_rf("tags")
-
-  site.tags.sort.each do |tag, posts|
-    html = <<-HTML
----
-layout: default
-title: "tagged: #{tag}"
----
-  <h1 class="title">#{tag}</h1>
-  {% for post in site.posts %}
-    {% for tag in post.tags %}
-      {%if tag == "#{tag}" %}
-        {%include post.html%}
-      {%endif%}
-    {%endfor%}
-  {% endfor %}
-HTML
-
-    FileUtils.mkdir_p("tags/#{tag}")
-    File.open("tags/#{tag}/index.html", 'w+') do |file|
-      file.puts html
-    end
-  end
-  puts 'Done.'
-end
-

@@ -1,0 +1,42 @@
+--- 
+layout: post
+title: Issue 4 - 21st December 2010
+---
+
+h2. Issue 4 - 21st December 2010
+
+_Welcome to the fourth instalment of Devops Weekly. I'll probably be taking a break next week while I'm on holiday, so the next issue should be available in the new year. As always email gareth@morethanseven.net if you have anything you'd like included._
+
+h2. News
+
+The Configuration Management DevRoom at Fosdem next year is looking for talks, anyone interested has until the 8th of January to submit. Presentations are to be formal and not longer than 30 minutes, plus 15 
+extra for questions (45 in total). Panels with more than one speaker are also of interest.
+
+"http://www.puppetlabs.com/blog/call-for-papers-configuration-management-devroom-at-fosdem-2011/":http://www.puppetlabs.com/blog/call-for-papers-configuration-management-devroom-at-fosdem-2011/
+
+You might not be using either Glassfish or Puppet but I found this article interesting anyway as it's a good walk though of taking unpackaged software fresh from the developers and going through the steps of packaging and automating installation.
+
+"http://blog.screv.com/?p=143":http://blog.screv.com/?p=143
+
+The guys at Devstructure have made lots of changes to their service this week, including moving to a completely free model. It's an interesting approach to configuration management that's worth having a look at of you haven't already.
+
+"http://blog.devstructure.com/rebooting-devstructure":http://blog.devstructure.com/rebooting-devstructure
+
+I feel bad about including the next article as I wrote it, but I reason it's interesting to readers of devopsweekly. Even pushing down the time between releases doesn't remove all of the risk from rolling out new code, that's where smoke testing comes in. This article walks through an example using cucumber and celerity to do fast, headless, tests to check your deployment worked.
+
+"http://sysadvent.blogspot.com/2010/12/day-17-smoke-testing-deployments-using.html":http://sysadvent.blogspot.com/2010/12/day-17-smoke-testing-deployments-using.html
+
+More headless testing, this time using the Jasmine BDD Javascript framework. This article shows how to wire up Rhino to allow you to run javascript tests without a browser, perfect for continuous integration.
+
+"http://agile.dzone.com/news/javascript-bdd-jasmine-without":http://agile.dzone.com/news/javascript-bdd-jasmine-without
+
+
+h2. Tools
+
+Mcollective, the build server orchestration or parallel job execution framework, has just released version 1.0.0. It comes with a few minor features and bug fixes but also marks a change in how the software packages will be made available and versioned in the future. Well worth a look.
+
+"http://groups.google.com/group/mcollective-users/browse_thread/thread/9c548d321b159627":http://groups.google.com/group/mcollective-users/browse_thread/thread/9c548d321b159627
+
+LinkedIn recently released their deployment automation platform called Glu, which is used to deploy the various different parts of LinkedIn. It's written in groovy/java but can apparently be used to deploy anything.
+
+"https://github.com/linkedin/glu/":https://github.com/linkedin/glu/

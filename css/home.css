@@ -1,5 +1,10 @@
 #main p {
     background-color: #FFFEE1;
+    margin-bottom: 0;
+}
+
+img {
+  margin-left: -40px;
 }
 
 #mc_embed_signup {
@@ -39,19 +44,4 @@ div.mce_inline_error {
     left: 385px;
     color: #000;
     font-weight: bold;
-}
-
-.mc-sub-badge10 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.mc-sub-badge10 li.mc-subscribers {
-    padding: 6px 5px 5px 0 !important;
-}
-
-.mc-sub-badge10 li.mc-power {
-    text-align: right;
-    margin-top: 5px;
 }

@@ -1,0 +1,53 @@
+--- 
+layout: post
+title: Issue 11 - 22th February 2011
+---
+
+h2. Issue 11 - 22th February 2011
+
+_Last week was pretty light on tools so I've this week I've found all sorts of interesting looking new toys to play with. I'd love to see and stories of success or failure if anyone tries any of these out._
+
+h2. News
+
+I'm constantly interested in how everyone does deployment subtly or wildly differently so I've decided to run a survey rather than just base my thoughts on my own personal experience and here say. If you have 5 minutes and have anything to do with deploying web sites or applications then please fill in the following Google form. 
+
+"http://bit.ly/webdeployment":http://bit.ly/webdeployment
+
+In many cases you don't want or can't have lots of automated small releases as you push code but you do want everything that comes with the workflow around continuous deployment. A good article about terminology, around why the recent book was called continuous delivery and why deployment should maybe have been release.
+
+"http://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/":http://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/
+
+Sometimes you just want to be in the bay area and this event on Data Collection and Logging looks great. You've probably seen talks about processing data with Hadoop, but how did that data get collected in the first place? Are you using Scribe, Chukwa, or something else? And where are you keeping all that data until you're ready to process it?  What about after you process it?
+
+"http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/events/15481136/":http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/events/15481136/
+
+A pretty interesting argument that devops is a way of insourcing work back into development teams that's previously been outsourced. Drawing parallels to how agile made testing sexy and got people interested in tooling. Worth a read.
+
+"http://www.redmonk.com/cote/2011/02/16/the-developer-landgrab-another-way-to-look-at-devops/":http://www.redmonk.com/cote/2011/02/16/the-developer-landgrab-another-way-to-look-at-devops/
+
+Always nice to see more people talking about vagrant, very quick example but it does contain a link to a Centos base box for the latest version of Vagrant.
+
+"http://www.maestrodev.com/blogs/vagrant-is-my-new-best-friend":http://www.maestrodev.com/blogs/vagrant-is-my-new-best-friend
+
+Nice list of 8 things to think about when deploying mysql databases, with a specific focus on EC2 environments. Not loads of detail but a nice list to have handy if you're not already a database expert.
+
+"http://www.iheavy.com/2011/02/21/deploying-mysql-on-amazon-ec2-best-practices/":http://www.iheavy.com/2011/02/21/deploying-mysql-on-amazon-ec2-best-practices/
+
+
+h2. Tools
+
+An interesting looking continuous deployment framework that makes use of ZooKeeper. At it's heart a daemon you install on your production machines and a command to trigger those nodes to pull your latest application from your continuous integration system.
+
+"https://github.com/mconigliaro/conveyor":https://github.com/mconigliaro/conveyor
+
+Deployment tools are definitely interesting lots of people at the moment and Meerkatalyst looks like an interesting continuous deployment server allowing developers to deploy ASP.net or Ruby projects. Currently invite only but you can sign up on the site.
+
+"http://www.meerkatalyst.com/":http://www.meerkatalyst.com/
+
+Poni describes itself as a systems management tool for defining, deploying and verifying complex multi-node computer systems. It looks like a pretty comprehensive command line tool with cloud provisioning baked in as well.
+
+"http://melor.github.com/poni/index.html":http://melor.github.com/poni/index.html
+
+And finally yet another deployment tool, this time called Beehive which is written in Erlang and Ruby. Again lots of good examples and documentation for getting started.
+
+"http://getbeehive.com/":http://getbeehive.com/
