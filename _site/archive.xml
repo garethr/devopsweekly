@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Scott Tesoriere</title>
+  <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2011-04-17T14:46:33+01:00</updated>
+  <updated>2011-04-17T14:53:13+01:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
-    <email>scott@morethanseven.ner</email>
+    <email>gareth@morethanseven.ner</email>
   </author>
   
   <entry>
