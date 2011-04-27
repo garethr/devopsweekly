@@ -3,12 +3,47 @@
   <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2011-04-17T14:58:13+01:00</updated>
+  <updated>2011-04-27T14:42:04+01:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
     <email>gareth@morethanseven.ner</email>
   </author>
+  
+  <entry>
+    <title>Issue 18 - 21st April 2011</title>
+    <link href="http://devopsweekly.com/2011/04/21/issue-18/"/>
+    <updated>2011-04-21T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/04/21/issue-18</id>
+    <content type="html">&lt;h2&gt;Issue 18 &amp;#8211; 21st April 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Another busy week, with lots of interesting tools, announcements and goings on. As I write this issue Amazon EC2 is having some nasty downtime issues. Hopefully next week I can feature some good advice on how to run things across multiple zones more easily and mitigate such problems. Anyone still staring at the &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; status dashboard rather than sleeping has my thoughts.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;VMWare announced what they&amp;#8217;ve been working on of late, and it&amp;#8217;s an open source platform as a service. It currently runs Java, Ruby and Node.js applications with hopefully more on the way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cloudfoundry.com/&quot;&gt;http://www.cloudfoundry.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re interested in playing with OpenStack, like anything else it&amp;#8217;s useful to be able to do so locally. This article covers settings up the whole OpenStack platform under Virtualbox.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://uksysadmin.wordpress.com/2011/02/17/running-openstack-under-virtualbox-a-complete-guide/&quot;&gt;http://uksysadmin.wordpress.com/2011/02/17/running-openstack-under-virtualbox-a-complete-guide/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The recent London CI meetups have been excellent. I was out of town for the last one but luckily the video of Chris Read talking about evolving Continuous Delivery is already up online. Worth watching.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://skillsmatter.com/podcast/agile-testing/a-sneak-preview-of-evolving-continuous-delivery/js-1600&quot;&gt;http://skillsmatter.com/podcast/agile-testing/a-sneak-preview-of-evolving-continuous-delivery/js-1600&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lots of companies are both taking the build process more seriously and also often looking to take that responsibility and place it in the hands of one person. Kief Morris writes up why this is a bad idea, and why distributing this across a development team is important.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://grokandroll.com/Build_Monkey_Antipattern.html&quot;&gt;http://grokandroll.com/Build_Monkey_Antipattern.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A well put together tutorial with clear code examples and good screen shots. It covers installing software (in this case Drizzle) onto EC2 using Chef.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://posulliv.github.com/2011/04/07/drizzle-chef.html&quot;&gt;http://posulliv.github.com/2011/04/07/drizzle-chef.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The idea of a development environment on demand using Vagrant is one I&amp;#8217;m pretty keen on. This article again introduces the tool as well as pointing out a couple of issues the author ran into in getting things up and running.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://biven.org/writing/dev_on_demand_with_vagrant/&quot;&gt;http://biven.org/writing/dev_on_demand_with_vagrant/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re in the position to be looking at different configuration management tools this product matrix might be useful. It covers a wide range of tools in some detail.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://distrinet.cs.kuleuven.be/software/sysconfigtools/overview&quot;&gt;http://distrinet.cs.kuleuven.be/software/sysconfigtools/overview&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;John Vincent is looking for some feedback on what the Operational primitives are in peoples workflows, specifically related to the tool Noah that&amp;#8217;s in development.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://lusislog.blogspot.com/2011/04/operational-primitives.html&quot;&gt;http://lusislog.blogspot.com/2011/04/operational-primitives.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A good reminder that using trending data collected in tools like Ganglia or Collectd is perfect for powering alerting in tools such as Nagios. If you&amp;#8217;re not already going this it&amp;#8217;s a great idea.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://vuksan.com/blog/2011/04/19/use-your-trending-data-for-alerting/&quot;&gt;http://vuksan.com/blog/2011/04/19/use-your-trending-data-for-alerting/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A week to go until the deadline for paper proposals for a special issue of Cutters to be edited by Patrick Debois. This looks particularly interesting as the list of topics is all about culture, not technology.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cutter.com/content-and-analysis/journals-and-reports/cutter-it-journal/callforpapers03.html&quot;&gt;http://www.cutter.com/content-and-analysis/journals-and-reports/cutter-it-journal/callforpapers03.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Increasingly some projects are encouraging folks to install software by running a remote shell script. This might be evil in many ways but folks are using it so I&amp;#8217;m glad a project like Gosh exists. Gosh gives you a bit of an insight into the code you&amp;#8217;re about to execute.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/sstephenson/gosh&quot;&gt;https://github.com/sstephenson/gosh&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In a one man war against the failings of ruby packaging Jordan Sissel has been working on a simple way of creating system packages from &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; builds. Very promising.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jordansissel/rvm-packaging&quot;&gt;https://github.com/jordansissel/rvm-packaging&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   
   <entry>
     <title>Issue 17 - 11th April 2011</title>

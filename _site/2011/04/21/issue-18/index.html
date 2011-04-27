@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 18 - 21st April 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 18 &#8211; 21st April 2011</h2>
+<p><em>Another busy week, with lots of interesting tools, announcements and goings on. As I write this issue Amazon EC2 is having some nasty downtime issues. Hopefully next week I can feature some good advice on how to run things across multiple zones more easily and mitigate such problems. Anyone still staring at the <span class="caps">AWS</span> status dashboard rather than sleeping has my thoughts.</em></p>
+<h2>News</h2>
+<p>VMWare announced what they&#8217;ve been working on of late, and it&#8217;s an open source platform as a service. It currently runs Java, Ruby and Node.js applications with hopefully more on the way.</p>
+<p><a href="http://www.cloudfoundry.com/">http://www.cloudfoundry.com/</a></p>
+<p>If you&#8217;re interested in playing with OpenStack, like anything else it&#8217;s useful to be able to do so locally. This article covers settings up the whole OpenStack platform under Virtualbox.</p>
+<p><a href="http://uksysadmin.wordpress.com/2011/02/17/running-openstack-under-virtualbox-a-complete-guide/">http://uksysadmin.wordpress.com/2011/02/17/running-openstack-under-virtualbox-a-complete-guide/</a></p>
+<p>The recent London CI meetups have been excellent. I was out of town for the last one but luckily the video of Chris Read talking about evolving Continuous Delivery is already up online. Worth watching.</p>
+<p><a href="http://skillsmatter.com/podcast/agile-testing/a-sneak-preview-of-evolving-continuous-delivery/js-1600">http://skillsmatter.com/podcast/agile-testing/a-sneak-preview-of-evolving-continuous-delivery/js-1600</a></p>
+<p>Lots of companies are both taking the build process more seriously and also often looking to take that responsibility and place it in the hands of one person. Kief Morris writes up why this is a bad idea, and why distributing this across a development team is important.</p>
+<p><a href="http://grokandroll.com/Build_Monkey_Antipattern.html">http://grokandroll.com/Build_Monkey_Antipattern.html</a></p>
+<p>A well put together tutorial with clear code examples and good screen shots. It covers installing software (in this case Drizzle) onto EC2 using Chef.</p>
+<p><a href="http://posulliv.github.com/2011/04/07/drizzle-chef.html">http://posulliv.github.com/2011/04/07/drizzle-chef.html</a></p>
+<p>The idea of a development environment on demand using Vagrant is one I&#8217;m pretty keen on. This article again introduces the tool as well as pointing out a couple of issues the author ran into in getting things up and running.</p>
+<p><a href="http://biven.org/writing/dev_on_demand_with_vagrant/">http://biven.org/writing/dev_on_demand_with_vagrant/</a></p>
+<p>If you&#8217;re in the position to be looking at different configuration management tools this product matrix might be useful. It covers a wide range of tools in some detail.</p>
+<p><a href="http://distrinet.cs.kuleuven.be/software/sysconfigtools/overview">http://distrinet.cs.kuleuven.be/software/sysconfigtools/overview</a></p>
+<p>John Vincent is looking for some feedback on what the Operational primitives are in peoples workflows, specifically related to the tool Noah that&#8217;s in development.</p>
+<p><a href="http://lusislog.blogspot.com/2011/04/operational-primitives.html">http://lusislog.blogspot.com/2011/04/operational-primitives.html</a></p>
+<p>A good reminder that using trending data collected in tools like Ganglia or Collectd is perfect for powering alerting in tools such as Nagios. If you&#8217;re not already going this it&#8217;s a great idea.</p>
+<p><a href="http://vuksan.com/blog/2011/04/19/use-your-trending-data-for-alerting/">http://vuksan.com/blog/2011/04/19/use-your-trending-data-for-alerting/</a></p>
+<p>A week to go until the deadline for paper proposals for a special issue of Cutters to be edited by Patrick Debois. This looks particularly interesting as the list of topics is all about culture, not technology.</p>
+<p><a href="http://www.cutter.com/content-and-analysis/journals-and-reports/cutter-it-journal/callforpapers03.html">http://www.cutter.com/content-and-analysis/journals-and-reports/cutter-it-journal/callforpapers03.html</a></p>
+<h2>Tools</h2>
+<p>Increasingly some projects are encouraging folks to install software by running a remote shell script. This might be evil in many ways but folks are using it so I&#8217;m glad a project like Gosh exists. Gosh gives you a bit of an insight into the code you&#8217;re about to execute.</p>
+<p><a href="https://github.com/sstephenson/gosh">https://github.com/sstephenson/gosh</a></p>
+<p>In a one man war against the failings of ruby packaging Jordan Sissel has been working on a simple way of creating system packages from <span class="caps">RVM</span> builds. Very promising.</p>
+<p><a href="https://github.com/jordansissel/rvm-packaging">https://github.com/jordansissel/rvm-packaging</a></p>
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>
