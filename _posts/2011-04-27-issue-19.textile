@@ -3,7 +3,7 @@ layout: post
 title: Issue 19 - 27th April 2011
 ---
 
-h2. Isse 19 - 27th April 2011
+h2. Issue 19 - 27th April 2011
 
 _I'm not sure whether it's just because I'm on holiday and have more time on my hands or whether it's just been a busy week but lots of news and interesting tool releases this last week._
 

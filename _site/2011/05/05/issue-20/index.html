@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 19 - 27th April 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 20 &#8211; 5th May 2011</h2>
+<p><em>Back to a more health mix of releases, interesting articles, tutorials and tools this week after the deluge of <span class="caps">AWS</span> and cloud related experience reports last time. Anyone writing any interesting tools do let me know. If only I had time to try everything out personally.</em></p>
+<h2>News</h2>
+<p>The videos from the previous London Devops event are now available. Big thanks to Adam, Ryan and Squirrel at YouDevise for letting us use their offices and for producing the videos. And thanks to Spike Morelli and James Hogarth for the two talks on Monitoring aided development and on Spacewalk.</p>
+<p><a href="http://vimeo.com/22652468">http://vimeo.com/22652468</a><br />
+<a href="ttp://vimeo.com/22653015">http://vimeo.com/22653015</a></p>
+<p>Really excellent article from Adam Wiggins of Heroku about growing development teams. It&#8217;s often missed amongst all the technology that scaling is also about scaling people, most organisations as requests, code bases and servers grow so does the team of people responsible for them.</p>
+<p><a href="http://adam.heroku.com/past/2011/4/28/scaling_a_development_team/">http://adam.heroku.com/past/2011/4/28/scaling_a_development_team/</a></p>
+<p>A big Chef release landing this week. With 0.10.0 you get much better console behaviour, the new environments concept, easier ways of ignoring files when distributing them to nodes and encrypted data bags amongst other changes and fixes. If you&#8217;re running your own Chef server you&#8217;ll need to rebuild your search index though.</p>
+<p><a href="http://www.opscode.com/blog/2011/05/02/chef-0-10-0-released/">http://www.opscode.com/blog/2011/05/02/chef-0-10-0-released/</a></p>
+<p>The folks at Puppet Labs are conducting a survey around devops practices. If you have a few minutes to answer a few questions I&#8217;m sure the results will be interesting.</p>
+<p><a href="http://svy.mk/jNImMz">http://svy.mk/jNImMz</a></p>
+<p>The long discussed Puppet move to use the Apache 2.0 licence instead of the <span class="caps">GPL</span> has now happened. For most this probably makes no difference at all, although we might be some more interesting products integrated with puppet in the future because of the change.</p>
+<p><a href="http://www.puppetlabs.com/blog/relicensing-puppet-to-apache-2-0/">http://www.puppetlabs.com/blog/relicensing-puppet-to-apache-2-0/</a></p>
+<p><span class="caps">PHP</span> and <span class="caps">PHP</span> programmers often get quite a big of stick but it&#8217;s still a language which sees lots of use, so it&#8217;s good to see comprehensive articles aimed at getting <span class="caps">PHP</span> folk up and running with continuous integration. Some pretty nice tools used here for static analysis to code smells.</p>
+<p><a href="http://erichogue.ca/2011/05/03/continuous-integration-in-php/">http://erichogue.ca/2011/05/03/continuous-integration-in-php/</a></p>
+<p>I&#8217;ve just found this article, from Mark Mayo and written in 2008, about the impending change in both the hosting environment and the role of the sysadmin. Describing the need for sysadmins to move more towards development, virtualisation and web native protocols. All still very relevant today.</p>
+<p><a href="http://www.vmunix.com/mark/blog/archives/2008/10/17/cloud-computing-is-a-sea-change-how-sysadmins-can-prepare/">http://www.vmunix.com/mark/blog/archives/2008/10/17/cloud-computing-is-a-sea-change-how-sysadmins-can-prepare/</a></p>
+<p>Post from Damon Edwards about the risk of seeing devops as winning the fight for adoption. Depending on who you talk to either everyone is already doing all these things we&#8217;re talking about or no-one has even heard of any of them. Timely reminder that evangelism is still needed.</p>
+<p><a href="http://www.agileweboperations.com/2011_escaping_devops_echo_chamber">http://www.agileweboperations.com/2011_escaping_devops_echo_chamber</a></p>
+<p>Amazon have written a pretty comprehensive outline of what went wrong, what they are doing to make it less likely in the future and offering affected customers some free service. They acknowledged communications issues during the outage and talk about how they&#8217;ll improve that in the future.</p>
+<p><a href="http://aws.amazon.com/message/65648/">http://aws.amazon.com/message/65648/</a></p>
+<p>Quick roundup of popular of unix based orchestration tools. Anyone automating a few boxes would probably benefit from having one of these in their toolkit.</p>
+<p><a href="http://www.infoq.com/news/2011/05/unix-orchestration">http://www.infoq.com/news/2011/05/unix-orchestration</a></p>
+<h2>Tools</h2>
+<p>Rump looks an interesting addition for anyone using puppet. It brings with it a git based workflow and command line tool for easily running the client and pushing out changes to remote clients. Presentation from the recent puppetcamp and code available.</p>
+<p><a href="http://www.slideshare.net/auxesis/rump-making-puppetmasterless-puppet-meaty">http://www.slideshare.net/auxesis/rump-making-puppetmasterless-puppet-meaty</a><br />
+<a href="https://github.com/railsmachine/rump">https://github.com/railsmachine/rump</a></p>
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

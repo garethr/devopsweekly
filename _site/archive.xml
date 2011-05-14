@@ -3,7 +3,7 @@
   <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2011-05-05T21:53:23+01:00</updated>
+  <updated>2011-05-14T17:25:34+01:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
@@ -12,10 +12,45 @@
   
   <entry>
     <title>Issue 19 - 27th April 2011</title>
+    <link href="http://devopsweekly.com/2011/05/05/issue-20/"/>
+    <updated>2011-05-05T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/05/05/issue-20</id>
+    <content type="html">&lt;h2&gt;Issue 20 &amp;#8211; 5th May 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Back to a more health mix of releases, interesting articles, tutorials and tools this week after the deluge of &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; and cloud related experience reports last time. Anyone writing any interesting tools do let me know. If only I had time to try everything out personally.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;The videos from the previous London Devops event are now available. Big thanks to Adam, Ryan and Squirrel at YouDevise for letting us use their offices and for producing the videos. And thanks to Spike Morelli and James Hogarth for the two talks on Monitoring aided development and on Spacewalk.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://vimeo.com/22652468&quot;&gt;http://vimeo.com/22652468&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;ttp://vimeo.com/22653015&quot;&gt;http://vimeo.com/22653015&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Really excellent article from Adam Wiggins of Heroku about growing development teams. It&amp;#8217;s often missed amongst all the technology that scaling is also about scaling people, most organisations as requests, code bases and servers grow so does the team of people responsible for them.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://adam.heroku.com/past/2011/4/28/scaling_a_development_team/&quot;&gt;http://adam.heroku.com/past/2011/4/28/scaling_a_development_team/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A big Chef release landing this week. With 0.10.0 you get much better console behaviour, the new environments concept, easier ways of ignoring files when distributing them to nodes and encrypted data bags amongst other changes and fixes. If you&amp;#8217;re running your own Chef server you&amp;#8217;ll need to rebuild your search index though.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.opscode.com/blog/2011/05/02/chef-0-10-0-released/&quot;&gt;http://www.opscode.com/blog/2011/05/02/chef-0-10-0-released/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The folks at Puppet Labs are conducting a survey around devops practices. If you have a few minutes to answer a few questions I&amp;#8217;m sure the results will be interesting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://svy.mk/jNImMz&quot;&gt;http://svy.mk/jNImMz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The long discussed Puppet move to use the Apache 2.0 licence instead of the &lt;span class=&quot;caps&quot;&gt;GPL&lt;/span&gt; has now happened. For most this probably makes no difference at all, although we might be some more interesting products integrated with puppet in the future because of the change.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.puppetlabs.com/blog/relicensing-puppet-to-apache-2-0/&quot;&gt;http://www.puppetlabs.com/blog/relicensing-puppet-to-apache-2-0/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; programmers often get quite a big of stick but it&amp;#8217;s still a language which sees lots of use, so it&amp;#8217;s good to see comprehensive articles aimed at getting &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; folk up and running with continuous integration. Some pretty nice tools used here for static analysis to code smells.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://erichogue.ca/2011/05/03/continuous-integration-in-php/&quot;&gt;http://erichogue.ca/2011/05/03/continuous-integration-in-php/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve just found this article, from Mark Mayo and written in 2008, about the impending change in both the hosting environment and the role of the sysadmin. Describing the need for sysadmins to move more towards development, virtualisation and web native protocols. All still very relevant today.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.vmunix.com/mark/blog/archives/2008/10/17/cloud-computing-is-a-sea-change-how-sysadmins-can-prepare/&quot;&gt;http://www.vmunix.com/mark/blog/archives/2008/10/17/cloud-computing-is-a-sea-change-how-sysadmins-can-prepare/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Post from Damon Edwards about the risk of seeing devops as winning the fight for adoption. Depending on who you talk to either everyone is already doing all these things we&amp;#8217;re talking about or no-one has even heard of any of them. Timely reminder that evangelism is still needed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.agileweboperations.com/2011_escaping_devops_echo_chamber&quot;&gt;http://www.agileweboperations.com/2011_escaping_devops_echo_chamber&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Amazon have written a pretty comprehensive outline of what went wrong, what they are doing to make it less likely in the future and offering affected customers some free service. They acknowledged communications issues during the outage and talk about how they&amp;#8217;ll improve that in the future.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://aws.amazon.com/message/65648/&quot;&gt;http://aws.amazon.com/message/65648/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Quick roundup of popular of unix based orchestration tools. Anyone automating a few boxes would probably benefit from having one of these in their toolkit.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/news/2011/05/unix-orchestration&quot;&gt;http://www.infoq.com/news/2011/05/unix-orchestration&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Rump looks an interesting addition for anyone using puppet. It brings with it a git based workflow and command line tool for easily running the client and pushing out changes to remote clients. Presentation from the recent puppetcamp and code available.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/auxesis/rump-making-puppetmasterless-puppet-meaty&quot;&gt;http://www.slideshare.net/auxesis/rump-making-puppetmasterless-puppet-meaty&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/railsmachine/rump&quot;&gt;https://github.com/railsmachine/rump&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 19 - 27th April 2011</title>
     <link href="http://devopsweekly.com/2011/04/27/issue-19/"/>
     <updated>2011-04-27T00:00:00+01:00</updated>
     <id>http://devopsweekly.com/2011/04/27/issue-19</id>
-    <content type="html">&lt;h2&gt;Isse 19 &amp;#8211; 27th April 2011&lt;/h2&gt;
+    <content type="html">&lt;h2&gt;Issue 19 &amp;#8211; 27th April 2011&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;I&amp;#8217;m not sure whether it&amp;#8217;s just because I&amp;#8217;m on holiday and have more time on my hands or whether it&amp;#8217;s just been a busy week but lots of news and interesting tool releases this last week.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;News&lt;/h2&gt;
 &lt;p&gt;As I was busy sending the last issue Amazon &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; was having some rather epic issues. While everyones boxes where inaccessible people used the time to write blog posts about the downtime. The High Scalability blog has about 50 articles.&lt;/p&gt;
