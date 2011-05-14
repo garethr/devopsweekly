@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Issue 19 - 27th April 2011
+title: Issue 20 - 5th May 2011
 ---
 
 h2. Issue 20 - 5th May 2011
