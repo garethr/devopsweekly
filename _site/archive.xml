@@ -3,7 +3,7 @@
   <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2011-05-14T17:25:34+01:00</updated>
+  <updated>2011-05-28T13:12:22+01:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
@@ -11,7 +11,81 @@
   </author>
   
   <entry>
-    <title>Issue 19 - 27th April 2011</title>
+    <title>Issue 22 - 20th May 2011</title>
+    <link href="http://devopsweekly.com/2011/05/20/issue-22/"/>
+    <updated>2011-05-20T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/05/20/issue-22</id>
+    <content type="html">&lt;h2&gt;Issue 22 &amp;#8211; 20th May 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;More articles worth reading, events worth attending and tools worth investigating. If only I had time to try out all of the things everyone is publishing or discussing.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;The next Devopsdays Europe has a date, Friday 14th and Saturday 15th of October 2011, to go along with the location of Goteborg in Sweden. They are still looking for sponsors so if that&amp;#8217;s you be sure to get in touch with the organisers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.devopsdays.org/events/2011-goteborg/&quot;&gt;http://www.devopsdays.org/events/2011-goteborg/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pro Puppet is out. James Turnbull has written a follow up to the first Puppet book, this time with much more content and with an index (sorry James). It covers getting started all the way through to using MCollective. Apologies for the affiliate link, it helps pay the bills.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.uk/dp/1430230576/tag=devobook-21&quot;&gt;https://www.amazon.co.uk/dp/1430230576/tag=devobook-21&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is the first &lt;span class=&quot;caps&quot;&gt;PDF&lt;/span&gt; link I&amp;#8217;ve included I think, but it&amp;#8217;s worth it. The Operating Systems Division of The National Security Agency has published a whopping 200 page guide to the Secure Configuration of Red Hat Enterprise Linux 5. If this is a topic you need to know about this looks perfect.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.nsa.gov/ia/_files/os/redhat/rhel5-guide-i731.pdf&quot;&gt;http://www.nsa.gov/ia/_files/os/redhat/rhel5-guide-i731.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m going to wager lots of readers spend a great deal of time in the console, and why not when so many powerful tools exist all just a keystroke away? This post is collecting useful command line tools, a few of which I&amp;#8217;d not come across before. Particularly good starting point if you&amp;#8217;re new to the command line.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://kkovacs.eu/cool-but-obscure-unix-tools&quot;&gt;http://kkovacs.eu/cool-but-obscure-unix-tools&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Everyone is probably vaguely (or intimately) familiar with the Unix Process model. Adam Wiggins of Heroku has been writing about applying this approach to web applications, in particular as an approach to scaling up a system. The tool mentioned called Foreman looks pretty interesting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://adam.heroku.com/past/2011/5/9/applying_the_unix_process_model_to_web_apps/&quot;&gt;http://adam.heroku.com/past/2011/5/9/applying_the_unix_process_model_to_web_apps/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A nice long form article by Jez Humble aimed at CIOs and technical managers. Introducing the ideas behind continuous delivery and other devops tenets, and focusing on the business rationale to make changes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cioupdate.com/trends/article.php/3933106/Tired-of-Playing-Ping-Pong-with-Dev-QA-and-Ops.htm&quot;&gt;http://www.cioupdate.com/trends/article.php/3933106/Tired-of-Playing-Ping-Pong-with-Dev-QA-and-Ops.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A nice article arguing that, yes, adopting devops practices will probably lead to more work due to unfulfilled demand, but that this is a good thing. And with the right tools, people and processes in place should both drive down costs and drive up profits. Good examples to backup the theme too.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.agileweboperations.com/devops-driven-demand&quot;&gt;http://www.agileweboperations.com/devops-driven-demand&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s easier to build apps upon apps with advances in APIs and simpler to fire up new servers in cloud environments either inside or outside your company. This proliferation and speed makes traditional business continuity planning harder argues this article. Getting ahead of this potential problem is something worth thinking about for any growing organisation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.jpmorgenthal.com/morgenthal/?p=256&quot;&gt;http://www.jpmorgenthal.com/morgenthal/?p=256&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Having system metrics is important, but without application level monitoring your users can have problems even while you think your servers are fine. This article walks through a great example with graphs and diagrams showing exactly how this comes about.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://highscalability.com/blog/2011/5/11/troubleshooting-response-time-problems-why-you-cannot-trust.html&quot;&gt;http://highscalability.com/blog/2011/5/11/troubleshooting-response-time-problems-why-you-cannot-trust.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;FPM&lt;/span&gt; saw a few more releases this last week, amongst other things adding the ability to very easily convert Python packages from PyPi or local directories to DEBs or RPMs.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jordansissel/fpm/wiki/ConvertingPython&quot;&gt;https://github.com/jordansissel/fpm/wiki/ConvertingPython&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Splinter looks a interesting Python based web functional testing tool. It looks a little like Capybara in Ruby, and provides three drivers for chrome, firefox and the python zopetestbrowser. The blog post demonstrates using it with Lettuce which is a Python &lt;span class=&quot;caps&quot;&gt;BDD&lt;/span&gt; framework similar to Cucumber.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://splinter.cobrateam.info/&quot;&gt;http://splinter.cobrateam.info/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://cilliano.com/blog/2011/02/07/django-bdd-with-lettuce-and-splinter/&quot;&gt;http://cilliano.com/blog/2011/02/07/django-bdd-with-lettuce-and-splinter/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 21 - 14th May 2011</title>
+    <link href="http://devopsweekly.com/2011/05/14/issue-21/"/>
+    <updated>2011-05-14T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/05/14/issue-21</id>
+    <content type="html">&lt;h2&gt;Issue 21 &amp;#8211; 14th May 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;A few days late but a bit of a bumper issue. We&amp;#8217;ve also passed the 1000th subscriber so welcome to everyone who has joined recently.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Devopsdays Boston have released all the videos from the talks given so if you could&amp;#8217;nt make it along you can catch up on topics ranging from culture to devops in government and much talk of deployment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.devopsdays.org/events/2011-boston/program/&quot;&gt;http://www.devopsdays.org/events/2011-boston/program/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A few people have started producing Chef recipes and Puppet manifests for installing the full Cloudfoundry vcap stack. I&amp;#8217;m much more interested in Vcap that I am another hosted platform and the easier it is to get up and running the better.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/auser/cloudfoundry-quickstart&quot;&gt;https://github.com/auser/cloudfoundry-quickstart&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.kartar.net/2011/05/install-cloud-foundry-vcap-via-puppet/&quot;&gt;http://www.kartar.net/2011/05/install-cloud-foundry-vcap-via-puppet/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In any distributed system you need a mechanism for the various components to transfer and exchange date efficiently. Both Protocol Buffers (from Google) and Thrift (originally developed at Facebook and now under the Apache banner) are solutions to this problem worth knowing about, and this article does a good job of comparing the technical details of the two.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://floatingsun.net/articles/thrift-vs-protocol-buffers/&quot;&gt;http://floatingsun.net/articles/thrift-vs-protocol-buffers/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Testing Javascript automatically has often been problematic. The folk at Zendesk have written up how they approach the problem using Jenkins, Jasmine, PhantomJS and JSHint. The post includes some useful rake tasks that you can use to do the same.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.zendesk.com/blog/javascript-loves-ci&quot;&gt;http://www.zendesk.com/blog/javascript-loves-ci&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Patrick Debois unfortunately missed giving his presentation at goto this last week, but has kindly made the slides available anyway. Damn Abstraction : Development vs Operational Efficiency goes over the the many abstractions we introduce to software projects and management.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/jedi4ever/damn-abstraction-development-vs-operational-efficiency&quot;&gt;http://www.slideshare.net/jedi4ever/damn-abstraction-development-vs-operational-efficiency&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Continuous deployment doesn&amp;#8217;t have to be hard argues John Wedgwood, with a good post about getting started with a minimum amount of fuss and configuration.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.johnwedgwood.com/continuous-deployment&quot;&gt;http://www.johnwedgwood.com/continuous-deployment&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As a counter point to the above article Jim Bird argues that not only is continuous deployment hard in many environments, it&amp;#8217;s also not always a good idea. I liked this in particular because it doesn&amp;#8217;t focus on the technical problems as much as the process, security and external relations side of deployments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://swreflections.blogspot.com/2011/05/continuous-deployment-is-no-holy-grail.html&quot;&gt;http://swreflections.blogspot.com/2011/05/continuous-deployment-is-no-holy-grail.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Richard Crowley wrote a great article I missed at the start of the year. Arguing good packaging is a thing of beauty and releasing a nifty tool (Debra) which looks a very simple way of approaching the Debian packaging problem.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://rcrowley.org/articles/packaging.html&quot;&gt;http://rcrowley.org/articles/packaging.html&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://rcrowley.org/articles/debra.html&quot;&gt;http://rcrowley.org/articles/debra.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Puppet has been around for a good while now and it&amp;#8217;s nice to see more and more people writing up good advice. The main thing I took away from this particular article was that learning the whole puppet language, and how to extend it, is a good way of really getting the most out of the tool.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://nuknad.com/2011/05/10/puppet-lessons-learned/&quot;&gt;http://nuknad.com/2011/05/10/puppet-lessons-learned/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Test::Right is described as an opinionated Selenium testing framework. It&amp;#8217;s from the folks at Sauce Labs who know a few things about functional testing and aims to lay lots of useful groundwork for writing this sort of test, avoiding many of the common maintenance and tight coupling pitfalls.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/saucelabs/test_right&quot;&gt;https://github.com/saucelabs/test_right&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;People occasionally comment on the large dependency chain that the Chef server has, and Fatty, from the the Opscode folk, looks to be their answer to this. It appears to be a generic tool that allows for creating a single installable&lt;br /&gt;
+shell-script that can be executed on the client side. Interesting for some usecases.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/adamhjk/fatty&quot;&gt;https://github.com/adamhjk/fatty&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Migrating large databases is hard work, but the folks at Sound Cloud have started releasing some of the tools they&amp;#8217;ve been having success with, entertainingly nicknamed the Large Hadron Migrator.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backstage.soundcloud.com/2011/05/introducing-the-large-hadron-migrator-3/&quot;&gt;http://backstage.soundcloud.com/2011/05/introducing-the-large-hadron-migrator-3/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ever wondering what in the network stack is taking up the time for a given &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; request? Ruok looks a pretty handy little tool for making multiple requests and displaying the time taken for things like &lt;span class=&quot;caps&quot;&gt;DNS&lt;/span&gt; lookup, waiting for a connection or &lt;span class=&quot;caps&quot;&gt;SSL&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/fr0stbyte/ruok&quot;&gt;https://github.com/fr0stbyte/ruok&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 20 - 5th May 2011</title>
     <link href="http://devopsweekly.com/2011/05/05/issue-20/"/>
     <updated>2011-05-05T00:00:00+01:00</updated>
     <id>http://devopsweekly.com/2011/05/05/issue-20</id>
