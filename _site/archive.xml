@@ -3,12 +3,46 @@
   <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2011-05-28T13:12:22+01:00</updated>
+  <updated>2011-06-04T20:25:06+01:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
     <email>gareth@morethanseven.ner</email>
   </author>
+  
+  <entry>
+    <title>Issue 23 - 28th May 2011</title>
+    <link href="http://devopsweekly.com/2011/05/28/issue-23/"/>
+    <updated>2011-05-28T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/05/28/issue-23</id>
+    <content type="html">&lt;h2&gt;Issue 23 &amp;#8211; 28th May 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Another busy week on the internet, including a very interesting discussion about the state of monitoring on &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; and twitter using the tag #monitoringsucks. For those who missed it (or like me where asleep because it was the middle of the night) the &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; logs are available at https://github.com/monitoringsucks/irc-logs.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;A good story based article from an experienced agile consultant about the often fraught relationship between development and operations groups. Has some interesting things she has tried to encourage better understanding and communication.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.estherderby.com/2011/03/bridging-structural-conflict-same-and-different.html&quot;&gt;http://www.estherderby.com/2011/03/bridging-structural-conflict-same-and-different.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Surge conference on scalability and performance is on again in September, and to show folks what it&amp;#8217;s all about they have kindly released last years speakers videos.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://omniti.com/surge/2010/speakers&quot;&gt;http://omniti.com/surge/2010/speakers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Heroku suffered a &lt;span class=&quot;caps&quot;&gt;DDOS&lt;/span&gt; attack last week and, after dealing with it, posted some interesting findings and recommendations. In particular they recommend against using bare domain names, instead always using subdomains that can be &lt;span class=&quot;caps&quot;&gt;CNAME&lt;/span&gt; aliased to their proxy.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://status.heroku.com/incident/156&quot;&gt;http://status.heroku.com/incident/156&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Agile Cambridge conference has a call for speakers out until the June 17th, and are specifically looking for Devops flavoured talks. Promoting this is only slightly self-centred, I live in Cambridge and like the idea of interesting folk coming to visit.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.agilecambridge.net/ac2011/speak.php&quot;&gt;http://www.agilecambridge.net/ac2011/speak.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Having something to aim for when you&amp;#8217;re building anything is useful, and this sort list outlines 7 levels of continuous integration. Worthwhile thinking about where you sit and how to reach the next tier.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://agile.dzone.com/news/7-levels-continuous&quot;&gt;http://agile.dzone.com/news/7-levels-continuous&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A well written article on common pitfalls when running &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; load tests, done as a set of 10 things you should think about and ideally be doing. Especially useful if you&amp;#8217;re just starting to look at load testing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.mnot.net/blog/2011/05/18/http_benchmark_rules&quot;&gt;http://www.mnot.net/blog/2011/05/18/http_benchmark_rules&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A good walk-though with code examples for managing a puppet workflow with Capistrano. Featuring the ability to deploy and easily rollback changes to different environments and making use of mcollective to trigger puppet runs across all your machines.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.threedrunkensysadsonthe.net/2011/05/deploy-and-roll-back-system-configs-with-capistrano-mcollective-and-puppet/&quot;&gt;http://www.threedrunkensysadsonthe.net/2011/05/deploy-and-roll-back-system-configs-with-capistrano-mcollective-and-puppet/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More and more people seem to be intrigued with the possibilities of Noah, but most of the examples I&amp;#8217;ve seen have been using Chef. James Turnbull has been putting together some Puppet based examples, including one that queries a Noah server for a host and uses the list of its services to specify which Puppet classes to use.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.kartar.net/2011/05/puppet-noah/&quot;&gt;http://www.kartar.net/2011/05/puppet-noah/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;The OpenStack folks have been building their own message queuing system called Burrow aimed at being used in a multi-tenant system. They do a pretty good job of outlining why they went down this route rather than using an existing product.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://burrow.openstack.org/overview.html&quot;&gt;http://burrow.openstack.org/overview.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hotspots is a very nice looking Rails profiling tool. Add some middleware to collect the data and then run the included command line tool to produce a very comprehensive report. I&amp;#8217;ve been using request_log_analyzer recently too, and I&amp;#8217;d love to see similar tools for other frameworks.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/tmm1/hotspots&quot;&gt;https://github.com/tmm1/hotspots&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A nice blog post by a member of the Economist development team on how they are using Selenium to test code on every commit. In particular they have written a simple &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; application to help with creating a X virtual frame buffer and then using ffmpeg to capture a video of all the tests run.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://codebaboon.com/economist-testing-drupal-using-selenium&quot;&gt;http://codebaboon.com/economist-testing-drupal-using-selenium&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://launchpad.net/selenium-zoetrope&quot;&gt;https://launchpad.net/selenium-zoetrope&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   
   <entry>
     <title>Issue 22 - 20th May 2011</title>
