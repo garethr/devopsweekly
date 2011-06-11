@@ -3,12 +3,41 @@
   <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2011-06-04T20:25:06+01:00</updated>
+  <updated>2011-06-11T21:43:23+01:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
     <email>gareth@morethanseven.ner</email>
   </author>
+  
+  <entry>
+    <title>Issue 24 - 4th June 2011</title>
+    <link href="http://devopsweekly.com/2011/06/04/issue-24/"/>
+    <updated>2011-06-04T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/06/04/issue-24</id>
+    <content type="html">&lt;h2&gt;Issue 24 &amp;#8211; 4th June 2011&lt;/h2&gt;
+&lt;p&gt;You can tell it&amp;#8217;s the summer because of all the conferences it seems. Lots of events are happening around Velocity this year, as well as Devops Down Under in Australia next month. Hopefully that means lots of videos and content for the weeks following those events.&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;The next Devops Down Under event is now open for registration. It&amp;#8217;s a two day event with scheduled talks and open spaces and is talking place on July 22nd and 23rd in Melbourne.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://devopsdownunder.org/&quot;&gt;http://devopsdownunder.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Devops Cafe podcast made a comeback last week and it sounds like it&amp;#8217;s going to be back to being a regular show. This episode features a good discussion with John Vincent about devops in general and noah in particular.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://devopscafe.org/show/2011/6/2/episode-18.html&quot;&gt;http://devopscafe.org/show/2011/6/2/episode-18.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Facebook have released a video talking about how the Release Engineering team push out changes to Facebook. Lots of interesting details.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.facebook.com/video/video.php?v=10100259101684977&amp;amp;oid=9445547199&quot;&gt;http://www.facebook.com/video/video.php?v=10100259101684977&amp;amp;oid=9445547199&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Not everyone enjoys managing a Ruby stack, and the recent changes in Rubygems 1.8 have caused people using operating system packaged versions of Ruby some problems. Slimgems is a new project which aims to maintain the old &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; at the same time as providing features and performance improvements.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://gnuu.org/2011/06/01/slimgems-a-drop-in-replacement-for-rubygems/&quot;&gt;http://gnuu.org/2011/06/01/slimgems-a-drop-in-replacement-for-rubygems/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The nice folks at Devstructure have released Blueprint I/O, a server that allows you to store blueprints in S3 and easily move them around between different servers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.devstructure.com/blueprint-io&quot;&gt;http://blog.devstructure.com/blueprint-io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another event, this time in Sunnyvale on June 16th (just after velocity finishes). Following on from a previous night of talking monitoring, this time the same topic but with a ban on talking about Nagios. Sounds fun.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/events/15481164/&quot;&gt;http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/events/15481164/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kohsuke Kawaguchi, the creator of Jenkins, was in London last week to do a talk and Maciej Matyjas wrote up a few notes. My favourite quote has to be &amp;#8220;Treat servers like livestock rather than pets&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://matyjas.posterous.com/distributed-builds-with-jenkins-jenkinsci&quot;&gt;http://matyjas.posterous.com/distributed-builds-with-jenkins-jenkinsci&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A nice comprehensive writeup from the team at Outbrain about monitoring. Contains lots of screen shots from their setup and links to the various tools they are using.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://techblog.outbrain.com/2011/05/monitoring-a-wild-beast/&quot;&gt;http://techblog.outbrain.com/2011/05/monitoring-a-wild-beast/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;The #monitoringsucks discussion has spawned a useful looking GitHub repo containing links to a large number of existing monitoring tools. Useful if you&amp;#8217;re looking for something specific or seeking inspiration for a new tool.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/monitoringsucks/tool-repos&quot;&gt;https://github.com/monitoringsucks/tool-repos&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   
   <entry>
     <title>Issue 23 - 28th May 2011</title>
