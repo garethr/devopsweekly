@@ -1,0 +1,66 @@
+--- 
+layout: post
+title: Issue 27 - 26th June 2011
+---
+
+h2. Issue 27 - 26th June 2011
+
+_I'm sure more people are writing more about devops and related topics each week. Either that or I'm finding more articles each week. Either way here's a whole bunch of videos, articles, slide-desks and tools from the last week._
+
+h2. News
+
+Hot on the heels of devopsdays in the US, the call for papers has gone out for the upcoming European event in Gothenburg. The theme this year is all about 'inclusive', so hopefully lots more talk about the people side of devops.
+
+"http://devopsdays.org/events/2011-goteborg/proposals/":http://devopsdays.org/events/2011-goteborg/proposals/
+
+A whopping 247 slide desk from John Allspaw presented at Velocity a few weeks ago titled Advanced PostMortem Fu and Human Error 101. Well worth a look, I'm just hoping the video of this talk makes it online.
+
+"http://www.slideshare.net/jallspaw/advanced-postmortem-fu-and-human-error-101-velocity-2011":http://www.slideshare.net/jallspaw/advanced-postmortem-fu-and-human-error-101-velocity-2011
+
+Patrick gave what looks to have been an excellent talk at devopsdats about where Vagrant fits into a typical development workflow. Well worth a skim through if you're not sure yet how local virtualisation tools actually help.
+
+"http://www.slideshare.net/jedi4ever/vagrant-devopsdays-mountain-view-2011":http://www.slideshare.net/jedi4ever/vagrant-devopsdays-mountain-view-2011
+
+As well as slides many of the keynote talks from Velocity are already up for viewing. That's a whole 6 hours of video that should keep anyone busy who couldn't make it along.
+
+"http://www.youtube.com/view_play_list?p=C394849408B5F203":http://www.youtube.com/view_play_list?p=C394849408B5F203
+
+A nice PDF to download and print from Paul Duvall and DZone focusing on Continuous Delivery. It pulls out lots of the component parts and outlines patterns and anti-patterns that you can strive for or look to eliminate.
+
+"http://refcardz.dzone.com/refcardz/continuous-delivery-patterns":http://refcardz.dzone.com/refcardz/continuous-delivery-patterns
+
+A very thorough writeup of an operational problem, from detection through diagnosis and onwards to resolution and root cause analysis. It's always illuminating when people go into the details behind even small problems like this.
+
+"http://omniti.com/seeds/when-things-go-wrong-a-case-study":http://omniti.com/seeds/when-things-go-wrong-a-case-study
+
+Hot on the heals of last weeks big Ganglia UI release, Vladimir Vuksan has pushed another super useful feature called Overlay Events. Simply put you can mark events (like deploys or backups) on your graphs when they happen using a simple http based API. Very useful for diagnosing why a metric has just gone haywire.
+
+"http://ganglia.info/?p=382":http://ganglia.info/?p=382
+
+Sam Newman from Thoughtworks gave a talk at a recent quarterly briefing about DevOps and Continuous Delivery (hit the watch the full briefing button near the top right for the full video).
+
+"http://www.thoughtworks.com/events/push-the-button":http://www.thoughtworks.com/events/push-the-button
+
+A full day free event on OpenStack is happening in London on Jul 13th. Introductory talks, panels and some technical sessions in the afternoon. Looks like it might be worth heading along if you're in the area.
+
+"http://emeaopenstackday.eventbrite.com/":http://emeaopenstackday.eventbrite.com/
+
+Nice writeup from velocity and in particular devopsdays US. Several interesting discussions keep being mentioned by folks who went along, hopefully I'll find some more write-ups.
+
+"http://www.appdynamics.com/blog/2011/06/22/web-ops-to-dev-ops-in-mountain-view/":http://www.appdynamics.com/blog/2011/06/22/web-ops-to-dev-ops-in-mountain-view/
+
+The London CI meetup has been excellent when I've managed to get along, and it's always nice when people write up the events afterwards. The last event had Gus Power talking about Continuous Integration, in particular focusing on measuring system acceptance criteria which are often missed.
+
+"http://jamesbetteley.wordpress.com/2011/06/18/continuous-integration-the-last-mile/":http://jamesbetteley.wordpress.com/2011/06/18/continuous-integration-the-last-mile/
+
+
+h2. Tools
+
+Puppet 2.7.0 has been released, including deterministic catalog application, a newly apache licenced codebase, support for Ruby 1.9.2 and the new Puppet Faces API. Well worth upgrading if you can.
+
+"http://groups.google.com/group/puppet-users/browse_thread/thread/ffe1345c165bf293?pli=1":http://groups.google.com/group/puppet-users/browse_thread/thread/ffe1345c165bf293?pli=1
+
+Testing configuration management code is often discussed but I think it's fair to say no one approach or tool has yet won widespread adoption. Chefci looks interesting however, more as one potential approach at this stage. It focuses on solving a specific problem of a development based OS X workstation.
+
+"https://github.com/mkocher/chefci":https://github.com/mkocher/chefci
+

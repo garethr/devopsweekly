@@ -1,0 +1,71 @@
+--- 
+layout: post
+title: Issue 25 - 19th June 2011
+---
+
+h2. Issue 25 - 19th June 2011
+
+_Sorry for the slight delay this week, I'm just moving into a rather nice new house and hence rather busy. To make up for that this weeks issue is rather jam-packed with interesting content. And I haven't even caught up with anything that's come out of velocity or devopsdays yet._
+
+
+h2. News
+
+Puppet have announced PuppetConf, a pretty amazing looking multi-track operations conference in Portland from September 19th-23rd. I'm hugely excited to have been asked to be Master Of Ceremonies for the Devops track, so hopefully I'll see a few of you there.
+
+"http://puppetconf.com/":http://puppetconf.com/
+
+The new book by Noah Campbell looks interesting, aiming to cover everything about Yum and RPM from a clear introduction to using it for application deployment. Three chapters are available to read online so far in draft format.
+
+"http://webscalebook.com/":http://webscalebook.com/
+
+A good overview of how one organisation is currently deploying software. I'm a big fan of information like this being shared, it gives people lots more chances to learn and to critique others approaches.
+
+"http://www.agileweboperatiOns.com/state-of-development-annual-address-on-how-we-ship-software":http://www.agileweboperatiOns.com/state-of-development-annual-address-on-how-we-ship-software
+
+Maven might not be everyones favourite tool but it's pretty powerful. With that comes complexity, and this book, published on GitHub, looks a nice way of learning the ins and outs.
+
+"https://github.com/buildndeploy/maven-book":https://github.com/buildndeploy/maven-book
+
+I'd missed the new relationship syntax in Puppet, but this article shows why it's super useful with the example of wanting to run an apt-get update before installing a package. Quick talk of other approaches and then code showing how the relationship approach solves the problem.
+
+"http://johnleach.co.uk/words/771/puppet-dependencies-and-run-stages":http://johnleach.co.uk/words/771/puppet-dependencies-and-run-stages
+
+Those nice folk at Devstructure would like to show more people how powerful their blueprint tool is. So they are offering to build blueprints for people that contact them with specific architecture problems. I'd love to see some of the resulting blueprints open sourced so we can all learn from them.
+
+"http://blog.devstructure.com/two-men-and-a-server":http://blog.devstructure.com/two-men-and-a-server
+
+Chef isn't just for managing lots of servers, and Joshua's latest post shows how he's using it to manage his OS X home machines. Some interesting generic recipes referenced that will be useful the next time I manage to get myself a new machine.
+
+"http://jtimberman.posterous.com/managing-my-workstations-with-chef":http://jtimberman.posterous.com/managing-my-workstations-with-chef
+
+Avoid using the term "Cloud Computing" except when being ironic says this post, or rather it points out that for technical discussions we should be more specific about what we mean.
+
+"http://everythingsysadmin.com/2011/06/avoid-using-the-term-cloud-com.html":http://everythingsysadmin.com/2011/06/avoid-using-the-term-cloud-com.html
+
+Ever wondered how Google go about continuous integration? This post has lots of interesting details about the approach they take to deal with a large volatile codebase. The short version is that they use a dependency graph to only run the tests relevant to the change at hand.
+
+"http://google-engtools.blogspot.com/2011/06/testing-at-speed-and-scale-of-google.html":http://google-engtools.blogspot.com/2011/06/testing-at-speed-and-scale-of-google.html
+
+Puppet will happily watch the status of running services, but under the hood it turns out that it often just does that by looking at the low level process. Dean Wilson points out how to have it use the operating system process management tool, as well as how to write custom checks for even better monitoring.
+
+"http://www.unixdaemon.net/tools/puppet/smarter-service-status-in-puppet.html":http://www.unixdaemon.net/tools/puppet/smarter-service-status-in-puppet.html
+
+Analysing log files is fun. But the bigger the log files get the harder the problem becomes, unless you're already using something like Hadoop. This article from Troy Davis of PaperTrail shows you how to use Amazon's hosted Hadoop and Hive system to analyse logs from S3.
+
+"http://help.papertrailapp.com/kb/analytics/log-analytics-with-hadoop-and-hive":http://help.papertrailapp.com/kb/analytics/log-analytics-with-hadoop-and-hive
+
+
+h2. Tools
+
+Ganglia Web 2.0 has been released, including the much more functional web front end. You can also now define graphs in JSON as well as PHP, send data easily to Graphite, dynamically build aggregate graphs and access metric data as JSON or CSV and much more.
+
+"http://ganglia.info/?p=393":http://ganglia.info/?p=393
+
+Another release from an establish project, the Go release management tool from Thoughtworks Studios has released version 2.2. This release introduces better tools for managing and comparing release pipelines as well as versioning all configuration.
+
+"http://community.thoughtworks.com/posts/7dcda4ede1":http://community.thoughtworks.com/posts/7dcda4ede1
+
+Misty is a DSL for Amazon's Cloud Formation tool from the developers at Forward. It allows you to describe an architecture of EC2 instances and have them come up when commanded. No documentation yet but the example Mistfile from the tests looks interesting.
+
+"https://github.com/forward/misty":https://github.com/forward/misty
+

@@ -3,12 +3,117 @@
   <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2011-06-11T21:43:23+01:00</updated>
+  <updated>2011-06-27T09:25:46+01:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
     <email>gareth@morethanseven.ner</email>
   </author>
+  
+  <entry>
+    <title>Issue 27 - 26th June 2011</title>
+    <link href="http://devopsweekly.com/2011/06/26/issue-27/"/>
+    <updated>2011-06-26T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/06/26/issue-27</id>
+    <content type="html">&lt;h2&gt;Issue 27 &amp;#8211; 26th June 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;I&amp;#8217;m sure more people are writing more about devops and related topics each week. Either that or I&amp;#8217;m finding more articles each week. Either way here&amp;#8217;s a whole bunch of videos, articles, slide-desks and tools from the last week.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Hot on the heels of devopsdays in the US, the call for papers has gone out for the upcoming European event in Gothenburg. The theme this year is all about &amp;#8216;inclusive&amp;#8217;, so hopefully lots more talk about the people side of devops.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://devopsdays.org/events/2011-goteborg/proposals/&quot;&gt;http://devopsdays.org/events/2011-goteborg/proposals/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A whopping 247 slide desk from John Allspaw presented at Velocity a few weeks ago titled Advanced PostMortem Fu and Human Error 101. Well worth a look, I&amp;#8217;m just hoping the video of this talk makes it online.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/jallspaw/advanced-postmortem-fu-and-human-error-101-velocity-2011&quot;&gt;http://www.slideshare.net/jallspaw/advanced-postmortem-fu-and-human-error-101-velocity-2011&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Patrick gave what looks to have been an excellent talk at devopsdats about where Vagrant fits into a typical development workflow. Well worth a skim through if you&amp;#8217;re not sure yet how local virtualisation tools actually help.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/jedi4ever/vagrant-devopsdays-mountain-view-2011&quot;&gt;http://www.slideshare.net/jedi4ever/vagrant-devopsdays-mountain-view-2011&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As well as slides many of the keynote talks from Velocity are already up for viewing. That&amp;#8217;s a whole 6 hours of video that should keep anyone busy who couldn&amp;#8217;t make it along.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/view_play_list?p=C394849408B5F203&quot;&gt;http://www.youtube.com/view_play_list?p=C394849408B5F203&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A nice &lt;span class=&quot;caps&quot;&gt;PDF&lt;/span&gt; to download and print from Paul Duvall and DZone focusing on Continuous Delivery. It pulls out lots of the component parts and outlines patterns and anti-patterns that you can strive for or look to eliminate.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://refcardz.dzone.com/refcardz/continuous-delivery-patterns&quot;&gt;http://refcardz.dzone.com/refcardz/continuous-delivery-patterns&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A very thorough writeup of an operational problem, from detection through diagnosis and onwards to resolution and root cause analysis. It&amp;#8217;s always illuminating when people go into the details behind even small problems like this.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://omniti.com/seeds/when-things-go-wrong-a-case-study&quot;&gt;http://omniti.com/seeds/when-things-go-wrong-a-case-study&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hot on the heals of last weeks big Ganglia UI release, Vladimir Vuksan has pushed another super useful feature called Overlay Events. Simply put you can mark events (like deploys or backups) on your graphs when they happen using a simple http based &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;. Very useful for diagnosing why a metric has just gone haywire.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://ganglia.info/?p=382&quot;&gt;http://ganglia.info/?p=382&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sam Newman from Thoughtworks gave a talk at a recent quarterly briefing about DevOps and Continuous Delivery (hit the watch the full briefing button near the top right for the full video).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.thoughtworks.com/events/push-the-button&quot;&gt;http://www.thoughtworks.com/events/push-the-button&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A full day free event on OpenStack is happening in London on Jul 13th. Introductory talks, panels and some technical sessions in the afternoon. Looks like it might be worth heading along if you&amp;#8217;re in the area.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://emeaopenstackday.eventbrite.com/&quot;&gt;http://emeaopenstackday.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nice writeup from velocity and in particular devopsdays US. Several interesting discussions keep being mentioned by folks who went along, hopefully I&amp;#8217;ll find some more write-ups.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.appdynamics.com/blog/2011/06/22/web-ops-to-dev-ops-in-mountain-view/&quot;&gt;http://www.appdynamics.com/blog/2011/06/22/web-ops-to-dev-ops-in-mountain-view/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The London CI meetup has been excellent when I&amp;#8217;ve managed to get along, and it&amp;#8217;s always nice when people write up the events afterwards. The last event had Gus Power talking about Continuous Integration, in particular focusing on measuring system acceptance criteria which are often missed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jamesbetteley.wordpress.com/2011/06/18/continuous-integration-the-last-mile/&quot;&gt;http://jamesbetteley.wordpress.com/2011/06/18/continuous-integration-the-last-mile/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Puppet 2.7.0 has been released, including deterministic catalog application, a newly apache licenced codebase, support for Ruby 1.9.2 and the new Puppet Faces &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;. Well worth upgrading if you can.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://groups.google.com/group/puppet-users/browse_thread/thread/ffe1345c165bf293?pli=1&quot;&gt;http://groups.google.com/group/puppet-users/browse_thread/thread/ffe1345c165bf293?pli=1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Testing configuration management code is often discussed but I think it&amp;#8217;s fair to say no one approach or tool has yet won widespread adoption. Chefci looks interesting however, more as one potential approach at this stage. It focuses on solving a specific problem of a development based OS X workstation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mkocher/chefci&quot;&gt;https://github.com/mkocher/chefci&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 25 - 19th June 2011</title>
+    <link href="http://devopsweekly.com/2011/06/19/issue-26/"/>
+    <updated>2011-06-19T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/06/19/issue-26</id>
+    <content type="html">&lt;h2&gt;Issue 25 &amp;#8211; 19th June 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Sorry for the slight delay this week, I&amp;#8217;m just moving into a rather nice new house and hence rather busy. To make up for that this weeks issue is rather jam-packed with interesting content. And I haven&amp;#8217;t even caught up with anything that&amp;#8217;s come out of velocity or devopsdays yet.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Puppet have announced PuppetConf, a pretty amazing looking multi-track operations conference in Portland from September 19th-23rd. I&amp;#8217;m hugely excited to have been asked to be Master Of Ceremonies for the Devops track, so hopefully I&amp;#8217;ll see a few of you there.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://puppetconf.com/&quot;&gt;http://puppetconf.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The new book by Noah Campbell looks interesting, aiming to cover everything about Yum and &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; from a clear introduction to using it for application deployment. Three chapters are available to read online so far in draft format.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://webscalebook.com/&quot;&gt;http://webscalebook.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A good overview of how one organisation is currently deploying software. I&amp;#8217;m a big fan of information like this being shared, it gives people lots more chances to learn and to critique others approaches.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.agileweboperatiOns.com/state-of-development-annual-address-on-how-we-ship-software&quot;&gt;http://www.agileweboperatiOns.com/state-of-development-annual-address-on-how-we-ship-software&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Maven might not be everyones favourite tool but it&amp;#8217;s pretty powerful. With that comes complexity, and this book, published on GitHub, looks a nice way of learning the ins and outs.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/buildndeploy/maven-book&quot;&gt;https://github.com/buildndeploy/maven-book&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;d missed the new relationship syntax in Puppet, but this article shows why it&amp;#8217;s super useful with the example of wanting to run an apt-get update before installing a package. Quick talk of other approaches and then code showing how the relationship approach solves the problem.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://johnleach.co.uk/words/771/puppet-dependencies-and-run-stages&quot;&gt;http://johnleach.co.uk/words/771/puppet-dependencies-and-run-stages&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Those nice folk at Devstructure would like to show more people how powerful their blueprint tool is. So they are offering to build blueprints for people that contact them with specific architecture problems. I&amp;#8217;d love to see some of the resulting blueprints open sourced so we can all learn from them.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.devstructure.com/two-men-and-a-server&quot;&gt;http://blog.devstructure.com/two-men-and-a-server&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Chef isn&amp;#8217;t just for managing lots of servers, and Joshua&amp;#8217;s latest post shows how he&amp;#8217;s using it to manage his OS X home machines. Some interesting generic recipes referenced that will be useful the next time I manage to get myself a new machine.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jtimberman.posterous.com/managing-my-workstations-with-chef&quot;&gt;http://jtimberman.posterous.com/managing-my-workstations-with-chef&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Avoid using the term &amp;#8220;Cloud Computing&amp;#8221; except when being ironic says this post, or rather it points out that for technical discussions we should be more specific about what we mean.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://everythingsysadmin.com/2011/06/avoid-using-the-term-cloud-com.html&quot;&gt;http://everythingsysadmin.com/2011/06/avoid-using-the-term-cloud-com.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ever wondered how Google go about continuous integration? This post has lots of interesting details about the approach they take to deal with a large volatile codebase. The short version is that they use a dependency graph to only run the tests relevant to the change at hand.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://google-engtools.blogspot.com/2011/06/testing-at-speed-and-scale-of-google.html&quot;&gt;http://google-engtools.blogspot.com/2011/06/testing-at-speed-and-scale-of-google.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Puppet will happily watch the status of running services, but under the hood it turns out that it often just does that by looking at the low level process. Dean Wilson points out how to have it use the operating system process management tool, as well as how to write custom checks for even better monitoring.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.unixdaemon.net/tools/puppet/smarter-service-status-in-puppet.html&quot;&gt;http://www.unixdaemon.net/tools/puppet/smarter-service-status-in-puppet.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Analysing log files is fun. But the bigger the log files get the harder the problem becomes, unless you&amp;#8217;re already using something like Hadoop. This article from Troy Davis of PaperTrail shows you how to use Amazon&amp;#8217;s hosted Hadoop and Hive system to analyse logs from S3.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://help.papertrailapp.com/kb/analytics/log-analytics-with-hadoop-and-hive&quot;&gt;http://help.papertrailapp.com/kb/analytics/log-analytics-with-hadoop-and-hive&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Ganglia Web 2.0 has been released, including the much more functional web front end. You can also now define graphs in &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; as well as &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt;, send data easily to Graphite, dynamically build aggregate graphs and access metric data as &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; or &lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt; and much more.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://ganglia.info/?p=393&quot;&gt;http://ganglia.info/?p=393&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another release from an establish project, the Go release management tool from Thoughtworks Studios has released version 2.2. This release introduces better tools for managing and comparing release pipelines as well as versioning all configuration.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://community.thoughtworks.com/posts/7dcda4ede1&quot;&gt;http://community.thoughtworks.com/posts/7dcda4ede1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Misty is a &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; for Amazon&amp;#8217;s Cloud Formation tool from the developers at Forward. It allows you to describe an architecture of EC2 instances and have them come up when commanded. No documentation yet but the example Mistfile from the tests looks interesting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/forward/misty&quot;&gt;https://github.com/forward/misty&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 25 - 11th June 2011</title>
+    <link href="http://devopsweekly.com/2011/06/11/issue-25/"/>
+    <updated>2011-06-11T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/06/11/issue-25</id>
+    <content type="html">&lt;h2&gt;Issue 25 &amp;#8211; 11th June 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;It&amp;#8217;s Velocity and devopsdays next week and I&amp;#8217;m guessing a fair few readers will be going along. While you&amp;#8217;re enjoying all the glorious content take a moment to think of everyone who can&amp;#8217;t make it &amp;#8211; and blog and tweet like crazy so we can keep up.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;It turns out Puppet Labs employ a User Experience Designer, responsible for making the command line, API&amp;#8217;s and the Puppet &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; as nice to use as they can be. Too many designers miss the potential of command line utilities so this is greta news.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.puppetlabs.com/blog/what-is-user-experience-in-puppet/&quot;&gt;http://www.puppetlabs.com/blog/what-is-user-experience-in-puppet/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;R.I.Pienaar (of mcollective fame) has been very busy this last week. First releasing Hiera, a new hierarchal data store aimed at representing key value data about infrastructure. The following two blog posts go into details about how this can be used with puppet to keep manifests particularly clean and reusable.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.devco.net/archives/2011/06/05/hiera_a_pluggable_hierarchical_data_store.php&quot;&gt;http://www.devco.net/archives/2011/06/05/hiera_a_pluggable_hierarchical_data_store.php&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.devco.net/archives/2011/06/06/puppet_backend_for_hiera.php&quot;&gt;http://www.devco.net/archives/2011/06/06/puppet_backend_for_hiera.php&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.devco.net/archives/2011/06/11/puppet_backend_for_hiera_part_2.php&quot;&gt;http://www.devco.net/archives/2011/06/11/puppet_backend_for_hiera_part_2.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve mentioned the growing #monitoringsucks movement in the last few issues. John Vincent has written a good blog post summarising what&amp;#8217;s going on and what he&amp;#8217;d love to see come out of the group. The project now has repos for tools, metrics best practice, irc logs and any blog posts written on the subject.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://lusislog.blogspot.com/2011/06/why-monitoring-sucks.html&quot;&gt;http://lusislog.blogspot.com/2011/06/why-monitoring-sucks.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Selenium is a handy tool, but running it in headless mode has often been troublesome. This blog post demonstrates using PyVirtualDisplay, a Python wrapper for Xvfb and Xephyr, to run your tests. If you&amp;#8217;re using Python this looks very useful.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://coreygoldberg.blogspot.com/2011/06/python-headless-selenium-webdriver.html&quot;&gt;http://coreygoldberg.blogspot.com/2011/06/python-headless-selenium-webdriver.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I found this article on the &lt;span class=&quot;caps&quot;&gt;IBM&lt;/span&gt; Integrated Service Management Blog. Describing devops as &amp;#8220;simultaneously reassuring and terrifying&amp;#8221; it&amp;#8217;s a really interesting, and positive, insight from an experienced outsider. The car analogy is a nice thought as well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www-304.ibm.com/connections/blogs/59c1123b-0353-458e-a719-b002d84108d5/entry/devops_should_i_have_known_what_that_is1?lang=en_us&quot;&gt;https://www-304.ibm.com/connections/blogs/59c1123b-0353-458e-a719-b002d84108d5/entry/devops_should_i_have_known_what_that_is1?lang=en_us&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Log.io looks an interesting tool for visualising log files in realtime in a browser. It&amp;#8217;s a node.js application that you can host yourself, and it can harvest log files from multiple machines and let you build up views of what you want to see.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://logio.org/&quot;&gt;http://logio.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vagrant is spawning a number of useful plugins, and snap is the latest. It provides the ability to take snapshots of virtual machines and then restore back to them, and it usefully supports multi-vm vagrantfiles.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/t9md/vagrant-snap&quot;&gt;https://github.com/t9md/vagrant-snap&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;chef.vim is plugin for vim using chef fans. It provides the ability to jump between attributes and recipes and easily open recipes, templates and files in your cookbooks.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/t9md/vim-chef&quot;&gt;https://github.com/t9md/vim-chef&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   
   <entry>
     <title>Issue 24 - 4th June 2011</title>
