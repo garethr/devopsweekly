@@ -3,7 +3,7 @@
   <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2011-06-27T09:25:46+01:00</updated>
+  <updated>2011-07-24T17:32:58+01:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
@@ -48,11 +48,11 @@
   </entry>
   
   <entry>
-    <title>Issue 25 - 19th June 2011</title>
+    <title>Issue 26 - 19th June 2011</title>
     <link href="http://devopsweekly.com/2011/06/19/issue-26/"/>
     <updated>2011-06-19T00:00:00+01:00</updated>
     <id>http://devopsweekly.com/2011/06/19/issue-26</id>
-    <content type="html">&lt;h2&gt;Issue 25 &amp;#8211; 19th June 2011&lt;/h2&gt;
+    <content type="html">&lt;h2&gt;Issue 26 &amp;#8211; 19th June 2011&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Sorry for the slight delay this week, I&amp;#8217;m just moving into a rather nice new house and hence rather busy. To make up for that this weeks issue is rather jam-packed with interesting content. And I haven&amp;#8217;t even caught up with anything that&amp;#8217;s come out of velocity or devopsdays yet.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;News&lt;/h2&gt;
 &lt;p&gt;Puppet have announced PuppetConf, a pretty amazing looking multi-track operations conference in Portland from September 19th-23rd. I&amp;#8217;m hugely excited to have been asked to be Master Of Ceremonies for the Devops track, so hopefully I&amp;#8217;ll see a few of you there.&lt;/p&gt;

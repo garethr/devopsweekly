@@ -1,9 +1,9 @@
 --- 
 layout: post
-title: Issue 25 - 19th June 2011
+title: Issue 26 - 19th June 2011
 ---
 
-h2. Issue 25 - 19th June 2011
+h2. Issue 26 - 19th June 2011
 
 _Sorry for the slight delay this week, I'm just moving into a rather nice new house and hence rather busy. To make up for that this weeks issue is rather jam-packed with interesting content. And I haven't even caught up with anything that's come out of velocity or devopsdays yet._
 
