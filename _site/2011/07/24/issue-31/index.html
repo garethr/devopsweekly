@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 31 - 24th July 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 31 &#8211; 24th July 2011</h2>
+<p><em>This issue is dedicated to all those who call themselves system administrators, because this Friday it&#8217;s System Administrator Appreciation Day http://sysadminday.com/. Devops is all about communication so if you&#8217;re not already best friends with your sysadmin colleagues go strike up a conversation this week.</em></p>
+<h2>News</h2>
+<p>Patrick Debois gave what looks to have been a fantastic presentation at devopsdownunder last week. Devops, what&#8217;s in a word?, counters in plain terms all the arguments against devops in one slide deck. This will probably become my reference when I have those tricky conversations about why I find the devops movement interesting.</p>
+<p><a href="http://www.slideshare.net/jedi4ever/devopsdays-downundervfinal">http://www.slideshare.net/jedi4ever/devopsdays-downundervfinal</a></p>
+<p>The #monitoringsucks <span class="caps">IRC</span> chat happened last week, and John has written up the notes. It turns out naming things is hard, but the post is a good start, and mapping these terms to existing tools is a great idea.</p>
+<p><a href="http://lusislog.blogspot.com/2011/07/monitoring-sucks-watch-your-language.html">http://lusislog.blogspot.com/2011/07/monitoring-sucks-watch-your-language.html</a></p>
+<p>John Allspaw appears to spend his time reading some rather interesting material. Here&#8217;s a section taken from the <span class="caps">NASA</span> Systems Engineering handbook, which describes rather brilliantly what a systems engineer is. I&#8217;m sure lots of people will look at this and find it a pretty good description of what they do with software.</p>
+<p><a href="http://www.kitchensoap.com/2011/07/18/systems-engineering-great-definition/">http://www.kitchensoap.com/2011/07/18/systems-engineering-great-definition/</a></p>
+<p>When identifying what&#8217;s causing your web application to perform badly, it&#8217;s often the database that&#8217;s the first to be blamed. This article covers why this is and some of the things you can do to help diagnose the actual problem.</p>
+<p><a href="http://www.appdynamics.com/blog/2011/07/12/slow-sql-a-usual-suspect/">http://www.appdynamics.com/blog/2011/07/12/slow-sql-a-usual-suspect/</a></p>
+<p>I&#8217;m quite a fan of High Scalability posts, especially those that are basically lists of interesting facts about a companies architecture. New Relic reveal all sorts of interesting facts, in particular about how they deal with the database side of such a write heavy application.</p>
+<p><a href="http://highscalability.com/blog/2011/7/18/new-relic-architecture-collecting-20-billion-metrics-a-day.html">http://highscalability.com/blog/2011/7/18/new-relic-architecture-collecting-20-billion-metrics-a-day.html</a></p>
+<p>Netflix have previously written about the Chaos Monkey, a tool for keeping them honest when it comes to cloud redundancy. They have been taking this approach further, with tools introducing latency, taking down entire availability zones and checking security and conformance criteria. I&#8217;d love to see some of these open sourced eventually.</p>
+<p><a href="http://techblog.netflix.com/2011/07/netflix-simian-army.html">http://techblog.netflix.com/2011/07/netflix-simian-army.html</a></p>
+<p>Nice details writeup and presentation of using a Kanban system in an operations team. This post covers what the team at realestate.com.au have learned, and includes lots of photos that really help make sense of the system they adopted.</p>
+<p><a href="http://www.slideshare.net/geekle/kanban-in-operations-8667326">http://www.slideshare.net/geekle/kanban-in-operations-8667326</a><br />
+<a href="http://www.geekle.id.au/2011/07/kanban-in-operations-virtual-card-wall.html">http://www.geekle.id.au/2011/07/kanban-in-operations-virtual-card-wall.html</a></p>
+<p>The Velocity Conference is set to hit Europe, specifically Berlin on 8th and 9th of November. The Call for Papers is out now, you have until the 8th of August to get your talk ideas submitted.</p>
+<p><a href="http://velocityconf.com/velocityeu/">http://velocityconf.com/velocityeu/</a></p>
+<h2>Tools</h2>
+<p>Vagrant is spawning more plugins as well, I came across vagrant-hosts this week that automatically add or remove local hosts entries when bringing up or shutting down machines with vagrant.</p>
+<p><a href="https://github.com/dwt/vagrant-hosts">https://github.com/dwt/vagrant-hosts</a></p>
+<p>If you&#8217;re looking for a web based application to manage your virtual machines, then Archipel might be of interest. It uses an <span class="caps">XMPP</span> daemon installed on each machine for communication and supports everything via libvert. It&#8217;s open source as too.</p>
+<p><a href="http://archipelproject.org/">http://archipelproject.org/</a></p>
+<p>Dew is an environment management tool intended for use in multi-instance <span class="caps">AWS</span> application deployments. It takes a single configuration file and provides commands to create and manage a number of newly created instances in a similar way to Amazon&#8217;s own CloudFormation. I&#8217;d love to see a bit more documentation.</p>
+<p><a href="https://github.com/playup/dew">https://github.com/playup/dew</a></p>
+<p>Etsy have released the tools they use for AB testing, multivariate testing and various other flavours of experimental feature release. It&#8217;s a collection of <span class="caps">PHP</span> classes, but I would love to see implementations in other languages and frameworks. Looks like Etsy are also planning on open sourcing deployinator at some point too.</p>
+<p><a href="https://github.com/etsy/ab">https://github.com/etsy/ab</a><br />
+<a href="http://www.oscon.com/oscon2011/public/schedule/detail/19623">http://www.oscon.com/oscon2011/public/schedule/detail/19623</a></p>
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

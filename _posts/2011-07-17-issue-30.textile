@@ -1,0 +1,45 @@
+--- 
+layout: post
+title: Issue 30 - 17th July 2011
+---
+
+h2. Issue 30 - 17th July 2011
+
+_Welcome to lots of new readers this week. More new readers in fact that any other week since the first. Hopefully the collection of tools and news will prove useful. And if anyone has any good links do let me know at gareth@morethanseven.net_
+
+
+h2. News
+
+John E. Vincent has continued driving the #monitoringsucks discussion, and is organising another IRC chat. This time it's likely to be more focused on producing things that help with any resulting hacking. After a quick vote the chat has been organised for Thursday, July 21st at 5:00 PM BST so should be good for those in the US and Europe hopefully. A further chat for those closer to Australia who will likely be asleep is in the works too.
+
+"http://lusislog.blogspot.com/2011/07/monitoring-sucks-round-2-fight.html":http://lusislog.blogspot.com/2011/07/monitoring-sucks-round-2-fight.html
+
+Matt Ray has taken a look at the terminology around discussing monitoring. Agreeing on words and concepts will be pretty important if the whole #monitoringsucks explosion of compatible tools and services is to happen.
+
+"https://leastresistance.wordpress.com/2011/07/12/monitoringsucks-terminology-first-stab/":https://leastresistance.wordpress.com/2011/07/12/monitoringsucks-terminology-first-stab/
+
+I've been doing more with Jenkins again recently and came across the excellent Build Pipeline plugin. If you've read the Continuous Delivery book you'll be familiar with the term, but at a basic level it's using downstream builds to define a deployment workflow. With the plugin you get a very nice visualisation and importantly the ability to introduce manual gates (for instance for a QA check on staging).
+
+"https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin":https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin
+"http://blog.knuthaugen.no/2011/04/continuous-delivery-the-ruby-way.html":http://blog.knuthaugen.no/2011/04/continuous-delivery-the-ruby-way.html
+"http://www.multunus.com/2011/07/continuous-delivery-using-jenkins-build-pipeline/":http://www.multunus.com/2011/07/continuous-delivery-using-jenkins-build-pipeline/
+
+The rapid evolution of career paths is an interesting aside to the growth of devops, but where are the next generation going to come from. A nice post enthusing about the role of the system administrator, why you might want to be one, and how you can get started. I think personally I'd have added something about learning to programme as well.
+
+"http://silverwraith.com/blog/2011/07/so-you-want-to-be-a-systems-administrator/":http://silverwraith.com/blog/2011/07/so-you-want-to-be-a-systems-administrator/
+
+
+h2. Tools
+
+The monitoring discussions this week prompted me to look around for other new contenders, and I found Critical from Dan DeLeo of Opscode. It features a DSL for describing metrics and the monitoring of those metrics. Definitely worth a look.
+
+"https://github.com/danielsdeleo/critical":https://github.com/danielsdeleo/critical
+
+More and more folks are using Graphite it seems for storing ad-hoc metrics data. Diamond is a python based daemon for collecting and publishing metrics including cpu, memory, network, i/o, load and disk data. It also has a simple API for more custom data collection.
+
+"http://opensource.brightcove.com/project/Diamond/":http://opensource.brightcove.com/project/Diamond/
+
+As you get more data into Graphite you might want to alert on it from Nagios. Very similar to the check_ganglia command, check_graphite is a Nagios plugin that takes an average data point from graphite and compares it to a threshold.
+
+"https://github.com/recoset/check_graphite":https://github.com/recoset/check_graphite
+

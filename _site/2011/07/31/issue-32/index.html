@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 32 - 31st July 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 32 &#8211; 31st July 2011</h2>
+<p><em>A busy week for content, only partly down to <span class="caps">OSCON</span> it seems. Hopefully you&#8217;ll have time to read a selection of introductions, delve into a few publicly available Puppet and Chef repositories and add a few new tools to your toolbox.</em></p>
+<h2>News</h2>
+<p>A fantastic article by Mathias Meyer entitled Web Operations 101 For Developers. It really is a great introduction to operations and associated concerns from those coming from a development background. Definitely worth circulating amongst your work colleagues whichever side of the tracks you&#8217;re from.</p>
+<p><a href="http://www.paperplanes.de/2011/7/25/web_operations_101_for_developers.html">http://www.paperplanes.de/2011/7/25/web_operations_101_for_developers.html</a></p>
+<p>More and more tools are coming with rich API&#8217;s, often exposing data as <span class="caps">JSON</span>. Familiar tools like grep can be used on this data but in a fairly brute force way, they have no understanding of the overall document structure. That&#8217;s where jgrep from Pieter Loubser comes in. Here&#8217;s some useful examples from R.I. Pienaar.</p>
+<p><a href="http://www.devco.net/archives/2011/07/29/rich-data-on-the-cli.php">http://www.devco.net/archives/2011/07/29/rich-data-on-the-cli.php</a></p>
+<p>It looks like Ben Rockwood has stumbled upon a treasure trove of useful reading material for anyone interested in the management/process side of devops. A fantastic post for anyone in search of a solid list of book recommendations.</p>
+<p><a href="http://cuddletech.com/blog/?p=642">http://cuddletech.com/blog/?p=642</a></p>
+<p>When learning a new tool it&#8217;s often useful to see more than just simple examples, and be able to explore an entire project. Open source is generally very good at libraries, examples and tools, less so on entire working code bases. So I enjoyed looking through the a Chef repository in use at <span class="caps">CERN</span> and the Debian project puppet repo this week.</p>
+<p><a href="http://code.hep.wisc.edu/">http://code.hep.wisc.edu/</a><br />
+<a href="http://anonscm.debian.org/gitweb/?p=mirror/dsa-puppet.git;a=summary">http://anonscm.debian.org/gitweb/?p=mirror/dsa-puppet.git;a=summary</a></p>
+<p>It&#8217;s easy to forget that the Vagrant configuration file is just Ruby, which means you can do some quite simple optimisations for multi-box environments. This Gist shows a quick example.</p>
+<p><a href="https://gist.github.com/1108747">https://gist.github.com/1108747</a></p>
+<p>Great talk from Jordan Sissel at Oscon on Logstash and where it&#8217;s aiming to fit into the whole logging puzzle. The slides themselves are worth going through anyway, but you can also get the speakers notes (from the actions button at the bottom) which give more background.</p>
+<p><a href="https://docs.google.com/present/view?id=0Aa9liCTsAyzRZGNtd3dkOTRfNjV3bXFnNHNnbQ&amp;hl=en_US&amp;pli=1">https://docs.google.com/present/view?id=0Aa9liCTsAyzRZGNtd3dkOTRfNjV3bXFnNHNnbQ&amp;hl=en_US&amp;pli=1</a></p>
+<p>Another What is Devops post, but one that acts as a bit of a history up till now for those that are just hearing about the term. It&#8217;s also nicely written and balanced, mentioning both positive and negative points, all in a very readable manner.</p>
+<p><a href="http://dev-spout.blogspot.com/2011/07/what-is-devops.html">http://dev-spout.blogspot.com/2011/07/what-is-devops.html</a></p>
+<p>The Joel Test is well known amongst developers as an opinionated but useful quick look at what you can improve across a software team. Thomas Limoncelli has just published a similar list of systems administration. It comprises 32 questions (which is probably a few too many to be quick in my opinion) that you can use to pin point areas to improve.</p>
+<p><a href="http://everythingsysadmin.com/the-test.html">http://everythingsysadmin.com/the-test.html</a></p>
+<p>Exactly what your configuration management tool should manage has been a hot topic of late, with several good discussions that I&#8217;m aware of about packages vs configuration. This article from Sean OMeara explains the approach he prefers, which I thought was neatly summed up by &#8220;Don’t edit config files. Instead, edit the truth.&#8221;</p>
+<p><a href="http://blog.afistfulofservers.net/post/8140290279/configuration-management-strategies">http://blog.afistfulofservers.net/post/8140290279/configuration-management-strategies</a></p>
+<p>A worthwhile article that talks about the different audiences for packaging, praising both apt for its features and tools like Leiningen for solving developers problems. Leiningen is a clojure tool similar in purpose to Bundler, and interestingly it&#8217;s in the process of being packaged for Debian.</p>
+<p><a href="http://technomancy.us/151">http://technomancy.us/151</a></p>
+<h2>Tools</h2>
+<p>The fabled deployinator, Etsy&#8217;s inhouse deployment tool, has been open sourced as mentioned last week. The code is on GitHub and more documentation is being added all the time. I&#8217;d love someone to write up experiences of getting this up and running and where they see it fitting.</p>
+<p><a href="https://github.com/etsy/deployinator">https://github.com/etsy/deployinator</a></p>
+<p>Dell have open sourced a tool they have been using to bring up a multi-node OpenStack cloud on bare metal. It appears to use Chef under the hood. Worth a look if you&#8217;re wanting to investigate OpenStack.</p>
+<p><a href="http://bartongeorge.net/2011/07/26/dell-announces-availability-of-openstack-solution-open-sources-crowbar-software-framework/">http://bartongeorge.net/2011/07/26/dell-announces-availability-of-openstack-solution-open-sources-crowbar-software-framework/</a><br />
+<a href="https://github.com/dellcloudedge/crowbar">https://github.com/dellcloudedge/crowbar</a></p>
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

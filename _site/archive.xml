@@ -3,12 +3,176 @@
   <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2011-07-24T17:32:58+01:00</updated>
+  <updated>2011-07-31T20:31:24+01:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
     <email>gareth@morethanseven.ner</email>
   </author>
+  
+  <entry>
+    <title>Issue 32 - 31st July 2011</title>
+    <link href="http://devopsweekly.com/2011/07/31/issue-32/"/>
+    <updated>2011-07-31T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/07/31/issue-32</id>
+    <content type="html">&lt;h2&gt;Issue 32 &amp;#8211; 31st July 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;A busy week for content, only partly down to &lt;span class=&quot;caps&quot;&gt;OSCON&lt;/span&gt; it seems. Hopefully you&amp;#8217;ll have time to read a selection of introductions, delve into a few publicly available Puppet and Chef repositories and add a few new tools to your toolbox.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;A fantastic article by Mathias Meyer entitled Web Operations 101 For Developers. It really is a great introduction to operations and associated concerns from those coming from a development background. Definitely worth circulating amongst your work colleagues whichever side of the tracks you&amp;#8217;re from.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.paperplanes.de/2011/7/25/web_operations_101_for_developers.html&quot;&gt;http://www.paperplanes.de/2011/7/25/web_operations_101_for_developers.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More and more tools are coming with rich API&amp;#8217;s, often exposing data as &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt;. Familiar tools like grep can be used on this data but in a fairly brute force way, they have no understanding of the overall document structure. That&amp;#8217;s where jgrep from Pieter Loubser comes in. Here&amp;#8217;s some useful examples from R.I. Pienaar.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.devco.net/archives/2011/07/29/rich-data-on-the-cli.php&quot;&gt;http://www.devco.net/archives/2011/07/29/rich-data-on-the-cli.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It looks like Ben Rockwood has stumbled upon a treasure trove of useful reading material for anyone interested in the management/process side of devops. A fantastic post for anyone in search of a solid list of book recommendations.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cuddletech.com/blog/?p=642&quot;&gt;http://cuddletech.com/blog/?p=642&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When learning a new tool it&amp;#8217;s often useful to see more than just simple examples, and be able to explore an entire project. Open source is generally very good at libraries, examples and tools, less so on entire working code bases. So I enjoyed looking through the a Chef repository in use at &lt;span class=&quot;caps&quot;&gt;CERN&lt;/span&gt; and the Debian project puppet repo this week.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://code.hep.wisc.edu/&quot;&gt;http://code.hep.wisc.edu/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://anonscm.debian.org/gitweb/?p=mirror/dsa-puppet.git;a=summary&quot;&gt;http://anonscm.debian.org/gitweb/?p=mirror/dsa-puppet.git;a=summary&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s easy to forget that the Vagrant configuration file is just Ruby, which means you can do some quite simple optimisations for multi-box environments. This Gist shows a quick example.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/1108747&quot;&gt;https://gist.github.com/1108747&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Great talk from Jordan Sissel at Oscon on Logstash and where it&amp;#8217;s aiming to fit into the whole logging puzzle. The slides themselves are worth going through anyway, but you can also get the speakers notes (from the actions button at the bottom) which give more background.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.google.com/present/view?id=0Aa9liCTsAyzRZGNtd3dkOTRfNjV3bXFnNHNnbQ&amp;amp;hl=en_US&amp;amp;pli=1&quot;&gt;https://docs.google.com/present/view?id=0Aa9liCTsAyzRZGNtd3dkOTRfNjV3bXFnNHNnbQ&amp;amp;hl=en_US&amp;amp;pli=1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another What is Devops post, but one that acts as a bit of a history up till now for those that are just hearing about the term. It&amp;#8217;s also nicely written and balanced, mentioning both positive and negative points, all in a very readable manner.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://dev-spout.blogspot.com/2011/07/what-is-devops.html&quot;&gt;http://dev-spout.blogspot.com/2011/07/what-is-devops.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Joel Test is well known amongst developers as an opinionated but useful quick look at what you can improve across a software team. Thomas Limoncelli has just published a similar list of systems administration. It comprises 32 questions (which is probably a few too many to be quick in my opinion) that you can use to pin point areas to improve.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://everythingsysadmin.com/the-test.html&quot;&gt;http://everythingsysadmin.com/the-test.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Exactly what your configuration management tool should manage has been a hot topic of late, with several good discussions that I&amp;#8217;m aware of about packages vs configuration. This article from Sean OMeara explains the approach he prefers, which I thought was neatly summed up by &amp;#8220;Don’t edit config files. Instead, edit the truth.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.afistfulofservers.net/post/8140290279/configuration-management-strategies&quot;&gt;http://blog.afistfulofservers.net/post/8140290279/configuration-management-strategies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A worthwhile article that talks about the different audiences for packaging, praising both apt for its features and tools like Leiningen for solving developers problems. Leiningen is a clojure tool similar in purpose to Bundler, and interestingly it&amp;#8217;s in the process of being packaged for Debian.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://technomancy.us/151&quot;&gt;http://technomancy.us/151&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;The fabled deployinator, Etsy&amp;#8217;s inhouse deployment tool, has been open sourced as mentioned last week. The code is on GitHub and more documentation is being added all the time. I&amp;#8217;d love someone to write up experiences of getting this up and running and where they see it fitting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/etsy/deployinator&quot;&gt;https://github.com/etsy/deployinator&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dell have open sourced a tool they have been using to bring up a multi-node OpenStack cloud on bare metal. It appears to use Chef under the hood. Worth a look if you&amp;#8217;re wanting to investigate OpenStack.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bartongeorge.net/2011/07/26/dell-announces-availability-of-openstack-solution-open-sources-crowbar-software-framework/&quot;&gt;http://bartongeorge.net/2011/07/26/dell-announces-availability-of-openstack-solution-open-sources-crowbar-software-framework/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/dellcloudedge/crowbar&quot;&gt;https://github.com/dellcloudedge/crowbar&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 31 - 24th July 2011</title>
+    <link href="http://devopsweekly.com/2011/07/24/issue-31/"/>
+    <updated>2011-07-24T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/07/24/issue-31</id>
+    <content type="html">&lt;h2&gt;Issue 31 &amp;#8211; 24th July 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;This issue is dedicated to all those who call themselves system administrators, because this Friday it&amp;#8217;s System Administrator Appreciation Day http://sysadminday.com/. Devops is all about communication so if you&amp;#8217;re not already best friends with your sysadmin colleagues go strike up a conversation this week.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Patrick Debois gave what looks to have been a fantastic presentation at devopsdownunder last week. Devops, what&amp;#8217;s in a word?, counters in plain terms all the arguments against devops in one slide deck. This will probably become my reference when I have those tricky conversations about why I find the devops movement interesting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/jedi4ever/devopsdays-downundervfinal&quot;&gt;http://www.slideshare.net/jedi4ever/devopsdays-downundervfinal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The #monitoringsucks &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; chat happened last week, and John has written up the notes. It turns out naming things is hard, but the post is a good start, and mapping these terms to existing tools is a great idea.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://lusislog.blogspot.com/2011/07/monitoring-sucks-watch-your-language.html&quot;&gt;http://lusislog.blogspot.com/2011/07/monitoring-sucks-watch-your-language.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;John Allspaw appears to spend his time reading some rather interesting material. Here&amp;#8217;s a section taken from the &lt;span class=&quot;caps&quot;&gt;NASA&lt;/span&gt; Systems Engineering handbook, which describes rather brilliantly what a systems engineer is. I&amp;#8217;m sure lots of people will look at this and find it a pretty good description of what they do with software.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.kitchensoap.com/2011/07/18/systems-engineering-great-definition/&quot;&gt;http://www.kitchensoap.com/2011/07/18/systems-engineering-great-definition/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When identifying what&amp;#8217;s causing your web application to perform badly, it&amp;#8217;s often the database that&amp;#8217;s the first to be blamed. This article covers why this is and some of the things you can do to help diagnose the actual problem.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.appdynamics.com/blog/2011/07/12/slow-sql-a-usual-suspect/&quot;&gt;http://www.appdynamics.com/blog/2011/07/12/slow-sql-a-usual-suspect/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m quite a fan of High Scalability posts, especially those that are basically lists of interesting facts about a companies architecture. New Relic reveal all sorts of interesting facts, in particular about how they deal with the database side of such a write heavy application.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://highscalability.com/blog/2011/7/18/new-relic-architecture-collecting-20-billion-metrics-a-day.html&quot;&gt;http://highscalability.com/blog/2011/7/18/new-relic-architecture-collecting-20-billion-metrics-a-day.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Netflix have previously written about the Chaos Monkey, a tool for keeping them honest when it comes to cloud redundancy. They have been taking this approach further, with tools introducing latency, taking down entire availability zones and checking security and conformance criteria. I&amp;#8217;d love to see some of these open sourced eventually.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://techblog.netflix.com/2011/07/netflix-simian-army.html&quot;&gt;http://techblog.netflix.com/2011/07/netflix-simian-army.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nice details writeup and presentation of using a Kanban system in an operations team. This post covers what the team at realestate.com.au have learned, and includes lots of photos that really help make sense of the system they adopted.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/geekle/kanban-in-operations-8667326&quot;&gt;http://www.slideshare.net/geekle/kanban-in-operations-8667326&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.geekle.id.au/2011/07/kanban-in-operations-virtual-card-wall.html&quot;&gt;http://www.geekle.id.au/2011/07/kanban-in-operations-virtual-card-wall.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Velocity Conference is set to hit Europe, specifically Berlin on 8th and 9th of November. The Call for Papers is out now, you have until the 8th of August to get your talk ideas submitted.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://velocityconf.com/velocityeu/&quot;&gt;http://velocityconf.com/velocityeu/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Vagrant is spawning more plugins as well, I came across vagrant-hosts this week that automatically add or remove local hosts entries when bringing up or shutting down machines with vagrant.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/dwt/vagrant-hosts&quot;&gt;https://github.com/dwt/vagrant-hosts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re looking for a web based application to manage your virtual machines, then Archipel might be of interest. It uses an &lt;span class=&quot;caps&quot;&gt;XMPP&lt;/span&gt; daemon installed on each machine for communication and supports everything via libvert. It&amp;#8217;s open source as too.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://archipelproject.org/&quot;&gt;http://archipelproject.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dew is an environment management tool intended for use in multi-instance &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; application deployments. It takes a single configuration file and provides commands to create and manage a number of newly created instances in a similar way to Amazon&amp;#8217;s own CloudFormation. I&amp;#8217;d love to see a bit more documentation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/playup/dew&quot;&gt;https://github.com/playup/dew&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Etsy have released the tools they use for AB testing, multivariate testing and various other flavours of experimental feature release. It&amp;#8217;s a collection of &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; classes, but I would love to see implementations in other languages and frameworks. Looks like Etsy are also planning on open sourcing deployinator at some point too.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/etsy/ab&quot;&gt;https://github.com/etsy/ab&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.oscon.com/oscon2011/public/schedule/detail/19623&quot;&gt;http://www.oscon.com/oscon2011/public/schedule/detail/19623&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 30 - 17th July 2011</title>
+    <link href="http://devopsweekly.com/2011/07/17/issue-30/"/>
+    <updated>2011-07-17T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/07/17/issue-30</id>
+    <content type="html">&lt;h2&gt;Issue 30 &amp;#8211; 17th July 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Welcome to lots of new readers this week. More new readers in fact that any other week since the first. Hopefully the collection of tools and news will prove useful. And if anyone has any good links do let me know at gareth@morethanseven.net&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;John E. Vincent has continued driving the #monitoringsucks discussion, and is organising another &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; chat. This time it&amp;#8217;s likely to be more focused on producing things that help with any resulting hacking. After a quick vote the chat has been organised for Thursday, July 21st at 5:00 PM &lt;span class=&quot;caps&quot;&gt;BST&lt;/span&gt; so should be good for those in the US and Europe hopefully. A further chat for those closer to Australia who will likely be asleep is in the works too.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://lusislog.blogspot.com/2011/07/monitoring-sucks-round-2-fight.html&quot;&gt;http://lusislog.blogspot.com/2011/07/monitoring-sucks-round-2-fight.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Matt Ray has taken a look at the terminology around discussing monitoring. Agreeing on words and concepts will be pretty important if the whole #monitoringsucks explosion of compatible tools and services is to happen.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://leastresistance.wordpress.com/2011/07/12/monitoringsucks-terminology-first-stab/&quot;&gt;https://leastresistance.wordpress.com/2011/07/12/monitoringsucks-terminology-first-stab/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve been doing more with Jenkins again recently and came across the excellent Build Pipeline plugin. If you&amp;#8217;ve read the Continuous Delivery book you&amp;#8217;ll be familiar with the term, but at a basic level it&amp;#8217;s using downstream builds to define a deployment workflow. With the plugin you get a very nice visualisation and importantly the ability to introduce manual gates (for instance for a QA check on staging).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin&quot;&gt;https://wiki.jenkins-ci.org/display/&lt;span class=&quot;caps&quot;&gt;JENKINS&lt;/span&gt;/Build+Pipeline+Plugin&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://blog.knuthaugen.no/2011/04/continuous-delivery-the-ruby-way.html&quot;&gt;http://blog.knuthaugen.no/2011/04/continuous-delivery-the-ruby-way.html&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.multunus.com/2011/07/continuous-delivery-using-jenkins-build-pipeline/&quot;&gt;http://www.multunus.com/2011/07/continuous-delivery-using-jenkins-build-pipeline/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The rapid evolution of career paths is an interesting aside to the growth of devops, but where are the next generation going to come from. A nice post enthusing about the role of the system administrator, why you might want to be one, and how you can get started. I think personally I&amp;#8217;d have added something about learning to programme as well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://silverwraith.com/blog/2011/07/so-you-want-to-be-a-systems-administrator/&quot;&gt;http://silverwraith.com/blog/2011/07/so-you-want-to-be-a-systems-administrator/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;The monitoring discussions this week prompted me to look around for other new contenders, and I found Critical from Dan DeLeo of Opscode. It features a &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; for describing metrics and the monitoring of those metrics. Definitely worth a look.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/danielsdeleo/critical&quot;&gt;https://github.com/danielsdeleo/critical&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More and more folks are using Graphite it seems for storing ad-hoc metrics data. Diamond is a python based daemon for collecting and publishing metrics including cpu, memory, network, i/o, load and disk data. It also has a simple &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; for more custom data collection.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://opensource.brightcove.com/project/Diamond/&quot;&gt;http://opensource.brightcove.com/project/Diamond/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As you get more data into Graphite you might want to alert on it from Nagios. Very similar to the check_ganglia command, check_graphite is a Nagios plugin that takes an average data point from graphite and compares it to a threshold.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/recoset/check_graphite&quot;&gt;https://github.com/recoset/check_graphite&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 29 - 10th July 2011</title>
+    <link href="http://devopsweekly.com/2011/07/10/issue-29/"/>
+    <updated>2011-07-10T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/07/10/issue-29</id>
+    <content type="html">&lt;h2&gt;Issue 29 &amp;#8211; 10th July 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;A slightly quieter week this time, which probably means lots of people are off enjoying a much needed holiday. Hopefully with all that free time readers are plotting even more tools and blog posts right?&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Glu is the deployment framework open sourced by LinkedIn, and this video of its creator Yan Pujante talking at a Chicago DevOps event is worth watching. Good demo explaining where it fits in and some good insights into the scale at which LinkedIn are working at.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://devops.com/2011/07/09/glu-deployment-automation-video/&quot;&gt;http://devops.com/2011/07/09/glu-deployment-automation-video/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As we&amp;#8217;re deploying more often we&amp;#8217;re probably generating more and more deployment artefacts. The question then is how long to store them? This article by Dave Farley goes into the different types of artefacts we&amp;#8217;re creating and what we might want to keep around.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://agile.dzone.com/news/how-long-retain-build-output&quot;&gt;http://agile.dzone.com/news/how-long-retain-build-output&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nikolay Sturm has recently started a new job, and is documenting the context surrounding man of the emerging devops best practices we hear lots about. So far covering branching and configuration management, with hopefully more to come.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.nistu.de/tags/devops%20toolbox/&quot;&gt;http://blog.nistu.de/tags/devops%20toolbox/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nice viewpoint from Philip J. Hollenback on devops. In particular coming to the term via the tools and later realising that it&amp;#8217;s really more about people and working together. Or more specifically DevOps Means Don&amp;#8217;t Be an A-hole.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.hollenback.net/index.php/DevOpsMeansDontBeAnAhole&quot;&gt;http://www.hollenback.net/index.php/DevOpsMeansDontBeAnAhole&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Not everyone is using Chef or Puppet for managing configuration files on a number of servers. WooMe take nearly the opposite approach, configuring the individual boxes, storing those files in mercurial repositories and then aggregating all those repos and the changes to a central machine for viewing as needed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://making.dev.woome.com/post/7299452441/lazy-devops-config-recoverability-with-mercurial&quot;&gt;http://making.dev.woome.com/post/7299452441/lazy-devops-config-recoverability-with-mercurial&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s commonly held that we need new approaches to monitoring, and &lt;span class=&quot;caps&quot;&gt;DSAC&lt;/span&gt; is Dean Wilson&amp;#8217;s take on the subject. At the moment we have high level diagrams of how a monitoring system could work, with code coming soon.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.unixdaemon.net/tools/introduction-to-dsac.html&quot;&gt;http://www.unixdaemon.net/tools/introduction-to-dsac.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Lots of folks are hacking on new approaches to monitoring it seems. As predominantly a developer I personally quite like the idea of checks as unit tests, and PagerUnit from Richard Crowley takes that approach. Write some python tests, and have PagerUnit run them every 10 seconds and email you if they fail.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/rcrowley/pagerunit&quot;&gt;https://github.com/rcrowley/pagerunit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another tool from Richard is python-cloudformation, a python library for creating &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; CloudFormation templates. Not much documentation yet but see the linked example for an idea of how it works.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/devstructure/python-cloudformation&quot;&gt;https://github.com/devstructure/python-cloudformation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aeolus is a tool from RedHat designed to easy managing cloud instances or virtual machines across different internal and external providers. It provides a browser based dashboard for firing up and managing new machines. With support for Eucalyptus, VMware vSphere, Rackspace, &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt; and more it might be useful for some folks.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.aeolusproject.org/&quot;&gt;http://www.aeolusproject.org/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 28 - 3rd July 2011</title>
+    <link href="http://devopsweekly.com/2011/07/03/issue-28/"/>
+    <updated>2011-07-03T00:00:00+01:00</updated>
+    <id>http://devopsweekly.com/2011/07/03/issue-28</id>
+    <content type="html">&lt;h2&gt;Issue 28 &amp;#8211; 3rd July 2011&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Lots of events news this week, along with a load of videos from various recent events. I&amp;#8217;ll be at the next London Devops event and in Goteburg later in the year, hopefully see a few people at both.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;Registration is now open for Devops Days Europe in Goteborg. $120 for 2 days is great value, and with only 150 people attending it should be quite a good event for indepth discussions. See you there.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.devopsdays.org/events/2011-goteborg/registration/&quot;&gt;http://www.devopsdays.org/events/2011-goteborg/registration/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The next London Devops event is now open for signup. The event is free to attend and will be on the 25th July 2011. The nice folks at Forward are sponsoring and providing a really nice space. If you&amp;#8217;re in London do come along. We&amp;#8217;re still looking for more speakers so if you&amp;#8217;re interested get in touch.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://londondevops.eventwax.com/devops-talks-back&quot;&gt;https://londondevops.eventwax.com/devops-talks-back&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The videos from sessions at Devops Days Mountain View have been posted online. Talks and discussions on Kanban, QA, &lt;span class=&quot;caps&quot;&gt;CDN&lt;/span&gt; Caching, Orchestration and more. Lots to catch up on.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://dev2ops.org/blog/tag/devops-days-mv-2011-video&quot;&gt;http://dev2ops.org/blog/tag/devops-days-mv-2011-video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m finding more and more videos with great content recently, including this talk from QCon by Jez Humble on minimising risk when releasing software. Worth watching.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/presentations/Remediation-Patterns&quot;&gt;http://www.infoq.com/presentations/Remediation-Patterns&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More videos from Damon Edwards, this time two videos from a visit to Etsy and discussions with John Allspaw. Two quick videos discussing metrics and what to put on developer and operations dashboards.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://dev2ops.org/blog/2011/6/24/video-with-john-allspaw-at-etsy-what-to-put-on-the-big-dashb.html&quot;&gt;http://dev2ops.org/blog/2011/6/24/video-with-john-allspaw-at-etsy-what-to-put-on-the-big-dashb.html&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://dev2ops.org/blog/2011/6/30/more-video-with-john-allspaw-at-etsy-dashboard-tour-metrics.html&quot;&gt;http://dev2ops.org/blog/2011/6/30/more-video-with-john-allspaw-at-etsy-dashboard-tour-metrics.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The recent Heroku release packed in lots of improvements and changes, and this series on some of the underlying principles has been great. This article goes over what they describe as Erosion Resistance of a platform, basically knowing if it works today that it will still work in the future without excessive maintenance.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts/&quot;&gt;http://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nice article from Ben Rockwood on what he describes as the Three Aspects of DevOps. Breaking the adoption of Devops practices into three phases, with activities under each is a nice high level way of looking for the next step in your team or organisation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cuddletech.com/blog/?p=624&quot;&gt;http://cuddletech.com/blog/?p=624&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A nice article by Brian Henerey from Sony on building a new team within the Online Technology Group. Some good tips for anyone involved in hiring and building or improving a team.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://agilesysadmin.net/building-a-devops-team&quot;&gt;http://agilesysadmin.net/building-a-devops-team&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Whenever building a system it&amp;#8217;s interesting to be able to compare with other similar platforms. Most individuals only have so much experience, so it&amp;#8217;s always nice to see details like these from TripAdvisor published online. Everything from number of service requests, expected response times, size of logs, etc. Lots to dig into.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://highscalability.com/blog/2011/6/27/tripadvisor-architecture-40m-visitors-200m-dynamic-page-view.html&quot;&gt;http://highscalability.com/blog/2011/6/27/tripadvisor-architecture-40m-visitors-200m-dynamic-page-view.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Creating custom AMIs for EC2 has generally been something I&amp;#8217;ve avoided, but Stem looks an incredibly simply way of creating and launching custom AMIs. A simple command line tool with a &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; configuration file. If you&amp;#8217;re using EC2 well worth taking a look at.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://michaelgorsuch.com/2011/02/27/introduction-to-stem.html&quot;&gt;http://michaelgorsuch.com/2011/02/27/introduction-to-stem.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Getting started with configuration management across a number of machines often requires a bit of setting things up and maybe some money spend on EC2. Chef Box is an interesting project that provides tools for bringing up several Vagrant controlled Ubuntu machines on your desktop, all managed by an Chef server installed on one of them.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/dysinger/chef-box&quot;&gt;https://github.com/dysinger/chef-box&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   
   <entry>
     <title>Issue 27 - 26th June 2011</title>

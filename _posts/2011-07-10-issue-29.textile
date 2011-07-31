@@ -1,0 +1,51 @@
+--- 
+layout: post
+title: Issue 29 - 10th July 2011
+---
+
+h2. Issue 29 - 10th July 2011
+
+_A slightly quieter week this time, which probably means lots of people are off enjoying a much needed holiday. Hopefully with all that free time readers are plotting even more tools and blog posts right?_
+
+
+h2. News
+
+Glu is the deployment framework open sourced by LinkedIn, and this video of its creator Yan Pujante talking at a Chicago DevOps event is worth watching. Good demo explaining where it fits in and some good insights into the scale at which LinkedIn are working at.
+
+"http://devops.com/2011/07/09/glu-deployment-automation-video/":http://devops.com/2011/07/09/glu-deployment-automation-video/
+
+As we're deploying more often we're probably generating more and more deployment artefacts. The question then is how long to store them? This article by Dave Farley goes into the different types of artefacts we're creating and what we might want to keep around.
+
+"http://agile.dzone.com/news/how-long-retain-build-output":http://agile.dzone.com/news/how-long-retain-build-output
+
+Nikolay Sturm has recently started a new job, and is documenting the context surrounding man of the emerging devops best practices we hear lots about. So far covering branching and configuration management, with hopefully more to come.
+
+"http://blog.nistu.de/tags/devops%20toolbox/":http://blog.nistu.de/tags/devops%20toolbox/
+
+Nice viewpoint from Philip J. Hollenback on devops. In particular coming to the term via the tools and later realising that it's really more about people and working together. Or more specifically DevOps Means Don't Be an A-hole.
+
+"http://www.hollenback.net/index.php/DevOpsMeansDontBeAnAhole":http://www.hollenback.net/index.php/DevOpsMeansDontBeAnAhole
+
+Not everyone is using Chef or Puppet for managing configuration files on a number of servers. WooMe take nearly the opposite approach, configuring the individual boxes, storing those files in mercurial repositories and then aggregating all those repos and the changes to a central machine for viewing as needed.
+
+"http://making.dev.woome.com/post/7299452441/lazy-devops-config-recoverability-with-mercurial":http://making.dev.woome.com/post/7299452441/lazy-devops-config-recoverability-with-mercurial
+
+It's commonly held that we need new approaches to monitoring, and DSAC is Dean Wilson's take on the subject. At the moment we have high level diagrams of how a monitoring system could work, with code coming soon.
+
+"http://www.unixdaemon.net/tools/introduction-to-dsac.html":http://www.unixdaemon.net/tools/introduction-to-dsac.html
+
+
+h2. Tools
+
+Lots of folks are hacking on new approaches to monitoring it seems. As predominantly a developer I personally quite like the idea of checks as unit tests, and PagerUnit from Richard Crowley takes that approach. Write some python tests, and have PagerUnit run them every 10 seconds and email you if they fail.
+
+"https://github.com/rcrowley/pagerunit":https://github.com/rcrowley/pagerunit
+
+Another tool from Richard is python-cloudformation, a python library for creating AWS CloudFormation templates. Not much documentation yet but see the linked example for an idea of how it works.
+
+"https://github.com/devstructure/python-cloudformation":https://github.com/devstructure/python-cloudformation
+
+Aeolus is a tool from RedHat designed to easy managing cloud instances or virtual machines across different internal and external providers. It provides a browser based dashboard for firing up and managing new machines. With support for Eucalyptus, VMware vSphere, Rackspace, AWS and more it might be useful for some folks.
+
+"http://www.aeolusproject.org/":http://www.aeolusproject.org/
+
