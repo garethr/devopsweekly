@@ -1,0 +1,115 @@
+--- 
+layout: post
+title: Issue 44 - 30th October 2011
+---
+
+## Issue 44 - 30th October
+
+Another week, another set of high quality articles from around the web.
+This time next week devopsweekly will probably have over 2000
+subscribers which is pretty impressive. And I still believe we're just
+the early adopters at this point. Anyway, on with the real content and a
+shamelessly promoted opportunity for someone to come and work with me at
+the day job.
+
+
+News
+====
+
+If you're in any doubt that devops is attracting a wider audience of
+late then have a read through this Wired article. I have to admit I'm
+mainly including this due to the title: The Chef, the Puppet, and the
+Sexy IT Admin.
+
+http://www.wired.com/wiredenterprise/2011/10/chef_and_puppet/
+
+
+Puppet has a pretty powerful extension system taking advantage of Ruby
+to add new functionality at runtime. This article, the first in a
+series, covers some of those integration points and shows lots of code
+examples that making it easier to follow along.
+
+http://www.masterzen.fr/2011/10/29/puppet-extension-points-part-1/
+
+
+Fosdem, the free and open source conference held each year in Belgium is
+looking for main track speakers for next year event. Last years
+configuration management room was excellent so hopefully we'll see more
+good devops flavoured content next year too.
+
+http://fosdem.org/2012/call-main-track
+
+
+A nice article acting as a counterpoint to all the ones talking about
+moving to cloud based hosting. Mixpanel have recently moved to dedicated
+hardware, getting better performance and lower costs out of the deal.
+
+http://code.mixpanel.com/2011/10/27/why-we-moved-off-the-cloud/
+
+
+George Reese gave a presentation at the recent Camp DevOps about some of
+the overlaps and resulting benefits of adopting devops approaches in a
+cloud environment. The main thread appears to be APIs for everything,
+allowing for the entire system (not just the software) to be defined in
+code.
+
+http://devops.com/2011/10/23/devops-in-the-cloud-explained/
+
+
+A nice rebuttal of the argument that you can automate yourself out of a
+job. Also nice to think about documentation as a fallback when
+automation is not possible or too costly.
+
+http://everythingsysadmin.com/2011/10/automate-will-i-lose-my-job.html
+
+
+Another writeup from a Camp DevOps talk, this time from Seth Thomson and
+Chris Read on Overcoming Organizational Hurdles. The reiteration that
+change is hard and communication is important is always welcome, and the
+idea that you should get people to pull you in rather than push them
+into doing something I found interesting.
+
+http://devops.com/2011/10/22/overcoming-organizational-hurdles/
+
+
+Jobs
+===
+
+I current work for the UK Government, in a brand new department called
+Government Digital Service. Our remit is nothing short of fundamentally
+changing how the Government operates online, and we're looking for more
+smart people. We're currently on the lookout for developers and systems
+administrators of all experience levels and backgrounds. Some details
+are available on the following links but if you have any questions just
+drop me an email at gareth@morethanseven.net
+
+http://digital.cabinetoffice.gov.uk/2011/10/25/the-second-lever/
+http://uk.authenticjobs.com/jobs/10481/web-ops
+http://uk.authenticjobs.com/jobs/10480/developer
+
+
+Tools
+====
+
+Version 1.4 of Rundeck, the framework for automating ad-hoc and routine
+command execution, has been released. Feels like development is
+progressing at quite a clip.
+
+https://github.com/dtolabs/rundeck/blob/v1.4.0.1/RELEASE.md
+
+
+The folks at GitHub have talked quite a bit about Hubot, their campfire
+bot which triggers deploys, queries the web and opens the office door
+among other things. A cleaned up version of the code has been released
+and we're already seeing lots of plugins being added.
+
+https://github.com/blog/968-say-hello-to-hubot
+https://github.com/github/hubot-scripts/tree/master/src/scripts
+
+
+Lots of folks appear to be building tools around Graphite of late.
+Tattle looks interesting, described as a self service alerting and
+dashboard frontend for graphite. So now you can get alerts when data
+sets change or thresholds are passed.
+
+https://github.com/wayfair/Graphite-Tattle

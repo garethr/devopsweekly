@@ -1,0 +1,123 @@
+--- 
+layout: post
+title: Issue 33 - 7th August 2011
+---
+
+## Issue 33 - 7th August
+
+In a quick break from the news and releases, I have to give special
+mention this week to John Willis for his latest addition to the music of
+devops: http://www.youtube.com/watch?v=pebIr4F-vjQ. Right, on with the
+regular programme.
+
+## News
+
+Many of the abstracts for PuppetConf have been released. I'm
+particularly looking forward to the Noah talk, and some of the notes on
+Luke Kanies' keynote sound interesting; a move into application
+management and how puppet can be smaller, faster, and easier to
+integrate with.
+
+http://puppetconf.com/speakers/
+
+My experience with Chef has been that you really only get the benefits
+if you understand all the different moving parts and how they tie
+together. I came across a useful representation of this architecture on
+the much improved Chef wiki this week, specifically everything mapped
+out using UML.
+
+http://wiki.opscode.com/display/chef/Chef+Concepts+as+UML
+
+I'm guessing most of the readers of this newsletter spend a lot of their
+time on the command line. So I'm always happy when I find people talking
+about user interface issues and design guidelines for command line
+applications. Next time you're building a little application try and
+remember some of the guidelines on this post.
+
+http://www.antoarts.com/designing-command-line-interfaces/
+
+It's always interesting to see what technologies and movements other
+people find interesting, and the Thoughworks technology radar is a nice
+example. Infrastructure as code, Continuous deployment and Devops ideas
+feature prominently alongside lots of other things I'm fond of that I
+want to see more people using.
+
+http://www.thoughtworks.com/articles/technology-radar-july-2011
+
+A good argument that reaching some areas of the wider systems
+administration ecosystem with devops ideas might be much harder that you
+might think. The reluctance for some to write code in any form is
+pointed out, as is the scarcity of people who make good systems
+programmers.
+
+http://blogs.citrix.com/2011/07/29/the-reluctance-to-code-is-devops-doomed/
+
+The idea of Polyglot programmers has been popular for a while, with more
+new languages seemingly becoming popular overnight. This post from
+Heroku talks about what that means for your typical deployment and
+operating infrastructure. The table comparing different languages and
+the duplication of tools is interesting, as is the call for more
+language-neutral interfaces.
+
+http://blog.heroku.com/archives/2011/8/3/polyglot_platform/
+
+On the face of it EC2 reserved instances look like a great way of
+reducing the cost of running in EC2. This post however argues that a
+hidden cost of reserved instances is the lack of flexibility. If you're
+just using EC2 to bring up a relatively stable number and type of
+instance then reserved instances can work but you're not getting the
+full benefit of the cloud environment. If your cluster is much more
+dynamic then reserved instances might not save you money.
+
+http://theagileadmin.com/2011/03/31/why-amazon-reserve-instances-torment-me/
+
+An hour long video from Damon Edwards talking devops and system
+architecture with Ernest Mueller and Peco Karayanev of National
+Instruments. It should be particularly interesting to anyone working
+inside a large organisation as lots of the conversation is about how to
+make positive changes and get everyone involved in delivery and
+operations.
+
+http://dev2ops.org/blog/2011/7/12/devops-in-the-enterprise-whiteboard-session-at-national-inst.html
+
+I'm really interested in the fight between continuous integration and
+feature branches. It feels to me that we need more discussion from both
+sides on this issue, partly because I see the same thing pointed out in
+the Thoughtworks technology radar - that as developers we're branching
+and merging more because the latest tools make it easy to do so. Martin
+Fowlers piece on one of the problems with a branch heavy approach makes
+interesting reading.
+
+http://martinfowler.com/bliki/SemanticConflict.html
+
+
+## Jobs
+
+Carrenza need some help with the Sport Relief 2012 platform build, and
+are looking for contract or permanent Chef lovers.
+iwanttowork@carrenza.com if you're feeling charitable.
+
+(This section is sponsored, if you're interested in featuring a job get
+in touch at gareth@morethanseven.net)
+
+## Tools
+
+The idea of writing tests for configuration management tools is talked
+about a lot, and chef spec looks an interesting approach if you're using
+Chef. For a new project the documentation is also great.
+
+http://acrmp.github.com/chefspec/
+
+Porkshop describes itself as a simple network-based system information
+server. Install it on your servers and it exposes information about the
+host over a simple HTTP interface. Plugins look simple enough to write
+too.
+
+https://github.com/disqus/porkchop
+
+Bunraku is a simple status panel for puppet, hooking into the puppet
+reporting facility and storing information in Redis. It's also looks
+like it would make a good starting point if you wanted to build you're
+own report processing tool.
+
+https://github.com/jamtur01/bunraku

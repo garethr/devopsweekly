@@ -22,9 +22,9 @@ p em {
 
 strong {
     font-weight: bold;
-}   
+}
 
-h1 em {
+#head h1 em {
     font-family: 'Droid Sans';
     font-size: 250%;
     font-weight: bold;
@@ -33,20 +33,21 @@ h1 em {
     color: #000;
 }
 
-h1 {
-    margin-top: 20px;
+#head h1 {
+    margin: 20px 0 0;
     font-size: 150%;
     color: #666;
+    text-transform: none;
+    font-weight: normal;
 }
 
-h2 {
+h1, h2 {
     font-family: 'Droid Sans';
     font-size: 150%;
     font-weight: bold;
     text-transform: uppercase;
     color: #000;
     margin: 2em 0 1em;
-} 
 }
 
 img {

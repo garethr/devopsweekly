@@ -1,2 +1,5 @@
 exclude: ['Rakefile', 'Readme.markdown', 'src', 'Gemfile', 'Gemfile.lock', 'config.rb', 'deploy.yml']
 permalink: pretty
+markdown: rdiscount
+rdiscount:
+    extensions: [smart, autolink]

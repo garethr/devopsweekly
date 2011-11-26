@@ -1,0 +1,116 @@
+--- 
+layout: post
+title: Issue 35 - 21st August 2011
+---
+
+## Issue 35 - 21st August
+
+I don't know what it was about this week but lots of the articles I came
+across were about systems orchestration. It's definitely a hot topic,
+with more tools and more discussion coming along all the time. I'm
+making sense of that with the help of this nice graphic from Canonical
+https://ensemble.ubuntu.com/DevOps which I really want on a T-shirt.
+
+
+News
+====
+
+Devops Cafe is back in the form of Devops Drop, an under 10 minutes
+podcast filled with discussion and news from John Willis and Damon
+Edwards. In three days we've seen three episodes covering details of
+crowbar, cloudfoundry, dynect, netflix, hack day and lots more. Looking
+forward to future episodes.
+
+http://devopscafe.org/show/2011/8/17/devops-drop-001.html
+http://devopscafe.org/show/2011/8/18/devops-drop-002.html
+http://devopscafe.org/show/2011/8/19/devops-drop-003.html
+
+
+A great series of posts about what I think is a very common setup -
+namely a redundant six machine web application cluster. Goes over the
+basics of load balancing, redundant database setup and even goes into
+the costs associated.
+
+http://rackerhacker.com/redundant-cloud-hosting-configuration-guide/
+
+
+Ensemble looks to be interesting. It's being developed by Canonical and
+is another tool aimed at orchestrating applications across multiple
+servers. It will be available in Ubuntu 11.10 or you can get it from a
+PPA now.
+
+http://cloud.ubuntu.com/2011/08/ensemble-the-service-orchestration-framework-for-hard-core-devops/
+https://ensemble.ubuntu.com/
+
+
+Upstart is an event-based replacement for the the init daemon which
+appears to be picking up lots of fans. It also has unbelievably good
+documentation all in one place. This huge page covers why it exists, how
+to use it and lots of cookbook style patterns.
+
+http://upstart.ubuntu.com/cookbook/
+
+
+A nice quick presentation entitled Mastering Complex Deployments.
+Covering what the problems are, why they are unlikely to go away and
+what we can do about them. I particularly like the line "Relentlessly
+Remove Variation".
+
+http://www.slideshare.net/Urbancode/mastering-complexdeployments
+
+
+Continuing what appears to be a theme this week, I came across a nice
+introductory article on Mcollective. Describing the problems simply and
+showing examples of some of the bundled tools. A good starting point if
+you've yet to look into Mcollective.
+
+http://redbluemagenta.com/2011/08/19/mcollective/
+
+
+Mcollective is often thought to be a Puppet specific tool, especially
+after it moved house to Puppetlabs. But nothing is really Puppet
+specific, as this post shows. As well as quickly presenting Mcollective
+this article covers some basic Chef integration and points out a few
+things that need addressing. I particularly like that a Vagrant box is
+provided for anyone to experiment with themselves.
+
+http://www.cryptocracy.com/using-mcollective-with-chef
+
+
+A nice article aimed at CIO's and business folk on bridging the dev and
+ops divide. It breaks things down to six elements, which really all come
+down to improving collaboration, communication and people.
+
+http://www.cio.com/article/688026/How_To_Improve_Collaboration_with_Development_and_Operations
+
+
+Jobs
+====
+
+Cox Media Group is looking for a passionate senior engineer who wants a
+large role in architecting and implementing our continuous deployment
+process. We're using Python, Django, Git, Puppet, Postgres and RabbitMQ
+to build out one of the largest media platforms for more than 120 sites.
+We've got the backing of a billion dollar company, but the freedom and
+flexibility to move fast and break new ground. We're located in Atlanta,
+GA but teleworking is an option for the right candidates. If this sounds
+appealing or you'd like to learn more contact johnny.preyer@coxinc.com
+
+
+Tools
+=====
+
+Pencil is a dashboard building tool for use with Graphite. I
+particularly like the idea of being able to turn a relative timeslice
+(say the last 8 hours) into an absolute one for placing a URL in bug
+reports.
+
+https://github.com/fetep/pencil
+
+
+Lint tools can be really handy, both when learning a new language and
+especially when refactoring. So it's nice to see a lint tool for puppet
+being worked on. It would be nice to see some documentation and details
+of what it's checking but I'm sure that will come.
+
+https://github.com/rodjek/puppet-lint

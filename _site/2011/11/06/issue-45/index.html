@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 45 - 6th November 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 45 &ndash; 6th November</h2>
+
+<p>With having just hit 2000 subscribers to this newsletter I thought I&rsquo;d
+take a moment to say a huge thank you to everyone who has written a blog
+post, posted slides or video from a talk or built a tool I&rsquo;ve featured
+over the last 45 issues. This would be a much less interesting email and
+importantly a much less vibrant community without the culture of
+sharing.</p>
+
+<h1>News</h1>
+
+<p>Vagrant is great for quickly managing local virtual machines for
+development, but if you&rsquo;re wanting to even more accurately simulate the
+network from a production cluster you have to delve into how VirtualBox
+does its thing. This post does just that with details of VLAN, PXE boot
+and bridged network support.</p>
+
+<p><a href="http://jedi.be/blog/2011/11/04/vagrant-virtualbox-hostonly-pxe-vlans/">http://jedi.be/blog/2011/11/04/vagrant-virtualbox-hostonly-pxe-vlans/</a></p>
+
+<p>A nice example of a shared puppet module for Cloudera&rsquo;s Hadoop
+distribution. Mainly picking out as I like the provided Vagrant
+configuration which lets you play around with a three machine cluster
+quickly.</p>
+
+<p><a href="https://github.com/thattommyhall/cloudera-cdh3-puppet">https://github.com/thattommyhall/cloudera-cdh3-puppet</a></p>
+
+<p>Technical debt is an often used term, and this article takes that and
+describes it in terms of infrastructure. It&rsquo;s a good take on the need to
+automate where possible and raises good points about some of the people
+and process things that need to be changed to make it happen. I
+particularly liked the point that &ldquo;people terribly underestimate the
+amount of manual work they do to accomplish a task&rdquo; which rings true in
+my experience too.</p>
+
+<p><a href="http://www.littlehart.net/atthekeyboard/2011/11/03/infrastructure-debt/">http://www.littlehart.net/atthekeyboard/2011/11/03/infrastructure-debt/</a></p>
+
+<p>As much as devops is about changes to processes and culture, lots of it
+is also driven by people with a deep interest in tooling. And not only
+are people writing tools or automating things, they are releasing them
+at an ever increasing rate. This post tries to get across why it&rsquo;s
+nearly always worth it to clean up that code and throw it into the wild.</p>
+
+<p><a href="http://kartar.net/2011/11/why-am-i-a-tool-maker%3f/">http://kartar.net/2011/11/why-am-i-a-tool-maker%3f/</a></p>
+
+<p>Chef is purposefully not opinionated about what you might want to manage
+with it. But the flexibility is there to provide cookbooks with
+expressive DSL, for example this one for application deployment. The
+description of these as &ldquo;deployment macros&rdquo; I like, and the fact it&rsquo;s
+already managing application written in Java, Scala, Erlang, Ruby and
+static sites bodes well.</p>
+
+<p><a href="http://blog.boundary.com/2011/11/01/the-apps-cookbook-and-application-deployments.html">http://blog.boundary.com/2011/11/01/the-apps-cookbook-and-application-deployments.html</a></p>
+
+<p>A nice introductory presentation covering why packaging up your Java
+applications as RPMs is generally a good idea. Covers everything from
+the problems, what you need to do to fix them and other advantages like
+simplifying configuration management manifests.</p>
+
+<p><a href="http://www.slideshare.net/actionjackx/automated-java-deployments-with-rpm">http://www.slideshare.net/actionjackx/automated-java-deployments-with-rpm</a></p>
+
+<p>A great &ldquo;one month with chef&rdquo; article, talking through the learning
+curve, how it changes how work got done and with a great list of things
+worth knowing before starting. Well worth reading if you&rsquo;re thinking of
+getting in to Chef.</p>
+
+<p><a href="http://devopsanywhere.blogspot.com/2011/10/month-with-chef.html">http://devopsanywhere.blogspot.com/2011/10/month-with-chef.html</a></p>
+
+<h1>Tools</h1>
+
+<p>Sensu is a new take on the monitoring problem, using a message queue for
+command distribution and discovery and a fast key value store for
+keeping track of hosts and checks. It certainly sounds interesting,
+although I&rsquo;d love to see a screen capture of similar to get a better
+feel for it.</p>
+
+<p><a href="http://portertech.ca/2011/11/01/sensu-a-monitoring-framework/">http://portertech.ca/2011/11/01/sensu-a-monitoring-framework/</a>
+<a href="https://github.com/sonian/sensu">https://github.com/sonian/sensu</a></p>
+
+<p>Databaseliner describes itself as &ldquo;a tool for spidering a database to
+produce a referentially integral subset of data&rdquo;. One use case is for
+creating useful datasets for testing purposes based on production data.
+Currently it comes with outputs for Postgres and Oracle, but with a bit
+of hacking you could add others too.</p>
+
+<p><a href="https://github.com/steppenwells/databaseliner">https://github.com/steppenwells/databaseliner</a></p>
+
+<p>The VirtualBox guest additions updates can cause problems with Vagrant
+base boxes which haven&rsquo;t been created with the latest tools installed.
+The three way fight between the version of vagrant, virtual box and the
+guest additions has bit me personally a few times. This plugin aims to
+help, providing an option for the vagrant file to keep everything up to
+date.</p>
+
+<p><a href="https://github.com/dotless-de/vagrant-vbguest">https://github.com/dotless-de/vagrant-vbguest</a></p>
+
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>
