@@ -1,0 +1,58 @@
+--- 
+layout: post
+title: Issue 49 - 4th December 2011
+---
+
+## Issue 49 - 4th December
+
+It's December again which means it's time for Sysadvent. Curated by Jordan Sissel, this advent calendar style blog brings a new post every day from a range of guest authors. Hats off to Jordan on this, at least with the newsletter I only have to put things together once a week.
+
+
+News
+====
+
+As mentioned Sysadvent is back, with four blog posts for far, and one per day throughout December. So far we've had bash tips, java deployment ideas, simple examples of web tools for letting other people run code and an introduction to packaging systems. All well worth checking out.
+
+http://sysadvent.blogspot.com/2011/12/day-1-dont-bash-your-process-outputs.html
+http://sysadvent.blogspot.com/2011/12/day-2-strategies-for-java-deployment.html
+http://sysadvent.blogspot.com/2011/12/day-3-share-skills-and-permissions-with.html
+http://sysadvent.blogspot.com/2011/12/day-4-guide-to-packaging-systems.html
+
+
+Right-ups of an organisations entire stack are always interesting, this one is from Instagram who have quite the fleet of instances on EC2.
+
+http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances-dozens-of
+
+
+Anyone who has tried to setup a continuous integration system to test across a range of different browsers already knows it's not the easiest thing to maintain. If you're now running on Windows already then you probably need some Windows machines too. This article covers doing just that in EC2, and features code to both start instances and run the tests on the windows hosts.
+
+http://tech.picklive.com/2011/12/02/continuous-integration-for-internet-explorer.html
+https://gist.github.com/1422833
+
+
+I spent a bit of time tweaking Varnish configurations this week and came across this article, which is worth reading mainly for the example vcl configurations.
+
+http://www.lullabot.com/articles/varnish-multiple-web-servers-drupal
+
+
+Interesting post positing that "Devops is the missing link between Agile/Extreme Programming and lean management", coming from a large company Chief Information Officer it's interesting to see how the idea is spreading.
+
+http://informationsystemsbiology.blogspot.com/2011/11/lean-it-devops-and-cloud-programming.html
+
+
+Tools
+====
+
+If you're running a number of Python or Django applications, or you're interested in how a platform as a service operates under the hood, you might want to take a look at Djangy which has recently been open sourced.
+
+https://github.com/dpaola2/djangy
+
+
+The sequencer is "an engine used by system administrators for the computation and execution of sequences of actions over hardware or software". The examples make things a little clearer, if you're running a physical data centre and need to software to power on/off computers, disk arrays, switches ad the like this might be of interest.
+
+http://pv-bull.github.com/sequencer/
+
+
+If you have a thing for yet more process supervision tools, Nanny might be of interest. It's been developed by the folks behind Freebase and looks to have a few nice features including an In-built HTTP server for logs and statistics with both humanly-readable and machine-readable JSON output.
+
+http://code.google.com/p/metaweb-nanny/

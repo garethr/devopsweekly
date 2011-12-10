@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 48 - 27th November 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 48 &ndash; 27th November</h2>
+
+<p>The first issue of this newsletter went out just about 1 year ago this weekend to 476 people. I&rsquo;m not sure when I started that if I thought I&rsquo;d be sending one a year later to over 2000 folks, so thanks to everyone who&rsquo;s stuck around or signed up since. With that in mind I&rsquo;ve finally updated the archive to include all the recent issues too <a href="http://devopsweekly.com/archive">http://devopsweekly.com/archive</a></p>
+
+<h1>News</h1>
+
+<p>The configuration management devroom at FOSDEM in Belgium is back for a second year, and the call for papers is open. You have until the 31st of December to get proposals in.</p>
+
+<p><a href="http://fosdem.puppetlabs.com/">http://fosdem.puppetlabs.com/</a></p>
+
+<p>A short interview with Ben Rockwood, who&rsquo;s going to be talking at LISA’11 next month on The Devops Transformation. Quick answers to questions, but it&rsquo;s good to see in a traditional systems administration setting.</p>
+
+<p><a href="http://blogs.usenix.org/2011/11/15/ben-rockwood-interview/">http://blogs.usenix.org/2011/11/15/ben-rockwood-interview/</a></p>
+
+<p>Lots of people are talking about what monitoring could look like in the future, and this great diagram tries to map out the different components involved and some of the existing software used for the job. Very useful if you&rsquo;re starting to think about this issue.</p>
+
+<p><a href="https://dl.dropbox.com/s/vj83geq6aiyzt5q/monitoring-puzzle.png">https://dl.dropbox.com/s/vj83geq6aiyzt5q/monitoring-puzzle.png</a></p>
+
+<p>Vagrant now has a public continuous integration server, which bodes well for future stability. As a fast moving project dependent on a third party piece of software in VirtualBox this is particularly important in avoiding version mismatches.</p>
+
+<p><a href="http://ci.vagrantup.com/">http://ci.vagrantup.com/</a></p>
+
+<p>This is an excellent looking list for anyone in a hurry to lock down a PHP application server. It&rsquo;s pretty extensive and at least tries to explain the why as well as giving you the commands to run. Some of the comments add a few more ideas as well.</p>
+
+<p><a href="http://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html">http://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html</a></p>
+
+<p>Nice presentation from Patrick Debois about taking learnings from the management of production infrastructure and applying that back to managing development environments and test machines.</p>
+
+<p><a href="http://www.slideshare.net/jedi4ever/manage-your-devtestprod-like-a-cloud">http://www.slideshare.net/jedi4ever/manage-your-devtestprod-like-a-cloud</a></p>
+
+<p>Interesting post describing using Hubot (the GitHub campfire bot) for triggering deployments. Interestingly thought this is in a .NET and Teamcity context. Some good ideas and sample code for extending hubot as well.</p>
+
+<p><a href="http://tomb.io/posts/hubot-ci-and-deploying/">http://tomb.io/posts/hubot-ci-and-deploying/</a></p>
+
+<p>A video from the recent London Puppet user group meetup, with Ken Barber talking on Puppet, Private Clouds and Building Solutions. It looks to be a pretty nice demo of OpenNebula as well as some Puppet tools.</p>
+
+<p><a href="http://forwardtechnology.co.uk/videos/32197839">http://forwardtechnology.co.uk/videos/32197839</a></p>
+
+<p>CitCon, the Continuous Integration conference took place a few weeks back, and this post summarises a few of the talking points. I&rsquo;d be interested in someone writing up the discussions around feature branching too.</p>
+
+<p><a href="http://jr0cket.blogspot.com/2011/11/7-continuous-integration-ideas-from.html">http://jr0cket.blogspot.com/2011/11/7-continuous-integration-ideas-from.html</a></p>
+
+<p>I nearly didn&rsquo;t include this next post, because it&rsquo;s a Chef vs Puppet one. However it&rsquo;s relatively balanced and stresses the answer to which to use is probably &ldquo;Yes&rdquo;. The interesting quote that swung it for me was &ldquo;I often wonder if Chef is the right tool because it&rsquo;s the second one we&rsquo;ve used&rdquo;. I definitely agree with this, leaning a tool (Chef or Puppet) and a pattern like configuration management at the same time is a big ask.</p>
+
+<p><a href="http://nathenharvey.blogspot.com/2011/11/why-we-chose-puppet-over-chef-at.html">http://nathenharvey.blogspot.com/2011/11/why-we-chose-puppet-over-chef-at.html</a></p>
+
+<h1>Tools</h1>
+
+<p>For cases where you want to use Chef without the server component, Pocketknife looks interesting. It&rsquo;s a set of configuration conventions and a nice command line interface for syncing and running chef-solo on a remote machine. Personally I like this sort of thing for local virtual machines or short lived instances used for development. You should probably be using the server if you&rsquo;re managing production machines in my view.</p>
+
+<p><a href="https://github.com/igal/pocketknife">https://github.com/igal/pocketknife</a></p>
+
+<p>If you&rsquo;ve ever wanted to get the stream of Nagios events onto a message queue this project might be worth a look. It consists of two components that, when combined, use Nagios Event Broker to gather data and output the messages using STOMP to Activemq. I&rsquo;d be interested in seeing things built atop that.</p>
+
+<p><a href="http://code.google.com/p/neb2activemq/">http://code.google.com/p/neb2activemq/</a></p>
+
+<p>KermIT appears to be an open source web application frontend to a Puppet master and Mcollective. Limited documentation at the moment but the videos looks very impressive.</p>
+
+<p><a href="http://www.kermit.fr/">http://www.kermit.fr/</a>
+<a href="http://www.kermit.fr/documentation/prez/prez.pdf">http://www.kermit.fr/documentation/prez/prez.pdf</a></p>
+
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

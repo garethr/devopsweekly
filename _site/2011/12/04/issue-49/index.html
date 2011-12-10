@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 49 - 4th December 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 49 &ndash; 4th December</h2>
+
+<p>It&rsquo;s December again which means it&rsquo;s time for Sysadvent. Curated by Jordan Sissel, this advent calendar style blog brings a new post every day from a range of guest authors. Hats off to Jordan on this, at least with the newsletter I only have to put things together once a week.</p>
+
+<h1>News</h1>
+
+<p>As mentioned Sysadvent is back, with four blog posts for far, and one per day throughout December. So far we&rsquo;ve had bash tips, java deployment ideas, simple examples of web tools for letting other people run code and an introduction to packaging systems. All well worth checking out.</p>
+
+<p><a href="http://sysadvent.blogspot.com/2011/12/day-1-dont-bash-your-process-outputs.html">http://sysadvent.blogspot.com/2011/12/day-1-dont-bash-your-process-outputs.html</a>
+<a href="http://sysadvent.blogspot.com/2011/12/day-2-strategies-for-java-deployment.html">http://sysadvent.blogspot.com/2011/12/day-2-strategies-for-java-deployment.html</a>
+<a href="http://sysadvent.blogspot.com/2011/12/day-3-share-skills-and-permissions-with.html">http://sysadvent.blogspot.com/2011/12/day-3-share-skills-and-permissions-with.html</a>
+<a href="http://sysadvent.blogspot.com/2011/12/day-4-guide-to-packaging-systems.html">http://sysadvent.blogspot.com/2011/12/day-4-guide-to-packaging-systems.html</a></p>
+
+<p>Right-ups of an organisations entire stack are always interesting, this one is from Instagram who have quite the fleet of instances on EC2.</p>
+
+<p><a href="http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances-dozens-of">http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances-dozens-of</a></p>
+
+<p>Anyone who has tried to setup a continuous integration system to test across a range of different browsers already knows it&rsquo;s not the easiest thing to maintain. If you&rsquo;re now running on Windows already then you probably need some Windows machines too. This article covers doing just that in EC2, and features code to both start instances and run the tests on the windows hosts.</p>
+
+<p><a href="http://tech.picklive.com/2011/12/02/continuous-integration-for-internet-explorer.html">http://tech.picklive.com/2011/12/02/continuous-integration-for-internet-explorer.html</a>
+<a href="https://gist.github.com/1422833">https://gist.github.com/1422833</a></p>
+
+<p>I spent a bit of time tweaking Varnish configurations this week and came across this article, which is worth reading mainly for the example vcl configurations.</p>
+
+<p><a href="http://www.lullabot.com/articles/varnish-multiple-web-servers-drupal">http://www.lullabot.com/articles/varnish-multiple-web-servers-drupal</a></p>
+
+<p>Interesting post positing that &ldquo;Devops is the missing link between Agile/Extreme Programming and lean management&rdquo;, coming from a large company Chief Information Officer it&rsquo;s interesting to see how the idea is spreading.</p>
+
+<p><a href="http://informationsystemsbiology.blogspot.com/2011/11/lean-it-devops-and-cloud-programming.html">http://informationsystemsbiology.blogspot.com/2011/11/lean-it-devops-and-cloud-programming.html</a></p>
+
+<h1>Tools</h1>
+
+<p>If you&rsquo;re running a number of Python or Django applications, or you&rsquo;re interested in how a platform as a service operates under the hood, you might want to take a look at Djangy which has recently been open sourced.</p>
+
+<p><a href="https://github.com/dpaola2/djangy">https://github.com/dpaola2/djangy</a></p>
+
+<p>The sequencer is &ldquo;an engine used by system administrators for the computation and execution of sequences of actions over hardware or software&rdquo;. The examples make things a little clearer, if you&rsquo;re running a physical data centre and need to software to power on/off computers, disk arrays, switches ad the like this might be of interest.</p>
+
+<p><a href="http://pv-bull.github.com/sequencer/">http://pv-bull.github.com/sequencer/</a></p>
+
+<p>If you have a thing for yet more process supervision tools, Nanny might be of interest. It&rsquo;s been developed by the folks behind Freebase and looks to have a few nice features including an In-built HTTP server for logs and statistics with both humanly-readable and machine-readable JSON output.</p>
+
+<p><a href="http://code.google.com/p/metaweb-nanny/">http://code.google.com/p/metaweb-nanny/</a></p>
+
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>
