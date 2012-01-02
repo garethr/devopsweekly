@@ -1,0 +1,112 @@
+--- 
+layout: post
+title: Issue 51 - 18th December 2011
+---
+
+## Issue 51 - 18th December
+
+First the bad news, I'm going to take next weekend off so the next issue won't be for two whole weeks. The good news is I have a bumper Christmas edition this week, which should hopefully keep everyone going until the new year. I've not been keeping track but I'm pretty sure this is the most content I've included so far, and hopefully their will be something for everyone. Thanks again to all the authors of articles, covers of talks and hackers of code that make devopsweekly good fun to put together.
+
+
+News
+====
+
+Anyone interested or already using Riak should buy themselves an early Christmas present. Mathias Meyer has been writing furiously and has just shipped the self published Riak Handbook. It's available as a bundle of Epub, Mobi and PDF. Importantly it covers not just using Riak, but also running it.
+
+http://riakhandbook.com/
+
+
+Most of the articles I include tend to be about learning new interesting things. This one is more of a warning - at some point soon the Sun Java packages are going to disappear from the Ubuntu partner repositories due to Oracle licensing changes. If someone finds a good article about the best thing to do if this affects you let me know.
+
+https://lists.ubuntu.com/archives/ubuntu-security-announce/2011-December/001528.html
+
+
+Good article with a few opinions about the state of log management. Mentioned logstash and graylog2. Interesting points about the initial fear of new moving parts and complexity being mitigated by the usefulness of the resulting setup.
+
+http://redbluemagenta.com/2011/08/19/modern-log-management-and-monitoring/
+
+
+Lots of talk, and writing, about testing configuration management this week.  Nikolay Sturm, author of Cucumber-puppet, has created an example project demonstrating that tools usage. It's easy to follow and makes a good template if you're starting to write features for your manifests and modules.
+
+http://blog.nistu.de/2011/12/11/an-example-project-using-cucumber-puppet/
+https://github.com/nistude/cucumber-puppet.example
+
+
+Fabric is great for ad-hoc remote command execution, but that means it doesn't ship with higher level abstractions that make common tasks just a matter of configuration. The discussion in this issue sounds interesting, a canonical source for useful snippets and higher level commands is in the works. For the moment the list of existing supporting tools is worth checking out.
+
+https://github.com/fabric/fabric/issues/461
+
+
+The third article in a good series of posts about extending Puppet. This one particularly caught the eye as it covers what the Indirector is. If you've delved into Puppet source recently then you'll have come across this and if you're anything like me taken a bit of time to get your head around. This post solves that problem for future visitors to the Puppet code very nicely.
+
+http://www.masterzen.fr/2011/12/11/the-indirector-puppet-extensions-points-3/
+
+
+Good talk from Luke Kaines (creator of Puppet) at LISA. Starting with a good list of what Devops isn't and then going on to the rapid changes in web operations. Also breaks down the agile manifesto in terms of systems administration.
+
+http://www.youtube.com/watch?v=HxBEEh4Nsnk&feature=youtu.be
+
+
+Another talk from LISA, this time from Jesse Robins of Opscode explaining the concept of a Gameday. I particularly love the quote "failure free operations require experience with failure". Lots of other good takeaways in the slides too.
+
+http://www.slideshare.net/jesserobbins/ameday-creating-resiliency-through-destruction
+
+
+The big conferences certainly make my life easier when looking for great content :) The last of this weeks LISA talks, this one the keynote given by Ben Rockwood. A pretty high level and convincing argument for Devops, painting it as a journey of discovery and not the final destination.
+
+http://blogs.usenix.org/2011/12/08/lisa-11-keynote-the-devops-transformation/
+
+
+Nice slide deck summarising Infrastructure as Code. Particular good for the diagrams used to explain the different parts of the process.
+
+http://www.slideshare.net/guttertec/infrastructure-as-code-10499271
+
+
+Consistent hashing is magic. This article explains how it works and why you should care. If you're dealing with improving the availability of data intensive applications then this is a must read.
+
+http://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html
+
+
+Sysadvent has kept up the high quality posts, this one particularly caught my eye. Everyone has logs that they'd love to analyse, this post shows how to do so relatively simply using Elastic Map Reduce (Hadoop on EC2) and the Pig query language. Good getting started post.
+
+http://sysadvent.blogspot.com/2011/12/day-10-analyzing-logs-with-pig-and.html
+
+
+The Patrick Debois Show
+==================
+
+Someone obviously put something in the water in Gent over the last week or so, as Patrick started churning out new and interesting content on a nearly daily basis.
+
+
+This post reprints an article written for the Usenix Login magazine, entitled Devops from a sysadmin perspective. It takes the familiar topics of culture, automation, measurement and sharing and breaks things down purely from the perspective of the working systems administrator. A good read if you're skeptical and thinking devops is a bunch of developers trying to take over.
+
+http://www.jedi.be/blog/2011/12/07/devops-from-a-sysadmin-perspective/
+
+
+As mentioned earlier the topic of testing configuration management came up a few times this week, and this post is one of the very few around on the topic. It covers using Cucumber-puppet, Rspec-puppet and puppet-lint to introduce some useful tests to your puppet code.
+
+http://www.jedi.be/blog/2011/12/05/puppet-unit-testing-like-a-pro/
+
+
+As an example of how the above tools might work in a real project, this github repo sets up vagrant and guard (a ruby library using inotify) to automatically run your puppet manifests against a virtual machine as you edit them.
+
+https://github.com/jedi4ever/vagrant-guard-demo
+
+
+And another little trick, this time for writing cucumber steps that can be more easily run across different systems using a couple of environment variables. The features are also worth having a look at if you're interested in using cucumber and the aruba provided steps for testing command output and exit codes.
+
+http://www.jedi.be/blog/2011/12/15/bdd-testing-with-vagrant/
+https://gist.github.com/1476703
+
+
+Tools
+====
+
+Rack-statsd is a number of pieces of Rack middleware for monitoring Ruby applications. Contains three middleware components extracted from GitHub for adding a health check URL, adding hostnames and git hashes as headers and sending unicorn process information to statsd.
+
+https://github.com/github/rack-statsd
+
+
+Building system packages can mean having access to lots of different architectures. Local virtual machines can help here, and this project shows a nice way forward. It provides a vagrant setup and puppet modules to both install build dependencies and to compile and build rpm packages on the resulting virtual machine. Nice idea.
+
+https://github.com/roidelapluie/vagrant-build-mapnik

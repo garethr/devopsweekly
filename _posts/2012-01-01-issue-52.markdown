@@ -1,0 +1,99 @@
+--- 
+layout: post
+title: Issue 52 - 1st January 2012
+---
+
+## Issue 52 - 1st January
+
+A happy new year to everyone, here's hoping 2012 will be just as productive on the devops front as 2011. The advantage of not sending anything last week is that this issue is overflowing with interesting content. It looks like at least a few folks have taken the time away from work to hack or write so thanks again.
+
+
+News
+====
+
+An extensive series of blog posts about implementing a continuous deployment setup in a .NET environment. Lots of screenshots. Lots of code examples. Lots of discussion about the tools used and what worked and what didn't. Worth reading whether you're using ASP.NET or not as most of it is application to any setup.
+
+http://wiki.lessthandot.com/index.php/Eli's_Continuous_Delivery_Project
+
+
+Describing the importance of cross functional teams can be difficult, it's relatively easy to push back on or water down. This post on the Continuous Delivery blog says to organize software delivery around outcomes, not roles. It's a good read and probably a good article to pass on to management.
+
+http://continuousdelivery.com/2011/12/organize-software-delivery-around-outcomes-not-roles/
+
+
+The Opscode Community Summit looked like excellent fun (so it's good to hear that it was the first of many). 40 sessions over 2 days generated lots of discussion, and nicely lots of those sessions have been written up.
+
+http://wiki.opscode.com/display/chef/Opscode+Community+Summit+1
+
+
+Configuring MySQL can be something of a black art. This excellent questionnaire based online application from Percona aims to make anyone with a web browser able to generate a sensible configuration for their particular setup. Very slick.
+
+http://tools.percona.com/
+
+
+Ever wondered which EC2 region to use for a particular geographical area? Well this open source project is doing interesting things to try and find out based on proximity and bandwidth availability. Interesting visualisations as well.
+
+http://www.turnkeylinux.org/blog/aws-datacenters
+
+
+The next release of Jenkins (1.446) has a very interesting looking feature slated for inclusion, namely exposing parts of the command line interface over a randomly assigned SSH interface. This should make it easier to automate Jenkins without carrying around the Java based command line interface library.
+
+https://wiki.jenkins-ci.org/display/JENKINS/Jenkins+SSH
+
+
+The latest release of Graylog2, the excellent log management tool, has made a big change to it's architecture and added a number of interesting looking features. Messages are now stored in ElasticSearch, allowing for faster queries against very large datasets. Aggregate statistics are stored elsewhere allowing for much faster graph generation and much longer term analytics. And the new browser based query shell looks good too.
+
+http://graylog2.org/ohai/0.9.6
+
+
+The holidays might be nearly over but everyone always has time for more reading. Here's a list of books, articles and papers to get you started in the new year.
+
+http://www.paperplanes.de/2011/12/22/holiday-reading-list.html
+
+
+Hot on the heals of the excellent puppet extensions series comes the start of a series on Puppet internals. This first part covers the Puppet Parser in quite some detail. Lots of code, good diagrams. If you're interested in working on Puppet itself or just seeing the insides of an interesting piece of software this is worth reading.
+
+http://www.masterzen.fr/2011/12/27/puppet-internals-the-parser/
+
+
+Visualision is always fun and potentially incredibly useful. This excellent blog post looks at an approach to visualising load across a large number of devices in such a way as to allow people to spot patterns. The break down of the problem and then working up the solution is excellent, and the end results very interesting.
+
+http://dtrace.org/blogs/brendan/2011/12/18/visualizing-device-utilization/
+
+
+Logs are an important part of knowing what is going on with our applications. This article argues that the sheer volume of lots means that log formats optimised for people are flawed, and more structured data optimised for machines is the better approach - specifically that JSON is perfect. Lots of examples, code and a well worked argument.
+
+http://journal.paul.querna.org/articles/2011/12/26/log-for-machines-in-json/
+
+
+Tools
+====
+
+FnordMetric describes itself as a realtime app/event tracking thing based on ruby eventmachine and redis. The screenshots look great and give you an idea of what's possible, and the documentation is extensive and includes lots of code samples. The todo list is also nothing if not ambitious, hopefully one to watch.
+
+https://github.com/paulasmuth/fnordmetric/
+
+
+Ever wondered which of your puppet resources was taking all that time? This very handy utility will give you a list of the slowest performing resources allowing you to optimise where it counts.
+
+https://github.com/rodjek/puppet-profiler
+
+
+Quick shell script to build native packages (using fpm) of a list of gems. Specifically designed for use as a Jenkins jobs to automatically build the package when new ones are added. I'd be interested to see how they are (automatically?) published to the yum repository mentioned.
+
+https://github.com/KrisBuytaert/build-gems
+
+
+Graphite has lots of fans, but it seems not everyone is smitten with the web interface. Graphiti is a Ruby, Javascript and Redis based application that provides an alternative dashboard with some nice features.
+
+https://github.com/paperlesspost/graphiti
+
+
+Everyone has a love/hate relationship with Nagios, and anything that makes automation easier has to be a good thing. This project provides a Ruby API client for the Livestatus Nagios plugin. It could do with more worked examples and better documentation but it looks an interesting and powerful approach.
+
+https://github.com/zenops/livestatus
+
+
+Hot on the heals of releasing the Hubot Campfire bot the folks at GitHub have released the tools they use to control a Jenkins continuous integration server via the same bot. It's designed for easy installation to Heroku so quick to try out.
+
+https://github.com/github/janky

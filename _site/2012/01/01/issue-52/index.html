@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 52 - 1st January 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 52 &ndash; 1st January</h2>
+
+<p>A happy new year to everyone, here&rsquo;s hoping 2012 will be just as productive on the devops front as 2011. The advantage of not sending anything last week is that this issue is overflowing with interesting content. It looks like at least a few folks have taken the time away from work to hack or write so thanks again.</p>
+
+<h1>News</h1>
+
+<p>An extensive series of blog posts about implementing a continuous deployment setup in a .NET environment. Lots of screenshots. Lots of code examples. Lots of discussion about the tools used and what worked and what didn&rsquo;t. Worth reading whether you&rsquo;re using ASP.NET or not as most of it is application to any setup.</p>
+
+<p><a href="http://wiki.lessthandot.com/index.php/Eli">http://wiki.lessthandot.com/index.php/Eli</a>&rsquo;s_Continuous_Delivery_Project</p>
+
+<p>Describing the importance of cross functional teams can be difficult, it&rsquo;s relatively easy to push back on or water down. This post on the Continuous Delivery blog says to organize software delivery around outcomes, not roles. It&rsquo;s a good read and probably a good article to pass on to management.</p>
+
+<p><a href="http://continuousdelivery.com/2011/12/organize-software-delivery-around-outcomes-not-roles/">http://continuousdelivery.com/2011/12/organize-software-delivery-around-outcomes-not-roles/</a></p>
+
+<p>The Opscode Community Summit looked like excellent fun (so it&rsquo;s good to hear that it was the first of many). 40 sessions over 2 days generated lots of discussion, and nicely lots of those sessions have been written up.</p>
+
+<p><a href="http://wiki.opscode.com/display/chef/Opscode+Community+Summit+1">http://wiki.opscode.com/display/chef/Opscode+Community+Summit+1</a></p>
+
+<p>Configuring MySQL can be something of a black art. This excellent questionnaire based online application from Percona aims to make anyone with a web browser able to generate a sensible configuration for their particular setup. Very slick.</p>
+
+<p><a href="http://tools.percona.com/">http://tools.percona.com/</a></p>
+
+<p>Ever wondered which EC2 region to use for a particular geographical area? Well this open source project is doing interesting things to try and find out based on proximity and bandwidth availability. Interesting visualisations as well.</p>
+
+<p><a href="http://www.turnkeylinux.org/blog/aws-datacenters">http://www.turnkeylinux.org/blog/aws-datacenters</a></p>
+
+<p>The next release of Jenkins (1.446) has a very interesting looking feature slated for inclusion, namely exposing parts of the command line interface over a randomly assigned SSH interface. This should make it easier to automate Jenkins without carrying around the Java based command line interface library.</p>
+
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Jenkins+SSH">https://wiki.jenkins-ci.org/display/JENKINS/Jenkins+SSH</a></p>
+
+<p>The latest release of Graylog2, the excellent log management tool, has made a big change to it&rsquo;s architecture and added a number of interesting looking features. Messages are now stored in ElasticSearch, allowing for faster queries against very large datasets. Aggregate statistics are stored elsewhere allowing for much faster graph generation and much longer term analytics. And the new browser based query shell looks good too.</p>
+
+<p><a href="http://graylog2.org/ohai/0.9.6">http://graylog2.org/ohai/0.9.6</a></p>
+
+<p>The holidays might be nearly over but everyone always has time for more reading. Here&rsquo;s a list of books, articles and papers to get you started in the new year.</p>
+
+<p><a href="http://www.paperplanes.de/2011/12/22/holiday-reading-list.html">http://www.paperplanes.de/2011/12/22/holiday-reading-list.html</a></p>
+
+<p>Hot on the heals of the excellent puppet extensions series comes the start of a series on Puppet internals. This first part covers the Puppet Parser in quite some detail. Lots of code, good diagrams. If you&rsquo;re interested in working on Puppet itself or just seeing the insides of an interesting piece of software this is worth reading.</p>
+
+<p><a href="http://www.masterzen.fr/2011/12/27/puppet-internals-the-parser/">http://www.masterzen.fr/2011/12/27/puppet-internals-the-parser/</a></p>
+
+<p>Visualision is always fun and potentially incredibly useful. This excellent blog post looks at an approach to visualising load across a large number of devices in such a way as to allow people to spot patterns. The break down of the problem and then working up the solution is excellent, and the end results very interesting.</p>
+
+<p><a href="http://dtrace.org/blogs/brendan/2011/12/18/visualizing-device-utilization/">http://dtrace.org/blogs/brendan/2011/12/18/visualizing-device-utilization/</a></p>
+
+<p>Logs are an important part of knowing what is going on with our applications. This article argues that the sheer volume of lots means that log formats optimised for people are flawed, and more structured data optimised for machines is the better approach &ndash; specifically that JSON is perfect. Lots of examples, code and a well worked argument.</p>
+
+<p><a href="http://journal.paul.querna.org/articles/2011/12/26/log-for-machines-in-json/">http://journal.paul.querna.org/articles/2011/12/26/log-for-machines-in-json/</a></p>
+
+<h1>Tools</h1>
+
+<p>FnordMetric describes itself as a realtime app/event tracking thing based on ruby eventmachine and redis. The screenshots look great and give you an idea of what&rsquo;s possible, and the documentation is extensive and includes lots of code samples. The todo list is also nothing if not ambitious, hopefully one to watch.</p>
+
+<p><a href="https://github.com/paulasmuth/fnordmetric/">https://github.com/paulasmuth/fnordmetric/</a></p>
+
+<p>Ever wondered which of your puppet resources was taking all that time? This very handy utility will give you a list of the slowest performing resources allowing you to optimise where it counts.</p>
+
+<p><a href="https://github.com/rodjek/puppet-profiler">https://github.com/rodjek/puppet-profiler</a></p>
+
+<p>Quick shell script to build native packages (using fpm) of a list of gems. Specifically designed for use as a Jenkins jobs to automatically build the package when new ones are added. I&rsquo;d be interested to see how they are (automatically?) published to the yum repository mentioned.</p>
+
+<p><a href="https://github.com/KrisBuytaert/build-gems">https://github.com/KrisBuytaert/build-gems</a></p>
+
+<p>Graphite has lots of fans, but it seems not everyone is smitten with the web interface. Graphiti is a Ruby, Javascript and Redis based application that provides an alternative dashboard with some nice features.</p>
+
+<p><a href="https://github.com/paperlesspost/graphiti">https://github.com/paperlesspost/graphiti</a></p>
+
+<p>Everyone has a love/hate relationship with Nagios, and anything that makes automation easier has to be a good thing. This project provides a Ruby API client for the Livestatus Nagios plugin. It could do with more worked examples and better documentation but it looks an interesting and powerful approach.</p>
+
+<p><a href="https://github.com/zenops/livestatus">https://github.com/zenops/livestatus</a></p>
+
+<p>Hot on the heals of releasing the Hubot Campfire bot the folks at GitHub have released the tools they use to control a Jenkins continuous integration server via the same bot. It&rsquo;s designed for easy installation to Heroku so quick to try out.</p>
+
+<p><a href="https://github.com/github/janky">https://github.com/github/janky</a></p>
+
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

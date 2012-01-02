@@ -1,0 +1,88 @@
+--- 
+layout: post
+title: Issue 50 - 11th December 2011
+---
+
+## Issue 50 - 11th December
+
+Last week was a little short, mainly because I'd been pretty busy of late. This week I spent a bit more time looking and reading, so hopefully this issue should keep everyone busy until next week.
+
+
+News
+====
+
+I'm a big fan of message based systems and this article is an excellent starting point if you're not that familiar with some of the terminology and general patterns. It covers what, why and some simple how examples. CoilMQ mentioned in the post also looks excellent.
+
+http://www.devco.net/archives/2011/12/11/common-messaging-patterns-using-stomp.php
+
+
+If you're the kind of person who prefers videos to long introductions, this presentation also covers message based architecture. It focuses a little on doing so with Sprint and discusses AMQP rather than stomp but it's still makes a good introduction.
+
+http://www.infoq.com/presentations/Messaging-for-Modern-Applications
+
+
+This next post asserts that "Devops has made Release and Deployment Cool". I'd argue that it's always been cool but that might just have been me :) The devops banner has certainly raised the awareness and level of debate between different parties about release automation. The brief discussion about the good and bad points about vendor involvement are also well put.
+
+http://swreflections.blogspot.com/2011/12/devops-has-made-release-and-deployment.html
+
+
+The Flume project, for collecting and aggregating log files, is looking at re-architecting how it works based on real world usage. Flume NG is the working title and this post discusses the upcoming plans for change. Interesting if you're using Flume or if you're interested in reliable distributed systems design.
+
+https://blogs.apache.org/flume/entry/flume_ng_architecture
+
+
+Lots of experiences from other sectors and approaches can be brought to bear on devops related problems. This post covers various Lean Manufacturing examples and in particular value stream mapping and applies them to web operations.
+
+http://dev2ops.org/blog/2011/12/5/companies-have-plenty-of-monitoring-what-they-dont-have-is-c.html
+
+
+Collecting log data in a manner that makes it easy to analyse can be tricky. This article covers using Fluentd to take apache logs and push them into a mongodb database with a minimum of configuration. Fluentd supports lots of different backends too.
+
+http://blog.treasure-data.com/post/13766262632/real-time-log-collection-with-fluentd-and-mongodb
+
+
+Excellent detailed post on the difference between Puppet's parameterized classes and definitions. Done via relatively straightforward examples showing the differences and when to use both.
+
+http://www.craigdunn.org/2011/09/puppet-parameterized-classes-vs-definitions/
+
+
+A nice interview from Goto Conference with the authors of Continuous Delivery. It covers various strategies and patterns for testing, building and releasing software, and how these fit in with agile and lean software development. 
+
+http://devnology.nl/en/podcast/10-content/181-devnology-podcast-023-continuous-delivery
+
+
+Nice infrastructure as code presentation introducing Chef for both managing server software and then going onto using Chef for deployment. Another presentation from GOTO.
+
+http://www.infoq.com/presentations/Chef-in-the-Cloud-and-On-the-Ground
+
+
+Jobs
+====
+
+Love what Puppet is doing and want to be a part of it? Puppet Labs, creators of Puppet, is growing, and are currently hiring for Professional Services Engineer (OR, NYC, UK), Operations Engineer (OR), Technical Training Manager (OR) and Account Manager (OR). Interested or know someone who might be? Check out our job postings (and apply online) 
+
+http://www.puppetlabs.com/jobs
+
+
+Tools
+====
+
+Librarian is a tool to resolve recursively a set of specifications and fetch and install the fully resolved specifications, in particular it provides a way of a managing a repository of Chef cookbooks. If you're familiar with something like bundler in ruby or the requirements.txt file from pip in python then it's something like that. 
+
+https://github.com/applicationsonline/librarian
+
+
+Foodcritic looks like an excellent lint tool for Chef cookbooks. It only has a small number of (useful) checks at present but it's pretty simple to add more if you have a particular pattern you want to enforce or quash.
+
+https://github.com/acrmp/foodcritic
+http://acrmp.github.com/foodcritic/
+
+
+If the dependency on Node.js put you off the GitHub Hubot campfire bot, then this might be exactly what you're after. This 'fork' is written entirely in bash, with plugins being any arbitrary executable.
+
+https://github.com/teddziuba/hubot
+
+
+Lots of organisations running large server clusters seem to be using or experimenting with bittorrent for distribution of code deploys. This project from Hyves is interesting mainly because of the details around making sure nodes in a given rack don't all swamp the available uplink bandwidth.
+
+https://github.com/hyves-org/p2ptracker

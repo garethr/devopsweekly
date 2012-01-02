@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 51 - 18th December 2011</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 51 &ndash; 18th December</h2>
+
+<p>First the bad news, I&rsquo;m going to take next weekend off so the next issue won&rsquo;t be for two whole weeks. The good news is I have a bumper Christmas edition this week, which should hopefully keep everyone going until the new year. I&rsquo;ve not been keeping track but I&rsquo;m pretty sure this is the most content I&rsquo;ve included so far, and hopefully their will be something for everyone. Thanks again to all the authors of articles, covers of talks and hackers of code that make devopsweekly good fun to put together.</p>
+
+<h1>News</h1>
+
+<p>Anyone interested or already using Riak should buy themselves an early Christmas present. Mathias Meyer has been writing furiously and has just shipped the self published Riak Handbook. It&rsquo;s available as a bundle of Epub, Mobi and PDF. Importantly it covers not just using Riak, but also running it.</p>
+
+<p><a href="http://riakhandbook.com/">http://riakhandbook.com/</a></p>
+
+<p>Most of the articles I include tend to be about learning new interesting things. This one is more of a warning &ndash; at some point soon the Sun Java packages are going to disappear from the Ubuntu partner repositories due to Oracle licensing changes. If someone finds a good article about the best thing to do if this affects you let me know.</p>
+
+<p><a href="https://lists.ubuntu.com/archives/ubuntu-security-announce/2011-December/001528.html">https://lists.ubuntu.com/archives/ubuntu-security-announce/2011-December/001528.html</a></p>
+
+<p>Good article with a few opinions about the state of log management. Mentioned logstash and graylog2. Interesting points about the initial fear of new moving parts and complexity being mitigated by the usefulness of the resulting setup.</p>
+
+<p><a href="http://redbluemagenta.com/2011/08/19/modern-log-management-and-monitoring/">http://redbluemagenta.com/2011/08/19/modern-log-management-and-monitoring/</a></p>
+
+<p>Lots of talk, and writing, about testing configuration management this week.  Nikolay Sturm, author of Cucumber-puppet, has created an example project demonstrating that tools usage. It&rsquo;s easy to follow and makes a good template if you&rsquo;re starting to write features for your manifests and modules.</p>
+
+<p><a href="http://blog.nistu.de/2011/12/11/an-example-project-using-cucumber-puppet/">http://blog.nistu.de/2011/12/11/an-example-project-using-cucumber-puppet/</a>
+<a href="https://github.com/nistude/cucumber-puppet.example">https://github.com/nistude/cucumber-puppet.example</a></p>
+
+<p>Fabric is great for ad-hoc remote command execution, but that means it doesn&rsquo;t ship with higher level abstractions that make common tasks just a matter of configuration. The discussion in this issue sounds interesting, a canonical source for useful snippets and higher level commands is in the works. For the moment the list of existing supporting tools is worth checking out.</p>
+
+<p><a href="https://github.com/fabric/fabric/issues/461">https://github.com/fabric/fabric/issues/461</a></p>
+
+<p>The third article in a good series of posts about extending Puppet. This one particularly caught the eye as it covers what the Indirector is. If you&rsquo;ve delved into Puppet source recently then you&rsquo;ll have come across this and if you&rsquo;re anything like me taken a bit of time to get your head around. This post solves that problem for future visitors to the Puppet code very nicely.</p>
+
+<p><a href="http://www.masterzen.fr/2011/12/11/the-indirector-puppet-extensions-points-3/">http://www.masterzen.fr/2011/12/11/the-indirector-puppet-extensions-points-3/</a></p>
+
+<p>Good talk from Luke Kaines (creator of Puppet) at LISA. Starting with a good list of what Devops isn&rsquo;t and then going on to the rapid changes in web operations. Also breaks down the agile manifesto in terms of systems administration.</p>
+
+<p><a href="http://www.youtube.com/watch?v=HxBEEh4Nsnk&amp;feature=youtu.be">http://www.youtube.com/watch?v=HxBEEh4Nsnk&amp;feature=youtu.be</a></p>
+
+<p>Another talk from LISA, this time from Jesse Robins of Opscode explaining the concept of a Gameday. I particularly love the quote &ldquo;failure free operations require experience with failure&rdquo;. Lots of other good takeaways in the slides too.</p>
+
+<p><a href="http://www.slideshare.net/jesserobbins/ameday-creating-resiliency-through-destruction">http://www.slideshare.net/jesserobbins/ameday-creating-resiliency-through-destruction</a></p>
+
+<p>The big conferences certainly make my life easier when looking for great content :) The last of this weeks LISA talks, this one the keynote given by Ben Rockwood. A pretty high level and convincing argument for Devops, painting it as a journey of discovery and not the final destination.</p>
+
+<p><a href="http://blogs.usenix.org/2011/12/08/lisa-11-keynote-the-devops-transformation/">http://blogs.usenix.org/2011/12/08/lisa-11-keynote-the-devops-transformation/</a></p>
+
+<p>Nice slide deck summarising Infrastructure as Code. Particular good for the diagrams used to explain the different parts of the process.</p>
+
+<p><a href="http://www.slideshare.net/guttertec/infrastructure-as-code-10499271">http://www.slideshare.net/guttertec/infrastructure-as-code-10499271</a></p>
+
+<p>Consistent hashing is magic. This article explains how it works and why you should care. If you&rsquo;re dealing with improving the availability of data intensive applications then this is a must read.</p>
+
+<p><a href="http://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html">http://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html</a></p>
+
+<p>Sysadvent has kept up the high quality posts, this one particularly caught my eye. Everyone has logs that they&rsquo;d love to analyse, this post shows how to do so relatively simply using Elastic Map Reduce (Hadoop on EC2) and the Pig query language. Good getting started post.</p>
+
+<p><a href="http://sysadvent.blogspot.com/2011/12/day-10-analyzing-logs-with-pig-and.html">http://sysadvent.blogspot.com/2011/12/day-10-analyzing-logs-with-pig-and.html</a></p>
+
+<h1>The Patrick Debois Show</h1>
+
+<p>Someone obviously put something in the water in Gent over the last week or so, as Patrick started churning out new and interesting content on a nearly daily basis.</p>
+
+<p>This post reprints an article written for the Usenix Login magazine, entitled Devops from a sysadmin perspective. It takes the familiar topics of culture, automation, measurement and sharing and breaks things down purely from the perspective of the working systems administrator. A good read if you&rsquo;re skeptical and thinking devops is a bunch of developers trying to take over.</p>
+
+<p><a href="http://www.jedi.be/blog/2011/12/07/devops-from-a-sysadmin-perspective/">http://www.jedi.be/blog/2011/12/07/devops-from-a-sysadmin-perspective/</a></p>
+
+<p>As mentioned earlier the topic of testing configuration management came up a few times this week, and this post is one of the very few around on the topic. It covers using Cucumber-puppet, Rspec-puppet and puppet-lint to introduce some useful tests to your puppet code.</p>
+
+<p><a href="http://www.jedi.be/blog/2011/12/05/puppet-unit-testing-like-a-pro/">http://www.jedi.be/blog/2011/12/05/puppet-unit-testing-like-a-pro/</a></p>
+
+<p>As an example of how the above tools might work in a real project, this github repo sets up vagrant and guard (a ruby library using inotify) to automatically run your puppet manifests against a virtual machine as you edit them.</p>
+
+<p><a href="https://github.com/jedi4ever/vagrant-guard-demo">https://github.com/jedi4ever/vagrant-guard-demo</a></p>
+
+<p>And another little trick, this time for writing cucumber steps that can be more easily run across different systems using a couple of environment variables. The features are also worth having a look at if you&rsquo;re interested in using cucumber and the aruba provided steps for testing command output and exit codes.</p>
+
+<p><a href="http://www.jedi.be/blog/2011/12/15/bdd-testing-with-vagrant/">http://www.jedi.be/blog/2011/12/15/bdd-testing-with-vagrant/</a>
+<a href="https://gist.github.com/1476703">https://gist.github.com/1476703</a></p>
+
+<h1>Tools</h1>
+
+<p>Rack-statsd is a number of pieces of Rack middleware for monitoring Ruby applications. Contains three middleware components extracted from GitHub for adding a health check URL, adding hostnames and git hashes as headers and sending unicorn process information to statsd.</p>
+
+<p><a href="https://github.com/github/rack-statsd">https://github.com/github/rack-statsd</a></p>
+
+<p>Building system packages can mean having access to lots of different architectures. Local virtual machines can help here, and this project shows a nice way forward. It provides a vagrant setup and puppet modules to both install build dependencies and to compile and build rpm packages on the resulting virtual machine. Nice idea.</p>
+
+<p><a href="https://github.com/roidelapluie/vagrant-build-mapnik">https://github.com/roidelapluie/vagrant-build-mapnik</a></p>
+
+  </div>
+  <div id="footer">
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>
