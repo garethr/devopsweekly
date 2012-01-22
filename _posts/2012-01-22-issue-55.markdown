@@ -1,0 +1,83 @@
+---
+layout: post
+title: Issue 55 - 22nd January 2012
+---
+
+## Issue 55 - 22nd January
+
+A big welcome to all the new readers this week. In terms of subscriptions this last week has been just about the business since I started. Elsewhere I've been seeing a definite increase in interest in this whole devops things. Hopefully that means even more interesting content to find and read.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+A good thread on Reddit with members of the Mozilla web development team discussing the approach they have taken to deployment and testing. Covers a lot of continuous delivery ground, but with some interesting first hand experiences.
+
+http://www.reddit.com/r/IAmA/comments/oonrg/iama_member_of_the_mozilla_webdev_team_ama/c3iufax
+
+
+Details of the configuration and systems management devroom at Fosdem are now up, and I'm already looking forward to lots of these talks. Talks covering new tools (Rudder), old tools (Jenkins) and some devops culture (DevOps is not an absolute. It's a range.)
+
+http://fosdem.org/2012/schedule/track/configuration_and_systems_management_devroom
+
+
+Amazon launched a new part of their web services stack this week, with Amazon DynamoDB. They describe is as a fast and scalable NoSQL database service and it's a fully managed service. The free tier should see people experimenting with this at the very least.
+
+http://www.allthingsdistributed.com/2012/01/amazon-dynamodb.html
+
+
+An interesting post about running Puppet without the master. It outlines concerns for certain setups with having a master and goes over how they dealt with things like stored configuration in a masterless setup.
+
+http://current.workingdirectory.net/posts/2011/puppet-without-masters/
+
+
+A well thought through post with a catchy title about how system administration is changing profoundly and rapidly. I particularly like this quote as I think it's hopefully an increasingly common sentiment "But it’s finally dawned on me that “devops” isn’t just some buzzword concept that someone has thought up to make sysadmins’ lives hell. It’s the natural evolution of both professions"
+
+http://www.juliandunn.net/2012/01/13/chef-devops-and-the-death-of-system-administration/
+
+
+Fantasic presentation by Mike Brittain about the development of a performance culture at Etsy. It features just enough graphs to give you ideas and talks about the technical, business and people sides of how they made improvements.
+
+http://www.slideshare.net/mikebrittain/web-performance-culture-and-tools-at-etsy-11159635
+
+
+Jobs
+====
+
+FreeAgent, online accounting pioneers helping freelancers and small businesses worldwide, are looking for a talented Operations Engineer to bridge the gap between product development and infrastructure and to scale their web app to handle hundreds of thousands of incredibly happy customers.
+
+http://www.freeagent.com/company/jobs/operations-engineer-devops
+
+
+Events
+=====
+
+FLOSS UK's annual Large Installation Systems Administration (LISA) conference is coming up soon, in Edinburgh from the 20th to the 22nd March. They are still on the lookout for talks as well if you have any good ideas.
+
+http://www.flossuk.org/Events/Spring2012
+
+
+Tools
+====
+
+Vagrant is gearing up for the big 1.0 release, with version 0.9 shipped this last week. Lots of things in this release, including support for bridged networks, huge windows improvements and support for multiple versions of virtual box. The Vagrantfile syntax has changed a little however, but on first run you should be told what you need to change.
+
+http://vagrantup.com/docs/changes/changes_08x_09x.html
+
+
+A very nice looking simple load testing tool. Rather than cover the same ground as everyone else it's one real feature is a way to visualise the resulting concurrent request success and failure rate. Beautifully simple.
+
+https://github.com/andrewvc/parbench
+
+
+(R?)ex is a Perl based remote command execution engine. The site has lots of nice examples and clear documentation, from a quick look it feels a lot like Fabric in Python. Might be useful, in particular if you're happier with Perl than anything else.
+
+http://rexify.org/
