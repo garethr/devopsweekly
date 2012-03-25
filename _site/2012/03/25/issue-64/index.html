@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 64 - 25th March 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 64 &ndash; 25th March</h2>
+
+<p>I&rsquo;m just back from Edinburgh after a fun and informative few days at PuppetCamp Edinburgh. Hi to all the folks who made it along. I got a chance to run through a talk on using the data buried inside your configuration management tool for things like reporting, eliminating multiple sources of truth and visualisation. <a href="http://www.slideshare.net/garethr/mining-puppet.">http://www.slideshare.net/garethr/mining-puppet.</a> Let me know what you think.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Lots of people do appear to get confused over the term Devops. This post tries to cover some of those areas for confusion and address them one by one. Worth reading for when you wander into similar conversations.</p>
+
+<p><a href="http://www.brunton-spall.co.uk/post/2012/03/13/what-is-devops-not/">http://www.brunton-spall.co.uk/post/2012/03/13/what-is-devops-not/</a></p>
+
+<p>Did anyone mention that naming things is hard? This post from Adrian Cockcroft of Netflix is interesting for a number of reasons but I found the descriptions of how Netflix operate the most insightful. Some good comments and replies too. If you&rsquo;re interested in cloud operations at scale it&rsquo;s worth a read.</p>
+
+<p><a href="http://perfcap.blogspot.co.uk/2012/03/ops-devops-and-noops-at-netflix.html">http://perfcap.blogspot.co.uk/2012/03/ops-devops-and-noops-at-netflix.html</a></p>
+
+<p>John Alspaw from Etsy responded with a long followup to the above post, going into some detail about the reasons why some folks don&rsquo;t like the NoOps terminology. Again I found this more interesting for the insight about how Etsy work and organise themselves.</p>
+
+<p><a href="https://gist.github.com/2140086">https://gist.github.com/2140086</a></p>
+
+<p>If you&rsquo;re developing code that will be distributed for multiple distributions then testing can be irritating. This post covers a neat way of testing Chef cookbooks across multiple distros using Vagrant &ndash; by defining multiple virtual machines in the Vagrantfile. It&rsquo;s a simple pattern, and one that would be useful for more than just configuration management testing.</p>
+
+<p><a href="http://jtimberman.housepub.org/blog/2012/03/18/multivm-vagrantfile-for-chef/">http://jtimberman.housepub.org/blog/2012/03/18/multivm-vagrantfile-for-chef/</a></p>
+
+<p>Not often I come across interesting Windows content, partly because I don&rsquo;t find myself using it very often. But whenever I do it&rsquo;s nearly always something about powershell. This article covers a nice idea, using a script to generate a regular report of data from across a group of servers. Includes an example, the working code and a good walk through of what&rsquo;s going on.</p>
+
+<p><a href="http://www.simple-talk.com/sysadmin/powershell/building-a-daily-systems-report-email-with-powershell/">http://www.simple-talk.com/sysadmin/powershell/building-a-daily-systems-report-email-with-powershell/</a></p>
+
+<p>The Food Fight podcast is back again and becoming more regular it seems. This episode goes into some detail about reusability of configuration management code and in particular applying good object orientated patterns to Chef recipes.</p>
+
+<p><a href="http://www.foodfightshow.org/2012/03/episode-6-cookbook-reusability-with.html">http://www.foodfightshow.org/2012/03/episode-6-cookbook-reusability-with.html</a></p>
+
+<p>At Puppet Camp this last week one of the talks, by Matt Carroll of Future Publishing was particularly interesting. These slides tell a good story of an evolving technical organisation and go into some details of how they came to love publish/subscribe tools via the use of mcollective.</p>
+
+<p><a href="http://oholiab.goatse.co.uk/puppetcamp.html">http://oholiab.goatse.co.uk/puppetcamp.html</a></p>
+
+<h1>Tools</h1>
+
+<p>Skewer is another tool to make using Puppet without the central puppetmaster easier. It features integration with fog for creating EC2 and Rackspace Cloud instances, as well as a bootstrap to install Puppet&rsquo;s dependencies.</p>
+
+<p><a href="https://github.com/builddoctor/skewer">https://github.com/builddoctor/skewer</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

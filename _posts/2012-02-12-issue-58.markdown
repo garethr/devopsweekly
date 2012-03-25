@@ -1,0 +1,73 @@
+---
+layout: post
+title: Issue 58 - 12th February 2012
+---
+
+## Issue 58 - 12th February
+
+A hopefully good set of blog posts this week, with many focused on people writing about their work infrastructure or stories about a particular incident. Maybe it's just because I've become better at finding this sort of content, but it feels to me like hand in hand with the whole devops thing has come much more openness about infrastructure and how we build these networks and systems.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+An excellent, detailed post about how to go about introducing a new programming language into an organisation. Having been involved in similar, though smaller, transitions this advice is well worth reading and I think is as relevant to systems administrators moving from just bash scripts as it is to developers moving from Java.
+
+http://blog.jayfields.com/2012/01/lessons-learned-while-introducing-new.html
+
+
+Nice to see a different take on some of the implications of continuous deployment, this post covers the case of paid for software, and the clash between continuous deployment and charging for a new version.
+
+http://ayende.com/blog/154689/the-economics-of-continuous-deployment
+
+
+Postmortem's for incidents can be hugely beneficial both for avoiding future issues and for institutional learning. However this blog post argues against stressing the root cause, stating that for complex systems there often isn't one single cause. Lots of interesting points and further academic reading for those particularly interested.
+
+http://www.kitchensoap.com/2012/02/10/each-necessary-but-only-jointly-sufficient/
+
+
+Detailed stories from inside organisations are always interesting. This one describes the infrastructure setup at 99designs. I'd wager this is quite a typical setup so is probably a good read for folks who are just learning how to grow their small web application and maybe want to know what it might look like in the future.
+
+http://99designs.com/tech-blog/blog/2012/01/30/infrastructure-at-99designs/
+
+
+Another good story post, this about a particular event - needing to scale up a small application very rapidly. It's worth reading, especially if you've not been involved in anything similar before. Integrating this sort of testing and working into your ongoing development process is important if you're not going to run into a similar hard deadline too.
+
+http://www.williamhertling.com/2012/02/scaling-web-app-1000x-in-3-days.html
+
+
+I love hanging automation off Puppet's stored configuration database, but deleting nodes in a highly dynamic environment can be irritating. This post and associated code shows one way of solving this problem in an OpenStack environment using the API.
+
+http://geek.jasonhancock.com/2012/02/06/removing-destroyed-cloudstack-instances-from-puppet-stored-configurations-db/
+
+
+After a question left unanswered in one of the talks at FOSDEM and a bit of rapid hacking Puppet now has a new way of describing manifests: XML. I was genuinely going to do this for the April 1st issue too.
+
+http://unethicalblogger.com/2012/02/08/puppet-xml-a-brand-new-synergy.html
+https://github.com/rtyler/puppet/tree/puppetxml
+
+
+After FOSDEM last weekend several people headed off to Antwerp for a monitoring themed hack day and workshop. Lots of whiteboarding ensued, as well as discussions of the increasing utility of logstash for  passing all the data around effectively. Sorry I couldn't make it.
+
+http://www.krisbuytaert.be/blog/we-didnt-fix-it
+
+
+And last a little self-promotion. At work as well as building a new development team inside the UK Government we've been building a culture of dashboards on large screens. I'm always interested to see other organisations dashboards and finally got round to a blog post about ours. If anyone else has similar pictures of posts I'd love to see them.
+
+http://digital.cabinetoffice.gov.uk/2012/02/08/radiating-information/
+
+
+Tools
+====
+
+OpenStack appears to be picking up speed, case studies and fans pretty quickly. But having a play with your own personal cloud feels a little difficult. That's where DevStack comes in. Good documentation and a series of scripts to get you setup with a local environment. It's not intended for production deployments, more for development and learning.
+
+http://devstack.org/

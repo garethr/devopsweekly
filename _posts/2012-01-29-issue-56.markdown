@@ -1,0 +1,83 @@
+---
+layout: post
+title: Issue 56 - 29th January 2012
+---
+
+## Issue 56 - 29th January
+
+A little late shipped today I'm afraid and I'm sure I'll have missed some good content as I've been particularly busy this week. Next weekend I'll be at FOSDEM, which either means a "live from Belgium" special edition, or another slight delay too. The good news though is with the configuration management and cloud dev rooms (and nice belgium beer) and I should find lots of good content.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+Git is increasingly the source control tool of choice for many projects, and going from using it for person projects to using it in a team can be quite a jump, especially if coming from a simpler tool. This guide is quick, simple and features useful graphics to try get you over the hump.
+
+http://kentnguyen.com/development/visualized-git-practices-for-team/
+
+
+CloudFoundry has a rather interesting new feature, namely the ability to span multiple cloud providers. Some details of how this works are covered in the announcement, along with some demos of it working.
+
+http://blog.cloudfoundry.com/post/13481010615/multi-language-multi-framework-what-about-multi-cloud
+
+
+Learning from others mistakes is nearly as good as learning from your own first hand, so this series looks interesting. Tales of database woe, first up issues with CHECKSUM and backups.
+
+http://www.simple-talk.com/sql/database-administration/confessions-of-a-dba-my-worst-mistake/
+
+
+I'm quite a Solr fan, so this article particularly interested me this week. Past a certain point index replication can become increasingly problematic, Etsy looked to solve this using BitTorrent as the distribution mechanism with some great results.
+
+http://codeascraft.etsy.com/2012/01/23/solr-bittorrent-index-replication/
+
+
+Google's pursuit of speed is well known, this article covers some very low level TCP tweaks that might be useful to get that extra edge.
+
+http://googlecode.blogspot.com/2012/01/lets-make-tcp-faster.html
+
+
+Sensu, the new monitoring framework, looked interesting when I first came across it. But this in-depth getting started article should make jumping in quickly possible. Lots of details of the commands needed to install and configure your first instance and writing your first check.
+
+http://joemiller.me/2012/01/19/getting-started-with-the-sensu-monitoring-framework/
+
+
+More examples of Jenkins being used for much more than continuous integration. The parallels between testing and monitoring have interested me for a while, and explains why Jenkins feature set makes using it as part of a monitoring setup easy. This post covers a simple check involving processes, databases and log files.
+
+http://blog.lusis.org/blog/2012/01/23/lowtech-monitoring-with-jenkins/
+
+
+For some in the agile community continuous delivery, and especially continuous deployment, ring alarm bells. This well argued post covers why this might be, and places continuous delivery as a subset of more traditional agile practices.
+
+http://kief.com/continuous_delivery/continuous_delivery_vs_agile.html
+
+
+GitHub has grown large pretty quickly, and this talk covers some of the how. Refreshingly it focuses both on technical and people issues equally, and has worthwhile points on both.
+
+http://zachholman.com/talk/scaling-github
+
+
+Events
+=====
+
+Users of Chef should be looking forward to ChefConf, to be held May 15th-17th in San Francisco. A call for proposals is open too, until February 17th.
+
+http://chefconf.opscode.com/
+
+
+Tools
+====
+
+Moncli looks like another interesting new take on the monitoring problem. Written in Python and based around a RabbitMQ message broker, it also features an interesting sounding compatibility layer for Nagios.
+
+https://github.com/smetj/Moncli
+http://www.smetj.net/wiki/Moncli_documentation
+
+

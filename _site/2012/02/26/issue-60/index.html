@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 60 - 26th February 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 60 &ndash; 26th February</h2>
+
+<p>Another weekend, and another devopsweekly issue filled with hopefully worthwhile articles and a few interesting tools. Do let me know what you think about the mix of content each week, or if you feel the email is missing anything in particular. Drop me a line at <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#103;&#x61;&#114;&#101;&#x74;&#x68;&#64;&#x6d;&#111;&#x72;&#x65;&#116;&#x68;&#x61;&#110;&#115;&#101;&#118;&#101;&#x6e;&#46;&#110;&#101;&#x74;">&#103;&#x61;&#114;&#x65;&#x74;&#104;&#x40;&#x6d;&#x6f;&#x72;&#101;&#116;&#104;&#97;&#x6e;&#115;&#101;&#118;&#101;&#x6e;&#46;&#x6e;&#101;&#116;</a> with any ideas you may have.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Devops Cafe is back this week with a new episode. John and Damon chat with Jordan Sissel about his work on fpm, logstash and more. Some good discussion in particular around the state of commercial and open source log management software.</p>
+
+<p><a href="http://devopscafe.org/show/2012/2/25/devops-cafe-episode-22.html">http://devopscafe.org/show/2012/2/25/devops-cafe-episode-22.html</a></p>
+
+<p>Interesting writeup about running into a scaling issue with puppet and some of the complexities of a real world setup using puppet, passenger and apt-cache. Attempting to get everything to call in at the same time is tricky so some useful tips here.</p>
+
+<p><a href="http://tomoconnor.eu/blogish/puppet-apt-and-our-very-own-thundering-herd/">http://tomoconnor.eu/blogish/puppet-apt-and-our-very-own-thundering-herd/</a></p>
+
+<p>Opscode, the nice folks behind Chef, have released their excellent training material under an open source license and put the content and code up on GitHub. Interesting writeup too of moving from Keynote to Markdown, and the ultimate goal of making the next session benefit from the previous ones.</p>
+
+<p><a href="http://www.opscode.com/blog/2012/02/23/open-source-training-materials/">http://www.opscode.com/blog/2012/02/23/open-source-training-materials/</a>
+<a href="https://github.com/opscode/chef-fundamentals">https://github.com/opscode/chef-fundamentals</a></p>
+
+<p>Good slide deck about mining all the data available from your infrastructure. Some nice examples of mapping metrics to configuration management tools and some ideas for dealing with graphs and logs.</p>
+
+<p><a href="http://www.slideshare.net/RanjibDey/spit-gather-churn-mining-infrastructure-data-for-ops-intelligence">http://www.slideshare.net/RanjibDey/spit-gather-churn-mining-infrastructure-data-for-ops-intelligence</a></p>
+
+<p>If you&rsquo;re looking to squeeze more performance out of your MySQL setup then this whitepaper from the Percona folk, MySQL Performance Analysis with Percona Toolkit and TCP/IP Network Traffic, might be of interest. Goes into lots of low level details if you&rsquo;re at the point of optimising network level traffic.</p>
+
+<p><a href="http://www.percona.com/about-us/mysql-white-paper/mysql-performance-analysis-with-percona-toolkit-and-tcp-ip-network-traffic/">http://www.percona.com/about-us/mysql-white-paper/mysql-performance-analysis-with-percona-toolkit-and-tcp-ip-network-traffic/</a></p>
+
+<p>I forgot to include this last week so folks have probably seen it, but just in case. An excellent in-depth technical article about how Tumblr works. Covers a huge range of what software and hardware they use and why, along with some particularly interesting numbers and what they are doing now to solve specific problems.</p>
+
+<p><a href="http://highscalability.com/blog/2012/2/13/tumblr-architecture-15-billion-page-views-a-month-and-harder.html">http://highscalability.com/blog/2012/2/13/tumblr-architecture-15-billion-page-views-a-month-and-harder.html</a></p>
+
+<p>One of the particularly interesting talks at FOSDEM was the wikipedia open source infrastructure talk. This writeup of the talk covers a lot of ground and picks a few of the particularly interesting success stories.</p>
+
+<p><a href="http://lwn.net/Articles/480002/">http://lwn.net/Articles/480002/</a></p>
+
+<p>Netflix are making increasing use of Cassandra and are releasing various open source tools they&rsquo;ve built to deal with a very large deployment. Priam looks particularly interesting, providing backup and recovery, bootstrapping and automated token assignment, centralized configuration management and interestingly a RESTful monitoring and metrics package.</p>
+
+<p><a href="http://techblog.netflix.com/2012/02/announcing-priam.html">http://techblog.netflix.com/2012/02/announcing-priam.html</a></p>
+
+<h1>Jobs</h1>
+
+<p>Wayfair, a Boston based 500 million dollar e-commerce company, is looking to grow our systems administration team by bringing on board talented individuals seeking broad exposure to the technologies that support our infrastructure and our large-scale Internet e-commerce platform.</p>
+
+<p><a href="http://www.wayfair.com/careers#dept=engineering&amp;job=oGMQVfwX">http://www.wayfair.com/careers#dept=engineering&amp;job=oGMQVfwX</a></p>
+
+<h1>Tools</h1>
+
+<p>Hyperdex is yet another key-value store, but it does appear to add an interesting feature to the mix, specifically optimisation for search and search primitives. The performance benchmarks look promising too, I&rsquo;d certainly be interested in finding anyone running this in anger.</p>
+
+<p><a href="http://hyperdex.org/">http://hyperdex.org/</a></p>
+
+<p>Amon is an interesting looking logging and exception tracking dashboard. It&rsquo;s a Python and MongoDB application but ships with support for Rails, Django and Node.js apps and the screenshot at least makes it look pretty good.</p>
+
+<p><a href="https://github.com/martinrusev/amon">https://github.com/martinrusev/amon</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

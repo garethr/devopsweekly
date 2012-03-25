@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 61 - 4th March 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 61 &ndash; 4th March</h2>
+
+<p>A quick thank you to two tools instead of a proper introduction this week. Without Instapaper (for collecting links during the week whether I&rsquo;m at a computer or from my phone) and without Mailchimp (for sorting all the subscriptions and sending the email) I&rsquo;m pretty sure Devops Weekly wouldn&rsquo;t have got this far. So thanks to both services for being awesome. Right, on with the content.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Sometimes it&rsquo;s useful to have a list to start from when setting up or improving infrastructure. This list breaks down into provisioning, configuration management, deployment, orchestration, monitoring, log management, process supervision and security/auditing and briefly describes each. I&rsquo;m going to use this list at work I think.</p>
+
+<p><a href="http://ranjib.posterous.com/infrastructure-tooling-patterns">http://ranjib.posterous.com/infrastructure-tooling-patterns</a></p>
+
+<p>Not new but it was recommended to me just last week, this free PDF book covers DNS in exacting detail (it comes in at 747 pages). Looks well worth reading.</p>
+
+<p><a href="http://jpmens.net/2010/10/29/alternative-dns-servers-the-book-as-pdf/">http://jpmens.net/2010/10/29/alternative-dns-servers-the-book-as-pdf/</a></p>
+
+<p>Incredibly simple approach to backing up Jenkins configuration using git and cron. Easy to alter for whatever backup approach you use too, the secret is in the example .gitignore file.</p>
+
+<p><a href="https://gist.github.com/1919354">https://gist.github.com/1919354</a></p>
+
+<p>Nice writeup of one organisations adoption of devops ideas, in particular to help improve the quality and maintainability of deployed software. I think it&rsquo;s missing a few things, in particular a push towards smaller and more regular deployments, and some mention that it&rsquo;s not just pre-deployment that can benefit from cross team communication but the whole development process. But the detail is all interesting.</p>
+
+<p><a href="http://searchsoftwarequality.techtarget.com/feature/Using-DevOps-approaches-for-pre-release-and-production-software-quality">http://searchsoftwarequality.techtarget.com/feature/Using-DevOps-approaches-for-pre-release-and-production-software-quality</a></p>
+
+<p>Amazon Web Services has lots of individual components, one of which that often seems to lead to misunderstandings is ELB, the load balancing service. This article from Amazon covers lots of technical details especially useful for anyone with experience of other load balancing technologies. It details the architecture as well as possible testing strategy.</p>
+
+<p><a href="http://aws.amazon.com/articles/1636185810492479">http://aws.amazon.com/articles/1636185810492479</a></p>
+
+<p>Good detailed post about a rigorous pursuit of speedy build and test runs. Lots of technical details specific to Java and JVM environments, but also lots of general principles about why and how to go about getting serious about build performance.</p>
+
+<p><a href="http://dan.bodar.com/2012/02/28/crazy-fast-build-times-or-when-10-seconds-starts-to-make-you-nervous/">http://dan.bodar.com/2012/02/28/crazy-fast-build-times-or-when-10-seconds-starts-to-make-you-nervous/</a></p>
+
+<p>Logs are always interesting, and this post gives a brief overview of how different platform as a service offerings deal with them. In particular it details what logs are available from Engine Yard, including lots of links to posts about how you might go about analysing the contents.</p>
+
+<p><a href="https://logentries.com/blog/2012/02/digging-into-engineyard-logs/">https://logentries.com/blog/2012/02/digging-into-engineyard-logs/</a></p>
+
+<p>Fantastically illustrated post about what it means to Netflix to be fault tolerant. The scale at which Netflix are operating is pretty extreme, but lots of the theory is applicable to smaller systems too. The break down of what to do from a user point of view when part of a distributed system fails is particularly relevant.</p>
+
+<p><a href="http://techblog.netflix.com/2012/02/fault-tolerance-in-high-volume.html">http://techblog.netflix.com/2012/02/fault-tolerance-in-high-volume.html</a></p>
+
+<h1>Tools</h1>
+
+<p>Not sure how I&rsquo;ve not come across Riemann until now. It&rsquo;s billed as a networking monitoring system for distributed systems. It&rsquo;s built to process streams of inputs, often sent from within applications over TCP or UDP. It can forward to graphite as well as email for specific events. More interesting are the protocol buffer based API and the example dashboard.</p>
+
+<p><a href="http://aphyr.github.com/riemann/">http://aphyr.github.com/riemann/</a>
+<a href="https://github.com/aphyr/riemann">https://github.com/aphyr/riemann</a></p>
+
+<p>Toft is similar to Vagrant in that it provides a simple set of command line tools for managing virtual machines. The difference is that it uses LXC containers rather than virtualbox, which does mean it only works on Linux but also means it&rsquo;s very fast to start or destroy containers.</p>
+
+<p><a href="https://github.com/exceedhl/toft">https://github.com/exceedhl/toft</a></p>
+
+<p>Lots of people have been experimenting with different ways of testing configuration management tools using virtual machines and this vagrant plugin attempts to make it easier to do so. Just define what tests you want to run in your vagrantfile and the plugin gives you a command to run both tests on the guest and on the host.</p>
+
+<p><a href="https://github.com/mconigliaro/vagrant-test">https://github.com/mconigliaro/vagrant-test</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

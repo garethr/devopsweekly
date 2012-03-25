@@ -1,0 +1,78 @@
+---
+layout: post
+title: Issue 61 - 4th March 2012
+---
+
+## Issue 61 - 4th March
+
+A quick thank you to two tools instead of a proper introduction this week. Without Instapaper (for collecting links during the week whether I'm at a computer or from my phone) and without Mailchimp (for sorting all the subscriptions and sending the email) I'm pretty sure Devops Weekly wouldn't have got this far. So thanks to both services for being awesome. Right, on with the content.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+Sometimes it's useful to have a list to start from when setting up or improving infrastructure. This list breaks down into provisioning, configuration management, deployment, orchestration, monitoring, log management, process supervision and security/auditing and briefly describes each. I'm going to use this list at work I think.
+
+http://ranjib.posterous.com/infrastructure-tooling-patterns
+
+
+Not new but it was recommended to me just last week, this free PDF book covers DNS in exacting detail (it comes in at 747 pages). Looks well worth reading.
+
+http://jpmens.net/2010/10/29/alternative-dns-servers-the-book-as-pdf/
+
+
+Incredibly simple approach to backing up Jenkins configuration using git and cron. Easy to alter for whatever backup approach you use too, the secret is in the example .gitignore file.
+
+https://gist.github.com/1919354
+
+
+Nice writeup of one organisations adoption of devops ideas, in particular to help improve the quality and maintainability of deployed software. I think it's missing a few things, in particular a push towards smaller and more regular deployments, and some mention that it's not just pre-deployment that can benefit from cross team communication but the whole development process. But the detail is all interesting.
+
+http://searchsoftwarequality.techtarget.com/feature/Using-DevOps-approaches-for-pre-release-and-production-software-quality
+
+
+Amazon Web Services has lots of individual components, one of which that often seems to lead to misunderstandings is ELB, the load balancing service. This article from Amazon covers lots of technical details especially useful for anyone with experience of other load balancing technologies. It details the architecture as well as possible testing strategy.
+
+http://aws.amazon.com/articles/1636185810492479
+
+
+Good detailed post about a rigorous pursuit of speedy build and test runs. Lots of technical details specific to Java and JVM environments, but also lots of general principles about why and how to go about getting serious about build performance.
+
+http://dan.bodar.com/2012/02/28/crazy-fast-build-times-or-when-10-seconds-starts-to-make-you-nervous/
+
+
+Logs are always interesting, and this post gives a brief overview of how different platform as a service offerings deal with them. In particular it details what logs are available from Engine Yard, including lots of links to posts about how you might go about analysing the contents.
+
+https://logentries.com/blog/2012/02/digging-into-engineyard-logs/
+
+
+Fantastically illustrated post about what it means to Netflix to be fault tolerant. The scale at which Netflix are operating is pretty extreme, but lots of the theory is applicable to smaller systems too. The break down of what to do from a user point of view when part of a distributed system fails is particularly relevant.
+
+http://techblog.netflix.com/2012/02/fault-tolerance-in-high-volume.html
+
+
+Tools
+====
+
+Not sure how I've not come across Riemann until now. It's billed as a networking monitoring system for distributed systems. It's built to process streams of inputs, often sent from within applications over TCP or UDP. It can forward to graphite as well as email for specific events. More interesting are the protocol buffer based API and the example dashboard.
+
+http://aphyr.github.com/riemann/
+https://github.com/aphyr/riemann
+
+
+Toft is similar to Vagrant in that it provides a simple set of command line tools for managing virtual machines. The difference is that it uses LXC containers rather than virtualbox, which does mean it only works on Linux but also means it's very fast to start or destroy containers.
+
+https://github.com/exceedhl/toft
+
+
+Lots of people have been experimenting with different ways of testing configuration management tools using virtual machines and this vagrant plugin attempts to make it easier to do so. Just define what tests you want to run in your vagrantfile and the plugin gives you a command to run both tests on the guest and on the host.
+
+https://github.com/mconigliaro/vagrant-test

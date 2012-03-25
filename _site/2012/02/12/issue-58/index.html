@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 58 - 12th February 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 58 &ndash; 12th February</h2>
+
+<p>A hopefully good set of blog posts this week, with many focused on people writing about their work infrastructure or stories about a particular incident. Maybe it&rsquo;s just because I&rsquo;ve become better at finding this sort of content, but it feels to me like hand in hand with the whole devops thing has come much more openness about infrastructure and how we build these networks and systems.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>An excellent, detailed post about how to go about introducing a new programming language into an organisation. Having been involved in similar, though smaller, transitions this advice is well worth reading and I think is as relevant to systems administrators moving from just bash scripts as it is to developers moving from Java.</p>
+
+<p><a href="http://blog.jayfields.com/2012/01/lessons-learned-while-introducing-new.html">http://blog.jayfields.com/2012/01/lessons-learned-while-introducing-new.html</a></p>
+
+<p>Nice to see a different take on some of the implications of continuous deployment, this post covers the case of paid for software, and the clash between continuous deployment and charging for a new version.</p>
+
+<p><a href="http://ayende.com/blog/154689/the-economics-of-continuous-deployment">http://ayende.com/blog/154689/the-economics-of-continuous-deployment</a></p>
+
+<p>Postmortem&rsquo;s for incidents can be hugely beneficial both for avoiding future issues and for institutional learning. However this blog post argues against stressing the root cause, stating that for complex systems there often isn&rsquo;t one single cause. Lots of interesting points and further academic reading for those particularly interested.</p>
+
+<p><a href="http://www.kitchensoap.com/2012/02/10/each-necessary-but-only-jointly-sufficient/">http://www.kitchensoap.com/2012/02/10/each-necessary-but-only-jointly-sufficient/</a></p>
+
+<p>Detailed stories from inside organisations are always interesting. This one describes the infrastructure setup at 99designs. I&rsquo;d wager this is quite a typical setup so is probably a good read for folks who are just learning how to grow their small web application and maybe want to know what it might look like in the future.</p>
+
+<p><a href="http://99designs.com/tech-blog/blog/2012/01/30/infrastructure-at-99designs/">http://99designs.com/tech-blog/blog/2012/01/30/infrastructure-at-99designs/</a></p>
+
+<p>Another good story post, this about a particular event &ndash; needing to scale up a small application very rapidly. It&rsquo;s worth reading, especially if you&rsquo;ve not been involved in anything similar before. Integrating this sort of testing and working into your ongoing development process is important if you&rsquo;re not going to run into a similar hard deadline too.</p>
+
+<p><a href="http://www.williamhertling.com/2012/02/scaling-web-app-1000x-in-3-days.html">http://www.williamhertling.com/2012/02/scaling-web-app-1000x-in-3-days.html</a></p>
+
+<p>I love hanging automation off Puppet&rsquo;s stored configuration database, but deleting nodes in a highly dynamic environment can be irritating. This post and associated code shows one way of solving this problem in an OpenStack environment using the API.</p>
+
+<p><a href="http://geek.jasonhancock.com/2012/02/06/removing-destroyed-cloudstack-instances-from-puppet-stored-configurations-db/">http://geek.jasonhancock.com/2012/02/06/removing-destroyed-cloudstack-instances-from-puppet-stored-configurations-db/</a></p>
+
+<p>After a question left unanswered in one of the talks at FOSDEM and a bit of rapid hacking Puppet now has a new way of describing manifests: XML. I was genuinely going to do this for the April 1st issue too.</p>
+
+<p><a href="http://unethicalblogger.com/2012/02/08/puppet-xml-a-brand-new-synergy.html">http://unethicalblogger.com/2012/02/08/puppet-xml-a-brand-new-synergy.html</a>
+<a href="https://github.com/rtyler/puppet/tree/puppetxml">https://github.com/rtyler/puppet/tree/puppetxml</a></p>
+
+<p>After FOSDEM last weekend several people headed off to Antwerp for a monitoring themed hack day and workshop. Lots of whiteboarding ensued, as well as discussions of the increasing utility of logstash for  passing all the data around effectively. Sorry I couldn&rsquo;t make it.</p>
+
+<p><a href="http://www.krisbuytaert.be/blog/we-didnt-fix-it">http://www.krisbuytaert.be/blog/we-didnt-fix-it</a></p>
+
+<p>And last a little self-promotion. At work as well as building a new development team inside the UK Government we&rsquo;ve been building a culture of dashboards on large screens. I&rsquo;m always interested to see other organisations dashboards and finally got round to a blog post about ours. If anyone else has similar pictures of posts I&rsquo;d love to see them.</p>
+
+<p><a href="http://digital.cabinetoffice.gov.uk/2012/02/08/radiating-information/">http://digital.cabinetoffice.gov.uk/2012/02/08/radiating-information/</a></p>
+
+<h1>Tools</h1>
+
+<p>OpenStack appears to be picking up speed, case studies and fans pretty quickly. But having a play with your own personal cloud feels a little difficult. That&rsquo;s where DevStack comes in. Good documentation and a series of scripts to get you setup with a local environment. It&rsquo;s not intended for production deployments, more for development and learning.</p>
+
+<p><a href="http://devstack.org/">http://devstack.org/</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>
