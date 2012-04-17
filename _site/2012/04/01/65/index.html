@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 65 - 1st April 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 65 &ndash; 1st April</h2>
+
+<p>The first Devopsdays event of the year kicks off tomorrow, and with it hopefully lots of events where people can get together in one place and talk to each other. What devops means to me has always been best exemplified by the people I&rsquo;ve met and talked to at such events, and when people take a line (devops is a developer land grab, none of these people work with systems at scale) I encourage them to go along and get involved.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Super interesting post from someone working in community management, about the overlaps between her world and that of operations and devops. Some nice examples and parallels, and a subtle call to team up and make things better.</p>
+
+<p><a href="http://venessapaech.wordpress.com/2012/03/28/devops-and-strategic-alliances/">http://venessapaech.wordpress.com/2012/03/28/devops-and-strategic-alliances/</a></p>
+
+<p>Devops Days Austin is just around the corner (Monday 2nd and Tuesday 3rd of April in fact) and for those that can&rsquo;t make it the organisers and sponsors have arranged for live video streaming.</p>
+
+<p><a href="http://www.bmc.com/videos/live/devopdays_austin2012.html">http://www.bmc.com/videos/live/devopdays_austin2012.html</a></p>
+
+<p>A couple of blog posts appeared this week summarising a recent mailing list thread. It&rsquo;s interesting because it gets to what devops is, or at least what we as a community would like it to be perceived as. The line &ldquo;For Devops to succeed we must focus on squishy stuff first, technical details second.&rdquo; I wholeheartedly agree with, but know from putting this newsletter together each week it&rsquo;s much easier to find interesting content on tools and processes. More &ldquo;squishy stuff&rdquo; would definitely be a good thing.</p>
+
+<p><a href="http://www.hollenback.net/DevopsPerceptions">http://www.hollenback.net/DevopsPerceptions</a>
+<a href="http://www.spikelab.org/devops-notjust-configuration-management/">http://www.spikelab.org/devops-notjust-configuration-management/</a></p>
+
+<p>Visualising networks of nodes is interesting, until you get to so many nodes that all sense breaks down. It turns out this is called a hairball in some graph circles, and this blog post describes the problems and a few potential solutions. I&rsquo;d certainly be interested in tools based on these ideas for infrastructure visualisation.</p>
+
+<p><a href="http://eagereyes.org/techniques/graphs-hairball">http://eagereyes.org/techniques/graphs-hairball</a></p>
+
+<p>Nice quick writeup of the custom file server that GitHub uses. Mainly interesting to see the different graphs used for monitoring an application of this kind.</p>
+
+<p><a href="https://github.com/blog/1089-nodeload-metrics">https://github.com/blog/1089-nodeload-metrics</a></p>
+
+<p>Describing operations goals in terms of developer and sprint friendly terminology definitely feels like a good idea, and this post lists some high level goals broken down into availability, performance, support, security and deployment. It would be nice to see these fleshed out with details and patterns for making them happen.</p>
+
+<p><a href="http://theagileadmin.com/2012/03/28/service-delivery-best-practices/">http://theagileadmin.com/2012/03/28/service-delivery-best-practices/</a></p>
+
+<p>Devops is still a very new movement/term and lots more people are finding it (and this newsletter) every week. For those in the position it&rsquo;s worth a little history lesson about where this all started to coalesce into a thing &ndash; and this blog post does that. The argument that three things, agile infrastructure, velocity and lean, came together is made nicely, and it&rsquo;s a good read of those that wonder about such things and weren&rsquo;t there.</p>
+
+<p><a href="http://itrevolution.com/the-convergence-of-devops/">http://itrevolution.com/the-convergence-of-devops/</a></p>
+
+<p>An overview of 16 common unix monitoring utilities. The long time systems administrators reading will be more than familiar with these but those new to operations roles, especially coming from a development background, should find it interesting and a good list of tools to investigate.</p>
+
+<p><a href="http://h30565.www3.hp.com/t5/Feature-Articles/16-Linux-Server-Monitoring-Commands-You-Really-Need-To-Know/ba-p/1936">http://h30565.www3.hp.com/t5/Feature-Articles/16-Linux-Server-Monitoring-Commands-You-Really-Need-To-Know/ba-p/1936</a></p>
+
+<h1>Tools</h1>
+
+<p>Spectacular looks like an interesting, and very quick, way of taking a look at SNMP data from your router. Just install the gem, point it at the router and you&rsquo;ll get a nice browser based interface to watch traffic on the interface.</p>
+
+<p><a href="https://github.com/tenderlove/spectacular">https://github.com/tenderlove/spectacular</a></p>
+
+<p>Kibana is an alternative user interface for Logstash, the log aggregation and visualisation tool. It&rsquo;s nicely documented with big pictures of the UI and some of the features like the trend analysis look particularly interesting.</p>
+
+<p><a href="http://rashidkpc.github.com/Kibana/about.html">http://rashidkpc.github.com/Kibana/about.html</a>
+<a href="https://github.com/rashidkpc/Kibana">https://github.com/rashidkpc/Kibana</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

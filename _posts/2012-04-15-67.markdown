@@ -1,0 +1,98 @@
+---
+layout: post
+title: Issue 67 - 15th April 2012
+---
+
+## Issue 67 - 15th April
+
+A bumper crop of links and tools again this week, with everything from interesting new tools, an epic run of posts with tips on Graphite all from the last week or so and talk of Devops from big companies like IBM and VMWare. The community certainly feels like it's getting bigger every week.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+VMWare have released BOSH which they describe as a "tool chain for release engineering, deployment and lifecycle management of large scale distributed services". It took me a while to find some good docs and examples but it certainly looks interesting. I'd be interested in anyone's experiences with trying this out.
+
+https://github.com/cloudfoundry/oss-docs/blob/master/bosh/documentation/documentation.md
+https://github.com/cloudfoundry/bosh-sample-release
+
+
+It's certainly interesting seeing the likes of IBM talk about the devops buzz. This piece actually acts as a nice quick introduction for folks in more of an enterprise environment, and contains "a small number of concrete practices that are necessary for an enterprise to fully embrace DevOp" which actually make useful reading.
+
+https://www.ibm.com/developerworks/mydeveloperworks/blogs/invisiblethread/entry/6-ways-for-enterprises-to-adopt-devops
+
+
+The topic of how complex systems fail is one of interest to most systems administrators and developers and this post (from last year) makes for an interesting read. It's main point is that "People Make Poor Monitors for Computers" and although it focuses on the problems with flying airplanes it has lots of good general points and comments worth reading.
+
+http://www.macroresilience.com/2011/12/29/people-make-poor-monitors-for-computers/
+
+
+Lots of people forget that Vagrantfile's are actually just Ruby code, which means you can do all sorts of project or context specific things in them. This example takes this to quite an extreme, using the same Vagrantfile between projects but along with a project specific configuration file.
+
+http://ergonlogic.com/blog/aegir-vagrant-project-templating-framework
+
+
+I'm always happy to see more folks discovering the advantages of virtualised development environments and Vagrant in particular. This post covers a nice story and includes a few of the problems that you can solve.
+
+http://mankindforward.com/2012/04/08/why-your-engineering-team-needs-vagrant/
+
+
+Graphite is awesome. I've only more recently had chance to really get into using it and, although it's immediately useful it's obvious that some of it's more powerful features will take time to learn. This excellent series, with 6 posts already this month, is well worth checking out for tips.
+
+http://obfuscurity.com/2012/04/Unhelpful-Graphite-Tip-1
+http://obfuscurity.com/2012/04/Unhelpful-Graphite-Tip-2
+http://obfuscurity.com/2012/04/Unhelpful-Graphite-Tip-3
+http://obfuscurity.com/2012/04/Unhelpful-Graphite-Tip-4
+http://obfuscurity.com/2012/04/Unhelpful-Graphite-Tip-5
+http://obfuscurity.com/2012/04/Unhelpful-Graphite-Tip-6
+
+
+Mcollective is a fantastic framework for remote execution but it does require some upfront effort for writing plugins. This post quickly walks through writing a smile agent which wraps an existing command line tool. Very handy if you're moving from a ssh loop based approach.
+
+http://blog.mague.com/?p=382
+
+
+In my experience DNS tends to be one of those things that all those coming from a systems administration background understand and those from more of a developer background done. That makes this blog post hugely useful, as well as well written and detailed.
+
+http://css.dzone.com/articles/devops-dns-developers
+
+
+Jobs
+====
+
+Shazam Entertainment is looking to fill a number of Service Engineering roles in our London HQ and Palo Alto office. We're looking for passionate individuals who enjoy building and operating highly reliable services by working closely with development to design and implement strong systems architectures, CI methodologies, and insane amounts of monitoring.  We also have a number of positions in our Infrastructure Operations team for those less interested in development and more interested in network engineering, building and operating private clouds, and focusing on third party software.
+
+For more details or to apply send on your CV/Resume or LinkedIn profile to devops@shazamteam.com
+
+
+Tools
+====
+
+Not everyone likes the perceived complexity of Chef or Puppet and lots of smaller shell script based frameworks seem to crop up that deal only with provisioning rather than everything else. Sunzi is one that caught my eye that has a few nice features.
+
+https://github.com/kenn/sunzi
+
+
+Load testing tools tend to have a bit of a barrier to entry, at least if you're trying to get useful data past the number of requests per second an individual URL can handle. Locust therefore looks interesting. Define tests in Python (similar to Funkload) but along with a very nice web based results dashboard and some distributed test running features.
+
+http://speakerdeck.com/u/cgbystrom/p/load-testing-with-locust
+http://locust.io/
+
+
+Lots of folks are releasing their in-house deployment tools, which is great for picking through code and finding ideas. I'm sure at some point we'll see a consolidation too. Brood is a PHP, XML and Gearman based tool which has just been released by IGN and might be worth a look.
+
+http://code.ign.com/blog/2012/04/01/continuous-deployment-with-brood
+https://github.com/ign/brood
+
+
+An interesting looking project, Metis is an implementation of the Nagios NRPE daemon written in Ruby. The emphasis appears to be on getting people to share and test monitoring code which is a worthy goal.
+
+https://github.com/krobertson/metis
