@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 71 - 13th May 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 71 &ndash; 13th May</h2>
+
+<p>Chefconf kicks off in a couple of days in San Francisco so have fun and learn lots anyone lucky enough to be going along. Looks a good mix of workshops, hacking spaces, talks, live podcasts and computer games. Hopefully lots of links to content next week.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Post showing how to use Chef and Vagrant to quickly start working on a new project. Very simple walkthrough, and good example of using the excellent Librarian to manage cookbooks. Contains good Cheffile and Vagrantfile examples that you can start with.</p>
+
+<p><a href="http://blog.base2.io/2012/05/01/vagrants-and-chefs-and-librarians-oh-my/">http://blog.base2.io/2012/05/01/vagrants-and-chefs-and-librarians-oh-my/</a></p>
+
+<p>Good couple of articles going into setting up a KVM host from scratch. Details network and libvert configuration as well as using the ubuntu-vm-builder tool for creating new machines.</p>
+
+<p><a href="http://www.cryptocracy.com/blog/2012/05/06/a-dedicated-server/">http://www.cryptocracy.com/blog/2012/05/06/a-dedicated-server/</a>
+<a href="http://www.cryptocracy.com/blog/2012/05/12/bootstrapping-chef/">http://www.cryptocracy.com/blog/2012/05/12/bootstrapping-chef/</a></p>
+
+<p>Nice writeup of Sprint.ly’s continuous integration setup. Good to see another example of folks using system packages and detailing the benefits. The use of mapping distributions to environments is neat.</p>
+
+<p><a href="http://blog.sprint.ly/post/22794189287/nerd-alert-sprint-lys-continuous-integration">http://blog.sprint.ly/post/22794189287/nerd-alert-sprint-lys-continuous-integration</a></p>
+
+<p>Inspired by Etsy&rsquo;s deployinator this company went about turning a very manual, error prone, process into something much more automated. Mainly of interest due to the stack; Mercurial, JRuby, ColdFusion and Windows isn&rsquo;t exactly the common case so it&rsquo;s good to see success with automation isn&rsquo;t just about one set of tools.</p>
+
+<p><a href="http://flydillonfly.wordpress.com/2012/05/06/how-etsy-helped-us-deploy/">http://flydillonfly.wordpress.com/2012/05/06/how-etsy-helped-us-deploy/</a></p>
+
+<p>Graphite is great for storing ad-hoc metrics and data easily, but once you&rsquo;ve started to throw lots of data in you start to think about how maybe you should have organised things. This post has a few tips, mainly simple rules to follow and importantly points out you can move and resize metrics easily.</p>
+
+<p><a href="http://obfuscurity.com/2012/05/Organizing-Your-Graphite-Metrics">http://obfuscurity.com/2012/05/Organizing-Your-Graphite-Metrics</a></p>
+
+<p>Good detailed presentation about moving to a service based architecture. Lots of examples and arguments and counter-arguments for different approaches. And lots and lots of diagrams.</p>
+
+<p><a href="http://www.slideshare.net/chris.e.richardson/decomposing-applications-for-scalability-and-deployability-april-2012">http://www.slideshare.net/chris.e.richardson/decomposing-applications-for-scalability-and-deployability-april-2012</a></p>
+
+<p>Not had a &ldquo;what is devops&rdquo; post for a while, but it&rsquo;s interesting to still see them cropping up. In this case we have a number of examples why things might be changing along with some of the value a Devops approach can bring.</p>
+
+<p><a href="http://zkybase.org/blog/2012/05/08/devops-what-it-is-and-why-you-should-be-doing-it/">http://zkybase.org/blog/2012/05/08/devops-what-it-is-and-why-you-should-be-doing-it/</a></p>
+
+<h1>Events</h1>
+
+<p>On June 5th Puppet Camp is making it to South East Asia, in particular to Kuala Lumpur. With Tokyo, Delhi and Sydney on the list of Devopsdays events this year too, this whole thing has definitely gone global.</p>
+
+<p><a href="http://puppetcampsea.eventbrite.com/">http://puppetcampsea.eventbrite.com/</a></p>
+
+<h1>Tools</h1>
+
+<p>One from a work colleague. We have a continuous delivery setup at work that works pretty well for applications, but not at all for the associated ruby libraries we publish. Gem Publisher helps with that, providing a Rake task which will publish our gems only if the version has been incremented, and hooked up with Jenkins only then if the tests pass.</p>
+
+<p><a href="https://github.com/alphagov/gem_publisher">https://github.com/alphagov/gem_publisher</a></p>
+
+<p>Seyren is another dashboard for Graphite, but this time the focus is on generating alerts from the collected data. The web interface acts as a self service console for alerts, allowing you to set any thresholds you&rsquo;re interested in and where any message should be sent.</p>
+
+<p><a href="https://github.com/scobal/seyren">https://github.com/scobal/seyren</a></p>
+
+<p>Avery is a real-time time-based metric storage, retrieval, and graphing service. It presents a very simple web service for storing data in an RRD-like format and displaying graphs that update as new data is pushed in.</p>
+
+<p><a href="https://github.com/OMGPOP/avery">https://github.com/OMGPOP/avery</a></p>
+
+<p>Lots of folks starting to use parts of OpenStack lately it seems. Supernova aims to help with the problem where you are dealing with multiple Nova API endpoints. Swapping environment variables around is no fun so this utility wraps everything in a handy command line and provides a configuration file to name configurations.</p>
+
+<p><a href="https://github.com/rackerhacker/supernova">https://github.com/rackerhacker/supernova</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

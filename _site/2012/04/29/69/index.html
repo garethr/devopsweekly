@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 69 - 29th April 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 69 &ndash; 29th April</h2>
+
+<p>Less blog posts or articles this week, but lots of presentations, podcasts and some interesting looking tools to make up for it. I think my spare time has been filled up with creating the slides for Bacon for the last few weeks so hopefully I&rsquo;ll find some more time now that&rsquo;s done to find and read all the interesting things folks are writing.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Last weekend at the Bacon conference in London I got a chance to present all about #monitoringsucks. This is mainly an introduction to the subject, along with a sort of story so far and some of the new emerging tools. The video of the talk should be available in the not-too-distant future too.</p>
+
+<p><a href="http://speakerdeck.com/u/garethr/p/monitoring-sucks">http://speakerdeck.com/u/garethr/p/monitoring-sucks</a></p>
+
+<p>Deploying applications is still hard or at least confusing to get started with. This article covers several patterns and anti-patterns around deploying Python applications and is a pretty good starting point. Many of these can be applied to similar technology stacks too.</p>
+
+<p><a href="http://hynek.me/articles/python-deployment-anti-patterns/">http://hynek.me/articles/python-deployment-anti-patterns/</a></p>
+
+<p>The Devops Cafe keeps making a comeback, and this episode features a great chat with Adam Jacobs, Chef author and co-founder of Opscode. Discussion ranges from the state of the cloud, to DevOps for business transformation, to building an open source community, to automated orchestration. Well worth a listen.</p>
+
+<p><a href="http://devopscafe.org/show/2012/4/23/devops-cafe-episode-26.html">http://devopscafe.org/show/2012/4/23/devops-cafe-episode-26.html</a></p>
+
+<p>Nice presentation from Amazon about continues deployment patterns in cloud environments. Some of it is specific to AWS but the most of it is relevant in any reasonably dynamic environment. Some good diagrams and examples of continuous integration setups and approaches to database migration.</p>
+
+<p><a href="http://www.slideshare.net/AmazonWebServices/cloudpowered-continuous-integration-and-deployment-architectures-jinesh-varia">http://www.slideshare.net/AmazonWebServices/cloudpowered-continuous-integration-and-deployment-architectures-jinesh-varia</a></p>
+
+<p>Interesting article on patch management (honestly). It discusses two alternative approaches to managing patch levels in highly dynamic cloud environments &ndash; specifically upgrading things in place and upgrading by replacing the entire virtual machine. Good discussion of why you might favour one or the other.</p>
+
+<p><a href="http://h30499.www3.hp.com/t5/Following-the-White-Rabbit/Patch-Management-in-the-Cloud-It-s-About-Consistency-and/ba-p/5484167">http://h30499.www3.hp.com/t5/Following-the-White-Rabbit/Patch-Management-in-the-Cloud-It-s-About-Consistency-and/ba-p/5484167</a></p>
+
+<h1>Tools</h1>
+
+<p>It&rsquo;s just not possible to have too many Graphite dashboards it seems. Tasseo looks excellent, able to show a large number of configurable metrics at a glance. Looks perfect for a big screen in any office already using Graphite.</p>
+
+<p><a href="https://github.com/obfuscurity/tasseo">https://github.com/obfuscurity/tasseo</a></p>
+
+<p>Cumberbatch is another tool in the growing pursuit of good testing tools for configuration management code. It makes use of Vagrant and Virtualbox snapshots, dynamically building rake tasks for running tests and providing hooks for cucumber features to control the resulting virtual machines.</p>
+
+<p><a href="https://github.com/jtopper/cumberbatch">https://github.com/jtopper/cumberbatch</a></p>
+
+<p>I&rsquo;ve seen a number of tools built atop fpm recently, and bunchr looks interesting. It&rsquo;s described as a Ruby/Rake DSL for building and packaging software into omnibus-style package, ie. with all required dependencies often including the language runtime. The repository provides a number of examples including Ruby and the components of the Sensu monitoring framework.</p>
+
+<p><a href="https://github.com/joemiller/bunchr">https://github.com/joemiller/bunchr</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

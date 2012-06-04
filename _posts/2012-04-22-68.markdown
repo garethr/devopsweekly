@@ -1,0 +1,63 @@
+---
+layout: post
+title: Issue 68 - 22nd April 2012
+---
+
+## Issue 68 - 22nd April
+
+I've spent the last couple of days at the excellent Bacon (http://devslovebacon.com/) conference in London, about all things developers love. Not only did I get an opportunity to talk about why #monitoringsucks but lots of the other talks where hugely interesting and inspiring. Definitely one to look out for next year if you're in London.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+I mentioned BOSH last week, in particular asking if anyone had had the chance to get it up and running. Well Dr Nic Williams has done more than that, with a number of tutorials and a useful looking screencast. Definitely looks to be the best place to start if you're investigating BOSH.
+
+http://drnicwilliams.com/2012/04/16/creating-a-bosh-from-scratch-on-aws/
+
+
+Nice short case study from the development operations team at Sonian. It talks about how they moved from spending most of their time responding to unplanned incidents to a much happier, proactive way of working.
+
+http://www.hightechinthehub.com/2012/04/virtuous-cycle-of-devops/
+
+
+A well designed API makes a huge difference to how likely I am to investigate a new tool and eventually how likely I am to add it to a stack. This presentation from Google (in PDF) is an excellent reference to API design and if you're building something for use by other developers is well worth reading.
+
+http://lcsd05.cs.tamu.edu/slides/keynote.pdf
+
+
+I had a great time at PuppetConf last year in Portland and it's back again this year, coming to San Francisco on September 27th & 28th this year. With five tracks of content covering all things operations and space for 700 people it should be quite an event.
+
+http://puppetconf.com/
+
+
+How teams and companies work is always interesting, and this article about Heroku covers a few interesting points. The relative independence of separate teams, APIs and contracts between internal service teams and a focus on asynchronous communication are all discussed.
+
+http://craigkerstiens.com/2011/11/02/how-heroku-works-teams-tools/
+
+
+Technical debt is a common subject of conversation in agile software development, and this post has some interesting points about debt from an operational point of view. The move to porting existing applications to cloud environments or wholly virtualised setups is one thing that's driving this discussion and the post has a few examples too.
+
+http://blog.ingineering.it/post/21311393348/tech-debt
+
+
+Tools
+====
+
+Lots of folks use S3 for production systems, but testing against it locally (or in a continuous integration environment) can be both slow and costly. Fake S3 aims to solve both those problem, it's a self contained executable that mimics the S3 apis and can easily be run locally.
+
+https://github.com/jubos/fake-s3
+http://blog.getspool.com/2012/04/18/fake-s3-save-time-money-and-develop-offline/
+
+
+Nearly everyone reading this newsletter will use SSH either constantly or occasionally, so anything that can improve the experience should be a good thing. Mosh, or Mobile Shell, claims a number of useful looking features - in particular better support for roaming and dropped connections as well as tricks to make things more responsive. I'll definitely be giving this a go, great documentation as well.
+
+http://mosh.mit.edu/

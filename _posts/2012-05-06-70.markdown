@@ -1,0 +1,73 @@
+---
+layout: post
+title: Issue 70 - 6th May 2012
+---
+
+## Issue 70 - 6th May
+
+More and more of the tools I've been playing with recently come with a flexible plugin system to make extending them easier. Mentioned in this issue Mcollective, Vagrant, Ansible and Agent99 are all based around a plugin system that isn't just an afterthought. Anyone building developer and operations tools should think about what that means for their software.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service, is the new sponsor of Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+Excellent presentation from last year about how SimpleGeo architect their systems. Lots of good examples and details about deployment, phased rollouts and some of the tools they have built in-house.
+
+http://www.slideshare.net/mmalone/architecture-at-simplegeo-staying-agile-at-scale
+
+
+Nice post extolling the power of the Graylog2 web interface. Graylog2 is a tool for indexing log information and providing a nice elastic searchinterface to it. This post shows a couple of examples of the types of useful query you can run.
+
+http://boojapathy.wordpress.com/2012/05/01/power-of-graylog2-web-interface/
+
+
+Interesting idea to break monitoring down into 6 distinct elements a log with definitions. System monitoring, Dependency monitoring, Integration, Business activity monitoring, Tracing and Complex event processing. Categorisation like this can be useful, in particular with all the talk of framework based approaches to monitoring tooling.
+
+http://ranjib.posterous.com/monitoring
+
+
+Good Microsoft writeup of a continuous integration and deployment setup. Talks about moving from SVN, Nant and Cruisecontrol to Mercurial, Powershell and Teamcity with lots of good examples of the code and configuration used.
+
+http://www.simple-talk.com/dotnet/.net-tools/towards-the-perfect-build/
+
+
+Mcollective 2.0.0 is out, with lots of new features and additions for those not tracking the development branch. Several packaging enhancements (the client is available as a gem, plugins can be automatically packages as debs or rpms and Windows support is available) as well as enhancements to how messages are passed to avoid common problems make this an essential upgrade.
+
+http://docs.puppetlabs.com/mcollective/releasenotes.html#2_0_0
+
+
+Presentation from the recent RailsConf selling operations to a predominantly developer audience. Lots of content on virtualised development environments, branching strategies, continuous deployment and more. Worth watching whether or not you're a Ruby person.
+
+http://confreaks.com/videos/882-railsconf2012-taming-the-kraken-how-operations-enables-developer-productivity
+
+
+Tools
+====
+
+Nifty vagrant plugin that allows for managing local DNS entries for vagrant machines. It runs a local DNS server and provides commands to hook that into the OSX DNS resolution system. It's been developed by the Berlin Vagrant user group too.
+
+https://github.com/BerlinVagrant/vagrant-dns/tree/v0.2.0
+
+
+Lots of people have been using IRC and chat bots (like Hubot) to manage and communicate with infrastructure components, and OpsBot is a set of simple scripts for a Jabber bot to do just that. It currently features plugins for Nagios and RT and looks easy enough to extend with additional Perl scripts.
+
+https://github.com/alcy/OpsBot
+
+
+In a similar vein, Agent99 is another bot - this time providing both an IRC and HTTP interface. It's very pluggable but ships with only a few examples, though the GitHub post-recieve hook one is a great example of why mixing IRC and HTTP could be useful.
+
+https://github.com/99designs/agent99
+
+
+Ansible is a new entry into the open source configuration management space, looking to blend some idempotent management tools and simple remote execution capability into a single plugin-centric tool.
+
+http://ansible.github.com/
+https://github.com/ansible/ansible

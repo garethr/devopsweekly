@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 74 - 3rd June 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 74 &ndash; 3rd June</h2>
+
+<p>I have a very long weekend on holiday this week and I&rsquo;m hoping to get some time to play with at least a few of the things I found this last week. Some hopefully useful monitoring and instrumentation talk, ideas about the future of configuration management and provisioning tools and lots more Graphite.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service &ndash; sponsors Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>I somehow missed all the talk about Razor last week. It&rsquo;s a provisioning tools from EMC and Puppet with the aim of being as happy in a more traditional hardware environment as with a public cloud. It makes use of mcollective and faster to do some auto-detection and then allows policies to be applied to hosts, often by handing off to Puppet.</p>
+
+<p><a href="http://puppetlabs.com/blog/introducing-razor-a-next-generation-provisioning-solution/">http://puppetlabs.com/blog/introducing-razor-a-next-generation-provisioning-solution/</a>
+<a href="http://nickapedia.com/2012/05/21/lex-parsimoniae-cloud-provisioning-with-a-razor/">http://nickapedia.com/2012/05/21/lex-parsimoniae-cloud-provisioning-with-a-razor/</a></p>
+
+<p>I&rsquo;m quite a fan of Fabric, and have recently started messing about with Clojure, so coming across Server-Stats piqued my interest. It&rsquo;s a framework for writing parallel SSH tasks in Clojure, so define groups of hosts and then write functions which when applied to a set of hosts execute the specified commands.</p>
+
+<p><a href="http://paulosuzart.github.com/blog/2012/04/17/monitoring-ec2-with-clojure-and-server-stats/">http://paulosuzart.github.com/blog/2012/04/17/monitoring-ec2-with-clojure-and-server-stats/</a>
+<a href="https://github.com/paulosuzart/Server-Stats">https://github.com/paulosuzart/Server-Stats</a></p>
+
+<p>The folks at Lonelyplanet have been getting down to instrumenting lots of Ruby applications and have written up how they went about it using statsd. This let to Fozzie, a configurable and more opinionated statsd client and middleware stack useful for Ruby web applications.</p>
+
+<p><a href="http://devops.lonelyplanet.com/monitoring-our-applications-the-statsd-way-ru">http://devops.lonelyplanet.com/monitoring-our-applications-the-statsd-way-ru</a>
+<a href="https://github.com/lonelyplanet/fozzie">https://github.com/lonelyplanet/fozzie</a></p>
+
+<p>A good summary of a number of conversations of configuration drift. If you have hosts around long enough, the occasional or polling nature of most configuration management tools combined with only managing what is defined, means configuration will probably &ldquo;drift&rdquo; from what you have described. Some good points about security, what the future might see and some smart comments.</p>
+
+<p><a href="http://blog.lusis.org/blog/2012/05/24/configuration-drift-and-next-gen-cm/">http://blog.lusis.org/blog/2012/05/24/configuration-drift-and-next-gen-cm/</a></p>
+
+<p>A good getting started with testing Chef code tutorial. Taking foodcritic (a useful linting tool) and the excellent travis ci continuous integration system to create a very quick and simple testing setup.</p>
+
+<p><a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/</a></p>
+
+<p>Making changes to complex relational databases while they&rsquo;re running can be tricky (unless you&rsquo;re paying all that money to Oracle). This post covers how Etsy have approach the thorny problem using a sharded master/master setup. One good tip &ndash; don&rsquo;t let the database generate anything (like auto incrementing keys).</p>
+
+<p><a href="http://codeascraft.etsy.com/2012/04/20/two-sides-for-salvation/">http://codeascraft.etsy.com/2012/04/20/two-sides-for-salvation/</a></p>
+
+<h1>Events</h1>
+
+<p>The Call For Participation for DevOps Down Under 2012 is open. The organisers are currently looking for speakers on all subjects DevOps, and the call closes on the 18th of June. The conference will be held on the 9th and 10th of August.</p>
+
+<p><a href="http://devopsdownunder.org/participate/">http://devopsdownunder.org/participate/</a></p>
+
+<h1>Tools</h1>
+
+<p>Graphite, the increasingly handy graphing tool, has hit 0.9.10 and with it a number of worthwhile improvements and fixes, including the ability to import saved graphs, a scattering of new render functions and options, more flexibility for the web interface and support for rendering graphs in SVG.</p>
+
+<p><a href="https://launchpad.net/graphite/0.9/0.9.10">https://launchpad.net/graphite/0.9/0.9.10</a></p>
+
+<p>One of the best parts of Graphite is the increasing ecosystem of tools around it, including the newly released backstop. It presents a nice http interface for submitting data to a graphite backend. Includes some simple examples of using this with collectd.</p>
+
+<p><a href="https://github.com/obfuscurity/backstop">https://github.com/obfuscurity/backstop</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>
