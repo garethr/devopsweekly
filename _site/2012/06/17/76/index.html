@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 76 - 17th June 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 76 &ndash; 17th June</h2>
+
+<p>A good number of tools links this week, and one thing that struck me was the range of things I find interesting for this newsletter. New databases, DNS hacks, logging and metrics collection tools, deployment scripts and statistical analysis. I&rsquo;m hoping everyone else is at least a little interested in quite such a wide range of different tools.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service &ndash; sponsors Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Most people probably spotted the downtime for one of the EC2 availability zones this week. One particular response made the rather bold claim that private cloud setups avoid all these issues and are cheaper to boot. This follow up post from HP explained why that&rsquo;s probably not the case in most situations.</p>
+
+<p><a href="http://h30499.www3.hp.com/t5/Following-the-Wh1t3-Rabbit-Down/The-Patchwork-Cloud-To-rent-or-buy-your-cloud/bc-p/5692227">http://h30499.www3.hp.com/t5/Following-the-Wh1t3-Rabbit-Down/The-Patchwork-Cloud-To-rent-or-buy-your-cloud/bc-p/5692227</a></p>
+
+<p>I spoke earlier in the year at the excellent Bacon conference and the videos of the talks have started to make it online. One talk, entitled Building a resilient cloud infrastructure, tells the story of how Brightbox (who kindly sponsor this newsletter) built their cloud stack from available open source software.</p>
+
+<p><a href="http://devslovebacon.com/speakers/jeremy-jarvis">http://devslovebacon.com/speakers/jeremy-jarvis</a></p>
+
+<p>Interesting look back in time at how, 20 years ago, one of the Sun offices did configuration management. I&rsquo;m sure lots of smart folks had hand rolled solutions.</p>
+
+<p><a href="http://hlangeveld.tumblr.com/post/25156252581/nothing-new-under-the-sun-cool-stuff-by-joyent">http://hlangeveld.tumblr.com/post/25156252581/nothing-new-under-the-sun-cool-stuff-by-joyent</a></p>
+
+<p>I&rsquo;m sure lots of readers are on the look out for smart colleagues, and this article has a few hints if you&rsquo;re trying the recruit devops minded folk. Apparently we&rsquo;re mainly squirrel shaped people.</p>
+
+<p><a href="http://searchdatacenter.techtarget.com/news/2240157660/How-do-you-fill-DevOps-jobs-Hire-squirrels">http://searchdatacenter.techtarget.com/news/2240157660/How-do-you-fill-DevOps-jobs-Hire-squirrels</a></p>
+
+<p>A quick list of things learned during a ten month stint working within a rapidly growing startup. A few interesting points about the meaning of legacy, the helpfulness of user groups and a desire to fight sprawl.</p>
+
+<p><a href="http://dodizzle.com/lessons-learn-while-devopsposterous">http://dodizzle.com/lessons-learn-while-devopsposterous</a></p>
+
+<p>The perils and merits of feature branching are often discussed, and one of the problems of moving to such an approach is how it works with continuous integration. This post covers how to do this with Jenkins, and covers lots of the details of why, how and when not to do this.</p>
+
+<p><a href="http://entagen.github.com/jenkins-build-per-branch/">http://entagen.github.com/jenkins-build-per-branch/</a></p>
+
+<h1>Tools</h1>
+
+<p>Titan is a new open source distributed graph database which supports Casandra and HBase at the storage layer and implements a few standard graph query and object mapping API&rsquo;s. I&rsquo;ve seen lots of discussion of modelling various systems as graphs and this might be of interest in such endeavours.</p>
+
+<p><a href="http://thinkaurelius.github.com/titan/">http://thinkaurelius.github.com/titan/</a></p>
+
+<p>I did a talk earlier this year about all the lovely data buried inside configuration management tools, and both of the following are good examples of what you can get up to. The first takes Puppet run data and feeds it to logstash for sending wherever, the second takes Chef run data and can send it to graphite, sensu or other backends</p>
+
+<p><a href="https://github.com/lusis/puppet-logstash-reporter">https://github.com/lusis/puppet-logstash-reporter</a>
+<a href="https://github.com/portertech/chef-metrics">https://github.com/portertech/chef-metrics</a></p>
+
+<p>Interesting DNS hack. xip.io acts as a wildcard DNS server for your local network. It&rsquo;s aimed at being a simple way of testing local hosts with zero configuration.</p>
+
+<p><a href="http://xip.io/">http://xip.io/</a></p>
+
+<p>Incanter is a little like the statistics language R but written in Clojure, while Nimrod is a log based metric collection server. Nimrod-incanter combines these two together, giving you a simple way of graphing or analysing data collected by Nimrod.</p>
+
+<p><a href="https://github.com/sbtourist/nimrod-incanter">https://github.com/sbtourist/nimrod-incanter</a></p>
+
+<p>Mina is another take on a remote execution tool written in Ruby. It&rsquo;s very close to Rake, and comes with some build in helpers for deploying Ruby applications directly from Git. Not for everyone but very simple to see what&rsquo;s going on.</p>
+
+<p><a href="http://nadarei.co/mina/">http://nadarei.co/mina/</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+</body>
+</html>

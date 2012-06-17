@@ -1,0 +1,78 @@
+---
+layout: post
+title: Issue 76 - 17th June 2012
+---
+
+## Issue 76 - 17th June
+
+A good number of tools links this week, and one thing that struck me was the range of things I find interesting for this newsletter. New databases, DNS hacks, logging and metrics collection tools, deployment scripts and statistical analysis. I'm hoping everyone else is at least a little interested in quite such a wide range of different tools.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+Most people probably spotted the downtime for one of the EC2 availability zones this week. One particular response made the rather bold claim that private cloud setups avoid all these issues and are cheaper to boot. This follow up post from HP explained why that's probably not the case in most situations.
+
+http://h30499.www3.hp.com/t5/Following-the-Wh1t3-Rabbit-Down/The-Patchwork-Cloud-To-rent-or-buy-your-cloud/bc-p/5692227
+
+
+I spoke earlier in the year at the excellent Bacon conference and the videos of the talks have started to make it online. One talk, entitled Building a resilient cloud infrastructure, tells the story of how Brightbox (who kindly sponsor this newsletter) built their cloud stack from available open source software.
+
+http://devslovebacon.com/speakers/jeremy-jarvis
+
+
+Interesting look back in time at how, 20 years ago, one of the Sun offices did configuration management. I'm sure lots of smart folks had hand rolled solutions.
+
+http://hlangeveld.tumblr.com/post/25156252581/nothing-new-under-the-sun-cool-stuff-by-joyent
+
+
+I'm sure lots of readers are on the look out for smart colleagues, and this article has a few hints if you're trying the recruit devops minded folk. Apparently we're mainly squirrel shaped people.
+
+http://searchdatacenter.techtarget.com/news/2240157660/How-do-you-fill-DevOps-jobs-Hire-squirrels
+
+
+A quick list of things learned during a ten month stint working within a rapidly growing startup. A few interesting points about the meaning of legacy, the helpfulness of user groups and a desire to fight sprawl.
+
+http://dodizzle.com/lessons-learn-while-devopsposterous
+
+
+The perils and merits of feature branching are often discussed, and one of the problems of moving to such an approach is how it works with continuous integration. This post covers how to do this with Jenkins, and covers lots of the details of why, how and when not to do this.
+
+http://entagen.github.com/jenkins-build-per-branch/
+
+
+Tools
+====
+
+Titan is a new open source distributed graph database which supports Casandra and HBase at the storage layer and implements a few standard graph query and object mapping API's. I've seen lots of discussion of modelling various systems as graphs and this might be of interest in such endeavours.
+
+http://thinkaurelius.github.com/titan/
+
+
+I did a talk earlier this year about all the lovely data buried inside configuration management tools, and both of the following are good examples of what you can get up to. The first takes Puppet run data and feeds it to logstash for sending wherever, the second takes Chef run data and can send it to graphite, sensu or other backends
+
+https://github.com/lusis/puppet-logstash-reporter
+https://github.com/portertech/chef-metrics
+
+
+Interesting DNS hack. xip.io acts as a wildcard DNS server for your local network. It's aimed at being a simple way of testing local hosts with zero configuration.
+
+http://xip.io/
+
+
+Incanter is a little like the statistics language R but written in Clojure, while Nimrod is a log based metric collection server. Nimrod-incanter combines these two together, giving you a simple way of graphing or analysing data collected by Nimrod.
+
+https://github.com/sbtourist/nimrod-incanter
+
+
+Mina is another take on a remote execution tool written in Ruby. It's very close to Rake, and comes with some build in helpers for deploying Ruby applications directly from Git. Not for everyone but very simple to see what's going on.
+
+http://nadarei.co/mina/
