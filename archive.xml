@@ -10,7 +10,7 @@ layout: nil
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
-    <email>gareth@morethanseven.ner</email>
+    <email>gareth@morethanseven.net</email>
   </author>
   {% for post in site.posts %}
   <entry>
