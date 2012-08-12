@@ -1,0 +1,80 @@
+---
+layout: post
+title: Issue 81 - 22nd July 2012
+---
+
+## Issue 81 - 22nd July
+
+I'm glad the attempts to define devops have died down a bit, my favourite thing about the term and the resulting community is just how varied the topics of interest are. Workflows, security and automation, costs and performance, low level TCP tuning to name a few from this issue.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+Disagreements are important and this post, about the dangers of placing too much importance on monitoring, is worth reading. The important takeaway is probably that different environments are different and have differing priorities.
+
+http://swreflections.blogspot.co.uk/2012/07/monitoring-sucks-but-monitoring-as.html
+
+
+Excellent detailed blog post about all sorts of assumptions about HTTPS. It's a good starting point for why HSTS is so important and goes into just enough detail about various problems it solves.
+
+http://www.imperialviolet.org/2012/07/19/hope9talk.html
+
+
+Whether rolling back a deployment is ever a good idea is an oft debated subject, but this blog post makes the case that it's an important tool to have at your disposal. It also covers a few pointers on how to deal with rollbacks successfully.
+
+http://benjaminwootton.co.uk/how-to-do-rollback-well/
+
+
+Good post about the changing role of security in a more agile development environment. It proposes changing security from a gatekeeping function to much more of a consulting approach - and relying on assured automation for some of the gatekeeping functions.
+
+http://h30458.www3.hp.com/us/us/ezine/security-leaders/jul/speed-and-security--just-add-automation---hp.html
+
+
+The Deploying Rails book has been released and should be a good read for any Ruby developers or operations people out there. It covers quite a bit of non-Rails specific software too including Vagrant, Ganglia, Nagios and Puppet.
+
+http://pragprog.com/book/cbdepra/deploying-rails
+
+
+Good presentation about the importance of Vagrant being in defining workflows, not in the software itself. It contains short descriptions of different developer and operations focused workflows along with pros and cons of each.
+
+https://speakerdeck.com/u/mitchellh/p/vagrant-usage-patterns
+
+
+"TCP is tunable. It pays to know your socket flags" states this blog post with a great example of how to reduce latency of certain types of low level operations.
+
+http://blog.boundary.com/2012/05/02/know-a-delay-nagles-algorithm-and-you/
+
+
+Amazon have launched new EC2 instance types with SSDs and Netflix took a bunch of them for a spin. This detailed blog post is worth reading just for the technical benchmarking and the insight it gives into how tweaking instance types can save money in the long run.
+
+http://techblog.netflix.com/2012/07/benchmarking-high-performance-io-with.html
+
+
+Events
+=====
+
+It's System Administrator Appreciation Day on this Friday, July 27th. If that's not you then remember to encourage everyone around you to appreciate your systems administrator colleagues.
+
+http://sysadminday.com/
+
+
+Tools
+====
+
+Mouth is a self contained metrics collection daemon using Ruby and MongoDB. It's similar to other services but provides the storage, collection (over UDP) and user interface all in one package making installation and management easier.
+
+https://github.com/cypriss/mouth
+
+
+I'd been looking for a dependency management tool for Puppet for a while and librarian-puppet looks excellent. It supports modules from the Puppet forge as well as via git repositories.
+
+https://github.com/rodjek/librarian-puppet

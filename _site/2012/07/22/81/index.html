@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 81 - 22nd July 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 81 &ndash; 22nd July</h2>
+
+<p>I&rsquo;m glad the attempts to define devops have died down a bit, my favourite thing about the term and the resulting community is just how varied the topics of interest are. Workflows, security and automation, costs and performance, low level TCP tuning to name a few from this issue.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service &ndash; sponsors Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Disagreements are important and this post, about the dangers of placing too much importance on monitoring, is worth reading. The important takeaway is probably that different environments are different and have differing priorities.</p>
+
+<p><a href="http://swreflections.blogspot.co.uk/2012/07/monitoring-sucks-but-monitoring-as.html">http://swreflections.blogspot.co.uk/2012/07/monitoring-sucks-but-monitoring-as.html</a></p>
+
+<p>Excellent detailed blog post about all sorts of assumptions about HTTPS. It&rsquo;s a good starting point for why HSTS is so important and goes into just enough detail about various problems it solves.</p>
+
+<p><a href="http://www.imperialviolet.org/2012/07/19/hope9talk.html">http://www.imperialviolet.org/2012/07/19/hope9talk.html</a></p>
+
+<p>Whether rolling back a deployment is ever a good idea is an oft debated subject, but this blog post makes the case that it&rsquo;s an important tool to have at your disposal. It also covers a few pointers on how to deal with rollbacks successfully.</p>
+
+<p><a href="http://benjaminwootton.co.uk/how-to-do-rollback-well/">http://benjaminwootton.co.uk/how-to-do-rollback-well/</a></p>
+
+<p>Good post about the changing role of security in a more agile development environment. It proposes changing security from a gatekeeping function to much more of a consulting approach &ndash; and relying on assured automation for some of the gatekeeping functions.</p>
+
+<p><a href="http://h30458.www3.hp.com/us/us/ezine/security-leaders/jul/speed-and-security--just-add-automation---hp.html">http://h30458.www3.hp.com/us/us/ezine/security-leaders/jul/speed-and-security--just-add-automation---hp.html</a></p>
+
+<p>The Deploying Rails book has been released and should be a good read for any Ruby developers or operations people out there. It covers quite a bit of non-Rails specific software too including Vagrant, Ganglia, Nagios and Puppet.</p>
+
+<p><a href="http://pragprog.com/book/cbdepra/deploying-rails">http://pragprog.com/book/cbdepra/deploying-rails</a></p>
+
+<p>Good presentation about the importance of Vagrant being in defining workflows, not in the software itself. It contains short descriptions of different developer and operations focused workflows along with pros and cons of each.</p>
+
+<p><a href="https://speakerdeck.com/u/mitchellh/p/vagrant-usage-patterns">https://speakerdeck.com/u/mitchellh/p/vagrant-usage-patterns</a></p>
+
+<p>&ldquo;TCP is tunable. It pays to know your socket flags&rdquo; states this blog post with a great example of how to reduce latency of certain types of low level operations.</p>
+
+<p><a href="http://blog.boundary.com/2012/05/02/know-a-delay-nagles-algorithm-and-you/">http://blog.boundary.com/2012/05/02/know-a-delay-nagles-algorithm-and-you/</a></p>
+
+<p>Amazon have launched new EC2 instance types with SSDs and Netflix took a bunch of them for a spin. This detailed blog post is worth reading just for the technical benchmarking and the insight it gives into how tweaking instance types can save money in the long run.</p>
+
+<p><a href="http://techblog.netflix.com/2012/07/benchmarking-high-performance-io-with.html">http://techblog.netflix.com/2012/07/benchmarking-high-performance-io-with.html</a></p>
+
+<h1>Events</h1>
+
+<p>It&rsquo;s System Administrator Appreciation Day on this Friday, July 27th. If that&rsquo;s not you then remember to encourage everyone around you to appreciate your systems administrator colleagues.</p>
+
+<p><a href="http://sysadminday.com/">http://sysadminday.com/</a></p>
+
+<h1>Tools</h1>
+
+<p>Mouth is a self contained metrics collection daemon using Ruby and MongoDB. It&rsquo;s similar to other services but provides the storage, collection (over UDP) and user interface all in one package making installation and management easier.</p>
+
+<p><a href="https://github.com/cypriss/mouth">https://github.com/cypriss/mouth</a></p>
+
+<p>I&rsquo;d been looking for a dependency management tool for Puppet for a while and librarian-puppet looks excellent. It supports modules from the Puppet forge as well as via git repositories.</p>
+
+<p><a href="https://github.com/rodjek/librarian-puppet">https://github.com/rodjek/librarian-puppet</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

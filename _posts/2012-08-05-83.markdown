@@ -1,0 +1,69 @@
+---
+layout: post
+title: Issue 83 - 5th August 2012
+---
+
+## Issue 83 - 5th August
+
+After lots of previous links and general discussions it's great to see Netflix release the first money in the Simian Army this week. Hopefully having the code out in the wild will spur others to both try the technique and modify the code for a wider audience. With 32 forks at the time of writing I'll definitely keep an eye out for a future clone army.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+A good argument that smaller projects can benefit from upfront automation maybe even more than the day job. The fact a group of people are doing something every day gives you some protection against losing knowledge, while personal projects can have big gaps between work being done on them.
+
+http://www.wirewd.com/hacks/blog/devops_integration/
+
+
+A presentation from the recent devops days event in Melbourne, all about continuous delivery and deployment. It's quite high level but does feature a few useful workflow diagrams.
+
+http://www.slideshare.net/NigelFds/devops-days-melbourne-meetup-13789963
+
+
+Everyone likes systems designed to automatically failover in case of problems, but that can lead to another problem: flapping. This post describes the problem and some of the strategies available to protect against it.
+
+http://blog.serverdensity.com/avoiding-flapping/
+
+
+One of the interesting things about Infrastructure as a Service models is that it makes cost incredibly tactical and therefore something that should be of interest to the day to day systems administration of at least larger environments. This analysis of pricing patterns of different suppliers caught my eye and makes for interesting reading.
+
+http://redmonk.com/sogrady/2012/08/02/iaas-pricing/
+
+
+Good post on integrating feedback from an IRC bot into a development workflow, the examples show parsing of ruby error messages from Jenkins logs but the workflow would be usable in any similar situation.
+
+http://3scale.github.com/2012/06/06/irc-driven-developement/
+
+
+Interesting insight into why OmniTI decided to create and maintain the new Solaris based distribution OmniOS. Covers most of the reasons why nothing quite fit and does a good job of selling tools like zones, zfs and dtrace at the same time.
+
+http://omniti.com/seeds/why-omnios
+
+
+Tools
+====
+
+The much talked about Chaos Monkey from Netflix has been released for others to play with. It's very opinionated in that it relies on several of the Amazon APIs but if you're running a large, dynamic, operation on EC2 then it will definitely be worth investigating.
+
+https://github.com/Netflix/SimianArmy
+https://github.com/Netflix/SimianArmy/wiki/Quick-Start-Guide
+
+
+Selenium is a handy tool but running tests in a full browser can get slow pretty quickly. Ghostdriver is a work in progress project to get allow tests to run on PhantomJS, a blazing fast headless browser. Worth keeping an eye on.
+
+https://github.com/detro/ghostdriver/
+
+
+Instapaper is a great service, and one I use to collect links for Devops Weekly. This service from Sean Porter completes that cycle, allowing folks to subscribe and have all the links from each Devops Weekly issue arrive in their Instapaper queue.
+
+https://github.com/portertech/acetone
+http://acetoneapp.com/

@@ -1,0 +1,84 @@
+---
+layout: post
+title: Issue 84 - 12th August 2012
+---
+
+## Issue 84 - 12th August
+
+Design is important, and unfortunately not something I come across too many interesting posts on in a devops context. With all the command line tools, APIs and different web interfaces we use that's a shame. Let me know about any particularly well design tools or dashboards you know of and I'll include them in future issues.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+An epic two part essay on the CAP theorem and it's application to operations and configuration management in particular. Some great points about the importance of thinking about time in designing distributed systems.
+
+http://cfengine.com/markburgess/blog_cap.html
+http://cfengine.com/markburgess/blog_cap2.html
+
+
+PuppetConf is back later this year with what looks like an amazing list of talks. Everything from community talks to large scale case studies to some great how-to talks.
+
+http://puppetconf.com/uncategorized/an-almost-complete-list-of-puppetconf-speakers-and-topics/
+
+
+Good interview with Adam Jacob from Opscode all about Chef, configuration management, the operations ecosystem, open source companies, Perl vs Ruby, Devops and much more besides.
+
+http://twit.tv/show/floss-weekly/219
+
+
+I certainly spend lots of time using command line applications so the recent interest in usability and interface design for command line tools is definitely of interest. Here's a recent talk from the Scottish Ruby Conference with lots of tips and examples.
+
+http://johnleach.co.uk/words/1231/beautiful-command-line-interface-design-talk
+
+
+Another design link, this time from Heroku about the new status site. Some great insights about the design process and the problems of displaying status information in a way that's useful to lots of people.
+
+http://blog.heroku.com/archives/2012/8/6/design_of_the_status_site/
+
+
+Nginx is hugely configurable when needed, and here's a nice involved example using Redis and the embedded lua scripting engine to build an LRU proxy cache.
+
+http://mikeferrier.com/2011/05/14/my-beautiful-dark-twisted-reverse-proxy-LRU-cache/
+
+
+Managing dependencies is a common problem and one approach is to vendor the third party code inside your application. Here's a great blog post digging into the pros and cons of this approach and why it's sometimes a useful tool.
+
+http://bitprophet.org/blog/2012/06/07/on-vendorizing/
+
+
+It turns out that the latest release of MySQL (5.6.6) bundles the memcached daemon and exposes some interesting interfaces to using it alongside SQL. This post covers a few of the potential usecases.
+
+http://blog.serverdensity.com/mysql-server-now-includes-embedded-memcached-for-performance/
+
+
+
+Tools
+====
+
+Another tool aimed at the content from this newsletter, index-weekly parses the contents into an elasticsearch index to make finding that elusive link easier.
+
+https://github.com/alcy/index-weekly
+
+
+Interesting project to build useful git hooks for working with Puppet. Currently contains a pre commit hook which checks for syntax, parsing and template errors.
+
+https://github.com/smarchive/puppet-git-hooks
+
+
+Using lots of tools for monitoring tends to favour those with APIs. Here's a great example script which takes information from Pingdom and exports it to Graphite. Bonus points for the backfill option and general configurability of the script.
+
+https://github.com/lewg/pingdom-to-graphite
+
+
+Shameless self promotion, I've been experimenting with Riemann recently and have released a few projects to make getting started easier. This includes a Vagrant configuration and Puppet module, along with a sample Riemann configuration and sample dashboard.
+
+http://www.morethanseven.net/2012/08/11/Riemann-puppet-module.html
