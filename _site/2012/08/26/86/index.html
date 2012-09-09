@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 86 - 26th August 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 86 &ndash; 26th August</h2>
+
+<p>A few links this week to other Devops flavoured publications; namely the Food Fight podcast and the newer ShipShow podcast. I think it&rsquo;s great for the community that we have lots of places you can go to discover new things. Good job all those involved.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service &ndash; sponsors Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>The Ship Show is a twice-monthly podcast, featuring discussion on everything from build engineering to devops and release management. Only a few episodes so far but worth catching up on.</p>
+
+<p><a href="http://theshipshow.com/">http://theshipshow.com/</a></p>
+
+<p>More podcasts, this time the frequently mentioned Food Fight. This episode has a chat with Jesse Newland all about the Github infrastructure and in particular how it&rsquo;s managed.</p>
+
+<p><a href="http://foodfightshow.org/2012/08/chatops-at-github-with-jesse-newland.html">http://foodfightshow.org/2012/08/chatops-at-github-with-jesse-newland.html</a></p>
+
+<p>Vagrant is no longer quite as tied to VirtualBox after this merge. At the moment that doesn&rsquo;t mean it has support for another virtualisation stack, but it&rsquo;s a big step towards that goal.</p>
+
+<p><a href="https://github.com/mitchellh/vagrant/commit/391dc392675c73518ebf04252d824fe916e8860b">https://github.com/mitchellh/vagrant/commit/391dc392675c73518ebf04252d824fe916e8860b</a></p>
+
+<p>Here&rsquo;s a few tips for adding statsd powered instrumentation to a typical Rails application. Shows a few different approaches, including using middleware, class overloading and using hooks provided by Rails.</p>
+
+<p><a href="http://www.mikeperham.com/2012/08/25/using-statsd-with-rails/">http://www.mikeperham.com/2012/08/25/using-statsd-with-rails/</a></p>
+
+<p>A pretty high level description of some of the implementation patterns of devops: testing, build pipelines, infrastructure as code, etc. Takes the view that much of this is about flattening organisation structures to avoid misaligned incentives.</p>
+
+<p><a href="http://www.ibm.com/developerworks/agile/library/a-devops1/index.html?ca=drs-&amp;utm_source=dlvr.it&amp;utm_medium=twitter">http://www.ibm.com/developerworks/agile/library/a-devops1/index.html?ca=drs-&amp;utm_source=dlvr.it&amp;utm_medium=twitter</a></p>
+
+<h1>Jobs at the FT</h1>
+
+<p>The Financial Times is well known for doing impressive things with their adaptive HTML5 web apps on tablets and phones, and their Labs team is now looking for a webops engineer to support the scaling out of the FT web app (<a href="http://app.ft.com">http://app.ft.com</a>) amongst other challenging web applications. To find out more and to apply:</p>
+
+<p><a href="http://labs.ft.com/jobs/webops">http://labs.ft.com/jobs/webops</a></p>
+
+<h1>Tools</h1>
+
+<p>Test Kitchen is a new integrated testing environment for Chef, built by the folks from Opscode. It provides a DSL for describing all kinds of tests and checks, along with integration with Vagrant for running up virtual machines for testing.</p>
+
+<p><a href="https://github.com/opscode/test-kitchen">https://github.com/opscode/test-kitchen</a></p>
+
+<p>I often find myself creating host entries for vagrant virtual machines. Not only is that another step, but tidying them up afterwards can easily be forgotten. This vagrant plugin fixes that rather nicely.</p>
+
+<p><a href="https://github.com/mosaicxm/vagrant-hostmaster">https://github.com/mosaicxm/vagrant-hostmaster</a></p>
+
+<p>Lots of folks building tools around Graphite, often that will happily run on Heroku or similar. Here&rsquo;s a good example, Rorschach is a self service alerting tool for Graphite. Define metrics to check, thresholds and how you want to be notified.</p>
+
+<p><a href="https://github.com/danryan/rorschach">https://github.com/danryan/rorschach</a></p>
+
+<p>Pants is a new build tool from the developers at Twitter. It&rsquo;s aimed at multiple language environments and building dependent projects direct from source all while ensuring snappy builds.</p>
+
+<p><a href="https://github.com/twitter/commons/tree/master/src/python/twitter/pants">https://github.com/twitter/commons/tree/master/src/python/twitter/pants</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

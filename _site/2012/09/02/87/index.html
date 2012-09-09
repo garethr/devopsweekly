@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 87 - 2nd September 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 87 &ndash; 2nd September</h2>
+
+<p>I checked this morning and this newsletter now has 4000 subscribers. That&rsquo;s a whole lot of people interested in the same topic, especially one some folks complain that no-one can provide a good definition for. I&rsquo;m seeing more content too from meetups and user groups, which again suggests a real growing community &ndash; a big thank you to everyone involved in spreading the word.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service &ndash; sponsors Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Announced at this years Chef Summit, Opscode has started releasing the new erlang based Chef server components. At the moment this is a series of individual components, but the built tools and packaged release should be available soon.</p>
+
+<p><a href="http://www.opscode.com/blog/2012/08/27/introducing-erchef/">http://www.opscode.com/blog/2012/08/27/introducing-erchef/</a></p>
+
+<p>I&rsquo;m seeing a few people starting to investigate BOSH. This screencast looks like a good starting point, and the bosh-solo tool described looks an excellent workflow addition.</p>
+
+<p><a href="http://drnicwilliams.com/2012/08/20/creating-new-bosh-releases-with-bosh-gen-and-bosh-solo/">http://drnicwilliams.com/2012/08/20/creating-new-bosh-releases-with-bosh-gen-and-bosh-solo/</a>
+<a href="https://github.com/drnic/bosh-solo">https://github.com/drnic/bosh-solo</a></p>
+
+<p>If you&rsquo;re interested in any of the features of SmartOS then this video from the BayLISA meetup is worth checking it. It&rsquo;s 40 minutes long and covers may of the interesting SmartOS features of interesting to systems administrators including KVM, zones and ZFS.</p>
+
+<p><a href="http://smartos.org/2012/08/22/smartos-an-sa-primer/">http://smartos.org/2012/08/22/smartos-an-sa-primer/</a></p>
+
+<p>This looks a good site to keep an eye on. Operations Anti-Patterns is documenting real world case studies of interesting failures everyone can learn from. So far it contains a few articles on migrating DNS and on the perils of restricted access to production.</p>
+
+<p><a href="http://opsantipatterns.com/">http://opsantipatterns.com/</a></p>
+
+<p>Lots of people are working on workflow tooling around the configuration management stack. This example introduces a git hook based mechanism for deploying puppet code to remote servers. It also features some validation of manifests to prevent pushing out invalid code.</p>
+
+<p><a href="http://brightbox.com/blog/2012/08/29/puppet-git-receiver/">http://brightbox.com/blog/2012/08/29/puppet-git-receiver/</a>
+<a href="https://github.com/brightbox/puppet-git-receiver/">https://github.com/brightbox/puppet-git-receiver/</a></p>
+
+<p>Stripe have been running a capture the flag game for a little while. This article delves into some of the configuration and setup they did when building up the architecture. Everything from performance problems creating users to chroot, permissions and some FCGI hacking.</p>
+
+<p><a href="https://blog.gregbrockman.com/2012/08/system-design-stripe-capture-the-flag/">https://blog.gregbrockman.com/2012/08/system-design-stripe-capture-the-flag/</a></p>
+
+<p>&ldquo;Your ops people are as much of a human resource as they are technical ones&rdquo;. A good opinion piece of the rapid changes to the world of systems administration and Devops, with a large focus on the people involved.</p>
+
+<p><a href="http://erik.hollensbe.org/2012/08/31/your-ops-team-is-probably-important/">http://erik.hollensbe.org/2012/08/31/your-ops-team-is-probably-important/</a></p>
+
+<p>The Devops community if filled with people learning more about development or more about systems administration (or more about both). Introductory articles like this 10 things every sysadmin should know are useful both for people new to the field, whether experienced developers or brand new operations folk.</p>
+
+<p><a href="http://agiletesting.blogspot.co.uk/2012/08/10-things-to-know-when-starting-out-as.html">http://agiletesting.blogspot.co.uk/2012/08/10-things-to-know-when-starting-out-as.html</a></p>
+
+<h1>Tools</h1>
+
+<p>If you&rsquo;re working with personal data then realistic sample data sets can be a pain to put together. Data::Anonymization is a nice looking ruby tool used to anonymize existing data. The documentation covers lots of different approaches for different problems.</p>
+
+<p><a href="http://sunitparekh.github.com/data-anonymization/">http://sunitparekh.github.com/data-anonymization/</a></p>
+
+<p>Making Vagrant base boxes is surprisingly easy to do, even just using the raw VBoxManage commands. Here&rsquo;s a example for building up-to-date Centos boxes if you want to be on the cutting edge.</p>
+
+<p><a href="https://github.com/astrostl/vagrant-centos">https://github.com/astrostl/vagrant-centos</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

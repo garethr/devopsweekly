@@ -1,0 +1,63 @@
+---
+layout: post
+title: Issue 85 - 19th August 2012
+---
+
+## Issue 85 - 19th August
+
+A relatively quiet issue this week, probably because I'm back at work and suitably busy. Hopefully a little something for everyone; interviews, reading lists, approaches to testing, recruitment and monitoring to name a few. Devops, at least as I see it, really is a broad topic.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+The initial set of talks have been announced for devopsdays Rome in October and all of them sound amazing. Early bird tickets still available too.
+
+http://devopsdays.org/events/2012-italy/
+
+
+The question about whether devops is applicable to large, traditional enterprises is interesting and this pretty in-depth question and answer session with lots of smart folks makes for worthwhile reading - especially if you have an interest in large company adoption.
+
+http://www.infoq.com/articles/virtual-panel-entreprise-ready-for-devops
+
+
+With more and more components and larger systems, an understanding of some of the theory of distributed systems is becoming increasingly useful. This is a useful, if a little dated, reading list that should provide a great start to delving into the topic from both an academic and practical standpoint.
+
+http://dancres.org/reading_list.html
+
+
+A series of vagrant setups for experimenting with various monitoring tools has also led to a growing rpm package repository of some useful tools including graphite, ganglia and logstash. A good way to get started quickly if you're investigating new tools.
+
+http://www.krisbuytaert.be/blog/our-monitoringsucks-rpm-repository-available
+
+
+Hiring or at least recruitment is a popular topic in devops circles due I think to a growing demand or at least interest. This post isn't specific to devops but is detailed and interesting, covering lots of reasons for leaving, joining or retaining good technical staff.
+
+http://www.daedtech.com/how-to-keep-your-best-programmers
+
+
+A few year ago testing configuration management code was pretty much just an interesting conversation but now we've got lots of tools to make it a reality. This blog post covers a range of tools useful for testing Chef code, as well as a few helpful utilities and tips for the resulting workflow.
+
+http://technology.customink.com/blog/2012/08/03/testing-chef-cookbooks/
+
+
+Tools
+====
+
+Knowing how a given application is using memory, IO and CPU can be useful when debugging problems. Monner tries to make that capability even earlier to access, including during development, be providing a useful command line wrapper that outputs utilisation information.
+
+https://github.com/colinhowe/monner
+
+
+If you produce relatively complex software that you want to work across a wide variety of different environments then virtual machines are an obvious solution. With vagrant and veewee as the underlying tools, bento is a modular set of basebox definitions used by Opscode. Useful as a starting point if you have similar cross-platform challenges.
+
+https://github.com/opscode/bento
+
