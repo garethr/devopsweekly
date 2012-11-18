@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 93 - 14th October 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 93 &ndash; 14th October</h2>
+
+<p>A little short of content this week as I&rsquo;ve been rather unreasonably busy. More content from some recent excellent conferences plus a particularly good post all about designing for failure in order to build robust systems.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service &ndash; sponsors Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>All 67 videos from the recent PuppetConf are available for viewing. That&rsquo;s probably about two continuous days worth of material. Lots of Puppet specific content but also lots of sessions that should be more broadly applicable too.</p>
+
+<p><a href="http://puppetlabs.com/blog/watch-and-learn-puppetconf-2012-videos/">http://puppetlabs.com/blog/watch-and-learn-puppetconf-2012-videos/</a></p>
+
+<p>Nice presentation from devopsdays Rome all about different approaches to building a pipeline. It&rsquo;s missing some context without the presenter but the diagrams generally do a good job of at least suggesting approaches to documenting a continuous delivery system.</p>
+
+<p><a href="http://www.slideshare.net/duality72/beyond-continuous-delivery-at-devopsdays-rome-2012">http://www.slideshare.net/duality72/beyond-continuous-delivery-at-devopsdays-rome-2012</a></p>
+
+<p>As the tools we&rsquo;re using mature we need better educational materials both for new starters and experts. So it&rsquo;s good to see folks like Peepcode coming out with a new two part screencast series on Chef.</p>
+
+<p><a href="https://peepcode.com/products/chef-i">https://peepcode.com/products/chef-i</a></p>
+
+<p>Building resilient systems is all about managing inevitable failures. This post picks out a few real world problems and some of the things that have worked well for National Instruments in detecting and preventing failures affecting customers.</p>
+
+<p><a href="http://theagileadmin.com/2011/11/14/devops-tip-design-for-failure/">http://theagileadmin.com/2011/11/14/devops-tip-design-for-failure/</a></p>
+
+<p>Nice writeup of an interview with John Alspaw from Etsy. The post picks out a few take away points around what devops means for the structure of teams, building up slowly to lots of deployments a day and approaches to database schema migration.</p>
+
+<p><a href="http://rhebus.posterous.com/interview-with-john-allspaw-on-continuous-del">http://rhebus.posterous.com/interview-with-john-allspaw-on-continuous-del</a></p>
+
+<p>Java environments work just differently enough to say Ruby or Python to mean shared tooling isn&rsquo;t that common. This talk is both a good introduction to Puppet and, at the end, a great demonstration of why a Java development team should care.</p>
+
+<p><a href="http://www.slideshare.net/carlossg/puppet-for-java-developers-javazone-no-2012">http://www.slideshare.net/carlossg/puppet-for-java-developers-javazone-no-2012</a></p>
+
+<h1>Events</h1>
+
+<p>FLOSS UK are hosting an unconference in London, 9am to 5pm Saturday 27th October. It should be a good opportunity to learn new things or to show off what you&rsquo;ve been working on if you have the day spare.</p>
+
+<p><a href="http://www.flossuk.org/Events/Unconference2012">http://www.flossuk.org/Events/Unconference2012</a></p>
+
+<h1>Tools</h1>
+
+<p>Loom is another tool to make bootstrapping puppet machines easier. It makes use of Fabric to do the remote execution and librarian-puppet for manage module dependencies. Might be worth a look if you&rsquo;re interested in different puppet workflows.</p>
+
+<p><a href="https://github.com/bfirsh/loom">https://github.com/bfirsh/loom</a></p>
+
+<p>An experimental webhook server for use with GitHub. It waits for updates to your chef repository and then synchronises the code on your Chef server. You could probably build some quite nice pipeline deployment mechanisms with this I think.</p>
+
+<p><a href="https://github.com/adamhjk/chef-github-hook">https://github.com/adamhjk/chef-github-hook</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

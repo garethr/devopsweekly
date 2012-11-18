@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 97 - 11th November 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 97 &ndash; 11th November</h2>
+
+<p>I&rsquo;m writing this weeks issue from San Francisco airport where it is currently about 5:30am. The upside to that is, between QCon and meeting up with nice folks from Heroku, LIbrato, Fastly, Twitter, Facebook, Travis and more, I&rsquo;ve got loads of content, including more tool than I think I&rsquo;ve ever included before.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service &ndash; sponsors Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>One of my favourite QCon talks this week came from Chuck Rossi talking about release engineering at Facebook. I&rsquo;ll definitely link to the video when that&rsquo;s available but in the meantime here&rsquo;s a good writeup of some of the main point.</p>
+
+<p><a href="http://devops.com/2012/11/08/release-engineering-at-facebook/">http://devops.com/2012/11/08/release-engineering-at-facebook/</a></p>
+
+<p>Good presentation from QCon this week all about the Netflix architecture. Lots of details and some new material focused on achieving high availability at scale.</p>
+
+<p><a href="http://www.slideshare.net/adrianco/architectures-for-high-availability-qconsf">http://www.slideshare.net/adrianco/architectures-for-high-availability-qconsf</a></p>
+
+<p>As you start to use Graphite more and more you might run into problems with having just one node. It turns out Graphite can be configured as a cluster and this post documents how. It also describes Graphite as &ldquo;a nearly undocumented thing of sweetness&rdquo; which entertained me.</p>
+
+<p><a href="http://rcrowley.org/articles/federated-graphite.html">http://rcrowley.org/articles/federated-graphite.html</a></p>
+
+<p>More good graphite content, this time about why histograms are useful and how to create them using statsd, at least after the referred pull request is merged and released.</p>
+
+<p><a href="http://dieter.plaetinck.be/histogram-statsd-graphing-over-time-with-graphite.html">http://dieter.plaetinck.be/histogram-statsd-graphing-over-time-with-graphite.html</a></p>
+
+<p>Good to see folks using the Riemann monitoring tool in anger, and particularly interesting in this case to see it being used to collect information from a Windows and .NET environment. Several useful tools mentioned if you&rsquo;re in a similar environment.</p>
+
+<p><a href="http://techblog.bluemountaincapital.com/2012/10/04/riemann-usage-at-bluemountain/">http://techblog.bluemountaincapital.com/2012/10/04/riemann-usage-at-bluemountain/</a></p>
+
+<p>Interesting looking addition to the Rackspace cloud offering, the Rackspace Service Registry provides a nice, API driven, registry to make orchestration and other cluster management tasks easier.</p>
+
+<p><a href="http://www.rackspace.com/blog/keep-track-of-your-services-and-applications-with-the-new-rackspace-service-registry/">http://www.rackspace.com/blog/keep-track-of-your-services-and-applications-with-the-new-rackspace-service-registry/</a></p>
+
+<p>Lots of great looking video from the recent Ricon conference from Basho. Loads of distributed systems talks plus monitoring, configuration management, Riak and more. Worth taking a look.</p>
+
+<p><a href="http://basho.com/community/ricon2012/">http://basho.com/community/ricon2012/</a></p>
+
+<h1>Tools</h1>
+
+<p>Very impressive Postgres 9.2 realtime dashboard. I saw this at the Heroku offices earlier this week and it&rsquo;s obvious how useful it could be for detecting and debugging issues. A live example is available too if you&rsquo;re after a demo.</p>
+
+<p><a href="https://github.com/will/datascope">https://github.com/will/datascope</a>
+<a href="https://datascope.herokuapp.com/">https://datascope.herokuapp.com/</a></p>
+
+<p>Very impressive looking distributed request tracing application. Allows for visualising the entire request lifecycle in a service based architecture. It does require you to be running ZooKeeper, Cassandra and Scribe however so it might be a little heavyweight for some use cases.</p>
+
+<p><a href="http://twitter.github.com/zipkin/">http://twitter.github.com/zipkin/</a></p>
+
+<p>The Puppet Dashboard is being taken over by the wider puppet community and finally seeing some activity. This fork looks encouraging, updating everything to Rails 3 and setting the scene for easier improvements in the future.</p>
+
+<p><a href="https://github.com/sodabrew/puppet-dashboard">https://github.com/sodabrew/puppet-dashboard</a></p>
+
+<p>Cube is a nifty looking time series collection and evaluation engine build on Mongo and Node.js. It has clients available in a number of languages and a few interesting tools, like a daily reporting engine.</p>
+
+<p><a href="https://github.com/square/cube">https://github.com/square/cube</a></p>
+
+<p>Simple but powerful looking metrics collection daemon that can ship measurements to Graphite or Librato. Aims to address some failings in similar tools like munin, ganglia and collectd for this use case.</p>
+
+<p><a href="https://github.com/mk-fg/graphite-metrics">https://github.com/mk-fg/graphite-metrics</a></p>
+
+<p>Handy Jenkins plugin that sends build information to statsd and on to Graphite. Useful to get information about the number of builds and the time being taken for runs into graphs.</p>
+
+<p><a href="https://github.com/joemiller/jenkins-statsd-plugin">https://github.com/joemiller/jenkins-statsd-plugin</a></p>
+
+<p>Descartes is yet another Graphite dashboard but one with a different slant. Instead of real time information it&rsquo;s aimed to collaboration, analysis and reviewing data sets after the fact. Would love to see a screenshot.</p>
+
+<p><a href="https://github.com/obfuscurity/descartes">https://github.com/obfuscurity/descartes</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

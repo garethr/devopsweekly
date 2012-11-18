@@ -1,0 +1,75 @@
+---
+layout: post
+title: Issue 89 - 16th September 2012
+---
+
+## Issue 89 - 16th September
+
+It's good to see the debate around Devops turning to what it means for organisations, on top of what it means for individuals. In large organisations in particular, with existing structures and defined job roles, the changes required make for an interesting topic.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+A good article drawing on personal experience of the transition to a devops way of working. The focus is on the making technical and cultural changes in small chunks over time, it's not all about a single change.
+
+http://www.infoq.com/articles/wide-range-devops
+
+
+Interesting article about what devops does to existing roles in large organisations. Makes some good points and goes into detail about release engineers, developers and operations. I'd have liked to have seen product management on that list too.
+
+https://www.ibm.com/developerworks/mydeveloperworks/blogs/devops/entry/who_moved_my_cheese_an_exploration_of_the_effect_devops_has_on_roles_in_the_enterprise2?lang=en
+
+
+PostgreSQL and MySQL discussions tend to end badly. This huge post tries to explain why, and goes into lots of technical details about what makes MySQL and PostgreSQL so different and suited to different usecases.
+
+http://ledgersmbdev.blogspot.co.uk/2012/09/or-modelling-interlude-postgresql-vs.html
+
+
+This post covers how to setup a simple development environment, but on a Linux system console. This is mainly just good fun (I think), but it's an interesting way to think about power consumption.
+
+http://klaig.blogspot.be/2012/09/setup-fancy-development-environment-on.html
+
+
+Looking to other disciplines for insights into web operations always makes for an interesting blog post or talk. This one looks at stress-strain curves and some mechanical engineering approaches, and swaps bars of metal for CPU or disk usage.
+
+http://www.kitchensoap.com/2012/09/10/fundamental-stress-strain-curves-in-web-engineering/
+
+
+Evernote operate a sharded architecture, and this post covers how they bring up new physical machines as they add new customers. As well as using Puppet they make extensive use of Debian preseed, and show example preeseed files that might be useful to others.
+
+http://blog.evernote.com/tech/2012/09/11/363/
+
+
+Google stores a lot of information. Spanner is Google's scalable, multi-version, globally-distributed, and synchronously-replicated database. Originally written for the advertising backend, this paper goes into the details of why they built it and how it works.
+
+http://research.google.com/archive/spanner.html
+
+
+Events
+=====
+
+A virtual event this week, Hangops is a weekly gathering aimed at remote workers. Every friday various folks ops and dev jump onto a Google Hangout for a chat about a suggested topic. It's at 2PM Pacific time so best suited to US readers.
+
+http://hangops.com/
+
+
+Tools
+====
+
+Woodchuck is another log shipper for logstash. It's Ruby based and currently supports file inputs and stdout and redis outputs.
+
+https://github.com/danryan/woodchuck
+
+
+Mission Control Technologies is a real-time monitoring and visualization platform. But from Nasa. It provides an API, a pluggable architecture and cimes with a Java based graphical interface for composing dashboards.
+
+https://github.com/nasa/mct

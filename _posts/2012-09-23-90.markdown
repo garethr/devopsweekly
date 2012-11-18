@@ -1,0 +1,73 @@
+---
+layout: post
+title: Issue 90 - 23rd September 2012
+---
+
+## Issue 90 - 23rd September
+
+A range of posts on automation, configuration management, upcoming events and some interesting looking tools this week. A few weeks of solid devops flavoured events kicks off this week too with PuppetConf and Surge Conference.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+Epic part one of a series of blog posts on the role of automation in mature engineering teams. Automation is hugely powerful, and generally seen as exclusively a good thing. However automation is only truly useful if it's trustable. Lots of other good ideas in here to think about too.
+
+http://www.kitchensoap.com/2012/09/21/a-mature-role-for-automation-part-i/
+
+
+It's PupperConf this coming week on the 27th and 28th, and PuppetLabs are streaming lots of the talks for those that can't make it. You can signup to receive the details now.
+
+http://info.puppetlabs.com/puppetconf2012-live.html
+
+
+Getting started with monitoring can be a little overwhelming due to all the different moving parts. This post aims to make setting up some simple monitoring quick and easy, and in my experience once you're over that first hump it's easy to carry on investigating.
+
+http://unwiredcouch.com/2012/09/15/getting-started-with-monitoring.html
+
+
+A few interesting examples of Node.js adoption in large organisation, and an argument that it will become more and more common. Some counter arguments about the Javascript language blocking some of this, but it's an interesting topic.
+
+http://blog.appfog.com/node-js-is-taking-over-the-enterprise-whether-you-like-it-or-not/
+
+
+Another episode of the Food Fight podcast, this time with an interview with Patrick Debois and Mitchell Hashimoto and lots of discussions about the future of Vagrant, including future integrations with OpenStack, KVM and EC2. This makes lots of sense, as it's the vagrant workflow that's the important part.
+
+http://foodfightshow.org/2012/09/vagrant.html
+
+
+I've been interested in Sensu for a while, but still haven't gotten around to experimenting with it. This post should make that easier, showing how to bring up Sensu on Heroku.
+
+http://unwiredcouch.com/2012/07/31/deploy-sensu-heroku.html
+https://github.com/mrtazz/sensu-heroku-app
+
+
+Good post all about the concept of GameDays, exercises to test emergency response. The post is a great discussion between people from Etsy, Opscode and Google about why it's important to do this for real and how best to try and arrange GameDays.
+
+http://queue.acm.org/detail.cfm?id=2371297
+
+
+Tools
+====
+
+I'm not sure how this might be useful, but it's very neat. It's an HTTP server written in bash. If you're interested in better understanding netcat or learning a bit more bash from a well documented and commented script then it might be worth a look.
+
+https://github.com/avleen/bashttpd
+
+
+Orchestration is still a complex topic, and tools are a good way of discussing the problems people feel exist. Mastermind is a new Ruby based tool which lets you create definitions of types of work and define jobs that run those definitions, all using an internal DSL.
+
+https://github.com/danryan/mastermind
+
+
+The foodcritic lint tool for Chef has a very nice pluggable architecture, allowing you to define you're own rules. Etsy have published the rules they use and they worth looking at. Warning about exec resources using wget, curl and git for instance are out, as it restarting core services from recipes.
+
+https://github.com/etsy/foodcritic-rules/blob/master/rules.rb

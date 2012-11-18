@@ -1,0 +1,79 @@
+---
+layout: post
+title: Issue 94 - 21st October 2012
+---
+
+## Issue 94 - 21st October
+
+Lots of good blog posts and reading materials this week rather than tools, videos and presentations. In particular the Ops School systems administration syllabus deserves a special mention. I'd bet nearly all the readers of this newsletter would benefit from reading through it - and if not then, if you have the time, you could be contributing back. Good work all the folks behind it.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+Formal education and System Administration aren't exactly the best of friends. So this new site is most welcome. It already contains a huge amount of count, structured as a syllabus for learning systems  administration based on some basic Linux knowledge. Networking, Security, File systems, Datacentres, Virtualisation and more. It's all on GitHub as well if you have time to contribute.
+
+http://ops-school.readthedocs.org/en/latest/
+https://github.com/opsschool/curriculum
+
+
+Having a devops team isn't a good idea. But as more people have become interested in this devops thing it's not always clear why - especially without talking face to face with people already doing it. This post discusses why an extra team is the exact opposite of the culture of collaboration that devops is trying to encourage. Required reading.
+
+http://continuousdelivery.com/2012/10/theres-no-such-thing-as-a-devops-team/
+
+
+A nice writeup of one persons experience with Chef over the last year. It contains lots of tips for anyone just getting started plus some hard learned recommendations. Lots relevant to tools other than Chef too.
+
+http://devopsanywhere.blogspot.co.uk/2012/10/a-year-with-chef.html
+
+
+Even in environments using configuration management tools SSH still has a place, and understanding the power of the SSH configuration file can make this much easier, especially in team environments. This post covers the basics plus expands a little on using tunnels to connect to externally closed ports via SSH.
+
+http://nerderati.com/2011/03/simplify-your-life-with-an-ssh-config-file/
+
+
+Some more SSH tricks and a more, for solving a common problem; just how identical are your staging and production environments? This post discusses an approach were they are virtually identical, down to the network addressing. This poses a few usability problems which the post discusses solutions to.
+
+http://www.markhneedham.com/blog/2012/10/14/environment-agnostic-machines-and-applications/
+
+
+Not a new post but I found myself doing quite a bit of load testing and analysis recently and this blog post is worth reading on the subject. It covers lots of common misunderstandings and has a number of good tips for getting useful results.
+
+http://www.mnot.net/blog/2011/05/18/http_benchmark_rules
+
+
+Few weeks go by without me finding something else cool in the Nginx documentation. But Nginx doesn't do everything, including have good support the HTTP Vary header. But Nginx can be extended using the Lua module, and this post shows how.
+
+http://jimpurbrick.com/2012/10/14/adding-vary-header-support-nginx/
+
+
+I remember seeing the Waza conference from Heroku last year and wishing I'd been able to make it. Well, all the videos are now available online, including quite a few that might be interested to readers here. The Logs as Conversations and Sane Dependency Management talks in particular sounds really interesting.
+
+http://vimeo.com/groups/waza2012
+
+
+Configuration management code can often appear quite different to other forms of programming. This presentation does a good job of drawing lots of parallels, from the primitive building blocks of Chef and Puppet up to
+tooling, profilers and testing approaches.
+
+http://www.slideshare.net/jedi4ever/code-but-not-as-we-know-it-infrastructure-as-code
+
+
+Tools
+====
+
+Interesting approach to testing configuration and setup of a machine. It's a shell script based tool which tests from the point of view of a black box, making it useful whatever language or framework you might be using. A supporting blog post showing more examples would be handy though.
+
+https://github.com/vimeo/simple-black-box
+
+
+VMfest uses Pallet to control Virtualbox instances, giving you a very nice repl to create, query and destroy local instances. You can also define boxes in code much like you can with Vagrant.
+
+https://github.com/tbatchelli/vmfest

@@ -1,0 +1,85 @@
+---
+layout: post
+title: Issue 91 - 30th September 2012
+---
+
+## Issue 91 - 30th September
+
+Lots of PuppetConf related content this week, although lots of it should hopefully be relevant even if you're not using the Puppet tools. I'm going to be at Velocity in London this coming week, and with that and devopsdays in Rome hopefully next weeks issue will be similarly packed.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+PuppetConf
+=========
+
+I missed out on PuppetConf this year but from all the reports it sounds like it was even better than last year. Here's a few of the links I've found already.
+
+
+I generally don't link to the homepage of sites, preferring to stick with individual articles. But I'm making an exception for Kent Bye who has written up 12 of the talks from the conference in quite a bit of detail.
+
+http://kentbye.com/
+
+
+Pinterest make extensive use of Puppet and have written a nice API wrapper for querying stored configuration data. The repo contains the presentation along with the API server and some examples using it to, for instance, generate host files for EC2 instances based on data from Puppet.
+
+https://github.com/pinterest/puppetconf
+
+
+Making modular, reusable and configurable puppet modules takes a good bit of thinking about. This presentation delves into some of the guidelines used for the Lab 42 module set and shows lots of examples and suggested approaches to problems.
+
+http://www.slideshare.net/Alvagante/puppet-modules-for-fun-and-profit
+
+
+News
+====
+
+A good post looking to document some patterns for building scalable systems, based on experience from Yahoo and Digg. It introduces caching, load balancing and off line processing  and makes a good point about most computer science programs not covering practical material like this.
+
+http://lethain.com/introduction-to-architecting-systems-for-scale/
+
+
+Debugging complex systems is something of an art, so public post mortems are a great way of learning without experiencing the error yourself. Travis CI are being incredibly open about the running of the service and this tale of timeouts is worth reading.
+
+http://about.travis-ci.org/blog/2012-09-24-post-mortem-pull-request-unavailability/
+
+
+I'm a big fan of alerting on collected metrics and this example, using Ganglia and Nagios, shows how to monitor a hardware RAID controller. The principles though are applicable to anything you can script the extraction of information from.
+
+http://blog.vuksan.com/2012/09/28/monitoring-health-of-delllsi-raid-arrays-with-ganglia/
+
+
+PostgreSQL is hugely powerful and those that use it tend to be quite evangelical about its advantages. This slidedeck runs through lots of the powerful features found in the database, including the wide range of extensions and datatypes.
+
+https://speakerdeck.com/u/craigkerstiens/p/postgres-demystified
+
+
+Tools
+====
+
+sshuttle looks an interesting tool for when setting up a VPN is too much work. It's a transparent proxy server that works as a poor man's VPN. It forwards everything over ssh and also supports DNS tunnelling.
+
+https://github.com/apenwarr/sshuttle
+
+
+language-puppet is an attempt to reimplement much of Puppet in Haskel, aiming to provide improved speed and memory usage. It can be used to parse .pp files, compile and interpret them, evaluate the templates and already integrates with PuppetDB.
+
+http://lpuppet.banquise.net/
+http://hackage.haskell.org/package/language-puppet
+
+
+The NetFlix ChaosMoney works on EC2 but has inspired a number of similar tools, including WazMonkey which aims to do the same sort of thing for Azure. At the moment running WazMonkey chooses a role instance from your service at random and reboots it.
+
+http://blog.smarx.com/posts/wazmonkey-chaos-monkey-for-windows-azure
+https://github.com/smarx/WazMonkey
+
+
+puppet-autoami is a tool that uses puppet to create Amazon Machine Images for use on EC2. It uses a database to store information about your images, and makes clever use of a report processor to determine when to create new AMIs.
+
+https://github.com/ccaum/puppet-autoami

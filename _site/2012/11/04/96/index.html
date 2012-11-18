@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 96 - 4th November 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 96 &ndash; 4th November</h2>
+
+<p>Just a note this week to say that the next issue of Devops Weekly may be delayed by a day or so. I&rsquo;ll be in San Francisco all next week and I&rsquo;m flying back most of Sunday. Normal service will resume the week after.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service &ndash; sponsors Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Sometimes having large traditional organisations doing things in a modern way can help make it easier to make a case to your own management. This blog post (admittedly written by me) about how the UK Government are releasing several times a day hopefully makes a useful casestudy.</p>
+
+<p><a href="http://digital.cabinetoffice.gov.uk/2012/11/02/regular-releases-reduce-risk/">http://digital.cabinetoffice.gov.uk/2012/11/02/regular-releases-reduce-risk/</a></p>
+
+<p>An interesting, more personal, use of logstash for local IRC notifications. A good demonstration of the simple input, filter, output configuration model.</p>
+
+<p><a href="http://unwiredcouch.com/2012/11/03/irc-notifications-with-logstash.html">http://unwiredcouch.com/2012/11/03/irc-notifications-with-logstash.html</a></p>
+
+<p>Especially in the heat of the moment it can still feel quicker to make manual changes to get things working again. This post briefly touches on why this might not be the best idea and a few tips to make the path of least resistance based on simple automation.</p>
+
+<p><a href="http://holmwood.id.au/~lindsay/2012/10/29/incentivising-automated-changes/">http://holmwood.id.au/~lindsay/2012/10/29/incentivising-automated-changes/</a></p>
+
+<p>Pretty epic debugging story involving ssh, tcpdump and nmap and more. Always nice to see someone write up all the context and technical details of one of those hard to debug problems.</p>
+
+<p><a href="http://mina.naguib.ca/blog/2012/10/22/the-little-ssh-that-sometimes-couldnt.html">http://mina.naguib.ca/blog/2012/10/22/the-little-ssh-that-sometimes-couldnt.html</a></p>
+
+<p>Memcached might be simple, but it does have a few more features than just setting and getting. This blog post mainly covers the Ruby API but demonstrates a few useful tricks which are worth knowing about.</p>
+
+<p><a href="https://devcenter.heroku.com/articles/advanced-memcache">https://devcenter.heroku.com/articles/advanced-memcache</a></p>
+
+<p>Good post about the tradeoffs inherent in database systems, but focusing not on CAP but on the cost of latency in normal running. Some worth reading comments too.</p>
+
+<p><a href="http://dbmsmusings.blogspot.co.uk/2011/12/replication-and-latency-consistency.html">http://dbmsmusings.blogspot.co.uk/2011/12/replication-and-latency-consistency.html</a></p>
+
+<h1>Tools</h1>
+
+<p>Tayu is a nice glue web service which integrates the Rundeck orchestration tool with PuppetDB. More evidence of the benefit of small tools and exposing programatic interfaces.</p>
+
+<p><a href="https://github.com/sirhopcount/tayu">https://github.com/sirhopcount/tayu</a></p>
+
+<p>Uptime is an open source node.js and Mongo application which provides a nice remote uptime monitoring application, much like a self hosted (and single node) version of Pingdom.</p>
+
+<p><a href="http://fzaninotto.github.com/uptime/">http://fzaninotto.github.com/uptime/</a>
+<a href="https://github.com/fzaninotto/uptime">https://github.com/fzaninotto/uptime</a></p>
+
+<p>Bouncy is another interesting looking proxy framework which can be configured as a simple load balancer as well as a range of other more interesting tools. It supports websockets and ssl too.</p>
+
+<p><a href="https://github.com/substack/bouncy">https://github.com/substack/bouncy</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

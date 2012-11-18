@@ -1,0 +1,93 @@
+---
+layout: post
+title: Issue 95 - 28th October 2012
+---
+
+## Issue 95 - 28th October
+
+What makes someone senior seems to be the topic of the week, with two well put posts that should give everyone something to consider and improve upon. It's still conference season as well it seems with some good content from the Opscode community summit and AppSecUSA.
+
+
+Sponsor
+======
+
+Brightbox Cloud - the UK's only multi-zone cloud infrastructure service - sponsors Devops Weekly.
+
+http://brightbox.com
+
+
+News
+====
+
+What makes someone senior? It's quite common to see in job titles but this post tries to define what makes a system administrator senior, stressing it's about being a multiplier for those around you much more than a hoarder of knowledge.
+
+http://everythingsysadmin.com/2012/09/seniorsysadmins.html
+
+
+Neatly following from the above, this next post delves into what it means to be a senior engineer. This should be required reading for anyone working in the field and makes a fantastic list to work from when thinking about how you can improve your skills.
+
+http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/
+
+
+The second Opscode community summit took place last week and the wiki is filled with notes from all the sessions. A huge range of content to wander through from ideas about the future of Chef to hints and tips and discussions of how people came to be involved in the community.
+
+http://wiki.opscode.com/display/chef/Opscode+Community+Summit+2
+
+
+Great slidedeck from the security folks at Twitter about the approaches and tools they use. A focus on automation, workflows and some good looking examples of internally developed tools.
+
+http://www.slideshare.net/xplodersuv/putting-your-robots-to-work-14901538
+
+
+Capistrano is a common deployment tool, but it's quite possible as you get bigger for deploys to take longer and longer. This post starts with a deploy taking 10 minutes and shows debugging tricks and some optimisations which bring it back under control.
+
+http://blog.pagerduty.com/2012/10/growing-a-rails-application-how-we-made-deploy-fast-again/
+
+
+I've mentioned Riemann a few times before, for those that haven't seen it it's an interesting open source network and application monitoring tool that treats everything as a stream of data to be analysed. It's creator has taken the bold move of deciding to work full time on Riemann and is looking for related work, people already using Riemann and more people to get involved in working on expanding the code and documentation.
+
+http://aphyr.com/posts/255-the-future-of-riemann
+
+
+Server Bishop looks interesting. A way of visualising Puppet manifests and associated templates, and a quick one liner to download and execute the manifest in question. Sort of a fire and forget workflow for Puppet.
+
+http://serverbishop.com/
+http://serverbishop.com/radu-spineanu/collectd-debian
+
+
+Nice post making a strong case for the soft skills part of devops. Great examples and good tips for making healthy cross discipline communication a management priority.
+
+http://www.agileweboperations.com/devops-these-soft-parts
+
+
+Java environments tend to be a bit different to most unix setups, and that can make debugging and configuration harder. This post does a good job of explaining approaches to tuning the Java garbage collector. It provides some log file samples and a clear explanation of what you're looking at.
+
+http://engineering.linkedin.com/26/tuning-java-garbage-collection-web-services
+
+
+A good overview of a few recent security issues including TLS/SSL vulnerabilities, short keys for DKIM and more interestingly example cross-VM attacks in XEN virtualised environments. The later is worth keeping an eye on if you're using public cloud environments.
+
+http://blog.cryptographyengineering.com/2012/10/attack-of-week-cross-vm-timing-attacks.html
+
+
+Good post making the point that although automation is powerful, it's also not always the right approach. And that importantly devops really is more about culture and communication than jumping straight to automating all the things.
+
+http://newtoniannuggets.com/2012/10/25/can-you-do-devops-without-automation/
+
+
+Tools
+====
+
+Performance testing in production can be a tricky affair, Kage attempts to make that easier. It can shadow the traffic passing through it to a second set of servers, allowing you to test pre-production code under real world load.
+
+https://github.com/cookpad/kage
+
+
+Neat idea for a service to check on the running of periodic tasks. Simply ping the service in your scripts and you get an overview of when things last ran plus an email if the script appears not to run in the expected period.
+
+https://deadmanssnitch.com/
+
+
+A nifty tool for managing and sharing complex ssh configs. It defines a very simple DSL which makes defining tunnels and ssh options easy, and a command line tool to convert that to a working ssh config file.
+
+https://github.com/aelse/dot-ssh-config

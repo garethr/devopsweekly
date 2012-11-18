@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 90 - 23rd September 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 90 &ndash; 23rd September</h2>
+
+<p>A range of posts on automation, configuration management, upcoming events and some interesting looking tools this week. A few weeks of solid devops flavoured events kicks off this week too with PuppetConf and Surge Conference.</p>
+
+<h1>Sponsor</h1>
+
+<p>Brightbox Cloud &ndash; the UK&rsquo;s only multi-zone cloud infrastructure service &ndash; sponsors Devops Weekly.</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Epic part one of a series of blog posts on the role of automation in mature engineering teams. Automation is hugely powerful, and generally seen as exclusively a good thing. However automation is only truly useful if it&rsquo;s trustable. Lots of other good ideas in here to think about too.</p>
+
+<p><a href="http://www.kitchensoap.com/2012/09/21/a-mature-role-for-automation-part-i/">http://www.kitchensoap.com/2012/09/21/a-mature-role-for-automation-part-i/</a></p>
+
+<p>It&rsquo;s PupperConf this coming week on the 27th and 28th, and PuppetLabs are streaming lots of the talks for those that can&rsquo;t make it. You can signup to receive the details now.</p>
+
+<p><a href="http://info.puppetlabs.com/puppetconf2012-live.html">http://info.puppetlabs.com/puppetconf2012-live.html</a></p>
+
+<p>Getting started with monitoring can be a little overwhelming due to all the different moving parts. This post aims to make setting up some simple monitoring quick and easy, and in my experience once you&rsquo;re over that first hump it&rsquo;s easy to carry on investigating.</p>
+
+<p><a href="http://unwiredcouch.com/2012/09/15/getting-started-with-monitoring.html">http://unwiredcouch.com/2012/09/15/getting-started-with-monitoring.html</a></p>
+
+<p>A few interesting examples of Node.js adoption in large organisation, and an argument that it will become more and more common. Some counter arguments about the Javascript language blocking some of this, but it&rsquo;s an interesting topic.</p>
+
+<p><a href="http://blog.appfog.com/node-js-is-taking-over-the-enterprise-whether-you-like-it-or-not/">http://blog.appfog.com/node-js-is-taking-over-the-enterprise-whether-you-like-it-or-not/</a></p>
+
+<p>Another episode of the Food Fight podcast, this time with an interview with Patrick Debois and Mitchell Hashimoto and lots of discussions about the future of Vagrant, including future integrations with OpenStack, KVM and EC2. This makes lots of sense, as it&rsquo;s the vagrant workflow that&rsquo;s the important part.</p>
+
+<p><a href="http://foodfightshow.org/2012/09/vagrant.html">http://foodfightshow.org/2012/09/vagrant.html</a></p>
+
+<p>I&rsquo;ve been interested in Sensu for a while, but still haven&rsquo;t gotten around to experimenting with it. This post should make that easier, showing how to bring up Sensu on Heroku.</p>
+
+<p><a href="http://unwiredcouch.com/2012/07/31/deploy-sensu-heroku.html">http://unwiredcouch.com/2012/07/31/deploy-sensu-heroku.html</a>
+<a href="https://github.com/mrtazz/sensu-heroku-app">https://github.com/mrtazz/sensu-heroku-app</a></p>
+
+<p>Good post all about the concept of GameDays, exercises to test emergency response. The post is a great discussion between people from Etsy, Opscode and Google about why it&rsquo;s important to do this for real and how best to try and arrange GameDays.</p>
+
+<p><a href="http://queue.acm.org/detail.cfm?id=2371297">http://queue.acm.org/detail.cfm?id=2371297</a></p>
+
+<h1>Tools</h1>
+
+<p>I&rsquo;m not sure how this might be useful, but it&rsquo;s very neat. It&rsquo;s an HTTP server written in bash. If you&rsquo;re interested in better understanding netcat or learning a bit more bash from a well documented and commented script then it might be worth a look.</p>
+
+<p><a href="https://github.com/avleen/bashttpd">https://github.com/avleen/bashttpd</a></p>
+
+<p>Orchestration is still a complex topic, and tools are a good way of discussing the problems people feel exist. Mastermind is a new Ruby based tool which lets you create definitions of types of work and define jobs that run those definitions, all using an internal DSL.</p>
+
+<p><a href="https://github.com/danryan/mastermind">https://github.com/danryan/mastermind</a></p>
+
+<p>The foodcritic lint tool for Chef has a very nice pluggable architecture, allowing you to define you&rsquo;re own rules. Etsy have published the rules they use and they worth looking at. Warning about exec resources using wget, curl and git for instance are out, as it restarting core services from recipes.</p>
+
+<p><a href="https://github.com/etsy/foodcritic-rules/blob/master/rules.rb">https://github.com/etsy/foodcritic-rules/blob/master/rules.rb</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>
