@@ -1,0 +1,91 @@
+---
+layout: post
+title: Issue 99 - 25th November 2012
+---
+
+# Issue 99 - 25th November
+
+I wrote the very first (actually issue 0 which went unpublished) Devops Weekly just about 2 years ago, on the 21st of November 2010. I'm still not quite sure how I've kept it up for 99 issues but a big reason for that is all the people writing interesting content and telling others about this little newsletter. Thanks to everyone who has found it useful.
+
+
+Sponsor
+======
+
+Devops Weekly is sponsored by Brightbox Cloud - launch cloud servers in multiple UK datacentres in seconds...
+
+http://brightbox.com
+
+
+News
+====
+
+
+Nice introduction to systems programming at Twitter and in particular how and why they use Scala extensively. Shows a few of the internal tools, including Zipkin which is open source and I've mentioned before and Viz which I've not seen up until now.
+
+http://monkey.org/~marius/talks/twittersystems
+
+
+Interesting article and the first time I've heard the phrase configuration management schema used. People are sharing modules and cookbooks more often but I've not seen much sharing of how those are then put together, and thinking about that as a schema makes me wonder how that might work.
+
+http://zkybase.org/blog/2012/11/22/designing-configuration-management-schemas/
+
+
+Detailed slide deck with lots of code examples, showing how to make a local cloud using VirtualBox.  Lots of VBoxManage examples, a simple chef setup, how to use Doozer for configuration data. Worth flicking through.
+
+http://slidedecks.wilmoore.com/2012-confoo/diy-private-cloud-using-virtualBox-and-chef/#1
+
+
+Good discussion of problems that come with different approaches to continuous delivery and deployment. The post argues for big picture thinking and standardisation, and points out some of the flaws with separating development completely from caring about the production infrastructure.
+
+http://server.dzone.com/articles/fatal-impedance-mismatch
+
+
+I was lucky enough to attend the QCon conference in San Francisco a few weeks ago and just about all the slides from nearly 100 presentations over the three days. Lots to take a look at that should be of interest - the Continuous Delivery track on thursday and many of the Architecture show and tell talks in particular.
+
+http://qconsf.com/sf2012/schedule/wednesday.jsp
+
+
+Jobs
+====
+
+DataSift, the social data mining platform that helps organizations improve their understanding and use of Social Media, are looking for a talented Operations Engineer with a passion and flair for deploying and scaling web applications. Successful candidates will work in an enthusiastic team using tools such as Chef, Graphite and Hadoop. Find out more about our platform on High Availability http://bit.ly/datasift_hs
+
+http://datasift.com/about-us/careers/job-openings/operations-engineer
+
+
+
+Packaging
+========
+
+A little separate section to group a few tools together this week all about system packages.
+
+ReproWeb is a nice looking repository browser for debian package repositories. It parses all the package metadata and presents a nice friendly user interface to browse the information.
+
+https://github.com/baseblack/ReproWeb
+
+
+Apt-Heroku is a simple example of how with a few shell scripts and Heroku you can have your own personal package repository online quickly.
+
+https://github.com/fabiokung/apt-heroku
+
+
+Similar to the above, here's some code I've been using to build debian packages (using Vagrant and fpm), create a package repository using the dpkg toolchains and then also push that to Heroku or some other similar services.
+
+https://github.com/garethr/packages
+http://packages.garethrushgrove.com/
+
+
+Tools
+====
+
+Interesting whats going on with my system command line tool. Presents lots of information about CPU, disk, memory, network and running processes all in a nice, and responsive, console user interface. Cross platform too.
+
+http://nicolargo.github.com/glances/
+
+
+Interesting Ruby tool to record the HTTP requests made during a test run. It stores them in a fixtures file and provides tools to allow you to play those requests back at a later date.
+
+https://github.com/myronmarston/vcr
+
+
+If you received this email directly then you're already signed up, thanks! If however someone forwarded this email to you and you'd like to get it each week then you can subscribe at http://devopsweekly.com
