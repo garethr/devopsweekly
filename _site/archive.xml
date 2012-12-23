@@ -3,12 +3,230 @@
   <title>Devops Weekly</title>
   <link href="http://devopsweekly.com/archive.xml" rel="self"/>
   <link href="http://devopsweekly.com/"/>
-  <updated>2012-12-02T10:44:11+00:00</updated>
+  <updated>2012-12-23T18:26:42+00:00</updated>
   <id>http://devopsweeksly.com</id>
   <author>
     <name>Gareth Rushgrove</name>
     <email>gareth@morethanseven.net</email>
   </author>
+  
+  <entry>
+    <title>Issue 103 - 23nd December 2012</title>
+    <link href="http://devopsweekly.com/2012/12/23/103/"/>
+    <updated>2012-12-23T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2012/12/23/103</id>
+    <content type="html">&lt;h2&gt;Issue 103 &amp;ndash; 23nd December&lt;/h2&gt;
+
+&lt;p&gt;This issue marks the first issue with more than 5000 subscribers. that&amp;rsquo;s a lot of people interested in a made-up word. It&amp;rsquo;s pretty impressive to see just how this community has grown over the last few years. Hopefully the following few links should keep everyone busy during the holidays.&lt;/p&gt;
+
+&lt;h1&gt;Sponsor&lt;/h1&gt;
+
+&lt;p&gt;Devops Weekly is sponsored by Brightbox Cloud &amp;ndash; launch cloud servers in multiple UK datacentres in seconds&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://brightbox.com&quot;&gt;http://brightbox.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;News&lt;/h1&gt;
+
+&lt;p&gt;Good blog post covering a more involved Vagrant workflow and helpfully showing a sample Vagrantfile making extensive use of Environment variables for configuration. The discussion of the problems in creating an appliance I think are going to be something lots of people hit next year.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.lusis.org/blog/2012/12/17/how-we-vagrant/&quot;&gt;http://blog.lusis.org/blog/2012/12/17/how-we-vagrant/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Nice article about various software deployment patterns, using the example of Lego to encourage modularity and interoperability.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://awsadvent.tumblr.com/post/38592081115/exploring-aws-cli&quot;&gt;http://awsadvent.tumblr.com/post/38592081115/exploring-aws-cli&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A good argument for deploying regularly, taking the case of going to the dentist about as far as an analogy can be taken.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://thefutureofdeployment.com/deploying-software-shouldnt-feel-like-visiting-the-dentist/&quot;&gt;http://thefutureofdeployment.com/deploying-software-shouldnt-feel-like-visiting-the-dentist/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Logtash has been picking up speed of late and a big milestone in the relentless progress is coming in February with the release of the Logstash book. You can signup now to be emailed when it&amp;rsquo;s ready.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.logstashbook.com/&quot;&gt;http://www.logstashbook.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The open source hosted continuous integration server Travis has just added support for uploading artifacts to S3 after builds. This should make a number of things possible, including various continuous deployment workflows.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://about.travis-ci.org/blog/2012-12-18-travis-artifacts/&quot;&gt;http://about.travis-ci.org/blog/2012-12-18-travis-artifacts/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s interesting to see how Devops is influencing and making inroads into quite traditional IT organisations. This post has a few anecdotes and focuses on automation and it&amp;rsquo;s influence on change control heavy organisations.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://servicevirtualization.com/profiles/blogs/adoption-of-devops-continues-to-accelerate&quot;&gt;http://servicevirtualization.com/profiles/blogs/adoption-of-devops-continues-to-accelerate&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;Tools&lt;/h1&gt;
+
+&lt;p&gt;Amazon have released a new, all-in-one, command line interface for all of AWS. Even better, within a day or release, AWS Advent have an article up on how to configure and use it. This should simplify working across different AWS services. Interestinly it&amp;rsquo;s written in Python this time, replacing the mix of Java and Ruby from the old tools.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/about-aws/whats-new/2012/12/21/introducing-the-aws-command-line-interface/&quot;&gt;https://aws.amazon.com/about-aws/whats-new/2012/12/21/introducing-the-aws-command-line-interface/&lt;/a&gt;
+&lt;a href=&quot;http://awsadvent.tumblr.com/post/38592081115/exploring-aws-cli&quot;&gt;http://awsadvent.tumblr.com/post/38592081115/exploring-aws-cli&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;An interesting Vagrant setup, specifically for testing Puppet manifests and modules across multiple operating systems at the same time. Could do with more automation (probably a plugin or via the rake integration) but it looks a good start.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/example42/vagrant-example42&quot;&gt;https://github.com/example42/vagrant-example42&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Scales is a reimagining of the Metrics library in Python. It&amp;rsquo;s not quite a port, but has a number of interesting features including timers, gauges, metrics aggregation and a built-in dashboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Cue/scales&quot;&gt;https://github.com/Cue/scales&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Giraffe is yet another Graphite dashboard, but one that is written in pure client side javascript. This makes deploying the dashboard incredibly easy, it&amp;rsquo;s just html, css, javascript and a few images. Configuration is well documented too and the demo is worth taking a look at.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/kenhub/giraffe&quot;&gt;https://github.com/kenhub/giraffe&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vagrant is commonly used to test out Chef cookbooks, but the cycle of creating, destroying and creating virtual machines can leave lots of stale data in your Chef server. Vagrant Butcher is a plugin for Vagrant that fixes this specific problem, removing the relevant data when the virtual machine is destroyed.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/cassianoleal/vagrant-butcher&quot;&gt;https://github.com/cassianoleal/vagrant-butcher&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 102 - 16th December 2012</title>
+    <link href="http://devopsweekly.com/2012/12/16/102/"/>
+    <updated>2012-12-16T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2012/12/16/102</id>
+    <content type="html">&lt;h2&gt;Issue 102 &amp;ndash; 16th December&lt;/h2&gt;
+
+&lt;p&gt;A hopefully good mix of tutorials, opinions and new tools from the worlds of security, process and configuration management this week. All in a days work for people interested in the world of devops.&lt;/p&gt;
+
+&lt;h1&gt;Sponsor&lt;/h1&gt;
+
+&lt;p&gt;Devops Weekly is sponsored by Brightbox Cloud &amp;ndash; launch cloud servers in multiple UK datacentres in seconds&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://brightbox.com&quot;&gt;http://brightbox.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;News&lt;/h1&gt;
+
+&lt;p&gt;Keeping track of security advisories for all the software you&amp;rsquo;re running can be a time consuming chore so RiskDB looks an interesting project. It provides a good search based interface as as well free and paid accounts if you want some additional collaboration and integration features.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://db.risk.io/&quot;&gt;https://db.risk.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re familiar with SQL then moving to using something like MongoDB can feel a little weird when writing non-trivial queries. This online application aims to help by converting SQL to Mongo queries, useful for learning the JSON based syntax.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.querymongo.com/&quot;&gt;http://www.querymongo.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A few people have been documenting patterns, of both code and behaviour, for devops minded organisations. This post is hopefully the start of documenting some anti-patterns starting with Committed is “Done”, My Responsibility Ends Here and They should.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.agileweboperations.com/devops-anti-patterns&quot;&gt;http://www.agileweboperations.com/devops-anti-patterns&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post aims to encourage more developers to embrace devops and makes a number of good points in doing so. From improving site reliability to building better software and improving your career prospects.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://benjaminwootton.co.uk/why-devops-matters-to-developers/&quot;&gt;http://benjaminwootton.co.uk/why-devops-matters-to-developers/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;How best to structure Puppet modules is something that&amp;rsquo;s really taken a step forward this last year, with tools starting to make assumptions about module structure beginning to emerge. This post documents much of the current best practice with a simple module example from scratch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.devco.net/archives/2012/12/13/simple-puppet-module-structure-redux.php&quot;&gt;http://www.devco.net/archives/2012/12/13/simple-puppet-module-structure-redux.php&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Good writeup of taking an existing Chef cookbook and updating it to use the latest Test Kitchen. It&amp;rsquo;s a good walkthrough that should make a good guide if you&amp;rsquo;re updating one of your own cookbooks.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jtimberman.housepub.org/blog/2012/12/13/cookbook-integration-testing-with-real-examples/&quot;&gt;http://jtimberman.housepub.org/blog/2012/12/13/cookbook-integration-testing-with-real-examples/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;Jobs&lt;/h1&gt;
+
+&lt;p&gt;Box needs you to scale, harden and more-awesome-ify its multi-data-center, 1000s-of-hosts deployment system. We use good stuff like Scala and ZooKeeper to do it. Know the &amp;lsquo;right way&amp;rsquo; to deploy? Drop a line of interest directly to Box&amp;rsquo;s Director of Engineering Services: &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#58;&amp;#x73;&amp;#x6f;&amp;#104;&amp;#97;&amp;#109;&amp;#x6d;&amp;#64;&amp;#x62;&amp;#111;&amp;#x78;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#109;&amp;#46;&quot;&gt;&amp;#115;&amp;#111;&amp;#x68;&amp;#97;&amp;#109;&amp;#x6d;&amp;#64;&amp;#98;&amp;#x6f;&amp;#120;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;&amp;#x2e;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, we&amp;rsquo;re also looking for ambitious Systems Engineers and Software Engineers who want to work on distributed systems. With over 10 million users and serving more than 92% of the Fortune 500, we&amp;rsquo;re also one of the hottest tech companies in Silicon Valley. Come help us get to the next level. We sponsor Visas too!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://box.com/careers&quot;&gt;http://box.com/careers&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;Events&lt;/h1&gt;
+
+&lt;p&gt;LoadDays or Linux Open Administration Days is back next year on the 6th and 7th of April in Wilrijk, Belgium.  A call for proposals is open now.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://loadays.org/&quot;&gt;http://loadays.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;Tools&lt;/h1&gt;
+
+&lt;p&gt;Twemproxy is a fast and lightweight proxy for the memcached and redis protocols. It was primarily built to reduce the connection count on caching servers and is in use by Twitter, Tumblr and Pinterest to name a few. The built int stats collection looks useful too.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/twitter/twemproxy&quot;&gt;https://github.com/twitter/twemproxy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;mctop is top for memcached, giving you a command line view of popular keys. The associated writeup demonstrates the types of problems mctop is aimed to solve as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://codeascraft.etsy.com/2012/12/13/mctop-a-tool-for-analyzing-memcache-get-traffic/&quot;&gt;http://codeascraft.etsy.com/2012/12/13/mctop-a-tool-for-analyzing-memcache-get-traffic/&lt;/a&gt;
+&lt;a href=&quot;https://github.com/etsy/mctop/&quot;&gt;https://github.com/etsy/mctop/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CMB appears to be a fully functional clone of Amazon&amp;rsquo;s SNS and SQS products. It makes use of Cassandra on the backend and aims to provide high availability and horizontal scalability.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Comcast/cmb&quot;&gt;https://github.com/Comcast/cmb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Metrics library is well used in Java environments and has many clones in other languages. However MetricCatcher takes the origin Metrics library and exposes it over a JSON based interface so it can be used easily from other languages and as a centralised service.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/clearspring/MetricCatcher&quot;&gt;https://github.com/clearspring/MetricCatcher&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Issue 101 - 9th December 2012</title>
+    <link href="http://devopsweekly.com/2012/12/09/101/"/>
+    <updated>2012-12-09T00:00:00+00:00</updated>
+    <id>http://devopsweekly.com/2012/12/09/101</id>
+    <content type="html">&lt;h2&gt;Issue 101 &amp;ndash; 9th December&lt;/h2&gt;
+
+&lt;p&gt;Something about December appears to be getting lots people writing interesting blog posts. As well as Sysadvent we also have AWSAdvent and lots of blog posts, tutorials and even a few screencasts and teaching videos.&lt;/p&gt;
+
+&lt;h1&gt;Sponsor&lt;/h1&gt;
+
+&lt;p&gt;Devops Weekly is sponsored by Brightbox Cloud &amp;ndash; launch cloud servers in multiple UK datacentres in seconds&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://brightbox.com&quot;&gt;http://brightbox.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;News&lt;/h1&gt;
+
+&lt;p&gt;Another excellent advent calendar blog, this time focused on Amazon Web Services. We&amp;rsquo;re already 9 posts in but the following two in particular stood out, being the best description and documentation I&amp;rsquo;ve seen on both Cloudformation and the Virtual Private Cloud service.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://awsadvent.tumblr.com/post/37167975262/amazon-virtual-private-cloud-amazon-virtual&quot;&gt;http://awsadvent.tumblr.com/post/37167975262/amazon-virtual-private-cloud-amazon-virtual&lt;/a&gt;
+&lt;a href=&quot;http://awsadvent.tumblr.com/post/37391299521/cloudformation-primer&quot;&gt;http://awsadvent.tumblr.com/post/37391299521/cloudformation-primer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Zookeeper is one of those bits of software that lots of large organisations use but that can appear pretty impenetrable and heavyweight to everyone else. This article from the sysadvent calendar covers using Zookeeper for distributed coordination of a cluster of machines. Good high level description of Zookeeper and a nice relevant use case.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://sysadvent.blogspot.co.uk/2012/12/day-4-zookeeper-for-distributed.html&quot;&gt;http://sysadvent.blogspot.co.uk/2012/12/day-4-zookeeper-for-distributed.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s the second year of the Devops survey from Puppetlabs. A scattering of questions about what devops is and about what tools and practices people have been using this last year. The more people fill it in the better the overall results should be so if you have a spare few minutes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://info.puppetlabs.com/devops-survey-2012.html&quot;&gt;http://info.puppetlabs.com/devops-survey-2012.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Good content on scaling web applications can be hard to find, and harder to digest. This screencast, by Eric Lindvall of Papertrail, might be a good starting point for some. It&amp;rsquo;s $12 but aims to cover everything from system design, metrics, software selection and business implications.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://peepcode.com/products/up-lindvall&quot;&gt;https://peepcode.com/products/up-lindvall&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Nice presentation deck about the architectural choices at Etsy. Covers the software stack, metrics, rapid deployment and some of the challenges and ways of working around potential limitations.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/kellan/architecting-for-change-qconnyc-2012&quot;&gt;http://www.slideshare.net/kellan/architecting-for-change-qconnyc-2012&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve not included a what is devops post for a while but this post caught my eye. The main point it makes, with some good examples, is that devops really is about end to end business activities, not just developers and systems administrators working closer together.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://klasson.tumblr.com/post/37205213856/thoughts-about-devops&quot;&gt;http://klasson.tumblr.com/post/37205213856/thoughts-about-devops&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Anemometer is an application from Box to help with optimizing mysql queries. It provides a very nice looking dashboard which provides tracking of query performance over time. This blog post covers a few tips as well as some general query profiling suggestions.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://tech.blog.box.com/2012/12/optimizing-mysql-performance-at-scale-with-anemometer-2/&quot;&gt;http://tech.blog.box.com/2012/12/optimizing-mysql-performance-at-scale-with-anemometer-2/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Good lucking introduction to Chef, including both code samples, basic instructions and videos. Looks a place to find out about Chef if you&amp;rsquo;re just getting started.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/&quot;&gt;http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/&lt;/a&gt;
+&lt;a href=&quot;http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/&quot;&gt;http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Insightful post mortem writeup from GitHub about networking issues that caused some downtime a week or so ago. A good example of a detailed writeup too, with the background, what happened and future planned improvements.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/blog/1346-network-problems-last-friday&quot;&gt;https://github.com/blog/1346-network-problems-last-friday&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;Jobs&lt;/h1&gt;
+
+&lt;p&gt;7digital Ltd. is a leading digital media delivery company based in Shoreditch, London and operating globally. We’re small, fast, innovative and bursting at the seams with people passionate about music and technology. Half the organisation is made up of tech people (Devs, DBA, Systems etc) and our CEO is a geek. We’ve got good at delivering our products and services at a fast pace in an iterative manner, but the faster we move the more apparent it is we need to be able to change our infrastructure just as quickly and reliably. We need super-talented and enthusiastic Web Ops / Sys Admins who are keen to work in a highly collaborative manner to build a more robust, reliable and more highly automated platform which can cope with scaling up to meet the ever increasing demand.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://about.7digital.com/jobs/&quot;&gt;http://about.7digital.com/jobs/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;Events&lt;/h1&gt;
+
+&lt;p&gt;If you&amp;rsquo;re heading to FOSDEM at the start of February and want to arrive a few days early you might be interested in a Puppetcamp event in Ghent on the Thursday and Friday. No schedule yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://puppetcampghent2013.eventbrite.com/&quot;&gt;http://puppetcampghent2013.eventbrite.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;Tools&lt;/h1&gt;
+
+&lt;p&gt;Roundtrip is an interesting looking monitoring tool aimed at tracking business events. It provides a very simple HTTP API at present with more interfaces on the way. The examples shown help with working out how you might make use of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.paracode.com/2012/12/02/tracking-your-business/&quot;&gt;http://blog.paracode.com/2012/12/02/tracking-your-business/&lt;/a&gt;
+&lt;a href=&quot;https://github.com/jondot/roundtrip&quot;&gt;https://github.com/jondot/roundtrip&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Issue 100 - 2nd December 2012</title>
@@ -168,7 +386,7 @@
     <id>http://devopsweekly.com/2012/11/18/98</id>
     <content type="html">&lt;h2&gt;Issue 98 &amp;ndash; 18th November&lt;/h2&gt;
 
-&lt;p&gt;I&amp;rsquo;ve been going to FOSDEM (a big open source conference in Belgium) for a few years now, and will be back again next year. One of the highlights is the Configuration Management dev room and the call for proposals is open until the 15th of December. Any ideas for talks can be emailed to &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#58;&amp;#99;&amp;#111;&amp;#110;&amp;#x66;&amp;#x69;&amp;#103;&amp;#45;&amp;#109;&amp;#103;&amp;#x6d;&amp;#x74;&amp;#45;&amp;#100;&amp;#101;&amp;#118;&amp;#114;&amp;#111;&amp;#x6f;&amp;#x6d;&amp;#64;&amp;#108;&amp;#x69;&amp;#115;&amp;#116;&amp;#115;&amp;#46;&amp;#102;&amp;#x6f;&amp;#x73;&amp;#x64;&amp;#x65;&amp;#x6d;&amp;#x2e;&amp;#x6f;&amp;#114;&amp;#x67;&amp;#46;&quot;&gt;&amp;#x63;&amp;#x6f;&amp;#110;&amp;#102;&amp;#105;&amp;#103;&amp;#x2d;&amp;#109;&amp;#103;&amp;#x6d;&amp;#x74;&amp;#45;&amp;#100;&amp;#x65;&amp;#118;&amp;#114;&amp;#x6f;&amp;#111;&amp;#109;&amp;#64;&amp;#108;&amp;#x69;&amp;#x73;&amp;#x74;&amp;#115;&amp;#46;&amp;#x66;&amp;#111;&amp;#115;&amp;#100;&amp;#101;&amp;#x6d;&amp;#x2e;&amp;#111;&amp;#114;&amp;#x67;&amp;#x2e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been going to FOSDEM (a big open source conference in Belgium) for a few years now, and will be back again next year. One of the highlights is the Configuration Management dev room and the call for proposals is open until the 15th of December. Any ideas for talks can be emailed to &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#58;&amp;#99;&amp;#111;&amp;#x6e;&amp;#x66;&amp;#x69;&amp;#x67;&amp;#x2d;&amp;#x6d;&amp;#x67;&amp;#x6d;&amp;#116;&amp;#45;&amp;#100;&amp;#x65;&amp;#118;&amp;#x72;&amp;#111;&amp;#x6f;&amp;#x6d;&amp;#64;&amp;#x6c;&amp;#x69;&amp;#x73;&amp;#116;&amp;#115;&amp;#x2e;&amp;#x66;&amp;#111;&amp;#115;&amp;#100;&amp;#101;&amp;#x6d;&amp;#x2e;&amp;#x6f;&amp;#114;&amp;#103;&amp;#x2e;&quot;&gt;&amp;#99;&amp;#x6f;&amp;#110;&amp;#x66;&amp;#105;&amp;#103;&amp;#x2d;&amp;#x6d;&amp;#x67;&amp;#109;&amp;#x74;&amp;#45;&amp;#x64;&amp;#101;&amp;#x76;&amp;#114;&amp;#x6f;&amp;#x6f;&amp;#x6d;&amp;#64;&amp;#108;&amp;#x69;&amp;#x73;&amp;#x74;&amp;#x73;&amp;#46;&amp;#102;&amp;#111;&amp;#115;&amp;#100;&amp;#x65;&amp;#109;&amp;#46;&amp;#x6f;&amp;#x72;&amp;#103;&amp;#46;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1&gt;Sponsor&lt;/h1&gt;
 
@@ -2223,7 +2441,7 @@ tooling, profilers and testing approaches.&lt;/p&gt;
 
 &lt;p&gt;Shazam Entertainment is looking to fill a number of Service Engineering roles in our London HQ and Palo Alto office. We&amp;rsquo;re looking for passionate individuals who enjoy building and operating highly reliable services by working closely with development to design and implement strong systems architectures, CI methodologies, and insane amounts of monitoring.  We also have a number of positions in our Infrastructure Operations team for those less interested in development and more interested in network engineering, building and operating private clouds, and focusing on third party software.&lt;/p&gt;
 
-&lt;p&gt;For more details or to apply send on your CV/Resume or LinkedIn profile to &lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#58;&amp;#x64;&amp;#101;&amp;#118;&amp;#111;&amp;#x70;&amp;#115;&amp;#x40;&amp;#x73;&amp;#104;&amp;#x61;&amp;#122;&amp;#97;&amp;#x6d;&amp;#x74;&amp;#101;&amp;#97;&amp;#x6d;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x64;&amp;#x65;&amp;#118;&amp;#x6f;&amp;#112;&amp;#115;&amp;#x40;&amp;#x73;&amp;#x68;&amp;#x61;&amp;#122;&amp;#97;&amp;#x6d;&amp;#116;&amp;#x65;&amp;#x61;&amp;#109;&amp;#46;&amp;#99;&amp;#x6f;&amp;#109;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more details or to apply send on your CV/Resume or LinkedIn profile to &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x64;&amp;#101;&amp;#118;&amp;#x6f;&amp;#x70;&amp;#x73;&amp;#64;&amp;#115;&amp;#x68;&amp;#97;&amp;#x7a;&amp;#97;&amp;#109;&amp;#116;&amp;#101;&amp;#97;&amp;#109;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x64;&amp;#x65;&amp;#118;&amp;#111;&amp;#x70;&amp;#x73;&amp;#x40;&amp;#x73;&amp;#x68;&amp;#x61;&amp;#x7a;&amp;#97;&amp;#x6d;&amp;#116;&amp;#x65;&amp;#97;&amp;#109;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1&gt;Tools&lt;/h1&gt;
 
@@ -2629,7 +2847,7 @@ tooling, profilers and testing approaches.&lt;/p&gt;
     <id>http://devopsweekly.com/2012/02/26/issue-60</id>
     <content type="html">&lt;h2&gt;Issue 60 &amp;ndash; 26th February&lt;/h2&gt;
 
-&lt;p&gt;Another weekend, and another devopsweekly issue filled with hopefully worthwhile articles and a few interesting tools. Do let me know what you think about the mix of content each week, or if you feel the email is missing anything in particular. Drop me a line at &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#58;&amp;#103;&amp;#x61;&amp;#114;&amp;#x65;&amp;#x74;&amp;#x68;&amp;#64;&amp;#109;&amp;#x6f;&amp;#x72;&amp;#x65;&amp;#116;&amp;#x68;&amp;#x61;&amp;#110;&amp;#x73;&amp;#x65;&amp;#x76;&amp;#101;&amp;#110;&amp;#46;&amp;#x6e;&amp;#101;&amp;#116;&quot;&gt;&amp;#103;&amp;#x61;&amp;#114;&amp;#x65;&amp;#x74;&amp;#x68;&amp;#x40;&amp;#x6d;&amp;#111;&amp;#114;&amp;#x65;&amp;#116;&amp;#x68;&amp;#x61;&amp;#110;&amp;#x73;&amp;#101;&amp;#x76;&amp;#x65;&amp;#110;&amp;#46;&amp;#110;&amp;#x65;&amp;#x74;&lt;/a&gt; with any ideas you may have.&lt;/p&gt;
+&lt;p&gt;Another weekend, and another devopsweekly issue filled with hopefully worthwhile articles and a few interesting tools. Do let me know what you think about the mix of content each week, or if you feel the email is missing anything in particular. Drop me a line at &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#x6f;&amp;#58;&amp;#x67;&amp;#97;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#104;&amp;#x40;&amp;#x6d;&amp;#111;&amp;#114;&amp;#101;&amp;#116;&amp;#104;&amp;#97;&amp;#110;&amp;#x73;&amp;#x65;&amp;#x76;&amp;#101;&amp;#x6e;&amp;#46;&amp;#x6e;&amp;#101;&amp;#116;&quot;&gt;&amp;#x67;&amp;#97;&amp;#114;&amp;#101;&amp;#116;&amp;#x68;&amp;#64;&amp;#x6d;&amp;#x6f;&amp;#114;&amp;#x65;&amp;#x74;&amp;#104;&amp;#97;&amp;#110;&amp;#115;&amp;#101;&amp;#118;&amp;#x65;&amp;#110;&amp;#x2e;&amp;#x6e;&amp;#101;&amp;#116;&lt;/a&gt; with any ideas you may have.&lt;/p&gt;
 
 &lt;h1&gt;Sponsor&lt;/h1&gt;
 
@@ -3636,7 +3854,7 @@ installation of Jenkins plugins as well which is particularly handy.&lt;/p&gt;
 
 &lt;h2&gt;Jobs&lt;/h2&gt;
 
-&lt;p&gt;Stripe is building next-generation infrastructure for online payments, and we&amp;rsquo;re expanding our devops team. If you love building highly scalable, chaos monkey-proof systems; if automating tasks is muscle memory; and if taking updates is a cathartic experience, then you should do-release-upgrade to Stripe. To apply, send an email to &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x6a;&amp;#x6f;&amp;#98;&amp;#x73;&amp;#64;&amp;#x73;&amp;#116;&amp;#114;&amp;#105;&amp;#x70;&amp;#101;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x6a;&amp;#x6f;&amp;#x62;&amp;#115;&amp;#64;&amp;#115;&amp;#116;&amp;#114;&amp;#x69;&amp;#112;&amp;#x65;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt; with your Github and Twitter usernames and a rant about an infrastructure tool of your choice.&lt;/p&gt;
+&lt;p&gt;Stripe is building next-generation infrastructure for online payments, and we&amp;rsquo;re expanding our devops team. If you love building highly scalable, chaos monkey-proof systems; if automating tasks is muscle memory; and if taking updates is a cathartic experience, then you should do-release-upgrade to Stripe. To apply, send an email to &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#x3a;&amp;#106;&amp;#x6f;&amp;#98;&amp;#115;&amp;#64;&amp;#115;&amp;#x74;&amp;#x72;&amp;#x69;&amp;#112;&amp;#x65;&amp;#46;&amp;#99;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#106;&amp;#x6f;&amp;#98;&amp;#115;&amp;#64;&amp;#115;&amp;#x74;&amp;#x72;&amp;#x69;&amp;#x70;&amp;#x65;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt; with your Github and Twitter usernames and a rant about an infrastructure tool of your choice.&lt;/p&gt;
 
 &lt;h2&gt;Tools&lt;/h2&gt;
 
@@ -3938,7 +4156,7 @@ changing how the Government operates online, and we&amp;rsquo;re looking for mor
 smart people. We&amp;rsquo;re currently on the lookout for developers and systems
 administrators of all experience levels and backgrounds. Some details
 are available on the following links but if you have any questions just
-drop me an email at &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#58;&amp;#103;&amp;#x61;&amp;#x72;&amp;#x65;&amp;#116;&amp;#x68;&amp;#x40;&amp;#109;&amp;#x6f;&amp;#114;&amp;#101;&amp;#x74;&amp;#104;&amp;#97;&amp;#x6e;&amp;#x73;&amp;#101;&amp;#118;&amp;#x65;&amp;#x6e;&amp;#46;&amp;#110;&amp;#101;&amp;#116;&quot;&gt;&amp;#x67;&amp;#97;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#x68;&amp;#x40;&amp;#x6d;&amp;#111;&amp;#114;&amp;#101;&amp;#x74;&amp;#x68;&amp;#97;&amp;#x6e;&amp;#x73;&amp;#101;&amp;#x76;&amp;#101;&amp;#x6e;&amp;#x2e;&amp;#110;&amp;#101;&amp;#x74;&lt;/a&gt;&lt;/p&gt;
+drop me an email at &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#x67;&amp;#x61;&amp;#114;&amp;#101;&amp;#116;&amp;#104;&amp;#x40;&amp;#109;&amp;#x6f;&amp;#114;&amp;#x65;&amp;#x74;&amp;#104;&amp;#97;&amp;#110;&amp;#115;&amp;#x65;&amp;#118;&amp;#x65;&amp;#x6e;&amp;#46;&amp;#x6e;&amp;#101;&amp;#x74;&quot;&gt;&amp;#103;&amp;#97;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#x68;&amp;#x40;&amp;#109;&amp;#x6f;&amp;#x72;&amp;#101;&amp;#x74;&amp;#x68;&amp;#97;&amp;#110;&amp;#115;&amp;#101;&amp;#x76;&amp;#x65;&amp;#110;&amp;#46;&amp;#x6e;&amp;#x65;&amp;#x74;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://digital.cabinetoffice.gov.uk/2011/10/25/the-second-lever/&quot;&gt;http://digital.cabinetoffice.gov.uk/2011/10/25/the-second-lever/&lt;/a&gt;
 &lt;a href=&quot;http://uk.authenticjobs.com/jobs/10481/web-ops&quot;&gt;http://uk.authenticjobs.com/jobs/10481/web-ops&lt;/a&gt;
@@ -4645,7 +4863,7 @@ mechanisms.&lt;/p&gt;
 especially if you&amp;rsquo;re using Chef. That&amp;rsquo;s because I&amp;rsquo;ve been busier than
 usual this week rather than a lack of content, so if you spot, write or
 build anything you think would be worth including do email me at
-&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#103;&amp;#97;&amp;#114;&amp;#101;&amp;#x74;&amp;#x68;&amp;#64;&amp;#109;&amp;#111;&amp;#114;&amp;#x65;&amp;#116;&amp;#x68;&amp;#x61;&amp;#110;&amp;#115;&amp;#x65;&amp;#118;&amp;#101;&amp;#110;&amp;#x2e;&amp;#x6e;&amp;#101;&amp;#116;&quot;&gt;&amp;#x67;&amp;#97;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#104;&amp;#64;&amp;#x6d;&amp;#111;&amp;#x72;&amp;#101;&amp;#116;&amp;#104;&amp;#97;&amp;#110;&amp;#115;&amp;#101;&amp;#x76;&amp;#101;&amp;#x6e;&amp;#46;&amp;#x6e;&amp;#x65;&amp;#x74;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#x67;&amp;#x61;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#104;&amp;#64;&amp;#x6d;&amp;#x6f;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#x68;&amp;#97;&amp;#x6e;&amp;#x73;&amp;#101;&amp;#x76;&amp;#101;&amp;#110;&amp;#46;&amp;#x6e;&amp;#x65;&amp;#116;&quot;&gt;&amp;#103;&amp;#x61;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#x68;&amp;#x40;&amp;#109;&amp;#x6f;&amp;#114;&amp;#x65;&amp;#116;&amp;#104;&amp;#x61;&amp;#x6e;&amp;#115;&amp;#101;&amp;#118;&amp;#x65;&amp;#110;&amp;#46;&amp;#110;&amp;#x65;&amp;#116;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1&gt;News&lt;/h1&gt;
 
@@ -4915,7 +5133,7 @@ to build out one of the largest media platforms for more than 120 sites.
 We&amp;rsquo;ve got the backing of a billion dollar company, but the freedom and
 flexibility to move fast and break new ground. We&amp;rsquo;re located in Atlanta,
 GA but teleworking is an option for the right candidates. If this sounds
-appealing or you&amp;rsquo;d like to learn more contact &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#x6a;&amp;#x6f;&amp;#104;&amp;#110;&amp;#110;&amp;#x79;&amp;#x2e;&amp;#x70;&amp;#114;&amp;#101;&amp;#x79;&amp;#101;&amp;#114;&amp;#x40;&amp;#99;&amp;#x6f;&amp;#120;&amp;#x69;&amp;#110;&amp;#99;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#x6a;&amp;#x6f;&amp;#x68;&amp;#110;&amp;#x6e;&amp;#121;&amp;#x2e;&amp;#112;&amp;#x72;&amp;#101;&amp;#x79;&amp;#x65;&amp;#x72;&amp;#64;&amp;#99;&amp;#x6f;&amp;#120;&amp;#x69;&amp;#110;&amp;#99;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+appealing or you&amp;rsquo;d like to learn more contact &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#108;&amp;#116;&amp;#111;&amp;#x3a;&amp;#106;&amp;#111;&amp;#104;&amp;#110;&amp;#110;&amp;#121;&amp;#x2e;&amp;#112;&amp;#114;&amp;#101;&amp;#121;&amp;#x65;&amp;#114;&amp;#x40;&amp;#x63;&amp;#x6f;&amp;#x78;&amp;#105;&amp;#110;&amp;#99;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#x6a;&amp;#x6f;&amp;#104;&amp;#110;&amp;#x6e;&amp;#x79;&amp;#x2e;&amp;#112;&amp;#x72;&amp;#x65;&amp;#121;&amp;#x65;&amp;#114;&amp;#x40;&amp;#99;&amp;#111;&amp;#x78;&amp;#105;&amp;#x6e;&amp;#99;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1&gt;Tools&lt;/h1&gt;
 
@@ -5112,10 +5330,10 @@ interesting reading.&lt;/p&gt;
 
 &lt;p&gt;Carrenza need some help with the Sport Relief 2012 platform build, and
 are looking for contract or permanent Chef lovers.
-&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#108;&amp;#116;&amp;#x6f;&amp;#58;&amp;#105;&amp;#x77;&amp;#97;&amp;#x6e;&amp;#x74;&amp;#116;&amp;#x6f;&amp;#119;&amp;#x6f;&amp;#x72;&amp;#x6b;&amp;#x40;&amp;#x63;&amp;#x61;&amp;#x72;&amp;#x72;&amp;#101;&amp;#x6e;&amp;#x7a;&amp;#x61;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#105;&amp;#x77;&amp;#x61;&amp;#x6e;&amp;#x74;&amp;#x74;&amp;#x6f;&amp;#x77;&amp;#111;&amp;#x72;&amp;#x6b;&amp;#x40;&amp;#x63;&amp;#97;&amp;#x72;&amp;#114;&amp;#x65;&amp;#x6e;&amp;#x7a;&amp;#x61;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt; if you&amp;rsquo;re feeling charitable.&lt;/p&gt;
+&lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#105;&amp;#108;&amp;#x74;&amp;#111;&amp;#58;&amp;#105;&amp;#x77;&amp;#x61;&amp;#x6e;&amp;#x74;&amp;#116;&amp;#x6f;&amp;#119;&amp;#x6f;&amp;#x72;&amp;#x6b;&amp;#64;&amp;#99;&amp;#97;&amp;#x72;&amp;#114;&amp;#101;&amp;#110;&amp;#122;&amp;#x61;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#x69;&amp;#x77;&amp;#x61;&amp;#110;&amp;#116;&amp;#x74;&amp;#111;&amp;#119;&amp;#111;&amp;#114;&amp;#x6b;&amp;#x40;&amp;#99;&amp;#97;&amp;#114;&amp;#x72;&amp;#x65;&amp;#x6e;&amp;#x7a;&amp;#x61;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; if you&amp;rsquo;re feeling charitable.&lt;/p&gt;
 
 &lt;p&gt;(This section is sponsored, if you&amp;rsquo;re interested in featuring a job get
-in touch at &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#103;&amp;#x61;&amp;#x72;&amp;#x65;&amp;#116;&amp;#104;&amp;#64;&amp;#109;&amp;#111;&amp;#114;&amp;#x65;&amp;#x74;&amp;#x68;&amp;#x61;&amp;#110;&amp;#115;&amp;#x65;&amp;#x76;&amp;#x65;&amp;#110;&amp;#46;&amp;#110;&amp;#101;&amp;#x74;&quot;&gt;&amp;#103;&amp;#x61;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#104;&amp;#64;&amp;#x6d;&amp;#x6f;&amp;#x72;&amp;#101;&amp;#116;&amp;#x68;&amp;#97;&amp;#110;&amp;#x73;&amp;#101;&amp;#x76;&amp;#101;&amp;#110;&amp;#46;&amp;#x6e;&amp;#101;&amp;#x74;&lt;/a&gt;)&lt;/p&gt;
+in touch at &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#x67;&amp;#x61;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#104;&amp;#x40;&amp;#x6d;&amp;#111;&amp;#x72;&amp;#101;&amp;#116;&amp;#104;&amp;#97;&amp;#110;&amp;#x73;&amp;#101;&amp;#x76;&amp;#x65;&amp;#x6e;&amp;#46;&amp;#x6e;&amp;#x65;&amp;#116;&quot;&gt;&amp;#103;&amp;#97;&amp;#x72;&amp;#x65;&amp;#x74;&amp;#104;&amp;#x40;&amp;#109;&amp;#x6f;&amp;#114;&amp;#x65;&amp;#x74;&amp;#104;&amp;#x61;&amp;#110;&amp;#x73;&amp;#101;&amp;#x76;&amp;#x65;&amp;#110;&amp;#x2e;&amp;#x6e;&amp;#101;&amp;#x74;&lt;/a&gt;)&lt;/p&gt;
 
 &lt;h2&gt;Tools&lt;/h2&gt;
 

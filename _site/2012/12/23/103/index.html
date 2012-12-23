@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 103 - 23nd December 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 103 &ndash; 23nd December</h2>
+
+<p>This issue marks the first issue with more than 5000 subscribers. that&rsquo;s a lot of people interested in a made-up word. It&rsquo;s pretty impressive to see just how this community has grown over the last few years. Hopefully the following few links should keep everyone busy during the holidays.</p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud &ndash; launch cloud servers in multiple UK datacentres in seconds&hellip;</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Good blog post covering a more involved Vagrant workflow and helpfully showing a sample Vagrantfile making extensive use of Environment variables for configuration. The discussion of the problems in creating an appliance I think are going to be something lots of people hit next year.</p>
+
+<p><a href="http://blog.lusis.org/blog/2012/12/17/how-we-vagrant/">http://blog.lusis.org/blog/2012/12/17/how-we-vagrant/</a></p>
+
+<p>Nice article about various software deployment patterns, using the example of Lego to encourage modularity and interoperability.</p>
+
+<p><a href="http://awsadvent.tumblr.com/post/38592081115/exploring-aws-cli">http://awsadvent.tumblr.com/post/38592081115/exploring-aws-cli</a></p>
+
+<p>A good argument for deploying regularly, taking the case of going to the dentist about as far as an analogy can be taken.</p>
+
+<p><a href="http://thefutureofdeployment.com/deploying-software-shouldnt-feel-like-visiting-the-dentist/">http://thefutureofdeployment.com/deploying-software-shouldnt-feel-like-visiting-the-dentist/</a></p>
+
+<p>Logtash has been picking up speed of late and a big milestone in the relentless progress is coming in February with the release of the Logstash book. You can signup now to be emailed when it&rsquo;s ready.</p>
+
+<p><a href="http://www.logstashbook.com/">http://www.logstashbook.com/</a></p>
+
+<p>The open source hosted continuous integration server Travis has just added support for uploading artifacts to S3 after builds. This should make a number of things possible, including various continuous deployment workflows.</p>
+
+<p><a href="http://about.travis-ci.org/blog/2012-12-18-travis-artifacts/">http://about.travis-ci.org/blog/2012-12-18-travis-artifacts/</a></p>
+
+<p>It&rsquo;s interesting to see how Devops is influencing and making inroads into quite traditional IT organisations. This post has a few anecdotes and focuses on automation and it&rsquo;s influence on change control heavy organisations.</p>
+
+<p><a href="http://servicevirtualization.com/profiles/blogs/adoption-of-devops-continues-to-accelerate">http://servicevirtualization.com/profiles/blogs/adoption-of-devops-continues-to-accelerate</a></p>
+
+<h1>Tools</h1>
+
+<p>Amazon have released a new, all-in-one, command line interface for all of AWS. Even better, within a day or release, AWS Advent have an article up on how to configure and use it. This should simplify working across different AWS services. Interestinly it&rsquo;s written in Python this time, replacing the mix of Java and Ruby from the old tools.</p>
+
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2012/12/21/introducing-the-aws-command-line-interface/">https://aws.amazon.com/about-aws/whats-new/2012/12/21/introducing-the-aws-command-line-interface/</a>
+<a href="http://awsadvent.tumblr.com/post/38592081115/exploring-aws-cli">http://awsadvent.tumblr.com/post/38592081115/exploring-aws-cli</a></p>
+
+<p>An interesting Vagrant setup, specifically for testing Puppet manifests and modules across multiple operating systems at the same time. Could do with more automation (probably a plugin or via the rake integration) but it looks a good start.</p>
+
+<p><a href="https://github.com/example42/vagrant-example42">https://github.com/example42/vagrant-example42</a></p>
+
+<p>Scales is a reimagining of the Metrics library in Python. It&rsquo;s not quite a port, but has a number of interesting features including timers, gauges, metrics aggregation and a built-in dashboard.</p>
+
+<p><a href="https://github.com/Cue/scales">https://github.com/Cue/scales</a></p>
+
+<p>Giraffe is yet another Graphite dashboard, but one that is written in pure client side javascript. This makes deploying the dashboard incredibly easy, it&rsquo;s just html, css, javascript and a few images. Configuration is well documented too and the demo is worth taking a look at.</p>
+
+<p><a href="https://github.com/kenhub/giraffe">https://github.com/kenhub/giraffe</a></p>
+
+<p>Vagrant is commonly used to test out Chef cookbooks, but the cycle of creating, destroying and creating virtual machines can leave lots of stale data in your Chef server. Vagrant Butcher is a plugin for Vagrant that fixes this specific problem, removing the relevant data when the virtual machine is destroyed.</p>
+
+<p><a href="https://github.com/cassianoleal/vagrant-butcher">https://github.com/cassianoleal/vagrant-butcher</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

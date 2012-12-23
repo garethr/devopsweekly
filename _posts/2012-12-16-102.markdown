@@ -1,0 +1,90 @@
+---
+layout: post
+title: Issue 102 - 16th December 2012
+---
+
+## Issue 102 - 16th December
+
+A hopefully good mix of tutorials, opinions and new tools from the worlds of security, process and configuration management this week. All in a days work for people interested in the world of devops.
+
+
+Sponsor
+======
+
+Devops Weekly is sponsored by Brightbox Cloud - launch cloud servers in multiple UK datacentres in seconds...
+
+http://brightbox.com
+
+
+News
+====
+
+Keeping track of security advisories for all the software you're running can be a time consuming chore so RiskDB looks an interesting project. It provides a good search based interface as as well free and paid accounts if you want some additional collaboration and integration features.
+
+https://db.risk.io/
+
+If you're familiar with SQL then moving to using something like MongoDB can feel a little weird when writing non-trivial queries. This online application aims to help by converting SQL to Mongo queries, useful for learning the JSON based syntax.
+
+http://www.querymongo.com/
+
+
+A few people have been documenting patterns, of both code and behaviour, for devops minded organisations. This post is hopefully the start of documenting some anti-patterns starting with Committed is “Done”, My Responsibility Ends Here and They should.
+
+http://www.agileweboperations.com/devops-anti-patterns
+
+
+This post aims to encourage more developers to embrace devops and makes a number of good points in doing so. From improving site reliability to building better software and improving your career prospects.
+
+http://benjaminwootton.co.uk/why-devops-matters-to-developers/
+
+
+How best to structure Puppet modules is something that's really taken a step forward this last year, with tools starting to make assumptions about module structure beginning to emerge. This post documents much of the current best practice with a simple module example from scratch.
+
+http://www.devco.net/archives/2012/12/13/simple-puppet-module-structure-redux.php
+
+
+Good writeup of taking an existing Chef cookbook and updating it to use the latest Test Kitchen. It's a good walkthrough that should make a good guide if you're updating one of your own cookbooks.
+
+http://jtimberman.housepub.org/blog/2012/12/13/cookbook-integration-testing-with-real-examples/
+
+
+Jobs
+====
+
+Box needs you to scale, harden and more-awesome-ify its multi-data-center, 1000s-of-hosts deployment system. We use good stuff like Scala and ZooKeeper to do it. Know the 'right way' to deploy? Drop a line of interest directly to Box's Director of Engineering Services: sohamm@box.com.
+
+Of course, we're also looking for ambitious Systems Engineers and Software Engineers who want to work on distributed systems. With over 10 million users and serving more than 92% of the Fortune 500, we're also one of the hottest tech companies in Silicon Valley. Come help us get to the next level. We sponsor Visas too!
+
+http://box.com/careers
+
+
+Events
+=====
+
+LoadDays or Linux Open Administration Days is back next year on the 6th and 7th of April in Wilrijk, Belgium.  A call for proposals is open now.
+
+http://loadays.org/
+
+
+Tools
+====
+
+Twemproxy is a fast and lightweight proxy for the memcached and redis protocols. It was primarily built to reduce the connection count on caching servers and is in use by Twitter, Tumblr and Pinterest to name a few. The built int stats collection looks useful too.
+
+https://github.com/twitter/twemproxy
+
+
+mctop is top for memcached, giving you a command line view of popular keys. The associated writeup demonstrates the types of problems mctop is aimed to solve as well.
+
+http://codeascraft.etsy.com/2012/12/13/mctop-a-tool-for-analyzing-memcache-get-traffic/
+https://github.com/etsy/mctop/
+
+
+CMB appears to be a fully functional clone of Amazon's SNS and SQS products. It makes use of Cassandra on the backend and aims to provide high availability and horizontal scalability.
+
+https://github.com/Comcast/cmb
+
+
+The Metrics library is well used in Java environments and has many clones in other languages. However MetricCatcher takes the origin Metrics library and exposes it over a JSON based interface so it can be used easily from other languages and as a centralised service.
+
+https://github.com/clearspring/MetricCatcher

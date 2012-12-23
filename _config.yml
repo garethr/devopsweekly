@@ -2,4 +2,4 @@ exclude: ['Rakefile', 'Readme.markdown', 'src', 'Gemfile', 'Gemfile.lock', 'conf
 permalink: pretty
 markdown: rdiscount
 rdiscount:
-    extensions: [smart, autolink]
+  extensions: [smart, autolink]
