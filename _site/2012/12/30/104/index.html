@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 104 - 30th December 2012</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 104 &ndash; 30th December</h2>
+
+<p>A good few monitoring tools and utilities this week, plus a range of other interesting articles. Next weeks issue might be late as I&rsquo;ll likely be travelling, don&rsquo;t worry if you don&rsquo;t receive it on Sunday.</p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud &ndash; launch cloud servers in multiple UK datacentres in seconds&hellip;</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>A counter to the &ldquo;no devops team&rdquo; theme, describing the formation of a team to help an existing development and operations team work better together. Best quote &ldquo;At first I was not sure it was the right name for this team, but now I don’t think it matters&rdquo;.</p>
+
+<p><a href="http://lumberjaph.net/devops/2012/12/16/about-devops.html">http://lumberjaph.net/devops/2012/12/16/about-devops.html</a></p>
+
+<p>A couple of interesting and detailed posts from the Indeed engineering team. Both describe the implementation of internal systems, first a log aggregation and next a highly available RPC framework. No code yet but the detailed discussion of the design choices is still interesting.</p>
+
+<p><a href="http://engineering.indeed.com/blog/2012/11/logrepo-enabling-data-driven-decisions/">http://engineering.indeed.com/blog/2012/11/logrepo-enabling-data-driven-decisions/</a>
+<a href="http://engineering.indeed.com/blog/2012/12/boxcar-self-balancing-distributed-services-protocol/">http://engineering.indeed.com/blog/2012/12/boxcar-self-balancing-distributed-services-protocol/</a></p>
+
+<p>Etsy reduced the number of different technologies in use starting a couple of years ago. This post covers why they no-longer use Mongo, and how they used MySQL for the application instead. The focus is on the hidden work when using a new system or service.</p>
+
+<p><a href="http://mcfunley.com/why-mongodb-never-worked-out-at-etsy">http://mcfunley.com/why-mongodb-never-worked-out-at-etsy</a></p>
+
+<p>Good case study of a deployment pipeline for infrastructure components using Puppet. Nicely it covers a previous design and the problems with it, before documenting the final working system.</p>
+
+<p><a href="http://puppetlabs.com/blog/a-deployment-pipeline-for-infrastructure/">http://puppetlabs.com/blog/a-deployment-pipeline-for-infrastructure/</a></p>
+
+<p>Another post about how devops fits into the skills and team structure within an organisation. The argument here is that devops, or developer operations, is likely to become a new specialism within larger teams.</p>
+
+<p><a href="http://if.andonlyif.net/blog/2012/12/specializing-in-devops.html">http://if.andonlyif.net/blog/2012/12/specializing-in-devops.html</a></p>
+
+<p>A good list of best practices for speeding up software releases. Short descriptions that should be a good starting point for further exploration.</p>
+
+<p><a href="http://manojanara.com/2012/12/26/8-best-practices-to-keep-the-release-train-moving/">http://manojanara.com/2012/12/26/8-best-practices-to-keep-the-release-train-moving/</a></p>
+
+<h1>Tools</h1>
+
+<p>logstash-tail is a nifty utility if you&rsquo;re using logstash. With the addition of a tcp output to logstash, logstash-tail gives you a command line interface to tail filtered logs.</p>
+
+<p><a href="https://github.com/ohlol/logstash-tail">https://github.com/ohlol/logstash-tail</a></p>
+
+<p>A good addition to the Erlang toolbox, folsomite aggregates folsom metrics from an Erlang process and exports them to either Riemann or Graphite. Good to see more folks using Riemann too.</p>
+
+<p><a href="http://lefant.net/2012/08/11/folsomite/">http://lefant.net/2012/08/11/folsomite/</a>
+<a href="https://github.com/campanja/folsomite/">https://github.com/campanja/folsomite/</a></p>
+
+<p>Graphital is a ruby based tool for shipping system metrics to graphite. It is very easy to extend with scripts in any language, and includes a few sample plugins for common tools and low level metrics.</p>
+
+<p><a href="https://github.com/rashidkpc/graphital">https://github.com/rashidkpc/graphital</a></p>
+
+<p>The Riemann monitoring tool ships with a dashboard as an example of using the API but the tool can be used for different usecases. Riemann-grid is an alternative dashboard written in clojure that might be worth a look.</p>
+
+<p><a href="https://github.com/exoscale/riemann-grid">https://github.com/exoscale/riemann-grid</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+---
+layout: post
+title: Issue 104 - 30th December 2012
+---
+
+## Issue 104 - 30th December
+
+A good few monitoring tools and utilities this week, plus a range of other interesting articles. Next weeks issue might be late as I'll likely be travelling, don't worry if you don't receive it on Sunday.
+
+
+Sponsor
+======
+
+Devops Weekly is sponsored by Brightbox Cloud - launch cloud servers in multiple UK datacentres in seconds...
+
+http://brightbox.com
+
+
+News
+====
+
+A counter to the "no devops team" theme, describing the formation of a team to help an existing development and operations team work better together. Best quote "At first I was not sure it was the right name for this team, but now I don’t think it matters".
+
+http://lumberjaph.net/devops/2012/12/16/about-devops.html
+
+
+A couple of interesting and detailed posts from the Indeed engineering team. Both describe the implementation of internal systems, first a log aggregation and next a highly available RPC framework. No code yet but the detailed discussion of the design choices is still interesting.
+
+http://engineering.indeed.com/blog/2012/11/logrepo-enabling-data-driven-decisions/
+http://engineering.indeed.com/blog/2012/12/boxcar-self-balancing-distributed-services-protocol/
+
+
+Etsy reduced the number of different technologies in use starting a couple of years ago. This post covers why they no-longer use Mongo, and how they used MySQL for the application instead. The focus is on the hidden work when using a new system or service.
+
+http://mcfunley.com/why-mongodb-never-worked-out-at-etsy
+
+
+Good case study of a deployment pipeline for infrastructure components using Puppet. Nicely it covers a previous design and the problems with it, before documenting the final working system.
+
+http://puppetlabs.com/blog/a-deployment-pipeline-for-infrastructure/
+
+
+Another post about how devops fits into the skills and team structure within an organisation. The argument here is that devops, or developer operations, is likely to become a new specialism within larger teams.
+
+http://if.andonlyif.net/blog/2012/12/specializing-in-devops.html
+
+
+A good list of best practices for speeding up software releases. Short descriptions that should be a good starting point for further exploration.
+
+http://manojanara.com/2012/12/26/8-best-practices-to-keep-the-release-train-moving/
+
+
+Tools
+====
+
+logstash-tail is a nifty utility if you're using logstash. With the addition of a tcp output to logstash, logstash-tail gives you a command line interface to tail filtered logs.
+
+https://github.com/ohlol/logstash-tail
+
+
+A good addition to the Erlang toolbox, folsomite aggregates folsom metrics from an Erlang process and exports them to either Riemann or Graphite. Good to see more folks using Riemann too.
+
+http://lefant.net/2012/08/11/folsomite/
+https://github.com/campanja/folsomite/
+
+
+Graphital is a ruby based tool for shipping system metrics to graphite. It is very easy to extend with scripts in any language, and includes a few sample plugins for common tools and low level metrics.
+
+https://github.com/rashidkpc/graphital
+
+
+The Riemann monitoring tool ships with a dashboard as an example of using the API but the tool can be used for different usecases. Riemann-grid is an alternative dashboard written in clojure that might be worth a look.
+
+https://github.com/exoscale/riemann-grid
