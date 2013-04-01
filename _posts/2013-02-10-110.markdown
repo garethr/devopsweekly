@@ -3,7 +3,7 @@ layout: post
 title: Issue 110 - 10th February 2013
 ---
 
-## Issue 110 - 10th February
+## Issue 110 -  10th February
 
 Logstash, one of the tools I've featured quite a few times in this newsletter has a book available, and a self published one at that. I'd love to see more self publishing around emerging tools and topics from the devops community. Traditional publishing is hard in such a fast moving environment, but being able to read a book rather than a blog post can really help with understanding a new tool or topic.
 
