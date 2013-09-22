@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Issue 142 22nd September 2013
+title: Issue 142 - 22nd September 2013
 ---
 
 ## Issue 142 - 22nd September
