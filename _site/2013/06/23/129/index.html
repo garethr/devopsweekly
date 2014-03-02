@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 129 - 23rd June 2013</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 129 &ndash; 23rd June</h2>
+
+<p><em>Another bumper issue; lots of talks, news, discussion and tools to keep people busy this week. I&rsquo;m on the lookout for content from Devopsdays Santa Clara which finished yesterday. If you made it along and have any good links do let me know.</em></p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud &ndash; launch cloud servers in multiple UK datacentres in seconds&hellip;</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>One area of development that&rsquo;s often been quite separate from the devops movement is front-end engineerings. This post proposes that increasingly there is lots of work for a front-end operations engineer around build processes, performance, measurement and automation.</p>
+
+<p><a href="http://www.smashingmagazine.com/2013/06/11/front-end-ops/">http://www.smashingmagazine.com/2013/06/11/front-end-ops/</a></p>
+
+<p>I mentioned the new Etsy anomaly detection stack Kale, Skyline and Oculus last issue. Here&rsquo;s the presentation which introduced it at Velocity. Lots of details about how it works under the hood and the performance challenges of all those metrics.</p>
+
+<p><a href="https://speakerdeck.com/astanway/bring-the-noise-continuously-deploying-under-a-hailstorm-of-metrics">https://speakerdeck.com/astanway/bring-the-noise-continuously-deploying-under-a-hailstorm-of-metrics</a></p>
+
+<p>Managing risk is an increasingly important thing to understand when building complex systems. This talk, by Johan Bergstrum at the recent Velocity conference, covers What, Where And When Is Risk In System Design.</p>
+
+<p><a href="http://www.youtube.com/watch?v=Pb_zYs8G6Co">http://www.youtube.com/watch?v=Pb_zYs8G6Co</a></p>
+
+<p>Packaging software for inclusion in operating systems is often a thankless task, but this post does make some good points about the benefits of more monolithic packages including dependencies over the desire to split everything up.</p>
+
+<p><a href="http://vagabond.github.io/2013/06/21/z_packagers-dont-know-best/">http://vagabond.github.io/2013/06/21/z_packagers-dont-know-best/</a></p>
+
+<p>If monolithic packages are of interest one way of building them is using the Omnibus tool from Opscope, which I&rsquo;ve mentioned before. Here&rsquo;s a nice tutorial on how to use it.</p>
+
+<p><a href="http://blog.scoutapp.com/articles/2013/06/21/omnibus-tutorial-package-a-standalone-ruby-gem">http://blog.scoutapp.com/articles/2013/06/21/omnibus-tutorial-package-a-standalone-ruby-gem</a></p>
+
+<p>Atlassian have developers and operations engineers all around the world and this next link is an interesting recorded discussion about devops in distributed teams. Lots of practical tips and challenges.</p>
+
+<p><a href="http://blogs.atlassian.com/2013/06/devops-distributed-teams/">http://blogs.atlassian.com/2013/06/devops-distributed-teams/</a></p>
+
+<p>Good presentation giving a great introduction to monitoring. Includes definitions, what to monitor and how, common mistakes and shows how important monitoring high level business value is.</p>
+
+<p><a href="http://www.slideshare.net/postwait/monitoring-and-observability-23201316">http://www.slideshare.net/postwait/monitoring-and-observability-23201316</a></p>
+
+<p>A good writeup of the general pattern of immutable servers, launching new instances when changes are required rather than upgrading existing machines. A name might make discussing this idea easier too.</p>
+
+<p><a href="http://martinfowler.com/bliki/ImmutableServer.html">http://martinfowler.com/bliki/ImmutableServer.html</a></p>
+
+<p>A nice and simple introduction to using Nginx aimed mainly at developers. Nginx configuration is amazingly powerful, and easy to pick up once you understand the basics.</p>
+
+<p><a href="http://carrot.is/coding/nginx_introduction">http://carrot.is/coding/nginx_introduction</a></p>
+
+<p>If you like diagrams and you like Chef then here&rsquo;s a stencil of the Chef primitives (roles, nodes, data bags, etc.) for use with OmniGraffle.</p>
+
+<p><a href="https://www.graffletopia.com/stencils/701">https://www.graffletopia.com/stencils/701</a></p>
+
+<h1>Jobs</h1>
+
+<p>TIM Group are looking for a Senior Linux Systems Administrator/Operations &ldquo;DevOps&rdquo; Engineer to join our team in London or Boston. The ideal candidate would be passionate about refining and perfecting the way web applications are deployed and managed, and with the mixed sysadmin/development skills to help us advance the state of the art. We offer a fun, challenging, and rewarding working environment with the opportunity to build an awesome career&hellip; and up to £70k, extensive benefits, and assistance in relocation for this role.</p>
+
+<p><a href="http://www.timgroup.com/careers/current-vacancies/senior-devops">http://www.timgroup.com/careers/current-vacancies/senior-devops</a></p>
+
+<h1>Tools</h1>
+
+<p>Ever been interested in what changed visually on your site after a release? dpxdt provides tools for taking screenshots, and providing a diff to show only those screens that have changed.</p>
+
+<p><a href="https://github.com/bslatkin/dpxdt">https://github.com/bslatkin/dpxdt</a>
+<a href="https://dpxdt-test.appspot.com/">https://dpxdt-test.appspot.com/</a></p>
+
+<p>Salmon is an interesting approach to a simple monitoring system that uses the Salt configuration management tool for much of the data.</p>
+
+<p><a href="https://github.com/lincolnloop/salmon">https://github.com/lincolnloop/salmon</a></p>
+
+<p>Testing against non-production environments with real traffic can be tricky. Gor is a new tool that collects and then can replay traffic in real-time against multiple environments, ideal for load testing.</p>
+
+<p><a href="https://github.com/buger/gor">https://github.com/buger/gor</a>
+<a href="http://leonsbox.com/blog/2013/06/04/improving-testing-by-using-real-traffic-from-production/">http://leonsbox.com/blog/2013/06/04/improving-testing-by-using-real-traffic-from-production/</a></p>
+
+<p>Maintaining a large number of Jenkins jobs using the web based interface can get a little time consuming. This plugin provides a simple domain specific language for defining jobs, making automation much easier.</p>
+
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin</a></p>
+
+<p>If you already have a set of configured servers moving to using configuration management tools like Puppet can seem a lot of work. Pysa is a new tool that aims to generate Puppet code based on the existing configuration of a running server. Maybe a good way of seeing value quickly.</p>
+
+<p><a href="http://www.madeiracloud.com/blog/introducing-pysa-reverse-your-servers-configurations">http://www.madeiracloud.com/blog/introducing-pysa-reverse-your-servers-configurations</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

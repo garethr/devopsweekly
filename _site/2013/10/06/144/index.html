@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 144 - 6th October 2013</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 144 &ndash; 6th October</h2>
+
+<p><em>I only included one tool link last week, but I’ve found five this week from handy utilities to entire applications or core infrastructure. One thing I still like about the whole devops community is a good balance between tool making and culture/organisation change &ndash; hopefully people find this newsletter gets the balance about right.</em></p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud &ndash; launch cloud servers in multiple UK datacentres in seconds&hellip;</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>Great presentation about the software and infrastructure behind a large online game. Lots of graphs, discussions of architecture trade-offs and tales of what works and what’s still hard.</p>
+
+<p><a href="http://gdcvault.com/play/1016640/Guild-Wars-2-Programming-the">http://gdcvault.com/play/1016640/Guild-Wars-2-Programming-the</a></p>
+
+<p>Nice write up about developing a real time log stream processing pipeline for DNS data. Interesting choices around real time vs batch and lots of details.</p>
+
+<p><a href="http://labs.umbrella.com/2013/10/04/zeromq-helping-us-block-malicious-domains/">http://labs.umbrella.com/2013/10/04/zeromq-helping-us-block-malicious-domains/</a></p>
+
+<p>A tale of starting out with a job title with the word devops and why the author changed it. Saying devops isn’t a job title isn’t enough, this is a great reason why.</p>
+
+<p><a href="http://blog.petecheslock.com/2013/05/03/devops-in-your-job-title-is-doing-you-harm/">http://blog.petecheslock.com/2013/05/03/devops-in-your-job-title-is-doing-you-harm/</a></p>
+
+<p>There are a bunch of HTTP headers which have useful security implications, especially in modern browsers. This site lists them, provides background details and lets you check how you’re doing.</p>
+
+<p><a href="https://securityheaders.com/index.php">https://securityheaders.com/index.php</a></p>
+
+<p>A few people (myself included) spoke at PuppetConf about wanting private classes in Puppet. This post explains a trick which gets you some of the way there now.</p>
+
+<p><a href="http://www.unixdaemon.net/tools/puppet/protect-internal-puppet-classes.html">http://www.unixdaemon.net/tools/puppet/protect-internal-puppet-classes.html</a></p>
+
+<p>A good list of milestones and checklists for evolving processes based on the three ways model of devops. Good structured ways of looking at improving your organisation.</p>
+
+<p><a href="http://everythingsysadmin.com/2013/09/devops-lookfors.html">http://everythingsysadmin.com/2013/09/devops-lookfors.html</a></p>
+
+<p>A nice tale of profiling, and using data to argue against common myths, in this case it’s always the database that’s the performance bottleneck.</p>
+
+<p><a href="http://blog.iconfinder.com/when-the-database-is-fast-enough/">http://blog.iconfinder.com/when-the-database-is-fast-enough/</a></p>
+
+<p>Devopsdays Atlanta was only a few days ago but the videos from the talks are already up, including talks on ITIL, SadOps, devops in large enterprises and more.</p>
+
+<p><a href="http://vimeo.com/album/2555095">http://vimeo.com/album/2555095</a></p>
+
+<h1>Tools</h1>
+
+<p>lmctfy is the open source version of Google’s container stack, which provides Linux application containers. The main focus appears to be a high-level user-centric API.</p>
+
+<p><a href="https://github.com/google/lmctfy">https://github.com/google/lmctfy</a></p>
+
+<p>Ansible provides a powerful but simple orchestration engine. Ansible shell builds upon that to provide an interactive shell for running commands, including handy things like tab completion.</p>
+
+<p><a href="https://github.com/dominis/ansible-shell">https://github.com/dominis/ansible-shell</a></p>
+
+<p>Kochiku is an entire continuous integrate platform, designed for long running test suites and for distribution across many nodes. I’d love to see a Puppet/Chef and Vagrant setup for trying this out as it looks excellent.</p>
+
+<p><a href="http://corner.squareup.com/2013/09/kochiku.html">http://corner.squareup.com/2013/09/kochiku.html</a>
+<a href="https://github.com/square/kochiku">https://github.com/square/kochiku</a></p>
+
+<p>The concept of feature flags or toggles is increasingly used for rolling out application features. Why not apply this to configuration management code too? Enter chef-whitelist.</p>
+
+<p><a href="https://github.com/etsy/chef-whitelist">https://github.com/etsy/chef-whitelist</a></p>
+
+<p>A set of utility scripts for managing ssh configuration for EC2, aimed mainly at people who make use of more than one EC2 account.</p>
+
+<p><a href="https://github.com/astrostl/aws">https://github.com/astrostl/aws</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

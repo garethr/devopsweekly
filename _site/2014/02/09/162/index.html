@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 162 - 9th February 2014</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 162 &ndash; 9th February</h2>
+
+<p><em>Lots of configuration management content this week, much of it from the first Configuration Management Camp in Gent last week. I managed to go along and met lots of people from all the major open source config management communities. Getting everyone together was a great idea, hopefully it will happen again next year.</em></p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud &ndash; launch cloud servers in multiple UK datacentres in seconds&hellip;</p>
+
+<p><a href="http://brightbox.com/devopsweekly">http://brightbox.com/devopsweekly</a></p>
+
+<h1>News</h1>
+
+<p>A nice presentation entitled application configuration &amp; deployment in the containerized new world. A high level look at some of the issues of managing distributed applications.</p>
+
+<p><a href="http://skottler.fedorapeople.org/presentations/infrastructurenext.html#/">http://skottler.fedorapeople.org/presentations/infrastructurenext.html#/</a></p>
+
+<p>A good infrastructure continuous deployment case study, showing lots of tools required to make this work around Chef and Jenkins.</p>
+
+<p><a href="http://www.slideshare.net/gmiranda23/cfg-mgmtcamp-cdwithchef">http://www.slideshare.net/gmiranda23/cfg-mgmtcamp-cdwithchef</a></p>
+
+<p>A good introduction to Test Driven Development with Chef. This isn’t just a look at the tools, but more a look at the process of TDD and how it applies to the various moving parts in Chef.</p>
+
+<p><a href="https://speakerdeck.com/nathenharvey/tdd-with-chef">https://speakerdeck.com/nathenharvey/tdd-with-chef</a></p>
+
+<p>Various folks have integrated monitoring tools with chat rooms, but this is the first post I’ve seen showing a full production issue end-to-end with chat dialogue, including graphs and alerts from various monitoring tools.</p>
+
+<p><a href="http://blog.librato.com/posts/confessions-of-a-chatbot">http://blog.librato.com/posts/confessions-of-a-chatbot</a></p>
+
+<p>An occasionally surreal presentation about breaking down silos in organisations, and what that can mean to overall organisation structure in larger groups.</p>
+
+<p><a href="http://www.slideshare.net/MichaelDucy/the-goat-and-silo">http://www.slideshare.net/MichaelDucy/the-goat-and-silo</a></p>
+
+<p>Here’s another infrastructure testing post, this one focusing on serverspec for acceptance testing. I’ve been really liking serverspec recently for those that haven’t had chance to use it yet.</p>
+
+<p><a href="https://micgo.net/serverspec-guard-and-test-kitchen-testing-servers-like-a-boss/">https://micgo.net/serverspec-guard-and-test-kitchen-testing-servers-like-a-boss/</a></p>
+
+<p>A nice description of a common pattern when provisioning machines, in this case using Chef and AWS. In order to speed up provisioning times do a two step configuration management run, the first one creating a base image from which you can build on.</p>
+
+<p><a href="http://tech.gamechanger.io/blog/2014/2/6/speeding-up-provisioning.html">http://tech.gamechanger.io/blog/2014/2/6/speeding-up-provisioning.html</a></p>
+
+<p>A nice description of the difference between tool building and automation. Put simply tool building aids the existing task, while automation removes or fundamentally changes the job.</p>
+
+<p><a href="http://everythingsysadmin.com/2014/02/tool-building-versus-automatio.html">http://everythingsysadmin.com/2014/02/tool-building-versus-automatio.html</a></p>
+
+<p>A good argument that it’s not about The Thing (in this case ITIL) but about how we embed and adopt the habits of The Thing. Certainly true of any move towards devops too.</p>
+
+<p><a href="http://www.itskeptic.org/content/fix-change-not-itil">http://www.itskeptic.org/content/fix-change-not-itil</a></p>
+
+<p>The OWASP (Open Web Application Security Project) project is hopefully well known for lots of tools and good content. This page in particular is worth bookmarking, it contains links to all the cheat sheets, from authentication and passwords to TLS and SQL Injection tips.</p>
+
+<p><a href="https://www.owasp.org/index.php/Cheat_Sheets">https://www.owasp.org/index.php/Cheat_Sheets</a></p>
+
+<h1>Events</h1>
+
+<p>QCon is coming back to London on the 5th to the 7th of March. The usual wide range of tracks, from scalable architectures, resilience and next generation cloud to devops and a track dedicated to people skills. Use the discount code devopsweekly for £100 off the conference price.</p>
+
+<p><a href="http://qconlondon.com/">http://qconlondon.com/</a></p>
+
+<h1>Tools</h1>
+
+<p>Drone is a new open source continuous integration server built around a nice modern user interface and using lxc containers (powered by docker) under the hood. It promises to be simple to install and integrates nicely with GitHub and Bitbucket.</p>
+
+<p><a href="http://blog.drone.io/2014/2/5/open-source-ci-docker.html">http://blog.drone.io/2014/2/5/open-source-ci-docker.html</a>
+<a href="https://github.com/drone/drone">https://github.com/drone/drone</a></p>
+
+<p>Trousseau is an interesting approach to a common problem, that of securely passing secrets around an infrastructure. It uses GPG signed files under the hood and nicely integrates with both version control systems and S3.</p>
+
+<p><a href="https://github.com/oleiade/trousseau">https://github.com/oleiade/trousseau</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

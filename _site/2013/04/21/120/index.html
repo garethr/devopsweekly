@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 120 - 21st April 2013</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 120 &ndash; 21st April</h2>
+
+<p><em>The march of Devopsdays through Europe continues with Paris this last week so several bits of related content. With Austin, Berlin, Mountain View and Amsterdam coming up in the next month or so expect lots of good quality new content from those too.</em></p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud &ndash; launch cloud servers in multiple UK datacentres in seconds&hellip;</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>I wasn&rsquo;t going to include this, as I wrote it, but a few people bugged me to do so. I work for the UK Government and as part of transforming how IT works we&rsquo;re writing a service design manual which now has a section on devops. If someone claims you&rsquo;re just making this devops think up then happily point them to an official Government page on the subject.</p>
+
+<p><a href="https://www.gov.uk/service-manual/operations/devops">https://www.gov.uk/service-manual/operations/devops</a></p>
+
+<p>Devops is all about organisational culture, so it&rsquo;s great to see a short ebook released on this very subject. &ldquo;Building a DevOps Culture&rdquo; is free too if you provide your name and email address.</p>
+
+<p><a href="http://programming.oreilly.com/2013/04/velocity-report-building-a-devops-culture.html">http://programming.oreilly.com/2013/04/velocity-report-building-a-devops-culture.html</a></p>
+
+<p>Epic set of notes on all of the sessions from Devopsdays Paris. Includes notes on some of the question and answer sessions too which you won&rsquo;t find in the slides.</p>
+
+<p><a href="https://github.com/philandstuff/devopsdaysparis">https://github.com/philandstuff/devopsdaysparis</a></p>
+
+<p>Great presentation about troubleshooting complex systems based on quite a bit of research about the Air France 447 disaster. Lots on communication, interface design, understanding responsibilities, blame, alerting strategies and more. Good example of looking to other disciplines for things we can learn about web operations.</p>
+
+<p><a href="http://www.slideshare.net/auxesis/escalating-complexity-devops-learnings-from-air-france-447">http://www.slideshare.net/auxesis/escalating-complexity-devops-learnings-from-air-france-447</a></p>
+
+<p>Slides from one of the ignite talks at Devopsdays Paris, from Patrick Debois, entitled &ldquo;what if devops was invented by coca-cola&rdquo;.</p>
+
+<p><a href="http://www.slideshare.net/devopsdays/what-if-devops-was-invented-by-coca-cola">http://www.slideshare.net/devopsdays/what-if-devops-was-invented-by-coca-cola</a></p>
+
+<p>More slides from Devopsdays Paris. This deck is called How devops improved my dev, and is a developers viewpoint on why devops is important. Note the first two slides are intentionally blank, just keep going.</p>
+
+<p><a href="https://speakerdeck.com/skade/how-devops-improved-my-dev">https://speakerdeck.com/skade/how-devops-improved-my-dev</a></p>
+
+<p>If you&rsquo;re a RedHat or Centos user interested in OpenStack then RDO might be just the think. It provides tools to get started quickly, claiming 3 steps and 15 minutes to get up and running. It&rsquo;s also a community forum for questions specific to running things on RHEL.</p>
+
+<p><a href="http://openstack.redhat.com/">http://openstack.redhat.com/</a></p>
+
+<p>A new post in a series on organisational change. This one covers how to measure team success. It pulls together various bits of thinking on the subject and asks some good questions about measuring business objectives rather than more easily defined team ones.</p>
+
+<p><a href="http://blog.devopsguys.com/2013/04/18/devops-how-do-you-measure-team-success/">http://blog.devopsguys.com/2013/04/18/devops-how-do-you-measure-team-success/</a></p>
+
+<p>If you decide to go down the software as a service route for your monitoring tools then there are lots of choices. Here&rsquo;s a curated list of different options available for logging, alerting, metrics and full stack monitoring options.</p>
+
+<p><a href="http://www.canopsis.org/2013/02/monitoring-saas/">http://www.canopsis.org/2013/02/monitoring-saas/</a></p>
+
+<h1>Tools</h1>
+
+<p>Fizzgig is a tool for writing fast unit tests for puppet. It uses the rspec matchers from rspec-puppet but takes the approach of on making catalogue compilation explicit. So rather than compiling the entire catalogue it just compiles the unit you&rsquo;re interested in.</p>
+
+<p><a href="https://github.com/philandstuff/fizzgig">https://github.com/philandstuff/fizzgig</a></p>
+
+<p>Puppet cleaner provides a number of utilities to clean up Puppet source code according to the Puppet language style guide. As well as transforming the source code it can also provide a diff of changes that it intends to make.</p>
+
+<p><a href="https://github.com/santana/puppet-cleaner">https://github.com/santana/puppet-cleaner</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

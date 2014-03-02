@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 119 - 14th April 2013</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 119 &ndash; 14th April</h2>
+
+<p><em>Devops has always been about more than collaboration between developers and web operations and it&rsquo;s great to see articles like the first one in this issue, in this case from deep within the network engineering community talking about the need to learn programming. At devops flavoured events talk often turns to how to get more people from networking or quality assurance or security backgrounds to join the community, it feels like that might be starting to happen.</em></p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud &ndash; launch cloud servers in multiple UK datacentres in seconds&hellip;</p>
+
+<p><a href="http://brightbox.com">http://brightbox.com</a></p>
+
+<h1>News</h1>
+
+<p>A fantastic article, from a network engineers point of view on a network engineer site, about why network folk should learn programming. It doesn&rsquo;t mention devops once. I still think one of the areas we&rsquo;ll see interesting tools and conversations about in the next year or so will be networking.</p>
+
+<p><a href="http://packetpushers.net/programming-101-for-network-engineers-why-bother/">http://packetpushers.net/programming-101-for-network-engineers-why-bother/</a></p>
+
+<p>It&rsquo;s very common for web applications to be moving towards a continuous release process, rather than say releasing a numbered version every 6 months. This blog post talks about this in terms of openstack (and is relevant to other infrastructure software too I&rsquo;d wager). Would you happily update your IaaS software every day?</p>
+
+<p><a href="http://fnords.wordpress.com/2013/04/11/the-need-for-releases/">http://fnords.wordpress.com/2013/04/11/the-need-for-releases/</a></p>
+
+<p>Interesting summary of the recent Heroku performance issues. This is mainly interesting because it raises issues about who owns what when running under a PaaS, and more importantly how you instrument an application when you don&rsquo;t own much of the stack.</p>
+
+<p><a href="http://www.virtualizationpractice.com/who-is-responsible-for-paas-cloud-application-performance-21213/">http://www.virtualizationpractice.com/who-is-responsible-for-paas-cloud-application-performance-21213/</a></p>
+
+<p>As more and more folks implement deployment pipelines we&rsquo;re discovering useful patterns. This post covers why just moving artefacts around between named repositories might not be the best approach, and why metadata is important too.</p>
+
+<p><a href="http://www.stephen-smith.co.uk/pipeline-antipattern-mutable-binary-location/">http://www.stephen-smith.co.uk/pipeline-antipattern-mutable-binary-location/</a></p>
+
+<p>Assume you didn&rsquo;t already have any preconceptions about PHP and you heard about a cool new language built for the web. PHP The Right Way is a actually quite impressive looking site aiming to improve the state of PHP documentation, and starts with things like xdebug, dependency management tools, built in web servers, vagrant and more.</p>
+
+<p><a href="http://www.phptherightway.com/">http://www.phptherightway.com/</a></p>
+
+<h1>Jobs</h1>
+
+<p>Workshare in London are looking for a DevOps engineer to join their team. This will be their first full-time DevOps hire in an established and profitable business, with fresh VC investment and led by a CEO who did 3 IPOs before. The DevOps will be tasked with building out brand new infrastructure to support a PaaS product offering. You will be heavily involved in defining architecture, tooling and process for the organisation.</p>
+
+<p><a href="http://www.workshare.com/company/careers/sysadmindevops-engineer-london">http://www.workshare.com/company/careers/sysadmindevops-engineer-london</a></p>
+
+<h1>Events</h1>
+
+<p>dotScale is an affordable upcoming conference in Paris, on June 7th with workshops on the June 8th. Som interesting folks down to speak, on everything from Hadoop and ElasticSearch to dotCloud and Heroku. The organisers have nicely offered a 15% discount to devops weekly readers too.</p>
+
+<p><a href="http://www.dotscale.eu/">http://www.dotscale.eu/</a>
+<a href="http://dotscale2013.eventbrite.com/?discount=DEVOPSWEEKLY">http://dotscale2013.eventbrite.com/?discount=DEVOPSWEEKLY</a></p>
+
+<h1>Tools</h1>
+
+<p>I mentioned the vagrant-omnibus tool last week for Chef and immediately wanted to the same thing for Puppet. The first step is a single installer, and puppet-omnibus is just that. It uses the tools from Opscode to make a single monolithic package.</p>
+
+<p><a href="https://github.com/andytinycat/puppet-omnibus">https://github.com/andytinycat/puppet-omnibus</a></p>
+
+<p>Internal applications often have either no or bad authentication and authorisation schemes. Google Auth Proxy is a reverse proxy which authenticates all requests via Google OAuth provider. Fast and simple, at least if you&rsquo;re already using an OAuth provider like Google Apps.</p>
+
+<p><a href="http://word.bitly.com/post/47548678256/google-auth-proxy">http://word.bitly.com/post/47548678256/google-auth-proxy</a>
+<a href="https://github.com/bitly/google_auth_proxy">https://github.com/bitly/google_auth_proxy</a></p>
+
+<p>More Vagrant providers, this one covers the Joyent cloud. Nicely it also comes with a sample Vagrantfile in a hello world style project (including a Chef bootstrap trick) which should get you started quickly.</p>
+
+<p><a href="https://github.com/someara/vagrant-joyent">https://github.com/someara/vagrant-joyent</a>
+<a href="https://github.com/someara/vagrant-joyent-hello_world-repo">https://github.com/someara/vagrant-joyent-hello_world-repo</a></p>
+
+<p>Chronos is an interesting cron replacement, with a distributed, fault tolerant model based on Mesos. You can specify jobs in iso8601, interact with a web interface or API and deal with failures gracefully. If you&rsquo;re running a full Hadoop stack the dependencies shouldn&rsquo;t be too scary.</p>
+
+<p><a href="http://airbnb.github.io/chronos/">http://airbnb.github.io/chronos/</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>
