@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 178 - 1st June 2014</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 178 - 1st June</h2>
+
+<p><em>I occasionally get emails asking how to get something featured in Devops Weekly. It comes down to two things, either I find useful content or tools while I’m reading the internet that week, or people send me links that I think are interesting. So if you come across something or write something that you think is interesting do send me an email or drop me a line at @garethr on twitter.</em></p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud - serious UK-based cloud infrastructure from only 1.5p per hour (£10.95/month)</p>
+
+<p>Start your £20 free trial now: <a href="http://brightbox.com/devopsweekly">http://brightbox.com/devopsweekly</a></p>
+
+<h1>News</h1>
+
+<p>A good overview of the various tools used for service discover, from the original Google Chubby paper, via Zookeeper and etcd to consul and various supporting tools. A good starting point if you’re looking tools in this area.</p>
+
+<p><a href="http://www.activestate.com/blog/2014/05/service-discovery-solutions">http://www.activestate.com/blog/2014/05/service-discovery-solutions</a></p>
+
+<p>A well written post-mortem from a recent outage at Joyent. Hats off as always for anyone publishing open post-mortems like this. Lots for anyone to learn from I would guess, including input validation for tools and the use of “full power” tools for routine tasks.</p>
+
+<p><a href="http://www.joyent.com/blog/postmortem-for-outage-of-us-east-1-may-27-2014">http://www.joyent.com/blog/postmortem-for-outage-of-us-east-1-may-27-2014</a></p>
+
+<p>A good post comparing and contrasting ITIL with aspects of devops. It focuses on the transition phase and discusses this in light of continuous delivery. The post also nicely packages this up in a design that tries to combine the best of both worlds. A good reminder ITIL is a framework too.</p>
+
+<p><a href="http://changeandrelease.com/2014/04/05/devops-and-itil-continuous-delivery-doesnt-stop-at-software/">http://changeandrelease.com/2014/04/05/devops-and-itil-continuous-delivery-doesnt-stop-at-software/</a></p>
+
+<p>Some interesting research on on-call and sleep patterns, done not in a lab but based on the habits and actual alerts at Etsy. The opsweekly idea mentioned also sounds a good way to optimise alerts and especially which one’s really need to page someone out-of-hours.</p>
+
+<p><a href="http://www.ryanfrantz.com/posts/sleep-driven-development/">http://www.ryanfrantz.com/posts/sleep-driven-development/</a></p>
+
+<p>The new version of Nginx has added support for syslog, which makes integration with various streaming log analysis tools easier. Here’s the very simple setup instructions for using it with graylog2.</p>
+
+<p><a href="http://blog.graylog2.org/easily-manage-your-nginx-access-logs-with-graylog2/">http://blog.graylog2.org/easily-manage-your-nginx-access-logs-with-graylog2/</a></p>
+
+<p>If whenever you write a bash script it quickly descends into a big ball of mud then this post is for you. Lots of useful tips including variable scoping, writing functions, debugging, formatting and more.</p>
+
+<p><a href="http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/">http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/</a></p>
+
+<p>Another response to questions about devops suitability for larger, more traditional, organisations. Some interesting points and references to examples. The more high level examples like this the easier it is to have conversations about devops practices in my experience.</p>
+
+<p><a href="http://www.informationweek.com/software/enterprise-applications/how-devops-benefits-large-enterprises/a/d-id/1268924">http://www.informationweek.com/software/enterprise-applications/how-devops-benefits-large-enterprises/a/d-id/1268924</a></p>
+
+<p>A talk with lots of examples of combining Chef with Docker. The deck also discusses some other integrations, for example with OpenStack Heat and Ansible.</p>
+
+<p><a href="http://www.slideshare.net/ewindisch/deploying-docker-provisioning-w-docker-chefpuppet-devopsdays-pgh">http://www.slideshare.net/ewindisch/deploying-docker-provisioning-w-docker-chefpuppet-devopsdays-pgh</a></p>
+
+<h1>Jobs</h1>
+
+<p>Net-A-Porter Group, the world&rsquo;s premier online luxury fashion retailer is hiring. We are looking for pro DevOps Engineers with excellent Linux Administration skills to work with our delivery teams, designing and realising the infrastructure for new services, and developing the tools the teams need to develop, deploy and support their own applications. Experience of building and operating large scale web platforms is essential plus knowledge of several of the following technologies (or similar): Puppet, Openstack, AWS, MySQL, Postgres, Apache, Nginx, Tomcat as well as scripting in Bash, Python, Perl or Ruby, good Hardware support and Networking knowledge.</p>
+
+<p><a href="http://isw.changeworknow.co.uk/net-a-porter/vms/e/net_a_porter/positions/bwkjzaXfDjh4QWLbKFebxD">http://isw.changeworknow.co.uk/net-a-porter/vms/e/net_a_porter/positions/bwkjzaXfDjh4QWLbKFebxD</a></p>
+
+<h1>Events</h1>
+
+<p>DevOpsDays Silicon Valley is at the end of the month, on the 27 and  28 of June. If you’re in town for Velocity, or just live in the area, you should be coming along. If the already announced program doesn’t have you registering, try the code WEEK for a 20% discount.</p>
+
+<p><a href="http://devopsdays.org/events/2014-siliconvalley/">http://devopsdays.org/events/2014-siliconvalley/</a></p>
+
+<h1>Tools</h1>
+
+<p>Changelog is a tool designed to answer the question “What changed in the last twenty minutes?”. It provides a simple HTTP api and a web interface and is intended for tracking everything from deployments, dns changes, reboots, creation of servers, etc.</p>
+
+<p><a href="http://engineering.prezi.com/blog/2014/05/28/changelog-a-tool-designed-to-help-you-recover-faster/">http://engineering.prezi.com/blog/2014/05/28/changelog-a-tool-designed-to-help-you-recover-faster/</a>
+<a href="https://github.com/prezi/changelog">https://github.com/prezi/changelog</a></p>
+
+<p>Openduty is an open source Alerting and incident escalation tool. It supports alerting with XMPP, email, SMS, Phone and Push notifications, and supports the Pagerduty API for triggering alerts.</p>
+
+<p><a href="https://github.com/ustream/openduty">https://github.com/ustream/openduty</a></p>
+
+<p>Checkzilla is simple tool for letting you know about out-of-date software versions. It currently supports Rubygems and NPM, but it’s extensible for other package types. Being able to manage this in one place feels like a good thing.</p>
+
+<p><a href="https://github.com/mickey/checkzilla">https://github.com/mickey/checkzilla</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

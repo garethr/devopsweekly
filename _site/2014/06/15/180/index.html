@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 180 - 15th June 2014</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 180 - 15th June</h2>
+
+<p><em>Lots of docker shaped content this week after the fantastic looking DockerCon finished a few days ago. Next weeks issue may be a day or so late as I’m travelling to Santa Clara for Velocity and Devopsdays next Sunday. Sorry about any delays if I don’t manage to write it from the airport.</em></p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud - serious UK-based cloud infrastructure from only 1.5p per hour (£10.95/month)</p>
+
+<p>Start your £20 free trial now: <a href="http://brightbox.com/devopsweekly">http://brightbox.com/devopsweekly</a></p>
+
+<h1>News</h1>
+
+<p>One of the keynote presentations from last week’s DockerCon. Eric Brewer from Google talks about their extensive experience running containers, focusing on robustness. Some hard won hints and tips if you’re just starting to run fleets of docker (or other types of) containers.</p>
+
+<p><a href="https://speakerdeck.com/eric_brewer/robust-containers">https://speakerdeck.com/eric_brewer/robust-containers</a></p>
+
+<p>An interview with the creator of Docker, talking about libswarm and the evolution and standardisation of the docker and container world. A good starting point if you missed the original announcements.</p>
+
+<p><a href="http://www.activestate.com/blog/2014/06/libswarm-docker-orchestration-announced">http://www.activestate.com/blog/2014/06/libswarm-docker-orchestration-announced</a></p>
+
+<p>A nice introduction to networking in docker. Simply walking through what happens to the local and container network as you spin up docker containers.</p>
+
+<p><a href="http://www.jedelman.com/home/docker-networking">http://www.jedelman.com/home/docker-networking</a></p>
+
+<p>A detailed post about some of the security challenges posed by patterns like continuous delivery and devops. It nicely identifies common problems and most importantly suggests methods for minimising the risks. Lots of good arguments for those selling this approach in large enterprises.</p>
+
+<p><a href="http://www.ibm.com/developerworks/library/d-security-considerations-devops-adoption/index.html">http://www.ibm.com/developerworks/library/d-security-considerations-devops-adoption/index.html</a></p>
+
+<p>Devops really is getting everywhere. This post nicely introduces many of the reasons for adopting devops practices and describes some of the things that CERT (the Computer Emergency Response Team) have done to improve their software delivery.</p>
+
+<p><a href="http://blog.sei.cmu.edu/post.cfm/generalized-model-automated-devops-153">http://blog.sei.cmu.edu/post.cfm/generalized-model-automated-devops-153</a></p>
+
+<p>A good example of the integration required to fit code review into a deployment pipeline. This example uses Gerrit, along with Jenkins and Amazon’s Opswork to build a nice looking system.</p>
+
+<p><a href="http://labs.vistarmedia.com/2014/05/30/from-code-review-to-opsworks.html">http://labs.vistarmedia.com/2014/05/30/from-code-review-to-opsworks.html</a></p>
+
+<p>If you’re familiar with the acronym COTS (for Commercial Off-the-Shelf) this next post should be interesting. It looks at the problems with fitting COTS software into a continuous delivery world and makes a few suggestions for improvements or workarounds.</p>
+
+<p><a href="http://markosrendell.wordpress.com/2014/06/13/reducing-continuous-delivery-impedance-part-3-cots-software-packages/">http://markosrendell.wordpress.com/2014/06/13/reducing-continuous-delivery-impedance-part-3-cots-software-packages/</a></p>
+
+<p>Documentation is important, and good documentation really helps people get started with your product. So having good examples that people can learn from seems useful, enter the beautiful docs repository.</p>
+
+<p><a href="https://github.com/PharkMillups/beautiful-docs">https://github.com/PharkMillups/beautiful-docs</a></p>
+
+<p>A nice, if simple, look at moving from a PaaS to an infrastructure you maintain. Discussion of app migration, load balancing and the rationale for choosing various components.</p>
+
+<p><a href="http://make.rafflecopter.com/custom-infrastructure-1.html">http://make.rafflecopter.com/custom-infrastructure-1.html</a>
+<a href="http://make.rafflecopter.com/custom-infrastructure-2-load-balancing.html">http://make.rafflecopter.com/custom-infrastructure-2-load-balancing.html</a>
+<a href="http://make.rafflecopter.com/custom-infrastructure-3-app-migration.html">http://make.rafflecopter.com/custom-infrastructure-3-app-migration.html</a></p>
+
+<p>A slightly biased but still useful comparison of some of the concepts and features of Go and Jenkins for continuous delivery.</p>
+
+<p><a href="http://highops.com/insights/continuous-delivery-pipelines-gocd-vs-jenkins/">http://highops.com/insights/continuous-delivery-pipelines-gocd-vs-jenkins/</a></p>
+
+<h1>Events</h1>
+
+<p>The first Devopsdays Warsaw will be taking place on Thursday 25th and Friday 26th of September. The organisers are looking for sponsors and speakers, with the call for proposals closing on the 11th of September.</p>
+
+<p><a href="http://devopsdays.org/events/2014-warsaw">http://devopsdays.org/events/2014-warsaw</a></p>
+
+<h1>Tools</h1>
+
+<p>Kubernetes is the open source version of Google’s container cluster manager, including support for docker. The setup instructions are based around Google Compute Engine but the software can run anywhere.</p>
+
+<p><a href="https://github.com/GoogleCloudPlatform/kubernetes">https://github.com/GoogleCloudPlatform/kubernetes</a></p>
+
+<p>Another announcement from DockerCon, Centurion is a deployment tool designed for docker. It provides a Rake based DSL which makes specifying hosts and images. The examples give you an idea, but the rolling update feature in particular is nice.</p>
+
+<p><a href="https://github.com/newrelic/centurion">https://github.com/newrelic/centurion</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>
