@@ -4,7 +4,7 @@ require 'rack/no-www'
 
 use Rack::NoWWW
 
-set :public, Proc.new { File.join(root, "_site") }
+set :public_folder, Proc.new { File.join(root, "_site") }
 
 # This before filter ensures that your pages are only ever served 
 # once (per deploy) by Sinatra, and then by Varnish after that
