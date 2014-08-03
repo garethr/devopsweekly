@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'rack/no-www'
 
-use Rack::NoWWW
+#use Rack::NoWWW
 
 set :public_folder, Proc.new { File.join(root, "_site") }
 
