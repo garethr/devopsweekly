@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 195 - 28th September 2014</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 195 - 28th September</h2>
+
+<p><em>So, with newly released major security vulnerabilities in bash, AWS rebooting and lots of people at Puppet Conf, Icinga Camp and Surge it’s been a quite week.</em></p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud - serious UK-based cloud infrastructure from only 1.5p per hour (£10.95/month)</p>
+
+<p>Start your £20 free trial now: <a href="http://brightbox.com/devopsweekly">http://brightbox.com/devopsweekly</a></p>
+
+<h1>Sponsored event</h1>
+
+<p>O'Reilly Velocity is coming on 17-19 November in Barcelona. You can enter to win a free conference pass by tweeting an answer to any of the following questions and using the hashtag #velocitytrivia, or by emailing <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#103;&#97;&#114;&#101;&#x74;&#x68;&#x40;&#x6d;&#x6f;&#114;&#x65;&#116;&#104;&#x61;&#110;&#x73;&#x65;&#x76;&#x65;&#x6e;&#x2e;&#110;&#101;&#x74;&#x2e;">&#x67;&#x61;&#x72;&#x65;&#x74;&#x68;&#x40;&#x6d;&#111;&#114;&#101;&#x74;&#x68;&#x61;&#110;&#x73;&#101;&#118;&#101;&#x6e;&#46;&#x6e;&#x65;&#116;&#46;</a></p>
+
+<ol type="a">
+<li>Name the keynote talk whose speaker works at a subsidiary of the Financial Times in London.</li>
+<li>Which Velocity Event gives you 5 mins. to get on stage and talk your latest passion, idea or hack?</li>
+<li>What session can I attend to learn if TLS is fast yet?</li>
+</ol>
+
+
+<p><a href="http://velocityconf.com/">http://velocityconf.com/</a></p>
+
+<p>The deadline for entry is Wednesday 1st October 2014 at 1am GMT. One winner will be chosen at random.</p>
+
+<h1>News</h1>
+
+<p>If you ever attend, or plan to attend, an industry event you should read this post. Heck, if you plan to leave your house your should read it. Our amazing community has a problem with diversity and anything you can do to make it more welcoming has to be a good thing.</p>
+
+<p><a href="http://bridgetkromhout.com/blog/2014/09/22/four-interactions-that-could-have-gone-better/">http://bridgetkromhout.com/blog/2014/09/22/four-interactions-that-could-have-gone-better/</a></p>
+
+<p>By now everyone will probably be aware, but just in case, Bash has a serious vulnerability that probably affects you. This is the best write-up I’ve found which quickly explains how this works and how it could be exploited.</p>
+
+<p><a href="http://www.troyhunt.com/2014/09/everything-you-need-to-know-about.html">http://www.troyhunt.com/2014/09/everything-you-need-to-know-about.html</a></p>
+
+<p>My talk from the recent Puppet Conf (disclaimer: I’m now a Puppet Labs employee), all about high level infrastructure testing. Includes a few experiments writing tests against infrastructure APIs and talks a bit about policy driven development.</p>
+
+<p><a href="https://speakerdeck.com/garethr/continuously-testing-infrastructure">https://speakerdeck.com/garethr/continuously-testing-infrastructure</a></p>
+
+<p>A full chapter on infrastructure automation from the Practicing Ruby book, stepping through the why alongside step-by-step examples of Chef recipes.</p>
+
+<p><a href="https://practicingruby.com/articles/infrastructure-automation">https://practicingruby.com/articles/infrastructure-automation</a></p>
+
+<p>I’ve made this point before but not so eloquently. If you’re writing Puppet, Chef or similar DSL based tool then you’re a programmer.</p>
+
+<p><a href="http://cwebber.net/blog/2014/09/26/i-am-not-a-coder/">http://cwebber.net/blog/2014/09/26/i-am-not-a-coder/</a></p>
+
+<p>Syslog is great, except when the standard isn’t actually adhered to. This next post shows how to deal with this situation using logstash and grok filters.</p>
+
+<p><a href="http://kartar.net/2014/09/when-logstash-and-syslog-go-wrong/">http://kartar.net/2014/09/when-logstash-and-syslog-go-wrong/</a></p>
+
+<p>At a previous job I a bit of desktop work, so this article about applying modern automation and devops approaches to large scale desktop systems was interesting. Lots of good points and ideas.</p>
+
+<p><a href="http://www.brianmadden.com/blogs/guestbloggers/archive/2014/09/16/is-it-time-for-enterprise-it-to-use-devops-for-smart-automation-of-virtual-desktop-delivery.aspx">http://www.brianmadden.com/blogs/guestbloggers/archive/2014/09/16/is-it-time-for-enterprise-it-to-use-devops-for-smart-automation-of-virtual-desktop-delivery.aspx</a></p>
+
+<p>A good talk and slide deck which quickly explains the state of networking for docker containers.</p>
+
+<p><a href="http://blog.thestateofme.com/2014/09/12/docker-networking/">http://blog.thestateofme.com/2014/09/12/docker-networking/</a></p>
+
+<p>It’s difficult to get people to work effectively together if they have never met, so for distributed organisations organising an internal conference is a nice idea. This post covers a few gotchas and an experience report from a recent effort.</p>
+
+<p><a href="http://betsandbits.com/2014/09/23/doccon1-organising-a-conference/">http://betsandbits.com/2014/09/23/doccon1-organising-a-conference/</a></p>
+
+<h1>Jobs</h1>
+
+<p>How much do companies pay for DevOps engineers? Find out in a Hired auction where 1,000+ companies in SF, NYC, LA, &amp; SEA send you offers with salary &amp; equity up front. Join today!</p>
+
+<p><a href="http://be.hired.com/devopsweekly5">http://be.hired.com/devopsweekly5</a></p>
+
+<h1>Tools</h1>
+
+<p>The new puppet server was released at Puppet Conf. Puppet server is a drop-in replacement for the current puppet master with some pretty big performance and scalability improvements.</p>
+
+<p><a href="https://github.com/puppetlabs/puppet-server">https://github.com/puppetlabs/puppet-server</a></p>
+
+<p>If you’re using Route53 DNS then Roadworker should be of interest. It’s a Ruby based DSL for creating zones and records. Good examples too.</p>
+
+<p><a href="https://github.com/winebarrel/roadworker">https://github.com/winebarrel/roadworker</a></p>
+
+<p>If like me you’re maintaining a number of puppet modules you probably have an occasional day when you try and remember to update lots of static files (Rakefile, .travis.yml, Gemfile, etc.) across all of them. Modulesync looks a nice solution to that issue.</p>
+
+<p><a href="https://github.com/puppetlabs/modulesync">https://github.com/puppetlabs/modulesync</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>

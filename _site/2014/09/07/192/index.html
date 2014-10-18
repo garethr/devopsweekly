@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Devops Weekly Issue 192 - 7th September 2014</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" />
+  <link href='http://feeds.feedburner.com/devopsweekly' rel='alternate' title='Devops Weekly Atom Feed' type='application/atom+xml' />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-435455-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="head">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+      <h1><em>Devops Weekly</em> A weekly slice of devops news</h1>
+    </div>
+    <script language="JavaScript" src="http://devopsweekly.us2.list-manage.com/subscriber-count?b=10&u=b6635e37e35fa5eff0c2a947a&id=a63f24d068" type="text/javascript"></script>
+    <h2>Issue 192 - 7th September</h2>
+
+<p><em>As mentioned last week, this issue is going out a little later than usual as I’m currently in Portland, Oregon. It should be back to normal time next week, but the week after I’ll be back in the US for PuppetConf. Phew</em></p>
+
+<h1>Sponsor</h1>
+
+<p>Devops Weekly is sponsored by Brightbox Cloud - serious UK-based cloud infrastructure from only 1.5p per hour (£10.95/month)</p>
+
+<p>Start your £20 free trial now: <a href="http://brightbox.com/devopsweekly">http://brightbox.com/devopsweekly</a></p>
+
+<h1>News</h1>
+
+<p>The basics of a Linux distribution are similar across most of the current distros. This post, from the folks behind systemd, proposes a radical future. Some good observations but lots to prod and question.</p>
+
+<p><a href="http://0pointer.net/blog/revisiting-how-we-put-together-linux-systems.html">http://0pointer.net/blog/revisiting-how-we-put-together-linux-systems.html</a></p>
+
+<p>Testing distributed systems is hard and approaches to this are still evolving. This post covers a library called pact and works through a complete example.</p>
+
+<p><a href="http://dius.com.au/2014/05/19/simplifying-micro-service-testing-with-pacts/">http://dius.com.au/2014/05/19/simplifying-micro-service-testing-with-pacts/</a></p>
+
+<p>Text as the interchange format between unix command line tools is powerful, but relies on some quite cryptic tools to use well. The next post looks briefly at an alternative, although it doesn’t mention PowerShell which does a similar thing.</p>
+
+<p><a href="http://paulhammant.com/2014/08/07/text-streams-should-be-the-fallback-interface-in-unix/">http://paulhammant.com/2014/08/07/text-streams-should-be-the-fallback-interface-in-unix/</a></p>
+
+<p>A really good post on the occasional clash between database administrators and software developers, and why it doesn’t have to be that way. Good analogies with sales and marketing, and the point that communication really is everybody&rsquo;s responsibility,</p>
+
+<p><a href="https://www.simple-talk.com/opinion/opinion-pieces/dbas-vs-developers-a-sad-tale-of-unnecessary-conflict/">https://www.simple-talk.com/opinion/opinion-pieces/dbas-vs-developers-a-sad-tale-of-unnecessary-conflict/</a></p>
+
+<p>Doing non-trivial load and performance testing of web applications is a bit of a dark art it sometimes feels like. This post does a great job of delving into how Twitter test for large spikes. A whole bunch of good lessons learned at scale.</p>
+
+<p><a href="https://blog.twitter.com/2014/push-our-limits-reliability-testing-at-twitter">https://blog.twitter.com/2014/push-our-limits-reliability-testing-at-twitter</a></p>
+
+<p>A tools like Puppet get more mature, the question of workflow comes up more and more. This post covers the new directory environments and how to use them with dependency tools like R10k.</p>
+
+<p><a href="http://garylarizza.com/blog/2014/08/31/r10k-plus-directory-environments/">http://garylarizza.com/blog/2014/08/31/r10k-plus-directory-environments/</a></p>
+
+<h1>Jobs</h1>
+
+<p>The Cloud Foundry engineering team is looking for a few great engineers to join us in building an open source platform that transforms how the world deploys and scales software. As part of the London team, you’ll be immersed in all the latest database technologies – Cassandra, Neo4j, Redis, MongoDB, Memcached, Elasticsearch, and more. We&rsquo;re looking for engineers who judge their success by the success of your team, and are interested in learning about distributed systems.</p>
+
+<p><a href="http://hire.jobvite.com/j/?aj=ot5bZfws&amp;s=Dev_Ops_UK">http://hire.jobvite.com/j/?aj=ot5bZfws&amp;s=Dev_Ops_UK</a></p>
+
+<p>DataSift is seeking operations engineers with a passion and flair for deploying and scaling distributed web applications. You will work on DataSift&rsquo;s growing server infrastructure, and be responsible for monitoring and optimising our platform across multiple servers, networks and databases. You will use modern operations tools, and will work closely with developers to achieve high levels of scalability.</p>
+
+<p><a href="http://jobvite.com/m?3ouPDgw5">http://jobvite.com/m?3ouPDgw5</a></p>
+
+<h1>Tools</h1>
+
+<p>If you’re doing any real PowerShell work in the console that PSReadLine is for you. It provides a much nicer command line interface with completion, history, syntax highlighting, multiline support and lots more.</p>
+
+<p><a href="https://github.com/lzybkr/PSReadLine">https://github.com/lzybkr/PSReadLine</a>
+<a href="http://rkeithhill.wordpress.com/2013/10/18/psreadline-a-better-line-editing-experience-for-the-powershell-console/">http://rkeithhill.wordpress.com/2013/10/18/psreadline-a-better-line-editing-experience-for-the-powershell-console/</a></p>
+
+<p>The concept of a single source of truth for everything pertaining to your infrastructure isn’t a new idea, but Collins looks like a more modern take on the CMDB. A documented API and client libraries, along with support for physical servers, switches, racks and higher level software properties.</p>
+
+<p><a href="http://tumblr.github.io/collins/">http://tumblr.github.io/collins/</a></p>
+
+<p>Portainer is an interesting combination of mesos and docker, aimed at building containers rather than running them. Worth investigating is you’re finding yourself building lots of containers and managing dedicated machines to do so.</p>
+
+<p><a href="https://github.com/duedil-ltd/portainer">https://github.com/duedil-ltd/portainer</a></p>
+
+<p>Oh My Vagrant is an opinionated development environment suitable for docker, puppet and more development activities. Based around Vagrant, Fedora, libvert and more.</p>
+
+<p><a href="http://ttboj.wordpress.com/2014/09/03/introducing-oh-my-vagrant/">http://ttboj.wordpress.com/2014/09/03/introducing-oh-my-vagrant/</a></p>
+
+<p>If you’ve found yourself writing small scripts in bash, and then re-implementing those same scripts for Windows as batch files then Batsh might be for you. A small scripting language that compiles to batch and bash. The online demo is pretty nifty.</p>
+
+<p><a href="https://github.com/BYVoid/Batsh">https://github.com/BYVoid/Batsh</a>
+<a href="http://batsh.org/">http://batsh.org/</a></p>
+
+  </div>
+  <div id="footer">
+    <p class="sponsor">Kindly sponsored by <a href="http://brightbox.com"><img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiRyAIM"/></a></p>
+    <p>Built using Ruby and Mailchimp. Hosted on <a href="http://heroku.com">Heroku</a>. Inspired by <a href="http://rubyweekly.com/">Ruby Weekly</a>. Looked after by <a href="http://morethanseven.net">Gareth Rushgrove</a>.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jquery.scrolldepth.js"></script>
+  <script>
+    $(function() {
+      $.scrollDepth();
+    });
+  </script>
+</body>
+</html>
