@@ -55,8 +55,10 @@ task :develop => :build do
   thread = Thread.new { server.start }
   trap("INT") { server.shutdown }
   printHeader "Development server started at http://localhost:4000/"
-  printHeader "Opening website in default web browser..."
-  %x[open http://localhost:4000/]
+  if ENV['open_in_browser'] != 'no'
+    printHeader "Opening website in default web browser..."
+    %x[open http://localhost:4000/]
+  end
   printHeader "Development mode entered."
   thread.join()
 end

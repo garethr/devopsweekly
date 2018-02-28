@@ -1,0 +1,6 @@
+language: ruby
+ruby: "2.3"
+
+install: bundle install
+
+script: rake build
